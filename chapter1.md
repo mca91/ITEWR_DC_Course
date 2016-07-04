@@ -25,9 +25,20 @@ Have a look at the plot. Which color does the point with the lowest rating have?
 
 movies <- read.csv("http://s3.amazonaws.com/assets.datacamp.com/course/introduction_to_r/movies.csv")
 
-library(ggplot2)
+library(AER)                                                    # contains the dataset 
+data(CASchools) 
 
-ggplot(movies, aes(x = runtime, y = rating, col = genre)) + geom_point()
+CASchools$tsratio  <- CASchools$students/CASchools$teachers     # teacher-student-ratio
+CASchools$score    <- (CASchools$read + CASchools$math)/2       # average test-score
+
+plot(score ~ tsratio, 
+     data = CASchools,
+     main = "Scatterplot of Test Score vs. Student-Teacher Ratio", 
+     xlab = "Student teacher-ratio (X)",
+     ylab = "Test Score (Y)",
+     xlim = c(10,30),
+     ylim = c(600, 720))
+
 ```
 
 *** =sct
