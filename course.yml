@@ -1,7 +1,7 @@
 title            : URFITE DC
-author_field     : Emwikts1970
-description      : This is an automatically generated demo course which will help you on your way to create an awesome DataCamp course.
-author_bio       : Emwikts1970 is an awesome DataCamp course creator.<br>You can say something about yourself <strong>here</strong>.
-university       : DataCamp
+author_field     : M. Arnold, A. Gerber, M. Schmelzer
+description      : This course offers accompanying material for the URFITE E-Book.
+author_bio       : We are currently working on our masters in economics and finance.
+university       : University of Duisburg-Essen
 difficulty_level : 2
-time_needed      : 1 hour
+time_needed      : 10 hours
