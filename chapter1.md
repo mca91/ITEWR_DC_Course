@@ -64,7 +64,6 @@ library(AER)
 set.seed(1)
 x <- runif(500, 0, 1)
 y <- 5 * rnorm(500, x, x)
-plot(y ~ x, col = "steelblue", pch = 19)
 ```
 
 *** =sample_code
@@ -79,6 +78,8 @@ plot(y ~ x, col = "steelblue", pch = 19)
 
 
 # Add the regression line to the plot.
+plot(y ~ x, col = "steelblue", pch = 19)
+
 
 ```
 
