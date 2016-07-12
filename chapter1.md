@@ -45,7 +45,7 @@ test_mc(correct = 2, feedback_msgs = c(msg_bad, msg_success, msg_bad, msg_bad))
 In the previous exercise, you saw example data exhibiting heteroskedasticity. In this exercise, we'll have a look at how 
 we can get a regression summary reporting robust standard errors
 
-A data set `data` consisting of the observations you have seen before is now available in the workspace.
+A data set consisting of observations you have seen before is now available in the workspace.
 
 *** =instructions
 - Regress `y` on `x` and a constant. Store the result in `mod`
@@ -64,7 +64,6 @@ library(AER)
 set.seed(1)
 x <- runif(500, 0, 1)
 y <- 5 * rnorm(500, x, x)
-data <- data.frame(x,y)
 ```
 
 *** =sample_code
@@ -110,7 +109,7 @@ test_object("mod")
 
 test_function("coeftest", args = c("x","vcov."))
 test_function("plot", args = c("x","y"))
-test_function("abline", args = "reg")
+test_function("abline", args = c("reg"))
 
 
 test_error()
