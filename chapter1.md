@@ -109,7 +109,7 @@ test_function("lm", args = "formula",
 test_object("mod")
 
 test_function("coeftest", args = c("x","vcov"))
-test_function("plot", args = "formula)
+test_function("plot", args = c("x","y"))
 test_function("abline", args = "reg")
 
 
