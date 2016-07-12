@@ -91,7 +91,7 @@ data <- data.frame(x,y)
 mod <- lm(y~x)
 
 # Report coefficients and robust standard errors.
-coeftest(mod, vcov=vcovHC(mod, type="HC0"))
+coeftest(mod, vcov.=vcovHC(mod, type="HC0"))
 
 # Plot data and add the regression line to the plot.
 plot(y ~ x)
@@ -108,7 +108,7 @@ test_function("lm", args = "formula",
 
 test_object("mod")
 
-test_function("coeftest", args = c("x","vcov"))
+test_function("coeftest", args = c("x","vcov."))
 test_function("plot", args = c("x","y"))
 test_function("abline", args = "reg")
 
