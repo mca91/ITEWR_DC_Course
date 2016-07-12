@@ -13,32 +13,21 @@ Have a look at the plot that showed up in the viewer to the right. Which of the 
 - No perfect multicollinearity
 - Homoskedasticity
 - Outlier are seldom
-- Y is $\chi^2_10$ distributed
+- Y is $\chi^2_{10}$ distributed
 
 *** =hint
-Have a look at the plot. Which color does the point with the lowest rating have?
+Have a look at the plot. What can you say about the dispersion of observations?
 
 *** =pre_exercise_code
 ```{r}
 # The pre exercise code runs code to initialize the user's workspace.
 # You can use it to load packages, initialize datasets and draw a plot in the viewer
+library(sandwich)
 
-movies <- read.csv("http://s3.amazonaws.com/assets.datacamp.com/course/introduction_to_r/movies.csv")
-
-library(AER)                                                    # contains the dataset 
-data(CASchools) 
-
-CASchools$tsratio  <- CASchools$students/CASchools$teachers     # teacher-student-ratio
-CASchools$score    <- (CASchools$read + CASchools$math)/2       # average test-score
-
-plot(score ~ tsratio, 
-     data = CASchools,
-     main = "Scatterplot of Test Score vs. Student-Teacher Ratio", 
-     xlab = "Student teacher-ratio (X)",
-     ylab = "Test Score (Y)",
-     xlim = c(10,30),
-     ylim = c(600, 720))
-
+set.seed(1)
+x <- runif(500, 0, 1)
+y <- 5 * rnorm(500, x, x)
+plot(y ~ x, col = "steelblue", pch = 19)
 ```
 
 *** =sct
@@ -46,80 +35,76 @@ plot(score ~ tsratio,
 # SCT written with testwhat: https://github.com/datacamp/testwhat/wiki
 
 msg_bad <- "That is not correct!"
-msg_success <- "Exactly! There seems to be a very bad action movie in the dataset."
+msg_success <- "Exactly! There seems to be Heteroskedasticity."
 test_mc(correct = 2, feedback_msgs = c(msg_bad, msg_success, msg_bad, msg_bad))
 ```
 
 --- type:NormalExercise lang:r xp:100 skills:1 key:d71e82b5ef
-## More movies
+## Regression and Robust Standard Errors
 
-In the previous exercise, you saw a dataset about movies. In this exercise, we'll have a look at yet another dataset about movies!
+In the previous exercise, you saw a example data exhibiting heteroskedasticity. In this exercise, we'll have a look at how
 
-A dataset with a selection of movies, `movie_selection`, is available in the workspace.
+A data set `data` consisting of the observations you have seen before is now available in the workspace.
 
 *** =instructions
-- Check out the structure of `movie_selection`.
-- Select movies with a rating of 5 or higher. Assign the result to `good_movies`.
-- Use `plot()` to  plot `good_movies$Run` on the x-axis, `good_movies$Rating` on the y-axis and set `col` to `good_movies$Genre`.
+- Regress `y` on `x` and a constant. Store the result in `mod`
+- Report coefficients and robust standard errors.
+- Plot the regression line.
 
 *** =hint
-- Use `str()` for the first instruction.
-- For the second instruction, you should use `...[movie_selection$Rating >= 5, ]`.
-- For the plot, use `plot(x = ..., y = ..., col = ...)`.
+- Use `lm()` for the first instruction.
+- Use the `coeftest()` function. See how you can specify a robust variance-covariance estimator to be used. coeftest has an argument were this can be specified. A look at the help file might be useful: `?coeftest`.
+- For the plot, use `abline()` on your model object.
 
 *** =pre_exercise_code
 ```{r}
-# You can also prepare your dataset in a specific way in the pre exercise code
-
-library(MindOnStats)
-data(Movies)
-movie_selection <- Movies[Movies$Genre %in% c("action", "animated", "comedy"),c("Genre", "Rating", "Run")]
-
-# Clean up the environment
-rm(Movies)
+library(sandwich)
+library(AER)
+data <- data.frame(x,y)
 ```
 
 *** =sample_code
 ```{r}
-# movie_selection is available in your workspace
-
-# Check out the structure of movie_selection
+# A data.frame `data` is available in your workspace
 
 
-# Select movies that have a rating of 5 or higher: good_movies
+# Regress y on x.
 
 
-# Plot Run (i.e. run time) on the x axis, Rating on the y axis, and set the color using Genre
+# Report coefficients and robust standard errors.
+
+
+# Add the regression line to the plot.
 
 ```
 
 *** =solution
 ```{r}
-# movie_selection is available in your workspace
+# A data.frame `data` is available in your workspace
 
-# Check out the structure of movie_selection
-str(movie_selection)
 
-# Select movies that have a rating of 5 or higher: good_movies
-good_movies <- movie_selection[movie_selection$Rating >= 5, ]
+# Regress y on x. Store the model in `mod`.
+mod <- lm(y~x, data)
 
-# Plot Run (i.e. run time) on the x axis, Rating on the y axis, and set the color using Genre
-plot(good_movies$Run, good_movies$Rating, col = good_movies$Genre)
+# Report coefficients and robust standard errors.
+coeftest(mod, vcov=vcovHC(mod, type="HC0"))
+
+# Add the regression line to the plot.
+abline(mod)
 ```
 
 *** =sct
 ```{r}
 # SCT written with testwhat: https://github.com/datacamp/testwhat/wiki
 
-test_function("str", args = "object",
-              not_called_msg = "You didn't call `str()`!",
-              incorrect_msg = "You didn't call `str(object = ...)` with the correct argument, `object`.")
+test_function("lm", args = "formula",
+              not_called_msg = "You didn't call `lm()`!",
+              incorrect_msg = "You didn't call `lm()` with the correct argument, `formula`.")
 
-test_object("good_movies")
+test_object("mod")
 
-test_function("plot", args = "x")
-test_function("plot", args = "y")
-test_function("plot", args = "col")
+test_function("abline", args = "reg")
+test_function("coeftest", args = c("x","vcov"))
 
 test_error()
 
