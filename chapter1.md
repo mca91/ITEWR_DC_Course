@@ -94,7 +94,7 @@ mod <- lm(y~x)
 coeftest(mod, vcov.=vcovHC(mod, type="HC0"))
 
 # Plot data and add the regression line to the plot.
-plot(y ~ x)
+plot(x,y)
 abline(mod)
 ```
 
