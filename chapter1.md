@@ -42,7 +42,8 @@ test_mc(correct = 2, feedback_msgs = c(msg_bad, msg_success, msg_bad, msg_bad))
 --- type:NormalExercise lang:r xp:100 skills:1 key:d71e82b5ef
 ## Regression and Robust Standard Errors
 
-In the previous exercise, you saw a example data exhibiting heteroskedasticity. In this exercise, we'll have a look at how
+In the previous exercise, you saw example data exhibiting heteroskedasticity. In this exercise, we'll have a look at how 
+we can get a regression summary reporting robust standard errors
 
 A data set `data` consisting of the observations you have seen before is now available in the workspace.
 
