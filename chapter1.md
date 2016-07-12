@@ -61,9 +61,9 @@ A data set `data` consisting of the observations you have seen before is now ava
 ```{r}
 library(sandwich)
 library(AER)
+set.seed(1)
 x <- runif(500, 0, 1)
 y <- 5 * rnorm(500, x, x)
-plot(y ~ x, col = "steelblue", pch = 19)
 data <- data.frame(x,y)
 ```
 
@@ -93,7 +93,8 @@ mod <- lm(y~x, data)
 # Report coefficients and robust standard errors.
 coeftest(mod, vcov=vcovHC(mod, type="HC0"))
 
-# Add the regression line to the plot.
+# Plot data and add the regression line to the plot.
+plot(y ~ x)
 abline(mod)
 ```
 
@@ -107,8 +108,10 @@ test_function("lm", args = "formula",
 
 test_object("mod")
 
-test_function("abline", args = "reg")
 test_function("coeftest", args = c("x","vcov"))
+test_function("plot", args = "formula)
+test_function("abline", args = "reg")
+
 
 test_error()
 
