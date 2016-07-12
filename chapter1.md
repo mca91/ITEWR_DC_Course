@@ -10,10 +10,10 @@ attachments :
 Have a look at the plot that showed up in the viewer to the right. Which of the OLS assumptions could be possibly violated?
 
 *** =instructions
-- Adventure
-- Action
-- Animation
-- Comedy
+- No perfect multicollinearity
+- Homoskedasticity
+- Outlier are seldom
+- Y is $\chi^2_10$ distributed
 
 *** =hint
 Have a look at the plot. Which color does the point with the lowest rating have?
