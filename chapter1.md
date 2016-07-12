@@ -63,6 +63,7 @@ library(sandwich)
 library(AER)
 x <- runif(500, 0, 1)
 y <- 5 * rnorm(500, x, x)
+plot(y ~ x, col = "steelblue", pch = 19)
 data <- data.frame(x,y)
 ```
 
