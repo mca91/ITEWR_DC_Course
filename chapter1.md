@@ -68,16 +68,16 @@ y <- 5 * rnorm(500, x, x)
 
 *** =sample_code
 ```{r}
-# Data vectors x and y are now available in your workspace
+# Data vectors `x` and `y` are now available in your workspace.
 
 
-# Regress y on x.
+# Regress y on x and store the model in `mod`.
 
 
 # Report coefficients and robust standard errors.
 
 
-# Add the regression line to the plot.
+# Add the regression line to the plot created by the code below.
 plot(y ~ x, col = "steelblue", pch = 19)
 
 
