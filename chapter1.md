@@ -88,7 +88,7 @@ data <- data.frame(x,y)
 
 
 # Regress y on x. Store the model in `mod`.
-mod <- lm(y~x, data)
+mod <- lm(y~x)
 
 # Report coefficients and robust standard errors.
 coeftest(mod, vcov=vcovHC(mod, type="HC0"))
