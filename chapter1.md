@@ -1,13 +1,13 @@
 ---
-title       : Insert the chapter title here
-description : Insert the chapter description here
+title       : OLS Basics 
+description : This section contains exercises dealing with the simple linear regression model and estimation using ordinary least squares. 
 attachments :
   slides_link : https://s3.amazonaws.com/assets.datacamp.com/course/teach/slides_example.pdf
 
 --- type:MultipleChoiceExercise lang:r xp:50 skills:1 key:35167f113b
-## A really bad movie
+## A really nice exercise about violation of OLS assumptions
 
-Have a look at the plot that showed up in the viewer to the right. Which type of movie has the worst rating assigned to it?
+Have a look at the plot that showed up in the viewer to the right. Which of the OLS assumptions could be possibly violated?
 
 *** =instructions
 - Adventure
