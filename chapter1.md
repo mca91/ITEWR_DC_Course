@@ -68,7 +68,7 @@ y <- 5 * rnorm(500, x, x)
 
 *** =sample_code
 ```{r}
-# A data.frame `data` is available in your workspace
+# Data vectors x and y are now available in your workspace
 
 
 # Regress y on x.
