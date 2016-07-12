@@ -61,6 +61,8 @@ A data set `data` consisting of the observations you have seen before is now ava
 ```{r}
 library(sandwich)
 library(AER)
+x <- runif(500, 0, 1)
+y <- 5 * rnorm(500, x, x)
 data <- data.frame(x,y)
 ```
 
