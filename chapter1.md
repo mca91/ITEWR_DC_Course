@@ -71,7 +71,7 @@ y <- 5 * rnorm(500, x, x)
 # Data vectors `x` and `y` are now available in your workspace.
 
 
-# Regress y on x and store the model in `mod`.
+# Regress y on x. Store the model in `mod`.
 
 
 # Report coefficients and robust standard errors.
@@ -85,7 +85,7 @@ plot(y ~ x, col = "steelblue", pch = 19)
 
 *** =solution
 ```{r}
-# A data.frame `data` is available in your workspace
+# Data vectors `x` and `y` are now available in your workspace.
 
 
 # Regress y on x. Store the model in `mod`.
@@ -94,7 +94,7 @@ mod <- lm(y~x)
 # Report coefficients and robust standard errors.
 coeftest(mod, vcov.=vcovHC(mod, type="HC0"))
 
-# Plot data and add the regression line to the plot.
+# Add the regression line to the plot created by the code below.
 plot(y ~ x, col = "steelblue", pch = 19)
 abline(mod)
 ```
