@@ -64,6 +64,7 @@ library(AER)
 set.seed(1)
 x <- runif(500, 0, 1)
 y <- 5 * rnorm(500, x, x)
+plot(y ~ x, col = "steelblue", pch = 19)
 ```
 
 *** =sample_code
@@ -93,7 +94,6 @@ mod <- lm(y~x)
 coeftest(mod, vcov.=vcovHC(mod, type="HC0"))
 
 # Plot data and add the regression line to the plot.
-plot(x,y)
 abline(mod)
 ```
 
@@ -108,7 +108,6 @@ test_function("lm", args = "formula",
 test_object("mod")
 
 test_function("coeftest", args = c("x","vcov."))
-test_function("plot", args = c("x","y"))
 test_function("abline")
 
 
