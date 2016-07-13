@@ -1,5 +1,5 @@
 # Urfite DataCamp Course
-<a href=http://localhost:3001/teach/repositories/62565332/go target="_blank"><img src="https://s3.amazonaws.com/assets.datacamp.com/img/github/content-engineering-repos/course_button.png" width="150"></a>
+<a href=https://www.datacamp.com/courses/1276 target="_blank"><img src="https://s3.amazonaws.com/assets.datacamp.com/img/github/content-engineering-repos/course_button.png" width="150"></a>
 <a href=http://localhost:3001/teach/repositories target="_blank"><img src="https://s3.amazonaws.com/assets.datacamp.com/img/github/content-engineering-repos/dashboard_button.png" width="150"></a>
 
 This an automatically generated <a href=https://www.datacamp.com target="_blank">DataCamp</a> course. You can start from these template files to create your own course.
