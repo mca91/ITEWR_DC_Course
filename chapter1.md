@@ -12,7 +12,7 @@ Have a look at the plot that showed up in the viewer to the right. Which of the 
 *** =instructions
 - No perfect multicollinearity
 - Homoskedasticity
-- Outlier are seldom
+- Outliers are seldom
 - Y is $\chi^2_{10}$ distributed
 
 *** =hint
