@@ -13,7 +13,7 @@ Have a look at the plot that showed up in the viewer to the right. Which of the 
 - No perfect multicollinearity
 - Homoskedasticity
 - Outliers are seldom
-- Y is $\chi^2_{10}$ distributed
+- Y is $\chi^2_{11}$ distributed
 
 *** =hint
 Have a look at the plot. What can you say about the dispersion of observations?
