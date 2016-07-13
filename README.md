@@ -1,4 +1,4 @@
-# DataCamp Template Course
+# Urfite DataCamp Course
 <a href=http://localhost:3001/teach/repositories/62565332/go target="_blank"><img src="https://s3.amazonaws.com/assets.datacamp.com/img/github/content-engineering-repos/course_button.png" width="150"></a>
 <a href=http://localhost:3001/teach/repositories target="_blank"><img src="https://s3.amazonaws.com/assets.datacamp.com/img/github/content-engineering-repos/dashboard_button.png" width="150"></a>
 
@@ -10,7 +10,7 @@ Changes you make to this GitHub repository are automatically reflected in the li
 
 1. Edit the markdown and yml files in this repository. You can use GitHub's online editor or use <a href=https://git-scm.com/ target="_blank">git</a> locally and push your changes.
 2. Check out your build attempts on the <a href=http://localhost:3001/teach/repositories target="_blank">Teach Dashboard</a>.
-3. Check out your automatically updated <a href=https://www.datacamp.com/teach/repositories/62565332/go target="_blank">course on DataCamp</a>
+3. Check out your automatically updated <a href=https://www.datacamp.com/courses/1276>course on DataCamp</a>
 
 ## Getting Started
 
