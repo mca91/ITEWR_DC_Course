@@ -118,5 +118,5 @@ test_error()
 success_msg("Good work!")
 ```
 
---- type:NormalExercise lang:r xp:100 skills:1
+--- type:NormalExercise lang:r xp:100 skills:1 key:13d4cf0fb6
 ## Test Exercise without key
