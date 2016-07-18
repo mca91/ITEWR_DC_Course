@@ -121,18 +121,18 @@ success_msg("Good work!")
 --- type:NormalExercise lang:r xp:100 skills:1 key:13d4cf0fb6
 ## Inference in the Simple Regression Model
 
---- type:NormalExercise lang:r xp:100 skills:1 key:13d4cf0fb6
+--- type:NormalExercise lang:r xp:100 skills:1 key:c4b2c27865
 ## Dummy Variables
 
---- type:NormalExercise lang:r xp:100 skills:1 key:13d4cf0fb6
+--- type:NormalExercise lang:r xp:100 skills:1 key:79d4a98b65
 ## Heteroskedasticity
 
---- type:NormalExercise lang:r xp:100 skills:1 key:13d4cf0fb6
+--- type:NormalExercise lang:r xp:100 skills:1 key:726a6d460b
 ## The Gauss Markov Theorem
 
---- type:NormalExercise lang:r xp:100 skills:1 key:13d4cf0fb6
+--- type:NormalExercise lang:r xp:100 skills:1 key:9ad3c5911e
 ## Introduction to Multiple Regression
 
---- type:NormalExercise lang:r xp:100 skills:1 key:13d4cf0fb6
+--- type:NormalExercise lang:r xp:100 skills:1 key:730b08fcd5
 ## Additional Exercises
 
