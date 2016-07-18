@@ -119,4 +119,20 @@ success_msg("Good work!")
 ```
 
 --- type:NormalExercise lang:r xp:100 skills:1 key:13d4cf0fb6
-## Test Exercise without key
+## Inference in the Simple Regression Model
+
+--- type:NormalExercise lang:r xp:100 skills:1 key:13d4cf0fb6
+## Dummy Variables
+
+--- type:NormalExercise lang:r xp:100 skills:1 key:13d4cf0fb6
+## Heteroskedasticity
+
+--- type:NormalExercise lang:r xp:100 skills:1 key:13d4cf0fb6
+## The Gauss Markov Theorem
+
+--- type:NormalExercise lang:r xp:100 skills:1 key:13d4cf0fb6
+## Introduction to Multiple Regression
+
+--- type:NormalExercise lang:r xp:100 skills:1 key:13d4cf0fb6
+## Additional Exercises
+
