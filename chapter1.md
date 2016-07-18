@@ -2,7 +2,7 @@
 title       : OLS Basics 
 description : This section contains exercises dealing with the simple linear regression model and estimation using ordinary least squares. 
 attachments :
-  slides_link : https://github.com/Emwikts1970/URFITE_DC/blob/master/FolienO%CC%88koI_2015_deutsch.pdf
+  slides_link :  URFITE_DC/Econometrics.pdf 
 
 --- type:MultipleChoiceExercise lang:r xp:50 skills:1 key:35167f113b
 ## A really nice exercise about violation of OLS assumptions
