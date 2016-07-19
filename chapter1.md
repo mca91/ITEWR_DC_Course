@@ -5,7 +5,7 @@ attachments :
   slides_link : https://github.com/Emwikts1970/URFITE_DC/raw/master/Econometrics
 
 --- type:MultipleChoiceExercise lang:r xp:50 skills:1 key:35167f113b
-## A really nice exercise about violation of OLS assumptions
+## Violation of OLS Assumptions
 
 Have a look at the plot that showed up in the viewer to the right. Which of the OLS assumptions could be possibly violated?
 
