@@ -157,7 +157,7 @@ data("CPSSWEducation")
 summary(CPSSWEducation)
 
 # Attach the data set to R's search path
-attach(CPSSWeducation)
+attach(CPSSWEducation)
 
 # Plot observations on education and earnings
 plot(education, earnings)
