@@ -4,7 +4,7 @@ description : This section contains exercises dealing with the simple linear reg
 attachments :
   slides_link : https://github.com/Emwikts1970/URFITE_DC/raw/master/Econometrics
 
---- type:NormalExercise lang:r xp:100 skills:1 
+--- type:NormalExercise lang:r xp:100 skills:1 key:
 ## The Simple Linear Regression Model I
 
 In this exercise, you will learn how to use R for estimating linear regression models. We use the `CPSSWEducation` data set coming with the AER package.
