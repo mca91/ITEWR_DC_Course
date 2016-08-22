@@ -208,6 +208,3 @@ success_msg("Good work!")
 --- type:NormalExercise lang:r xp:100 skills:1 key:9ad3c5911e
 ## Introduction to Multiple Regression
 
---- type:NormalExercise lang:r xp:100 skills:1 key:730b08fcd5
-## Additional Exercises
-
