@@ -151,10 +151,10 @@ In this exercise, you will learn how to use R for estimating linear regression m
 ```{r}
 # Load the AER package and add data to workspace
 library(AER)
-data("CPSSWeducation")
+data("CPSSWEducation")
 
 # Use the summary() function on the CPSSWEducation data set 
-summary(CPSSWeducation)
+summary(CPSSWEducation)
 
 # Attach the data set to R's search path
 attach(CPSSWeducation)
