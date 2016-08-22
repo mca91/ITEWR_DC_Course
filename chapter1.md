@@ -164,6 +164,13 @@ plot(education, earnings)
 
 ```
 
+*** =pre_exercise_code
+
+```{r}
+library(AER)
+data("CPSSWEducation")
+```
+
 *** =sct
 ```{r}
 
