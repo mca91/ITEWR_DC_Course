@@ -94,4 +94,53 @@ CPS1985 <- read.table("http://s3.amazonaws.com/assets.datacamp.com/production/co
 ```
 
 *** =instructions
-- Get an overview over the data set using summary()
+- Get an overview over the data set. Check its dimensions using `dim()` and compute some descriptive statistics with `summary()`
+
+*** =sample_code
+```{r}
+# Check dimensions and compute descriptive statistics
+
+
+# Use the [] operators to print the first 100 observations of `wage` to the console
+
+
+# Create a new object `cps1985_new` containing all variables from cps1985 except for `union`
+
+
+```
+
+*** =solution
+```{r}
+# Check dimensions and compute descriptive statistics
+dim(cps1985)
+summary(cps1985)
+
+# Use the [] operators to print the first 100 observations of `wage` to the console
+cps1985[100,1]
+
+# Create a new object `cps1985_new` containing all variables from cps1985 except for `union`
+cps1985_new <- cps1985[,-1]
+
+```
+
+*** =sct
+```{r}
+test_function("dim", args="x",
+              not_called_msg = "You didn't call `dim()`!",
+              incorrect_msg = "You did call `dim()` with the wrong argument")
+
+test_function("summary", args = "object",
+              not_called_msg = "You didn't call `summary()`!",
+              incorrect_msg = "You did call `summary()` with the wrong argument, `object`!")
+
+test_output_contains("cps1985[100,1]",
+                         incorrect_msg = "Have you used `[100, 1]` to print the first 100 obs. from `wage` in `cps1985`?")
+                         
+test_object(cps1985_new, 
+            eq_condition = "equivalent", 
+            eval = TRUE, 
+            undefined_msg = "You did not define an object named `cps1985_new`", 
+            incorrect_msg = "Something went wrong with the indexing. Maybe you confused rows with columns?") 
+
+```
+
