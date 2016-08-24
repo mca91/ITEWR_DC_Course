@@ -154,7 +154,7 @@ library(AER)
 data("CPSSWEducation")
 
 # Use the summary() function on the CPSSWEducation data set 
-summary(CPSSWEducation)
+summary(object=CPSSWEducation)
 
 # Attach the data set to R's search path
 attach(CPSSWEducation)
