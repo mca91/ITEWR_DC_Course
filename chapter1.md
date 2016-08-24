@@ -82,7 +82,7 @@ test_error()
 success_msg("Great! In the next exercise we will learn how to read data from .csv-files")
 ```
 
---- type:NormalExercise lang:r xp:100 skills:1
+--- type:NormalExercise lang:r xp:100 skills:1 key:89349eccc2
 ## Data Handling II
 
 In this exercise, you will learn how to import different kind of data like .csv or .dat-files. 
