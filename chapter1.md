@@ -90,5 +90,5 @@ In this exercise, you will learn some more tricks in data wrangling. We already 
 
 *** =pre_exercise_code
 ```{r}
-dat <- read.table("http://s3.amazonaws.com/assets.datacamp.com/production/course_1276/datasets/CPS1985.txt", sep=",", header=TRUE)
+CPS1985 <- read.table("http://s3.amazonaws.com/assets.datacamp.com/production/course_1276/datasets/CPS1985.txt", sep=",", header=TRUE)
 ```
