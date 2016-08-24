@@ -174,7 +174,7 @@ data("CPSSWEducation")
 *** =sct
 ```{r}
 
-test_function("library", args="package")
+test_function("library")
 
 test_function("data", args = "list",
               not_called_msg = "You didn't call `data()`!",
