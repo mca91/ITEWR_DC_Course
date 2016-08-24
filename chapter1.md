@@ -86,3 +86,8 @@ success_msg("Great! In the next exercise we will learn how to read data from .cs
 ## Data Handling II
 
 In this exercise, you will learn how to import different kind of data like .csv or .dat-files. 
+
+*** =pre_exercise_code
+```{r}
+dat <- read.table("http://s3.amazonaws.com/assets.datacamp.com/production/course_1276/datasets/CPS1985.txt, sep="", header=TRUE)
+```
