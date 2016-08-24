@@ -85,12 +85,12 @@ success_msg("Great! In the next exercise we will learn how to read data from .cs
 --- type:NormalExercise lang:r xp:100 skills:1  key:89349eccc2
 ## Data Handling II
 
-In this exercise, you will learn some more tricks in data wrangling. We already loaded the `CPS1985` dataset for you.
-`CPS1985` contains a subset of observations from the <a href="http://www.census.gov/programs-surveys/cps.html">Current Population Survey</a>.   
+In this exercise, you will learn some more tricks in data wrangling. We already loaded the `cps1985` dataset for you.
+`cps1985` contains a subset of observations from the <a href="http://www.census.gov/programs-surveys/cps.html">Current Population Survey</a>.   
 
 *** =pre_exercise_code
 ```{r}
-CPS1985 <- read.table("http://s3.amazonaws.com/assets.datacamp.com/production/course_1276/datasets/CPS1985.txt", sep=",", header=TRUE)
+cps1985 <- read.table("http://s3.amazonaws.com/assets.datacamp.com/production/course_1276/datasets/CPS1985.txt", sep=",", header=TRUE)
 ```
 
 *** =instructions
