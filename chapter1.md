@@ -174,9 +174,12 @@ data("CPSSWEducation")
 *** =sct
 ```{r}
 
-test_function("library",
-              not_called_msg = "You didn't call `library()`!",
-              incorrect_msg = "Maybe you did call `library()` with the wrong argument?")
+test_function("library", args="package",
+              eval = TRUE,
+              eq_condition = "equivalent",
+              not_called_msg = NULL,
+              args_not_specified_msg = NULL,
+              incorrect_msg = NULL)
 
 test_function("data", args = "list",
               not_called_msg = "You didn't call `data()`!",
