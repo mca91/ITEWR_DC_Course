@@ -3,9 +3,9 @@ title       : Basics in R
 description : This section teaches you basic commands in R.
 
 --- type:NormalExercise lang:r xp:100 skills:1 key:3db79c581d
-## R Basics
+## Data Handling I
 
-In this exercise, you will learn how to use R for estimating linear regression models. We use the `CPSSWEducation` data set coming with the AER package.
+In this exercise, you will learn how to use data that comes with R packages. We use the `CPSSWEducation` data set contained in the AER package.
 
 *** =instructions
 - Load the AER package using the `library()` function by executing `library(AER)`. Add the CPSSWEducation data set to the workspace with `data("CPSSWEducation")` 
@@ -76,5 +76,5 @@ test_function("plot", args = c("x","y"),
 
 test_error()
 
-success_msg("Good work!")
+success_msg("Great! In the next exercise we will learn how to read data from .csv-files")
 ```
