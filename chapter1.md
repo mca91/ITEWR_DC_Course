@@ -136,7 +136,7 @@ test_function("summary", args = "object",
 test_output_contains("cps1985[100,1]",
                          incorrect_msg = "Have you used `[100, 1]` to print the first 100 obs. from `wage` in `cps1985`?")
                          
-test_object(cps1985new)
+test_object("cps1985new")
 
 ```
 
