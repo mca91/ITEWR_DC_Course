@@ -22,7 +22,7 @@ In this exercise, you will learn how to use data that comes with R packages. We 
 # Use the summary() function on the CPSSWEducation data set 
 
 
-# Print observations of `education`
+# Print observations of `education`.
 
 
 # Attach the data set to R's search path
