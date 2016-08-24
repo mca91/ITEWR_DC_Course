@@ -119,7 +119,7 @@ summary(cps1985)
 cps1985[100,1]
 
 # Create a new object `cps1985new` containing all variables from cps1985 except for `union`
-cps1985new <- cps1985[,-1]
+#cps1985new <- cps1985[,-1]
 
 ```
 
@@ -136,7 +136,7 @@ test_function("summary", args = "object",
 test_output_contains("cps1985[100,1]",
                          incorrect_msg = "Have you used `[100, 1]` to print the first 100 obs. from `wage` in `cps1985`?")
                          
-test_object(cps1985new)
+
 
 ```
 
