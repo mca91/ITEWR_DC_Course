@@ -121,7 +121,7 @@ success_msg("Good work!")
 
 
 --- type:NormalExercise lang:r xp:100 skills:1 key:3db79c581d
-## The Simple Linear Regression Model I
+## R Basics
 
 In this exercise, you will learn how to use R for estimating linear regression models. We use the `CPSSWEducation` data set coming with the AER package.
 
