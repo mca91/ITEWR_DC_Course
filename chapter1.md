@@ -11,8 +11,8 @@ In this exercise, you will learn how to use data that comes with R packages. We 
 - Load the AER package using the `library()` function by executing `library(AER)`. Add the `CPSSWEducation` data set to the workspace with `data("CPSSWEducation")` 
 - Get an overview over the data stored in `CPSSWEducation` with help of the `summary()` function. Type and execute `summary(CPSSWEducation)`. Notice that `summary()` is called on an object. In R, an object's name has to be given without quotation marks.
 - `CPSSWEducation` is a `data.frame` object. For now, you can think of it as a matrix where variables are stored in named columns. You can select a specific variable using the `$` operator. Print observations for `education` using the command `CPSSWEducation$education` 
-- Use the `attach(CPSSWEducation)` command to attach the data set to R's search path. You are now able to access variables stored in the dataset by simply giving their names. Have a try!
-- Suppose you are interested in the relation between earnings and education. Use `plot(education, earnings)` to create a scatter plot of observations on these variables
+- Use the `attach(CPSSWEducation)` command to attach the data set to R's search path. You are now able to access variables stored in the dataset by simply giving their names. Have a try: Execute `education`!
+- Now suppose you are interested in the relation between earnings and education. Use `plot(education, earnings)` to create a scatter plot of observations on these variables
 
 *** =sample_code
 ```{r}
@@ -82,10 +82,11 @@ test_error()
 success_msg("Great! In the next exercise we will learn how to read data from .csv-files")
 ```
 
---- type:NormalExercise lang:r xp:100 skills:1 key:89349eccc2
+--- type:NormalExercise lang:r xp:100 skills:1 
 ## Data Handling II
 
-In this exercise, you will learn how to import different kind of data like .csv or .dat-files. 
+In this exercise, you will learn some more tricks in data wrangling. We already loaded the `CPS1985` dataset for you.
+`CPS1985` contains a subset of observations from the <a href="http://www.census.gov/programs-surveys/cps.html">Current Population Survey</a>.   
 
 *** =pre_exercise_code
 ```{r}
