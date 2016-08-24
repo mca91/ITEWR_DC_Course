@@ -67,7 +67,7 @@ test_function("summary", args = "object",
               incorrect_msg = "You did call `summary()` with the wrong argument, `object`!")
 
 test_student_typed("CPSSWEducation$education", 
-                    not_typed_msg = "Something went wrong. There must be a typo! Look again at your Code!")
+                    not_typed_msg = "You failed printing observations of `education`. There must be a typo! Look again at your Code!")
 
 test_function("attach", args = "what",
               not_called_msg = "You didn't call `attach()`!",
