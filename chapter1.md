@@ -103,7 +103,7 @@ cps1985 <- read.table("http://s3.amazonaws.com/assets.datacamp.com/production/co
 # Use the [] operators to print the first 100 observations of `wage` to the console
 
 
-# Create a new object `cps1985_new` containing all variables from cps1985 except for `union`
+# Create a new object `cps1985new` containing all variables from cps1985 except for `union`
 
 
 ```
