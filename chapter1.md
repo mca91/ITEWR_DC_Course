@@ -176,9 +176,9 @@ data("CPSSWEducation")
 
 test_function("library")
 
-test_function("data", args = "list",
+test_function("data",
               not_called_msg = "You didn't call `data()`!",
-              incorrect_msg = "You did call `data()` with the wrong argument, `list`!")
+              incorrect_msg = "You did call `data()` with the wrong argument")
               
 test_function("summary", args = "object",
               not_called_msg = "You didn't call `summary()`!",
