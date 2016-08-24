@@ -92,3 +92,6 @@ In this exercise, you will learn some more tricks in data wrangling. We already 
 ```{r}
 CPS1985 <- read.table("http://s3.amazonaws.com/assets.datacamp.com/production/course_1276/datasets/CPS1985.txt", sep=",", header=TRUE)
 ```
+
+*** =instructions
+- Get an overview over the data set using summary()
