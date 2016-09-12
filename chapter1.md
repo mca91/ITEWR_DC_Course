@@ -213,8 +213,6 @@ test_object("Y",
             undefined_msg = "You did not define an object named `y`!",
             incorrect_msg = "The matrix does not look the way it is supposed to be... Maybe you confused rows and columns?")
 
-test_function("%*%")
-
 test_object("A")
 
 test_output_contains("t(A)",
