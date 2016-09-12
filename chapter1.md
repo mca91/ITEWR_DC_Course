@@ -94,6 +94,8 @@ cps1985 <- read.table("http://s3.amazonaws.com/assets.datacamp.com/production/co
 
 *** =instructions
 - Get an overview over the data set. Check its dimensions using `dim()` and compute some descriptive statistics with `summary()`
+- Print the first 100 observations of `wage` to the console using `[]`
+- Store all variables contained in `cps1985` except for `union` in a new object named `cps1985new`
 
 *** =sample_code
 ```{r}
@@ -103,7 +105,7 @@ cps1985 <- read.table("http://s3.amazonaws.com/assets.datacamp.com/production/co
 # Use the [] operators to print the first 100 observations of `wage` to the console
 
 
-# Create a new object `cps1985new` containing all variables from cps1985 except for `union`
+# Create a new object `cps1985new` containing all variables from `cps1985` except for `union`
 
 
 ```
@@ -117,7 +119,7 @@ summary(cps1985)
 # Use the [] operators to print the first 100 observations of `wage` to the console
 cps1985[100,1]
 
-# Create a new object `cps1985new` containing all variables from cps1985 except for `union`
+# Create a new object `cps1985new` containing all variables from `cps1985` except for `union`
 cps1985new <- cps1985[,-1]
 
 ```
