@@ -147,3 +147,77 @@ success_msg("Good work!")
 
 --- type:NormalExercise lang:r xp:100 skills:1  key:e0d56bf08c
 ## Data Handling III
+
+This exercise teaches You some tricks to generate data yourself. 
+
+*** =instructions
+
+- Construct a 3x3 matrix `X` containing numbers from 1 to 9 rowwise using `matrix()`
+- Create two arbitrary numeric column vectors of length three named `x` and `y` and join them columnwise using `cbind()`. Store the resulting 3x2 matrix in `Y`
+- Compute the matrix product of `X` and `Y` using the `%*%` operator. Store the resulting 3x2 matrix in `A`
+- Transpose `A` using `t()`
+
+*** =sample_code
+```{r}
+# Construct a 3x3 matrix `X` containing numbers from 1 to 9 rowwise using `matrix()`
+
+
+# Create two two vectors `x` = (1 2 3)'  and `y` = (4 5 6)' and join them using `cbind()`. Store the result in `Y`
+
+
+# Determine the matrix product of `X` and `Y`. Store the result in `A`
+
+
+# Transpose `A`
+
+
+```
+
+*** =solution
+```{r}
+# Construct a 3x3 matrix `X` containing numbers from 1 to 9 rowwise using `matrix()`
+X <- matrix(c(1,2,3,4,5,6,7,8,9), nrow=3, byrow=T)
+
+# Create two vectors `x` = (1 2 3)'  and `y` = (4 5 6)' and join them using `cbind()`. Store the result in `Y`
+x <- c(1,2,3)
+y <- c(4,5,6)
+Y <- cbind(x,y)
+
+# Determine the matrix product of `X` and `Y`. Store the result in `A`
+A <- X %*% Y
+
+# Transpose `A`
+t(A)
+
+
+```
+
+*** =sct
+```{r}
+test_object("X",
+            undefined_msg = "You did not define an object named `X`!",
+            incorrect_msg = "The matrix does not look the way it is supposed to be... Maybe you confused rows and columns?")
+
+test_object("x",
+            undefined_msg = "You did not define an object named `x`!",
+            incorrect_msg = "The matrix does not look the way it is supposed to be... Maybe you confused rows and columns?")
+
+
+test_object("y",
+            undefined_msg = "You did not define an object named `y`!",
+            incorrect_msg = "The matrix does not look the way it is supposed to be... Maybe you confused rows and columns?")
+
+test_function("cbind")
+
+test_object("Y",
+            undefined_msg = "You did not define an object named `y`!",
+            incorrect_msg = "The matrix does not look the way it is supposed to be... Maybe you confused rows and columns?")
+
+test_function("%*%")
+
+test_object("A")
+
+test_output_contains("t(A)",
+                         incorrect_msg = "Have you used `t()` to transpose A?")
+
+```
