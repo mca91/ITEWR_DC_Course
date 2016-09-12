@@ -162,7 +162,7 @@ This exercise teaches You some tricks using selfgenerated data.
 # Construct a 3x3 matrix `X` containing numbers from 1 to 9 rowwise using `matrix()`
 
 
-# Create two vectors `x` = (1 2 3)'  and `y` = (4 5 6)' and join them using `cbind()`. Store the result in `Y`
+# Create two vectors `x` = (1 2 3)  and `y` = (4 5 6) and join them using `cbind()`. Store the result in `Y`
 
 
 # Determine the matrix product of `X` and `Y`. Store the result in `A`
@@ -178,7 +178,7 @@ This exercise teaches You some tricks using selfgenerated data.
 # Construct a 3x3 matrix `X` containing numbers from 1 to 9 rowwise using `matrix()`
 X <- matrix(c(1,2,3,4,5,6,7,8,9), nrow=3, byrow=T)
 
-# Create two vectors `x` = (1 2 3)'  and `y` = (4 5 6)' and join them using `cbind()`. Store the result in `Y`
+# Create two vectors `x` = (1 2 3)  and `y` = (4 5 6) and join them using `cbind()`. Store the result in `Y`
 x <- c(1,2,3)
 y <- c(4,5,6)
 Y <- cbind(x,y)
