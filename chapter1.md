@@ -148,7 +148,7 @@ success_msg("Good work!")
 --- type:NormalExercise lang:r xp:100 skills:1  key:e0d56bf08c
 ## Data Handling III
 
-This exercise teaches You some tricks to generate data yourself. 
+This exercise teaches You some tricks using selfgenerated data. 
 
 *** =instructions
 
@@ -162,7 +162,7 @@ This exercise teaches You some tricks to generate data yourself.
 # Construct a 3x3 matrix `X` containing numbers from 1 to 9 rowwise using `matrix()`
 
 
-# Create two two vectors `x` = (1 2 3)'  and `y` = (4 5 6)' and join them using `cbind()`. Store the result in `Y`
+# Create two vectors `x` = (1 2 3)'  and `y` = (4 5 6)' and join them using `cbind()`. Store the result in `Y`
 
 
 # Determine the matrix product of `X` and `Y`. Store the result in `A`
