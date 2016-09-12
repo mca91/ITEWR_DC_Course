@@ -196,22 +196,22 @@ t(A)
 ```{r}
 test_object("X",
             undefined_msg = "You did not define an object named `X`!",
-            incorrect_msg = "The matrix does not look the way it is supposed to be... Maybe you confused rows and columns?")
+            incorrect_msg = "The matrix does not look the way it is supposed to be... Maybe you confused rows with columns?")
 
 test_object("x",
             undefined_msg = "You did not define an object named `x`!",
-            incorrect_msg = "The matrix does not look the way it is supposed to be... Maybe you confused rows and columns?")
+            incorrect_msg = "The vector does not look the way it is supposed to be... Print it to the console and see what's wrong!")
 
 
 test_object("y",
             undefined_msg = "You did not define an object named `y`!",
-            incorrect_msg = "The matrix does not look the way it is supposed to be... Maybe you confused rows and columns?")
+            incorrect_msg = "The vector does not look the way it is supposed to be... Print it to the console and see what's wrong!")
 
 test_function("cbind")
 
 test_object("Y",
-            undefined_msg = "You did not define an object named `y`!",
-            incorrect_msg = "The matrix does not look the way it is supposed to be... Maybe you confused rows and columns?")
+            undefined_msg = "You did not define an object named `Y`!",
+            incorrect_msg = "The matrix does not look the way it is supposed to be...")
 
 test_object("A")
 
