@@ -78,13 +78,13 @@ test_function("plot", args = c("x","y"),
               incorrect_msg = "You did call `attach()` with the arguments, `x` and `y`!")
 
 test_error()
-success_msg("Great! In the next exercise we will learn how to read data from .csv-files")
+success_msg("Great! In the next exercise, You will learn some basic data wrangling techniques.")
 ```
 
 --- type:NormalExercise lang:r xp:100 skills:1  key:89349eccc2
 ## Data Handling II
 
-In this exercise, you will learn some more tricks in data wrangling. We already loaded the `cps1985` dataset for you.
+In this exercise, you will learn some more tricks in data wrangling. We already loaded the `cps1985` dataset for you, it is now available in the environment of you R session.
 `cps1985` contains a subset of observations from the <a href="http://www.census.gov/programs-surveys/cps.html">Current Population Survey</a>.   
 
 *** =pre_exercise_code
@@ -142,5 +142,8 @@ test_object("cps1985new",
             incorrect_msg = "The data set does not look the way it is supposed to be... Maybe you did somethind wrong with the indexing?")
 
 test_error()
+success_msg("Good work!")
 ```
 
+--- type:NormalExercise lang:r xp:100 skills:1  key:89349eccc2
+## Data Handling III
