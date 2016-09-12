@@ -218,4 +218,6 @@ test_object("A")
 test_output_contains("t(A)",
                          incorrect_msg = "Have you used `t()` to transpose A?")
 
+test_error()
+success_msg("Nice!")
 ```
