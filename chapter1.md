@@ -8,8 +8,8 @@ description : This section teaches you basic commands in R.
 ***=instructions
 
 - Use R as a calculator. Calculate 3 + 4, 6 − 8, 3 × 5 and 10 / 3
-- Save the result of 10 / 3 to `x` by using the `<-` operator
-- Print the content of `x` to the console by typing `x` and pressing <i>enter</i>
+- Save the result of 10 / 3 to a variable, e.g. `x`, by using the `<-` operator: `x <- 10/3`
+- Print the content of this object to the console by typing its name and pressing <i>enter</i>
 - Round the result to 2 decimal places using `round(x, 2)`
 
 *** =sample_code
@@ -17,10 +17,10 @@ description : This section teaches you basic commands in R.
 # Calculate 3 + 4, 6 − 8, 3 * 5 and 10 / 3
 
 
-# Save the result of 10 / 3 to `x`
+# Save the result of 10 / 3 to some variable
 
 
-# Print the content of `x` to the console
+# Print the content of the variable to the console
 
 
 # Round the result to 2 decimal places
@@ -37,10 +37,10 @@ description : This section teaches you basic commands in R.
 3*5
 10/3
 
-# Save the result of 10 / 3 to `x`
+# Save the result of 10 / 3 to some variable
 x <- 10/3
 
-# Print the content of `x` to the console
+# Print the content of the variable to the console
 x
 
 # Round the result to 2 decimal places
