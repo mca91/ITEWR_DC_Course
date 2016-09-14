@@ -3,6 +3,71 @@ title       : Basics in R
 description : This section teaches you basic commands in R.
 
 --- type:NormalExercise lang:r xp:100 skills:1 key:3db79c581d
+## R as a calculator
+
+***=instructions
+
+- Use R as a calculator. Calculate 3 + 4, 6 − 8, 3 × 5 and 10 ÷ 3
+- Save the result of 10 ÷ 3 to `x` by using the `<-` operator
+- Print the content of `x` to the console by typing `x` and pressing <i>enter</i>
+- Round the result to 2 decimal places using `round(x, 2)`
+
+*** =sample_code
+```{r}
+# Calculate 3 + 4, 6 − 8, 3 × 5 and 10 ÷ 3
+
+
+# Save the result of 10 ÷ 3 to `x`
+
+
+# Print the content of `x` to the console
+
+
+# Round the result to 2 decimal places
+
+
+```
+
+*** =solution
+```{r}
+
+# Calculate 3 + 4, 6 − 8, 3 × 5 and 10 ÷ 3
+3+4
+6-8
+3*5
+10/3
+
+# Save the result of 10 ÷ 3 to `x`
+x <- 10/3
+
+# Print the content of `x` to the console
+x
+
+# Round the result to 2 decimal places
+round(x, 2)
+
+```
+
+*** =sct
+```{r}
+
+test_output_contains("3+4", incorrect_msg = "Make sure you solve 3+4")
+test_output_contains("6-8", incorrect_msg = "Make sure you solve 6-8")
+test_output_contains("3*5", incorrect_msg = "Make sure you solve 3*5")
+test_output_contains("10/3", incorrect_msg = "Make sure you solve 10÷3")
+
+test_object("x", undefined_msg = "You have not defined an object named `x`",
+            incorrect_msg = "Nope, `x` does not contain the result of 10÷3")
+
+test_student_typed("x", not_typed_msg = "You did not type `x`"
+
+test_function("round", args=c("x","digits"))
+
+test_error()
+success_msg("Great!")
+```
+
+--- type:NormalExercise lang:r xp:100 skills:1 key:3db79c581d
 ## Data Handling I
 
 In this exercise, you will learn how to use data that comes with R packages. We use the `CPSSWEducation` data set contained in the AER package.
