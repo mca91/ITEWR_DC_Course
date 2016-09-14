@@ -14,10 +14,10 @@ description : This section teaches you basic commands in R.
 
 *** =sample_code
 ```{r}
-# Calculate 3 + 4, 6 − 8, 3 × 5 and 10 ÷ 3
+# Calculate 3 + 4, 6 − 8, 3 * 5 and 10 / 3
 
 
-# Save the result of 10 ÷ 3 to `x`
+# Save the result of 10 / 3 to `x`
 
 
 # Print the content of `x` to the console
@@ -31,13 +31,13 @@ description : This section teaches you basic commands in R.
 *** =solution
 ```{r}
 
-# Calculate 3 + 4, 6 − 8, 3 × 5 and 10 ÷ 3
+# Calculate 3 + 4, 6 − 8, 3 * 5 and 10 / 3
 3+4
 6-8
 3*5
 10/3
 
-# Save the result of 10 ÷ 3 to `x`
+# Save the result of 10 / 3 to `x`
 x <- 10/3
 
 # Print the content of `x` to the console
@@ -54,10 +54,10 @@ round(x, 2)
 test_output_contains("3+4", incorrect_msg = "Make sure you solve 3+4")
 test_output_contains("6-8", incorrect_msg = "Make sure you solve 6-8")
 test_output_contains("3*5", incorrect_msg = "Make sure you solve 3*5")
-test_output_contains("10/3", incorrect_msg = "Make sure you solve 10÷3")
+test_output_contains("10/3", incorrect_msg = "Make sure you solve 10/3")
 
 test_object("x", undefined_msg = "You have not defined an object named `x`",
-            incorrect_msg = "Nope, `x` does not contain the result of 10÷3")
+            incorrect_msg = "Nope, `x` does not contain the result of 10/3")
 
 test_student_typed("x", not_typed_msg = "You did not type `x`"
 
