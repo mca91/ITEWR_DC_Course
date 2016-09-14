@@ -7,8 +7,8 @@ description : This section teaches you basic commands in R.
 
 ***=instructions
 
-- Use R as a calculator. Calculate 3 + 4, 6 − 8, 3 × 5 and 10 ÷ 3
-- Save the result of 10 ÷ 3 to `x` by using the `<-` operator
+- Use R as a calculator. Calculate 3 + 4, 6 − 8, 3 × 5 and 10 / 3
+- Save the result of 10 / 3 to `x` by using the `<-` operator
 - Print the content of `x` to the console by typing `x` and pressing <i>enter</i>
 - Round the result to 2 decimal places using `round(x, 2)`
 
