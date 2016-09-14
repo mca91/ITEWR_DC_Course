@@ -59,7 +59,7 @@ test_output_contains("10/3", incorrect_msg = "Make sure you solve 10/3")
 test_object("x", undefined_msg = "You have not defined an object named `x`",
             incorrect_msg = "Nope, `x` does not contain the result of 10/3")
 
-test_student_typed("x", not_typed_msg = "You did not type `x`"
+test_student_typed("x", not_typed_msg = "You did not type `x`")
 
 test_function("round", args=c("x","digits"))
 
