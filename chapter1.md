@@ -67,7 +67,7 @@ test_error()
 success_msg("Great!")
 ```
 
---- type:NormalExercise lang:r xp:100 skills:1 key:3db79c581d
+--- type:NormalExercise lang:r xp:100 skills:1 key:a15675d543
 ## Data Handling I
 
 In this exercise, you will learn how to use data that comes with R packages. We use the `CPSSWEducation` data set contained in the AER package.
