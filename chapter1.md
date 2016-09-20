@@ -85,7 +85,7 @@ success_msg("Great!")
 # Calculate x^y, y^x, log(x), exp(x) and sqrt(x)
 
 
-#Calculate x+y, x-z, x*y and x/y
+#Calculate x+y, x-y, x*y and x/y
 
 
 ```
@@ -107,7 +107,7 @@ sqrt(x)
 
 #Calculate x+y, x-z, x*y and x/y
 x+y
-x-z
+x-y
 x*y
 x/y
 
