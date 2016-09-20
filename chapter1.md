@@ -79,7 +79,7 @@ success_msg("Great!")
 # Define a vector `x` containing all even numbers from 1 to 10
 
 
-# Define a vector `y` of length 5 containing only ones
+# Define a vector `y` ontaining all even numbers from 12 to 20
 
 
 # Calculate x^y, y^x, log(x), exp(x) and sqrt(x)
@@ -95,7 +95,7 @@ success_msg("Great!")
 # Define a vector `x` containing all even numbers from 1 to 10
 x <- seq(2,10,2)
 
-# Define a vector `y` of length 5 containing only ones
+Define a vector `y` ontaining all even numbers from 12 to 20
 y <- seq(12,20,2)
 
 # Calculate x^y, y^x, log(x), exp(x) and sqrt(x)
