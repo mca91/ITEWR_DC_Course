@@ -3,7 +3,7 @@ title       : Basics in R
 description : This section teaches you basic commands in R.
 
 --- type:NormalExercise lang:r xp:100 skills:1 key:3db79c581d
-## R as a calculator
+## R as a calculator I
 
 ***=instructions
 
@@ -62,6 +62,76 @@ test_object("x", undefined_msg = "You have not defined an object named `x`",
 test_output_contains("x", incorrect_msg = "Did you type `x` to the console?")
 
 test_function("round", args=c("x","digits"))
+
+test_error()
+success_msg("Great!")
+```
+--- type:NormalExercise lang:r xp:100 skills:1 key:a15675d543
+## R as a calculator II
+
+- Define a vector `x` containing all even numbers from 1 to 10. Hint: Use `seq()`
+- Define a vector `y` ontaining all even numbers from 12 to 20
+- Calculate x^y, y^x, log(x), exp(x) and sqrt(x)
+- Calculate x+y, x-z, x*y and x/y
+
+*** =sample_code
+```{r}
+# Define a vector `x` containing all even numbers from 1 to 10
+
+
+# Define a vector `y` of length 5 containing only ones
+
+
+# Calculate x^y, y^x, log(x), exp(x) and sqrt(x)
+
+
+#Calculate x+y, x-z, x*y and x/y
+
+
+```
+
+*** =solution
+```{r}
+# Define a vector `x` containing all even numbers from 1 to 10
+x <- seq(2,10,2)
+
+# Define a vector `y` of length 5 containing only ones
+y <- seq(12,20,2)
+
+# Calculate x^y, y^x, log(x), exp(x) and sqrt(x)
+x^y
+y^x
+log(x)
+exp(x)
+sqrt(x)
+
+#Calculate x+y, x-z, x*y and x/y
+x+y
+x-z
+x*y
+x/y
+
+```
+
+*** =sct
+```{r}
+
+
+test_object("x", undefined_msg = "You have not defined an object named `x`",
+            incorrect_msg = "Nope, `x` is not defined the way it is supposed to be :(")
+test_object("y", undefined_msg = "You have not defined an object named `y`",
+            incorrect_msg = "Nope, `y` is not defined the way it is supposed to be :(")
+
+test_output_contains("x^y", incorrect_msg = "Make sure you solve x^y")
+test_output_contains("y^x", incorrect_msg = "Make sure you solve y^x")
+test_output_contains("log(x)", incorrect_msg = "Make sure you solve log(x)")
+test_output_contains("exp(x)", incorrect_msg = "Make sure you solve exp(x)")
+test_output_contains("sqrt(x)", incorrect_msg = "Make sure you solve sqrt(x)")
+
+test_output_contains("x+y", incorrect_msg = "Make sure you solve x+y")
+test_output_contains("x-y", incorrect_msg = "Make sure you solve x-y")
+test_output_contains("x*y", incorrect_msg = "Make sure you solve x*y")
+test_output_contains("x/y", incorrect_msg = "Make sure you solve x/y")
 
 test_error()
 success_msg("Great!")
