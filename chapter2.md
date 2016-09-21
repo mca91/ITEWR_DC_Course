@@ -230,8 +230,8 @@ What is the sample standard deviation of test scores across the 50 classrooms?
 Review the formulas for the $R^2$ and $SER$ 
 
 $ R^2 = \frac{SSR}{TSS} $
-
-$ SER = \frac{1}{n-2} \sum_{i=1}^n u_{i}^2 $
+$x_2$
+$ SER = \sqrt{ \frac{1}{n-2} \sum_{i=1}^n u_{i}^2 } $
 
 
 *** =sample_code
