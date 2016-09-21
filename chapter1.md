@@ -137,6 +137,57 @@ test_error()
 success_msg("Great!")
 ```
 
+--- type:NormalExercise lang:r xp:100 skills:1 key:3db79c581d
+## R as a calculator III
+
+*** =instructions
+- Vectors `x` and `y` from the previous exercise are available in the environment. Use `c()` to combine both vectors in a new one and store the result in, say `z`.
+- Figure out the length of the new vector with `length(z)`.
+- Access the 6^{th} element of the new Vector by typing `z[6]`
+- Sum up the 2^{nd}, 6^{th} and 8^{th} element of the new vector. 
+
+*** =pre_exercise_code
+```{r}
+x <- seq(2,10,2)
+y <- seq(12,20,2)
+```
+
+*** =solution
+
+```{r}
+# Use `c()` to combine both vectors in a new one and store the result in, say `z`
+z <- c(x,y)
+
+# Figure out the length of the new vector
+length(z)
+
+# Access the 6th element of the new Vector
+z[6]
+
+# Sum up the 2nd, 6th and 8th element of the new vector
+sum(yz[c(2,6,8])
+
+```
+
+*** =sct
+
+```{r}
+
+test_object("z", undefined_msg = "You have not defined an object named `z`",
+            incorrect_msg = "Nope, `z` is not defined the way it is supposed to be :(")
+
+test_function("length",
+              not_called_msg = "You didn't call `length()`!",
+              incorrect_msg = "Something's wrong. Did you `length()` with the right argument?")
+
+test_output_contains("z[6]", incorrect_msg = "You did not access the sixth element of the vector.")
+
+test_output_contains("sum(yz[c(2,6,8])", incorrect_msg = "Something's wrong in your calculation. Give it another try!.")
+
+test_error()
+success_msg("Great!")
+```
+
 --- type:NormalExercise lang:r xp:100 skills:1 key:e5dc4639f7
 ## Data Handling I
 
