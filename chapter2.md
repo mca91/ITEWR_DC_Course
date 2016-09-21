@@ -203,7 +203,7 @@ Review the formulas for the OLS estimators!
 # First, define:
 beta_hat_0 <- 640.3
 beta_hat_1 <- -4.93
-avg_cs <- 22
+avg_cs <- 22.8
 
 # Using the OLS formula for beta_hat_0:
 avg_ts <- beta_hat_0 + beta_hat_1 * avg_cs
