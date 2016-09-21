@@ -215,7 +215,7 @@ avg_ts
 test_output_contains("527.896", incorrect_msg = "Not correct...")
 ```
 
---- type:NormalExercise lang:r xp:50 skills:1 key:250d5774a4
+--- type:NormalExercise lang:r xp:50 skills:1 key:39aef8ac4c
 ## Interpreting OLS Regressions IV
 
 Suppose that a researcher, using data on class size $CS$ and average test scores from 50 third-grade classes, estimates the OLS regression:
