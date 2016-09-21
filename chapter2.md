@@ -235,7 +235,7 @@ $ SER = \sqrt{\frac{SSR}{n-2}} $
 
 and
 
-$ SSR = \sum_{i=1}^n u_i^2$
+$ SSR = \sum_{i=1}^n u^2 $
 
 *** =sample_code
 ```{r}
