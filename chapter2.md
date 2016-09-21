@@ -123,7 +123,7 @@ success_msg("Good work!")
 
 Suppose that a researcher, using data on class size $CS$ and average test scores from 50 third-grade classes, estimates the OLS regression:
 
-\[ \widehat{TestScore} = 640.3 - 4.93 \times CS, R^2 = 0.11, SER= 8.7 \]
+$$ \widehat{TestScore} = 640.3 - 4.93 \times CS, R^2 = 0.11, SER= 8.7 $$
 
 Say a class room has 25 students. What is the regression's prediction for that classroom's average test score?
 
