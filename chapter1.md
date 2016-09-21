@@ -144,7 +144,7 @@ success_msg("Great!")
 - Vectors `x` and `y` from the previous exercise are available in the environment. Use `c()` to combine both vectors in a new one and store the result in, say `z`.
 - Figure out the length of the new vector with `length(z)`.
 - Access the $6^{th}$ element of the new Vector by typing `z[6]`
-- Sum up the 2nd, 6th and 8th element of the new vector. 
+- Sum up the $2^{nd}$, $6^{th}$ and $8^{th}$ element of the new vector. 
 
 *** =pre_exercise_code
 ```{r}
