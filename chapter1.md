@@ -199,7 +199,7 @@ test_function("length",
 
 test_output_contains("z[6]", incorrect_msg = "You did not access the sixth element of the vector.")
 
-test_output_contains("sum(z[c(2,6,8])", incorrect_msg = "Something's wrong in your calculation. Give it another try!.")
+test_output_contains("sum(z[c(2,6,8)])", incorrect_msg = "Something's wrong in your calculation. Give it another try!.")
 
 test_error()
 success_msg("Great!")
