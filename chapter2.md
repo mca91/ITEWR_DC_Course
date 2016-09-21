@@ -32,8 +32,6 @@ plot(y ~ x, col = "steelblue", pch = 19)
 
 *** =sct
 ```{r}
-# SCT written with testwhat: https://github.com/datacamp/testwhat/wiki
-
 msg_bad <- "That is not correct!"
 msg_success <- "Exactly! There seems to be Heteroskedasticity."
 test_mc(correct = 2, feedback_msgs = c(msg_bad, msg_success, msg_bad, msg_bad))
@@ -137,6 +135,15 @@ Say a class room has 25 students. What is the regression's prediction for that c
 *** =hint
 
 Have a look at the regression equation. How can you interpret the relation on the right hand side?
+
+*** =sct
+```{r}
+msg_bad <- "That is not correct!"
+msg_success <- "Exactly!"
+msg_joke <- "LoL, your definitely not 1337!"
+test_mc(correct = 1, feedback_msgs = c(msg_success, msg_joke, msg_bad, msg_bad))
+```
+
 
 --- type:NormalExercise lang:r xp:100 skills:1 key:2d231a7828
 ## Inference in the Simple Regression Model
