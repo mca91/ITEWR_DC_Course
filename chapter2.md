@@ -233,6 +233,9 @@ $ R^2 = \frac{SSR}{TSS} $
 
 $ SER = \sqrt{\frac{SSR}{n-2}} $
 
+and
+
+$ SSR = \sum_{i=1}^n u_i^2$
 
 *** =sample_code
 ```{r}
@@ -243,7 +246,11 @@ $ SER = \sqrt{\frac{SSR}{n-2}} $
 
 *** =solution
 ```{r}
-5
+# Define:
+SER <- 8.7
+R2 <- 0.11
+
+
 ```
 
 *** =sct
