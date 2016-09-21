@@ -165,7 +165,7 @@ length(z)
 z[6]
 
 # Sum up the 2nd, 6th and 8th element of the new vector
-sum(z[c(2,6,8])
+sum(z[c(2,6,8)])
 
 ```
 
