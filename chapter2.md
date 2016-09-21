@@ -230,14 +230,14 @@ What is the sample standard deviation of test scores across the 50 classrooms?
 Review the formulas for the $R^2$ and $SER$
 
 *** =sample_code
-```{}
+```{r}
 # What is sample standard deviation of test scores across the 50 classrooms?
 
 
 ```
 *** =solution
-
-
+```{r}
+```
 
 --- type:NormalExercise lang:r xp:100 skills:1 key:2d231a7828
 ## Inference in the Simple Regression Model
