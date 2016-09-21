@@ -233,7 +233,7 @@ $ R^2 = \frac{SSR}{TSS} $
 
 a
 
-$x_i$
+$x_i^2$
 
 a
 
