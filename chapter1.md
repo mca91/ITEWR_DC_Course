@@ -143,13 +143,30 @@ success_msg("Great!")
 *** =instructions
 - Vectors `x` and `y` from the previous exercise are available in the environment. Use `c()` to combine both vectors in a new one and store the result in, say `z`.
 - Figure out the length of the new vector with `length(z)`.
-- Access the 6th element of the new Vector by typing `z[6]`
+- Access the $6^{th}$ element of the new Vector by typing `z[6]`
 - Sum up the 2nd, 6th and 8th element of the new vector. 
 
 *** =pre_exercise_code
 ```{r}
 x <- seq(2,10,2)
 y <- seq(12,20,2)
+```
+
+*** =sample_code
+
+```{r}
+# Use `c()` to combine both vectors in a new one and store the result in, say `z`
+
+
+# Figure out the length of the new vector
+
+
+# Access the 6th element of the new Vector
+
+
+# Sum up the 2nd, 6th and 8th element of the new vector
+
+
 ```
 
 *** =solution
