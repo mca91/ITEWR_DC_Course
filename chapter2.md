@@ -138,7 +138,7 @@ Say a class room has 25 students. What is the regression's prediction for that c
 
 Have a look at the regression equation. How can you interpret the relation on the right hand side?
 
---- type:NormalExercise lang:r xp:100 skills:1 key:13d4cf0fb6
+--- type:NormalExercise lang:r xp:100 skills:1 key:2d231a7828
 ## Inference in the Simple Regression Model
 
 --- type:NormalExercise lang:r xp:100 skills:1 key:c4b2c27865
