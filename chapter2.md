@@ -177,6 +177,44 @@ Have a look at the regression equation. How can you interpret the relation on th
 test_output_contains("(640.3-4.93*24) - (640.3-4.93*21)", incorrect_msg = "No, that is not correct...")
 ```
 
+--- type:NormalExercise lang:r xp:50 skills:1 key:b0b7650bb3
+## Interpreting OLS Regressions III
+
+Suppose that a researcher, using data on class size $CS$ and average test scores from 50 third-grade classes, estimates the OLS regression:
+
+$$ \widehat{TestScore} = 640.3 - 4.93 \times CS, R^2 = 0.11, SER= 8.7 $$
+
+*** =instructions
+The sample average class size across 50 classrooms is 22.8. What is the sample average of the test scores across the 50 classrooms?
+
+*** =hint
+
+Review the formulas for the OLS estimators!
+
+*** =sample_code
+```{}
+# What is sample average of the test score across the 50 classrooms?
+
+
+```
+
+*** =solution
+```{r}
+# First, define:
+beta_hat_0 <- 640.3
+beta_hat_1 <- -4.93
+avg_cs <- 22
+
+# Using the OLS formula for beta_hat_0:
+avg_ts <- beta_hat_0 + beta_hat_1 * avg_cs
+avg_ts
+```
+
+*** =sct
+```{r}
+test_output_contains("avg_ts")
+```
+
 --- type:NormalExercise lang:r xp:100 skills:1 key:2d231a7828
 ## Inference in the Simple Regression Model
 
