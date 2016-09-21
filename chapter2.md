@@ -177,7 +177,7 @@ Have a look at the regression equation. How can you interpret the relation on th
 test_output_contains("(640.3-4.93*24) - (640.3-4.93*21)", incorrect_msg = "No, that is not correct...")
 ```
 
---- type:NormalExercise lang:r xp:50 skills:1 key:b0b7650bb3
+--- type:NormalExercise lang:r xp:50 skills:1 key:250d5774a4
 ## Interpreting OLS Regressions III
 
 Suppose that a researcher, using data on class size $CS$ and average test scores from 50 third-grade classes, estimates the OLS regression:
