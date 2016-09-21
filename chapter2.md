@@ -123,7 +123,7 @@ Suppose that a researcher, using data on class size $CS$ and average test scores
 
 $$ \widehat{TestScore} = 640.3 - 4.93 \times CS, R^2 = 0.11, SER= 8.7 $$
 
-<i>Say a class room has 25 students. What is the regression's prediction for that classroom's average test score?</i>
+<i>Say a class room has 25 students. What is the regression's prediction for that classroom's average test score? Don't forget: You can use the R console as a calculator!</i>
 
 *** =instructions
 
@@ -144,6 +144,37 @@ msg_joke <- "LoL, your definitely not 1337!"
 test_mc(correct = 1, feedback_msgs = c(msg_success, msg_joke, msg_bad, msg_bad))
 ```
 
+--- type:NormalExercise lang:r xp:50 skills:1 key:13d4cf0fb6
+## Interpreting OLS Regressions II
+
+Suppose that a researcher, using data on class size $CS$ and average test scores from 50 third-grade classes, estimates the OLS regression:
+
+$$ \widehat{TestScore} = 640.3 - 4.93 \times CS, R^2 = 0.11, SER= 8.7 $$
+
+<i>Last year a classroom had 21 students, and this year it has 24 students. What is the regression's prediction for the change in the classrom average test score?</i>
+
+*** =hint
+
+Have a look at the regression equation. How can you interpret the relation on the right hand side? What does this imply if you got test scores for two different class sizes?
+
+*** =sample_code
+```{}
+# What is the difference in average test score?
+
+
+```
+
+*** =solution
+```{r}
+# What is the difference in average test score?
+640.3 - 4.93 * 24 - 640.3 - 4.93 * 21
+
+```
+
+*** =sct
+```{r}
+test_output_contains("640.3-4.93*24 - 640.3-4.93*21")
+```
 
 --- type:NormalExercise lang:r xp:100 skills:1 key:2d231a7828
 ## Inference in the Simple Regression Model
