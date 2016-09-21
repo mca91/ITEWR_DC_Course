@@ -144,7 +144,7 @@ msg_joke <- "LoL, your definitely not 1337!"
 test_mc(correct = 1, feedback_msgs = c(msg_success, msg_joke, msg_bad, msg_bad))
 ```
 
---- type:NormalExercise lang:r xp:50 skills:1 key:13d4cf0fb6
+--- type:NormalExercise lang:r xp:50 skills:1 key:b0b7650bb3
 ## Interpreting OLS Regressions II
 
 Suppose that a researcher, using data on class size $CS$ and average test scores from 50 third-grade classes, estimates the OLS regression:
