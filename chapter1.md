@@ -143,8 +143,8 @@ success_msg("Great!")
 *** =instructions
 - Vectors `x` and `y` from the previous exercise are available in the environment. Use `c()` to combine both vectors in a new one and store the result in, say `z`.
 - Figure out the length of the new vector with `length(z)`.
-- Access the 6^{th} element of the new Vector by typing `z[6]`
-- Sum up the 2^{nd}, 6^{th} and 8^{th} element of the new vector. 
+- Access the 6th element of the new Vector by typing `z[6]`
+- Sum up the 2nd, 6th and 8th element of the new vector. 
 
 *** =pre_exercise_code
 ```{r}
@@ -165,7 +165,7 @@ length(z)
 z[6]
 
 # Sum up the 2nd, 6th and 8th element of the new vector
-sum(yz[c(2,6,8])
+sum(z[c(2,6,8])
 
 ```
 
@@ -182,7 +182,7 @@ test_function("length",
 
 test_output_contains("z[6]", incorrect_msg = "You did not access the sixth element of the vector.")
 
-test_output_contains("sum(yz[c(2,6,8])", incorrect_msg = "Something's wrong in your calculation. Give it another try!.")
+test_output_contains("sum(z[c(2,6,8])", incorrect_msg = "Something's wrong in your calculation. Give it another try!.")
 
 test_error()
 success_msg("Great!")
