@@ -212,7 +212,7 @@ avg_ts
 
 *** =sct
 ```{r}
-test_output_contains("527.896")
+test_output_contains("527.896", incorrect_msg = "Not correct...")
 ```
 
 --- type:NormalExercise lang:r xp:100 skills:1 key:2d231a7828
