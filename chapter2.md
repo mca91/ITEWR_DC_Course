@@ -215,6 +215,30 @@ avg_ts
 test_output_contains("527.896", incorrect_msg = "Not correct...")
 ```
 
+--- type:NormalExercise lang:r xp:50 skills:1 key:250d5774a4
+## Interpreting OLS Regressions IV
+
+Suppose that a researcher, using data on class size $CS$ and average test scores from 50 third-grade classes, estimates the OLS regression:
+
+$$ \widehat{TestScore} = 640.3 - 4.93 \times CS, R^2 = 0.11, SER= 8.7 $$
+
+*** =instructions
+What is the sample standard deviation of test scores across the 50 classrooms?
+
+*** =hint
+
+Review the formulas for the $R^2$ and $SER$
+
+*** =sample_code
+```{}
+# What is sample standard deviation of test scores across the 50 classrooms?
+
+
+```
+*** =solution
+
+
+
 --- type:NormalExercise lang:r xp:100 skills:1 key:2d231a7828
 ## Inference in the Simple Regression Model
 
