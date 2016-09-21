@@ -174,7 +174,7 @@ Have a look at the regression equation. How can you interpret the relation on th
 
 *** =sct
 ```{r}
-test_output_contains("(640.3-4.93*24) - (640.3-4.93*21)")
+test_output_contains("(640.3-4.93*24) - (640.3-4.93*21)", incorrect_msg = "No, that is not correct...")
 ```
 
 --- type:NormalExercise lang:r xp:100 skills:1 key:2d231a7828
