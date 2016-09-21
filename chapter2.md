@@ -231,7 +231,7 @@ Review the formulas for the $R^2$ and $SER$
 
 $ R^2 = \frac{SSR}{TSS} $
 
-$ SER = \sqrt{ \frac{SSR}{n-2} } = \frac{1}{n-2} \sum_{i=1}^n \hat{u}_i^2 $
+$ SER = \sqrt{ \frac{SSR}{n-2} } = \frac{1}{n-2} \sum_{i=1}^n $
 
 
 *** =sample_code
