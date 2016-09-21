@@ -231,7 +231,7 @@ Review the formulas for the $R^2$ and $SER$
 
 $ R^2 = \frac{SSR}{TSS} $
 
-$ SER = \frac{1}{n-2} \sum_{i=1}^n u^2 $
+$ SER = \frac{1}{n-2} \sum_{i=1}^n u_i $
 
 
 *** =sample_code
