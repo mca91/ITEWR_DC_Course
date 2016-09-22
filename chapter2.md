@@ -283,10 +283,10 @@ test_output_contains("sigma_hat", incorrect_msg = "Something's wrong... Did you 
 
 Suppose you got the regression model
 
-$ y_i = b_0 $
+$y_i = b_0$
 
 # Good
-$ a_1 = b_1 + c_1 $
+$a_1 = b_1 + c_1$
 
 # Bad
 a_1 = b_1 + c_1
