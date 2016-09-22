@@ -257,8 +257,13 @@ K <- 2
 SSR <- SER^2 * (n-K)
 TSS <- SSR/R2 
 
+# Hence, using the forumula for sample standard deviation:
+
 sigma_hat <- sqrt(1/(n-1) * TSS)
 
+# Print it
+
+sigma_hat
 ```
 
 *** =sct
