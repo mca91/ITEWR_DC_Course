@@ -291,6 +291,8 @@ $ a_1 = b_1 + c_1 $
 # Bad
 a_1 = b_1 + c_1
 
+$\chi^2_{11}$ 
+
 In the plotting area on the right, you see the result of a Monte Carlo simulation analysing distributional properties of the OLS estimator for $ b_0 $ in the model above and another linear estimator which uses different weights than OLS. Say, $b_0 = 0$. Is the result consistent with what you expect knowing the Gauss-Markov Theorem?  
 
 *** =instructions
