@@ -257,13 +257,13 @@ K <- 2
 SSR <- SER^2 * (n-K)
 TSS <- SSR/R2 
 
-sigma_hat <- 1/(n-1) * TSS
+sigma_hat <- sqrt(1/(n-1) * TSS)
 
 ```
 
 *** =sct
 ```{r}
-test_output_contains("sigma_hat")
+test_output_contains("sigma_hat", incorrect_msg = "Something's wrong... Did you use the forumula for sample standard deviation?")
 ```
 
 --- type:NormalExercise lang:r xp:100 skills:1 key:2d231a7828
