@@ -20,8 +20,6 @@ Have a look at the plot. What can you say about the dispersion of observations?
 
 *** =pre_exercise_code
 ```{r}
-# The pre exercise code runs code to initialize the user's workspace.
-# You can use it to load packages, initialize datasets and draw a plot in the viewer
 library(sandwich)
 
 set.seed(1)
@@ -280,8 +278,57 @@ test_output_contains("sigma_hat", incorrect_msg = "Something's wrong... Did you 
 --- type:NormalExercise lang:r xp:100 skills:1 key:79d4a98b65
 ## Heteroskedasticity
 
---- type:NormalExercise lang:r xp:100 skills:1 key:726a6d460b
-## The Gauss Markov Theorem
+--- type:MultipleChoiceExercise lang:r xp:100 skills:1 key:726a6d460b
+## The Gauss Markov Theorem I
+
+Suppose you got the regression model
+
+$$ y_i = \beta_0 + \epsilon_i $$
+
+In the plotting area on the right, you see the result of a Monte Carlo simulation analysing distributional properties of the OLS estimator for $\beta_0$ in the model above and another linear estimator which uses different weights than OLS. Say, $\beta_1 = 0$. Is the result consistent with what you expect knowing the Gauss-Markov Theorem?  
+
+*** =instructions
+- yes
+- no
+
+*** =pre_exercise_code
+```{r}
+# Set sample size and number of repititionas
+
+n <- 100      
+reps <- 1e5
+
+# Choose epsilon and create a vector of weights as defined above
+
+epsilon <- 0.8
+w <- c( rep((1+epsilon)/n,n/2), rep((1-epsilon)/n,n/2) )
+
+# Draw random sample y_1,...,y_N from the standard normal distribution 
+# Compute both estimates 1e6 times and store the result in vectors  
+
+ols <- rep(NA,reps)
+weightedestimator <- rep(NA,reps)
+
+for (i in 1:reps)
+{
+  y <- rnorm(n)
+  ols[i] <- mean(y)
+  weightedestimator[i] <- crossprod(w,y)
+}
+
+# Plot estimates of the estimators distribution 
+
+plot(density(ols),col="purple", lwd=3, main="Density of OLS and Weighted Estimator",xlab="")
+lines(density(weightedestimator),col="steelblue", lwd=3) 
+abline(v=0,lty=2)
+legend('topright', c("OLS","weighted"), col=c("purple","steelblue"),lwd=3)
+```
+*** =sct
+```{r}
+msg_bad <- "That is not correct!"
+msg_success <- "Exactly!"
+test_mc(correct = 1, feedback_msgs = c(msg_success, msg_bad))
+```
 
 --- type:NormalExercise lang:r xp:100 skills:1 key:9ad3c5911e
 ## Introduction to Multiple Regression
