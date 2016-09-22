@@ -249,13 +249,21 @@ $ SSR = \sum_{i=1}^n u^2 $
 # Define:
 SER <- 8.7
 R2 <- 0.11
+n <- 50
+K <- 2
 
+# Using the formulas:
+
+SSR <- SER^2 * (n-K)
+TSS <- SSR/R2 
+
+sigma_hat <- 1/(n-1) * TSS
 
 ```
 
 *** =sct
 ```{r}
-test_output_contains("5")
+test_output_contains("sigma_hat")
 ```
 
 --- type:NormalExercise lang:r xp:100 skills:1 key:2d231a7828
