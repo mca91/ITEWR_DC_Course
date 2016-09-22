@@ -283,7 +283,7 @@ test_output_contains("sigma_hat", incorrect_msg = "Something's wrong... Did you 
 
 Suppose you got the regression model
 
-$ y_i = \beta_0 + \epsilon_i $
+$ y_i = \beta_0 $
 
 In the plotting area on the right, you see the result of a Monte Carlo simulation analysing distributional properties of the OLS estimator for \beta_0 in the model above and another linear estimator which uses different weights than OLS. Say, \beta_1 = 0. Is the result consistent with what you expect knowing the Gauss-Markov Theorem?  
 
