@@ -285,7 +285,7 @@ Suppose you got the regression model
 
 # Not Working
 
-$$ y_i=\beta_0 $$
+$$ y_i=\beta^2_0 $$
 
 # Working
 
