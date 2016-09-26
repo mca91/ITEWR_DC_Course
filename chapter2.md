@@ -285,7 +285,7 @@ Suppose you got the regression model
 
 $$ y_i=\beta_0 $$
 
-In the plotting area on the right you see the result of a Monte Carlo simulation analysing distributional properties of the OLS estimator for $ \beta $ in the model above and another linear estimator which uses different weights than OLS. Say, $\overset{\beta}{sum}=0$. Is the result consistent with what you expect knowing the Gauss-Markov Theorem?  
+In the plotting area on the right you see the result of a Monte Carlo simulation analysing distributional properties of the OLS estimator for $ \beta $ in the model above and another linear estimator which uses different weights than OLS. Say, $\overset{\beta}{\sim}=0$. Is the result consistent with what you expect knowing the Gauss-Markov Theorem?  
 
 *** =instructions
 - yes
