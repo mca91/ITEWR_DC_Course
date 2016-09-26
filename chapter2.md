@@ -288,8 +288,9 @@ $$ y_i=\beta_0 $$
 In the plotting area on the right you see the result of a Monte Carlo simulation analysing distributional properties of the OLS estimator for $ \beta $ in the model above and another linear estimator $\overset{\sim}{\beta}$ which uses different weights than OLS. Say, $\beta=0$. Is the result consistent with what you expect knowing the Gauss-Markov Theorem?  
 
 *** =instructions
-- yes
-- no
+- Yes
+- No
+- Cannot be answered without prior inspection of data.
 
 *** =pre_exercise_code
 ```{r}
