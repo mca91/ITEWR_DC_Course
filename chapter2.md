@@ -31,7 +31,7 @@ plot(y ~ x, col = "steelblue", pch = 19)
 *** =sct
 ```{r}
 msg_bad <- "That is not correct!"
-msg_success <- "Exactly! There seems to be Heteroskedasticity: Dispersion increases with x."
+msg_success <- "Exactly! There seems to be heteroskedasticity: Dispersion increases with x."
 test_mc(correct = 2, feedback_msgs = c(msg_bad, msg_success, msg_bad, msg_bad))
 ```
 
