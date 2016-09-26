@@ -328,7 +328,7 @@ legend('topright', c("OLS","weighted"), col=c("purple","steelblue"),lwd=3)
 ```{r}
 msg_bad <- "That is not correct!"
 msg_success <- "Exactly!"
-test_mc(correct = 1, feedback_msgs = c(msg_success, msg_bad))
+test_mc(correct = 1, feedback_msgs = c(msg_success, msg_bad, msg_bad))
 ```
 
 --- type:NormalExercise lang:r xp:100 skills:1 key:9ad3c5911e
