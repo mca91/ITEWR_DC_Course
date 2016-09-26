@@ -294,8 +294,8 @@ $$ \chi^2_{12} $$
 In the plotting area on the right you see the result of a Monte Carlo simulation analysing distributional properties of the OLS estimator for $ \beta $ in the model above and another linear estimator $\overset{\sim}{\beta}$ which uses different weights than OLS. Say, $\beta=0$. Is the result consistent with what you expect knowing the Gauss-Markov Theorem?  
 
 *** =instructions
-- Yes
-- No
+- Yes, both estimators seem to be unbiased but the OLS estimator has less dispersion.
+- No, the distribution of $\overset{\sim}{\beta}$ looks more like a standard normal distribution.
 - Cannot be answered without prior inspection of data.
 
 *** =pre_exercise_code
