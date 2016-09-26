@@ -285,11 +285,11 @@ Suppose you got the regression model
 
 # Not Working
 
-$$ y_i=\beta^2_0 $$
+$$ y_i=\beta_0 $$
 
 # Working
 
-$$ \chi^2_{12} $$
+$$ y_i=\chi^2_{12} $$
 
 In the plotting area on the right you see the result of a Monte Carlo simulation analysing distributional properties of the OLS estimator for $ \beta $ in the model above and another linear estimator $\overset{\sim}{\beta}$ which uses different weights than OLS. Say, $\beta=0$. Is the result consistent with what you expect knowing the Gauss-Markov Theorem?  
 
