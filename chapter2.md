@@ -291,7 +291,7 @@ $$ y_i=\beta_0 $$
 
 $$ \chi^2_{12} $$
 
-In the plotting area on the right you see the result of a Monte Carlo simulation analysing distributional properties of the OLS estimator for $ \beta $ in the model above and another linear estimator $\overset{\sim}{\beta}$ which uses different weights than OLS. Say, $\beta=0$. Is the result consistent with what you expect knowing the Gauss-Markov Theorem?  
+In the plotting area on the right you see the result of a Monte Carlo simulation analysing distributional properties of the OLS estimator for $ \beta $ in the model above and another linear estimator $\overset{\sim}{\beta}$ which uses different weights than OLS. Say, $\beta=0$. Is the result consistent with what you expect beeing aware of the Gauss-Markov Theorem?  
 
 *** =instructions
 - Yes, both estimators seem to be unbiased but the OLS estimator has less dispersion.
