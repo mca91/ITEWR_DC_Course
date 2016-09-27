@@ -1,5 +1,5 @@
 ---
-title       : OLS Basics 
+title       : Multiple Regression Model
 description : This section contains exercises dealing with the simple linear regression model and estimation using ordinary least squares. 
 attachments :
   slides_link : https://github.com/Emwikts1970/URFITE_DC/raw/master/Econometrics
