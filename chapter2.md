@@ -347,23 +347,6 @@ plot(cars$speed, cars$dist)
 abline(lm(cars$dist ~ cars$speed))
 ```
 
-*** =instructions
-- Get an overview over the data set using `summary()`
-- Plot speed (`speed`) against distance (`dist`)
-- Estimate the model $dist = \beta_0 + \beta_1 \times speed$. Store the result in `mod`
-
-*** =sample_code
-```{r}
-```
-
-*** =solution
-```{r}
-```
-
-*** =sct
-```{r}
-```
-
 --- type:MultipleChoiceExercise lang:r xp:100 skills:1 key:726a6d460b
 ## The Gauss Markov Theorem I
 
