@@ -4,10 +4,8 @@ description : This section contains exercises dealing with the simple linear reg
 attachments :
   slides_link : https://github.com/Emwikts1970/URFITE_DC/raw/master/Econometrics
 
---- type:MultipleChoiceExercise lang:r xp:50 skills:1 key:35167f113b
+--- type:NormalExercise lang:r xp:50 skills:1 key:35167f113b
 ## Multiple Regression: Boston Housing Data
-
-
 
 *** =instructions
 - Attach the package `MASS`
