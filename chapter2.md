@@ -279,6 +279,7 @@ test_output_contains("sigma_hat", incorrect_msg = "Something's wrong... Did you 
 ## Heteroskedasticity
 
 *** pre_exercise_code
+
 ```{r}
 mod <- lm(dist~speed,cars)
 plot(mod)
