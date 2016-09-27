@@ -345,7 +345,7 @@ success_msg("You are doing great!")
 
 The object `mod` from the previous exercise is available in Your workspace. We have also added the regression line for this model to the plot.
 
-By means of the plot, it is not that easy to decide wether there is heteroskedasticity or not. It seems that there is more dispersion in `dist` for observations around the mean of `speed`.
+By means of simply plotting the data, it is not always easy to decide whether there is heteroskedasticity or not. Here, it seems that there is more dispersion in `dist` for observations around the mean of `speed`.
 
 *** =pre_exercise_code
 ```{r}
@@ -354,6 +354,10 @@ plot(cars$speed, cars$dist)
 mod <- lm(cars$dist ~ cars$speed)
 abline(mod)
 ```
+
+*** =instructions
+
+- Applying `plot()` to a model model object like `model` produces a whole battery of diagnostic plots. See how fitted values relate to residuals: `plot(mod,1)`
 
 --- type:MultipleChoiceExercise lang:r xp:100 skills:1 key:726a6d460b
 ## The Gauss Markov Theorem I
