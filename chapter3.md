@@ -35,7 +35,7 @@ Have a look at the plot. What can you say about the dispersion of observations?
 *** =solution
 ```{r}
 # Attach the package
-library(MASS)
+library(package = MASS)
 
 # Load the data set   
 data(Boston)
@@ -47,9 +47,7 @@ mod <- lm(medv ~ age + crim,data = Boston)
 
 *** =sct
 ```{r}
-test_function("library", args = "package",
-              not_called_msg = "You didn't call `library()`!",
-              incorrect_msg = "You didn't call `library()` with the correct argument, `package`.")
+
 
 test_function("lm", args = "formula",
               not_called_msg = "You didn't call `lm()`!",
