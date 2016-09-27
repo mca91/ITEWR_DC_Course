@@ -284,7 +284,7 @@ test_output_contains("sigma_hat", incorrect_msg = "Something's wrong... Did you 
 
 ```{r}
 mod <- lm(dist~speed,cars)
-plot(mod)
+plot(mod, 1)
 ```
 
 --- type:MultipleChoiceExercise lang:r xp:100 skills:1 key:726a6d460b
