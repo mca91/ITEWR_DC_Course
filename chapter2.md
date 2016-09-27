@@ -326,7 +326,7 @@ mod <- lm(cars$dist ~ cars$speed)
 *** =sct
 ```{r}
 test_function_result("summary")
-test_function("plot")
+test_function("plot", eq_condition = "equal")
 ```
 
 
