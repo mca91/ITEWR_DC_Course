@@ -285,6 +285,11 @@ test_output_contains("sigma_hat", incorrect_msg = "Something's wrong... Did you 
 
 In this block of exercises we will use the `cars` data set to explore ways to detect and to deal with heteroskedasticity when estimating simple linear models.
 
+We will discuss two ways of detecting heteroskedasticity:
+
+- graphical inspection
+- Statistical tests
+
 We have already loaded the `AER` package for You.
 
 *** =pre_exercise_code
@@ -338,7 +343,9 @@ success_msg("You are doing great!")
 --- type:NormalExercise lang:r xp:100 skills:1 key:324d782dca
 ## Heteroskedasticity II
 
-We have already loaded the `AER` package for You.
+The object `mod` from the previous exercise is available in Your workspace. We have also added the regression line for this model to the plot.
+
+By means of the plot, it is not that easy to decide wether there is heteroskedasticity or not. It seems that there is more dispersion in `dist` for observations around the mean of `speed`.
 
 *** =pre_exercise_code
 ```{r}
