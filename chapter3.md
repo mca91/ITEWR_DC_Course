@@ -38,7 +38,7 @@ Have a look at the plot. What can you say about the dispersion of observations?
 library(MASS)
 
 # Load the data set   
-data("Boston")
+#data("Boston")
 
 # Conduct the regression
 mod <- lm(medv ~ age + crim,data = Boston)
