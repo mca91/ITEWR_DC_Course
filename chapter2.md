@@ -394,7 +394,7 @@ plot(mod,1)
 test_function("abline")
 test_function("plot", index=1)
 test_function("plot", index=2)
-test_function_result("plot", index=3, eq_condition = "equal")
+test_output_contains("plot(mod,1)")
 ```
 
 
