@@ -295,7 +295,7 @@ library(AER)
 *** =instructions
 - Get an overview over the data set using `summary()`
 - Plot speed (`speed`) against distance (`dist`)
-- Estimate the model $dist = \beta_0 + \beta_1 \times speed$. Store the restult in `mod`
+- Estimate the model $dist = \beta_0 + \beta_1 \times speed$. Store the restut in `mod`
 
 *** =sample_code
 ```{r}
@@ -321,7 +321,6 @@ plot(cars$speed, cars$dist)
 # Estimate the model
 mod <- lm(cars$dist ~ cars$speed)
 
-
 ```
 
 *** =sct
@@ -334,9 +333,36 @@ test_or(
 )
 test_object("mod", eval=F)
 success_msg("You are doing great!")
-
 ```
 
+--- type:NormalExercise lang:r xp:100 skills:1 key:79d4a98b65
+## Heteroskedasticity II
+
+We have already loaded the `AER` package for You.
+
+*** =pre_exercise_code
+```{r}
+library(AER)
+plot(cars$speed, cars$dist)
+abline(lm(cars$dist ~ cars$speed))
+```
+
+*** =instructions
+- Get an overview over the data set using `summary()`
+- Plot speed (`speed`) against distance (`dist`)
+- Estimate the model $dist = \beta_0 + \beta_1 \times speed$. Store the result in `mod`
+
+*** =sample_code
+```{r}
+```
+
+*** =solution
+```{r}
+```
+
+*** =sct
+```{r}
+```
 
 --- type:MultipleChoiceExercise lang:r xp:100 skills:1 key:726a6d460b
 ## The Gauss Markov Theorem I
