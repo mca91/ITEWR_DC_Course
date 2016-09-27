@@ -398,7 +398,7 @@ test_student_typed(
   c("plot(mod,1)",
     "plot(mod, 1)"
   ),
-  incorrect_msg = "Make sure to call the plot as proposed in the instruction."
+  not_typed_msg = "Make sure to call the plot as proposed in the instruction."
  )
 ```
 
