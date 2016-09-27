@@ -331,7 +331,7 @@ test_function("plot", args=c("x","y"))
 test_object("mod")
 test_or(
   test_function("lm", eq_condition = "equal"),
-  test_object("lm", eq_condition = "equivalent")
+  test_function("lm", eq_condition = "equivalent")
 )
 success_msg("You are doing great!")
 
