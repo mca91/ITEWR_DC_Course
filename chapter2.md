@@ -351,17 +351,53 @@ The object `mod` from the previous exercise is available in Your workspace.
 library(AER)
 plot(cars$speed, cars$dist)
 mod <- lm(cars$dist ~ cars$speed)
-abline(mod)
 ```
 
 *** =instructions
 
-- Add the regression line for model `mod` to the plot
+- Add the regression line for the model `mod` to the plot
 
-By means of simply plotting the data, it is not always easy to decide whether there is heteroskedasticity or not. Here, it seems that there is more dispersion in `dist` for observations around the mean of `speed`. Let us have a closer look:
+By means of simply plotting the data, it is not always easy to decide whether there is heteroskedasticity or not, especially if your data set has more than two variables. Here, it seems that there is more dispersion in `dist` for observations around the mean of `speed`. Let us have a closer look:
 
 - Applying `plot()` to a model model object like `model` produces a whole battery of diagnostic plots. Check this!
+
+An indicator for heteroskedasticity is dependence of residuals on the level fitted values.
+
 - See how fitted values relate to residuals: `plot(mod,1)`
+
+*** =sample_code
+```{r}
+# Add the regression line for the model `mod` to the plot
+
+
+# Call plot() on your model
+
+
+# See how fitted values relate to residuals
+
+
+```
+
+*** =solution
+```{r}
+# Add the regression line for the model `mod` to the plot
+abline(mod)
+
+# Call plot() on your model
+plot(mod)
+
+# See how fitted values relate to residuals
+plot(mod,1)
+
+```
+
+*** =sct
+```{r}
+test_function("abline", args="reg", eq_condition = "equal")
+test_function_result("plot", index=1)
+test_function_result("plot", index=2)
+```
+
 
 --- type:MultipleChoiceExercise lang:r xp:100 skills:1 key:726a6d460b
 ## The Gauss Markov Theorem I
