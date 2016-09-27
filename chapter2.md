@@ -343,9 +343,8 @@ success_msg("You are doing great!")
 --- type:NormalExercise lang:r xp:100 skills:1 key:324d782dca
 ## Heteroskedasticity II
 
-The object `mod` from the previous exercise is available in Your workspace. We have also added the regression line for this model to the plot.
+The object `mod` from the previous exercise is available in Your workspace. 
 
-By means of simply plotting the data, it is not always easy to decide whether there is heteroskedasticity or not. Here, it seems that there is more dispersion in `dist` for observations around the mean of `speed`.
 
 *** =pre_exercise_code
 ```{r}
@@ -357,7 +356,12 @@ abline(mod)
 
 *** =instructions
 
-- Applying `plot()` to a model model object like `model` produces a whole battery of diagnostic plots. See how fitted values relate to residuals: `plot(mod,1)`
+- Add the regression line for model `mod` to the plot
+
+By means of simply plotting the data, it is not always easy to decide whether there is heteroskedasticity or not. Here, it seems that there is more dispersion in `dist` for observations around the mean of `speed`. Let us have a closer look:
+
+- Applying `plot()` to a model model object like `model` produces a whole battery of diagnostic plots. Check this!
+- See how fitted values relate to residuals: `plot(mod,1)`
 
 --- type:MultipleChoiceExercise lang:r xp:100 skills:1 key:726a6d460b
 ## The Gauss Markov Theorem I
