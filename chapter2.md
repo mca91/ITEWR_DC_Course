@@ -367,7 +367,7 @@ An indicator for heteroskedasticity is dependence of residuals on the level fitt
 
 *** =sample_code
 ```{r}
-# Add the regression line for the model `mod` to the plot
+# Add the regression line for the model mod to the plot
 
 
 # Call plot() on your model
@@ -380,8 +380,8 @@ An indicator for heteroskedasticity is dependence of residuals on the level fitt
 
 *** =solution
 ```{r}
-# Add the regression line for the model `mod` to the plot
-
+# Add the regression line for the model mod to the plot
+abline(mod)
 
 # Call plot() on your model
 plot(mod)
@@ -391,12 +391,6 @@ plot(mod,1)
 
 ```
 
-*** =sct
-```{r}
-test_function("abline", args="reg", eq_condition = "equal")
-test_function_result("plot", index=1)
-test_function_result("plot", index=2)
-```
 
 
 --- type:MultipleChoiceExercise lang:r xp:100 skills:1 key:726a6d460b
