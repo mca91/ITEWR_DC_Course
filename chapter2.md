@@ -319,9 +319,8 @@ summary(cars)
 plot(cars$speed, cars$dist)
 
 # Estimate the model
-mod1 <- lm(cars$dist ~ cars$speed)
-# or
-mod2 <- lm(dist ~ speed, data = cars)
+mod <- lm(cars$dist ~ cars$speed)
+
 
 ```
 
@@ -329,10 +328,10 @@ mod2 <- lm(dist ~ speed, data = cars)
 ```{r}
 test_function_result("summary")
 test_function("plot", args=c("x","y"))
-test_function("lm")
+test_object("mod")
 test_or(
-  test_object("mod1"),
-  test_object("mod2")
+  test_function("lm", eq_condition = "equal"),
+  test_object("lm", eq_condition = "equivalent")
 )
 success_msg("You are doing great!")
 
