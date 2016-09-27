@@ -356,7 +356,7 @@ mod <- lm(cars$dist ~ cars$speed)
 
 By means of simply plotting the data, it is not always easy to decide whether there is heteroskedasticity or not, especially if your data set has more than two variables. Here, it seems that there is more dispersion in `dist` for observations around the mean of `speed`. Let us have a closer look:
 
-- Applying `plot()` to a model model object like `model` produces a whole battery of diagnostic plots. Check this!
+- Applying `plot()` to a model model object like `model` produces a whole battery of diagnostic plots. Check this (Your can navigate through the different plots using the buttons).
 
 An indicator for heteroskedasticity is dependence of residuals on the level fitted values.
 
