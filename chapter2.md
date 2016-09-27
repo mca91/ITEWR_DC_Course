@@ -344,7 +344,8 @@ We have already loaded the `AER` package for You.
 ```{r}
 library(AER)
 plot(cars$speed, cars$dist)
-abline(lm(cars$dist ~ cars$speed))
+mod <- lm(cars$dist ~ cars$speed)
+abline(mod)
 ```
 
 --- type:MultipleChoiceExercise lang:r xp:100 skills:1 key:726a6d460b
