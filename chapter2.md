@@ -288,16 +288,46 @@ In this block of exercises we will use the `cars` data set to explore ways to de
 We have already loaded the `AER` package for You.
 
 *** =pre_exercise_code
-
 ```{r}
 library(AER)
 ```
 
 *** =instructions
-
 - Get an overview over the data set using `summary()`
-- Plot speed (`speed`) against against distance (`dist`)
-- Estimate the model $dist = \beta_0 + \beta_1 \times speed$
+- Plot speed (`speed`) against distance (`dist`)
+- Estimate the model $dist = \beta_0 + \beta_1 \times speed$. Store the restult in `mod`
+
+*** =sample_code
+```{r}
+# Get an overview over the data
+
+
+# Plot speed against distance
+
+
+# Estimate the model
+
+
+```
+
+*** =solution
+```{r}
+# Get an overview over the data
+summary(cars)
+
+# Plot speed against distance
+plot(cars$speed, cars$dist)
+
+# Estimate the model
+mod <- lm(cars$dist ~ cars$speed)
+
+```
+
+*** =sct
+```{r}
+test_function_result("summary")
+```
+
 
 --- type:MultipleChoiceExercise lang:r xp:100 skills:1 key:726a6d460b
 ## The Gauss Markov Theorem I
