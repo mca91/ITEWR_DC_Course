@@ -281,14 +281,23 @@ test_output_contains("sigma_hat", incorrect_msg = "Something's wrong... Did you 
 
 
 --- type:NormalExercise lang:r xp:100 skills:1 key:79d4a98b65
-## Heteroskedasticity
+## Heteroskedasticity I
+
+In this block of exercises we will use the `cars` data set to explore ways to detect and to deal with heteroskedasticity when estimating simple linear models.
+
+We have already loaded the `AER` package for You.
 
 *** =pre_exercise_code
 
 ```{r}
-mod <- lm(dist~speed,cars)
-plot(mod, 1)
+library(AER)
 ```
+
+*** =instructions
+
+- Get an overview over the data set using `summary()`
+- Plot speed (`speed`) against against distance (`dist`)
+- Estimate the model $dist = \beta_0 + \beta_1 \times speed$
 
 --- type:MultipleChoiceExercise lang:r xp:100 skills:1 key:726a6d460b
 ## The Gauss Markov Theorem I
