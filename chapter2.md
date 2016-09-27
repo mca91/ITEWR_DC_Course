@@ -18,6 +18,9 @@ Have a look at the plot that showed up in the viewer to the right. Which of the 
 *** =hint
 Have a look at the plot. What can you say about the dispersion of observations?
 
+*** =hint
+Have a look at the plot. What can you say about the dispersion of observations
+
 *** =pre_exercise_code
 ```{r}
 library(sandwich)
