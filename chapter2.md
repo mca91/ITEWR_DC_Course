@@ -358,7 +358,7 @@ By means of simply plotting the data, it is not always easy to decide whether th
 
 - Applying `plot()` to a model model object like `model` produces a whole battery of diagnostic plots. Check this (Your can navigate through the different plots using the buttons).
 
-An indicator for heteroskedasticity is dependence of residuals on the level fitted values.
+An indicator for heteroskedasticity is dependence of residuals on the level of fitted values.
 
 - See how fitted values relate to residuals: `plot(mod,1)`
 
