@@ -328,11 +328,11 @@ mod <- lm(cars$dist ~ cars$speed)
 ```{r}
 test_function_result("summary")
 test_function("plot", args=c("x","y"))
-test_object("mod")
 test_or(
   test_function("lm", eq_condition = "equal"),
   test_function("lm", eq_condition = "equivalent")
 )
+test_object("mod", eval=F)
 success_msg("You are doing great!")
 
 ```
