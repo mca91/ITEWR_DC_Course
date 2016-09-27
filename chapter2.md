@@ -365,7 +365,7 @@ An indicator for heteroskedasticity is dependence of residuals on the level fitt
 *** =sample_code
 ```{r}
 # Add the regression line for the model mod to the plot
-
+plot(cars$speed, cars$dist)
 
 # Call plot() on your model
 
