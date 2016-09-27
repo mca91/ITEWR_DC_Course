@@ -320,7 +320,7 @@ plot(cars$speed, cars$dist)
 
 # Estimate the model
 mod1 <- lm(cars$dist ~ cars$speed)
-or
+# or
 mod2 <- lm(dist ~ speed, data = cars)
 
 ```
