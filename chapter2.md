@@ -392,8 +392,8 @@ plot(mod,1)
 *** =sct
 ```{r}
 test_function("abline")
-test_function("plot")
-test_function("plot")
+test_function("plot", index=1)
+test_function("plot", index=2)
 ```
 
 
