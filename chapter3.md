@@ -16,10 +16,40 @@ attachments :
 *** =hint
 Have a look at the plot. What can you say about the dispersion of observations?
 
+*** =sample_code
+```{r}
+# Attach the package
+
+
+# Load the data set   
+
+
+# Conduct the regression
+
+```
+
 *** =pre_exercise_code
 ```{r}
 ```
 
+*** =solution
+```{r}
+# Attach the package
+library(MASS)
+
+# Load the data set   
+data(Boston)
+
+# Conduct the regression
+mod <- lm(medv ~ age + crim,data = Boston)
+```
+
+
 *** =sct
 ```{r}
+test_function("lm", args = "formula",
+              not_called_msg = "You didn't call `lm()`!",
+              incorrect_msg = "You didn't call `lm()` with the correct argument, `formula`.")
+
+test_object("mod")
 ```
