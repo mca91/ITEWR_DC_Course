@@ -18,9 +18,6 @@ Have a look at the plot that showed up in the viewer to the right. Which of the 
 *** =hint
 Have a look at the plot. What can you say about the dispersion of observations?
 
-*** =hint
-Have a look at the plot. What can you say about the dispersion of observations
-
 *** =pre_exercise_code
 ```{r}
 library(sandwich)
@@ -392,6 +389,12 @@ plot(mod,1)
 
 ```
 
+*** =sct
+```{r}
+test_function("abline")
+test_function("plot")
+test_function("plot")
+```
 
 
 --- type:MultipleChoiceExercise lang:r xp:100 skills:1 key:726a6d460b
