@@ -335,7 +335,7 @@ test_object("mod", eval=F)
 success_msg("You are doing great!")
 ```
 
---- type:NormalExercise lang:r xp:100 skills:1 key:79d4a98b65
+--- type:NormalExercise lang:r xp:100 skills:1 key:324d782dca
 ## Heteroskedasticity II
 
 We have already loaded the `AER` package for You.
