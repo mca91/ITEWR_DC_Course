@@ -394,7 +394,11 @@ plot(mod,1)
 test_function("abline")
 test_function("plot", index=1)
 test_function("plot", index=2)
-test_function("plot", index=3, eval=T)
+test_student_typed(
+  c("plot(mod,1)",
+    "plot(mod, 1)",
+  )
+ )
 ```
 
 
