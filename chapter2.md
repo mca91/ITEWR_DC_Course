@@ -278,6 +278,12 @@ test_output_contains("sigma_hat", incorrect_msg = "Something's wrong... Did you 
 --- type:NormalExercise lang:r xp:100 skills:1 key:79d4a98b65
 ## Heteroskedasticity
 
+*** pre_exercise_code
+```{r}
+mod <- lm(dist~speed,cars)
+plot(mod)
+```
+
 --- type:MultipleChoiceExercise lang:r xp:100 skills:1 key:726a6d460b
 ## The Gauss Markov Theorem I
 
