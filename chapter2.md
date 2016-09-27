@@ -396,7 +396,7 @@ test_function("plot", index=1)
 test_function("plot", index=2)
 test_student_typed(
   c("plot(mod,1)",
-    "plot(mod, 1)",
+    "plot(mod, 1)"
   )
  )
 ```
