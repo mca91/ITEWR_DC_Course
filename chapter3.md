@@ -28,6 +28,11 @@ Have a look at the plot. What can you say about the dispersion of observations?
 
 ```
 
+***=pre_exercise_code
+```{r}
+library(MASS)
+```
+
 *** =solution
 ```{r}
 # Attach the package
