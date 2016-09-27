@@ -49,11 +49,11 @@ mod <- lm(medv ~ age + crim,data = Boston)
 ```{r}
 test_function("library", args = "package",
               not_called_msg = "You didn't call `library()`!",
-              incorrect_msg = "You didn't call `lm()` with the correct argument, `package`.")
+              incorrect_msg = "You didn't call `library()` with the correct argument, `package`.")
 
 test_function("lm", args = "formula",
-              not_called_msg = "You didn't call `library()`!",
-              incorrect_msg = "You didn't call `lm()` with the correct argument, `package`.")
+              not_called_msg = "You didn't call `lm()`!",
+              incorrect_msg = "You didn't call `lm()` with the correct argument, `formula`.")
 
 test_object("mod")
 ```
