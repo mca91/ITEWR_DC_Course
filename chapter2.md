@@ -287,7 +287,7 @@ In this block of exercises we will use the `cars` data set to explore ways to de
 
 We will discuss two ways of detecting heteroskedasticity:
 
-- graphical inspection
+- Graphical inspection
 - Statistical tests
 
 We have already loaded the `AER` package for You.
@@ -381,6 +381,7 @@ An indicator for heteroskedasticity is dependence of residuals on the level fitt
 *** =solution
 ```{r}
 # Add the regression line for the model `mod` to the plot
+plot(cars$speed, cars$dist)
 abline(mod)
 
 # Call plot() on your model
