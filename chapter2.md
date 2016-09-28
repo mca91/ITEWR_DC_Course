@@ -459,6 +459,13 @@ Let us have another look on the results of the Breusch-Pagan test.
 
 We have printed the test function's ouput to your script. Which statement is correct?
 
+`
+	studentized Breusch-Pagan test
+
+ data:  mod
+ BP = 3.2149, df = 1, p-value = 0.07297
+`
+
 *** =instructions
 
 - It is not possible to see wheather the null is rejected without further investigation
@@ -474,14 +481,6 @@ Check the help file entry!
 library(AER)
 library(lmtest)
 mod <- lm(cars$dist ~ cars$speed)
-```
-
-*** =sample_code
-```{r}
-#	studentized Breusch-Pagan test
-
-# data:  mod
-# BP = 3.2149, df = 1, p-value = 0.07297
 ```
 
 *** =sct
