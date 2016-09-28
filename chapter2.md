@@ -518,7 +518,7 @@ bp <- bptest(mod)
 
 *** =sample_code
 ```{r}
-# compute the p-value
+# Compute the p-value
 
 
 # Build vectors X and chi
