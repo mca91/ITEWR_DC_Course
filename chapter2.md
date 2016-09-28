@@ -409,13 +409,13 @@ mod <- lm(cars$dist ~ cars$speed)
 ```
 
 *** =instructions
-```{r}
+
 The object `mod` from the previous exercise is available in Your R session. 
 
 - Load the `lmtest` package
 - Check the help file entry for `bptest`
 - Conduct the Breusch-Pagan test
-```
+
 
 *** =sample_code
 ```{r}
