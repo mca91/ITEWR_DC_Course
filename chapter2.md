@@ -460,8 +460,8 @@ Let us have another look on the results of the Breusch-Pagan test.
 We have printed the test function's ouput. Which statement is correct?
 
 
-`studentized Breusch-Pagan test`
-`data:  mod`
+`studentized Breusch-Pagan test`<br>
+`data:  mod`<br>
 `BP = 3.2149, df = 1, p-value = 0.07297`
 
 
