@@ -405,7 +405,6 @@ An R implementation can be found in the package `lmtest`. The function is named 
 *** =pre_exercise_code
 ```{r}
 library(AER)
-plot(cars$speed, cars$dist)
 mod <- lm(cars$dist ~ cars$speed)
 ```
 
