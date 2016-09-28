@@ -504,7 +504,7 @@ Put simply, the Breusch-Pagan test is a right-sided where the test statistic is 
 
 - Compute the $p$-value yourself: $p$-value $=1-F(\tau)$ wherby $\tau$ is the observed test statistic and $F$ is the cummulative distribution function of a $\chi_1^2$ random variable. Hint: Use `pchisq()`
 - Build a vector `chi` containing the density of the $\chi_1^2$ distribution at `seq(0,6,0.01)` using `dchisq()`. Save `seq(0,6,0.01)` to `X`
-- Draw a simple line plot depicting the density at `seq(0,6,0.01)`. Complete the code suggested in Your script.
+- Draw a simple line plot depicting the density at `seq(0,6,0.01)`. Complete the code suggested in `script.R`.
 
 *** =hint
 
