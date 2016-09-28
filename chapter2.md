@@ -457,7 +457,9 @@ test_function("bptest", args = "formula", eq_condition = "equal")
 
 Let us have another look on the results of the Breusch-Pagan test.
 
-We have printed the test function's ouput. Which statement is correct?
+We have printed the test function's ouput. 
+
+Which statement is correct? (Remember: You may use the console in the panel on the right)
 
 
 `studentized Breusch-Pagan test`<br>
@@ -473,7 +475,7 @@ We have printed the test function's ouput. Which statement is correct?
 - The test rejects clearly since the test statistic is bigger than the level of significance $\alpha=0.05$
 
 *** =hint
-Check the help file entry!
+Check your lecture notes!
 
 *** =pre_exercise_code
 ```{r}
