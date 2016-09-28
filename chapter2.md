@@ -534,7 +534,7 @@ plot(type = "l", col="steelblue")
 *** =solution
 ```{r}
 # compute the p-value
-1-pchsq(bp$statistic, df=1)
+1-pchisq(bp$statistic, df=1)
 
 # Build the vectors X and chi
 X <- seq(0,6,0.01)
