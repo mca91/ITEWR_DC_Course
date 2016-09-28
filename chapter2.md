@@ -452,6 +452,38 @@ test_function("bptest", args = "formula", eq_condition = "equal")
 ```
 
 
+--- type:MultipleChoiceExercise lang:r xp: skills: key:2a463d1c54
+## Heteroskedasticity IV
+
+Let us have another look on the results of the Breusch-Pagan test.
+
+We have printed the test function's ouput to the console. Which statement is correct?
+
+*** =instructions
+
+- It is not possible to see wheather the null is rejected without further investigation
+- The test does not reject at a level of $\alpha = 0.05$ since $p$-value $>0.05$
+- The test does reject at a level of $\alpha = 0.05$ sinse $p$-value $>0.05$
+- The test rejects clearly since the test statistic is bigger than the level of significance $\alpha=0.05$
+
+*** =hint
+Check the help file entry!
+
+*** =pre_exercise_code
+```{r}
+library(AER)
+library(Lmtest)
+mod <- lm(cars$dist ~ cars$speed)
+bptest(mod)
+```
+
+*** =sct
+```{r}
+msg_bad <- "That is not correct!"
+msg_success <- "Exactly! The null cannot be rejected. We conclude that there is homoskedasticity."
+test_mc(correct = 2, feedback_msgs = c(msg_bad, msg_correct, msg_bad, msg_bad))
+```
+
 --- type:MultipleChoiceExercise lang:r xp:100 skills:1 key:726a6d460b
 ## The Gauss Markov Theorem I
 
