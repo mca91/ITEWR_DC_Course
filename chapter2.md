@@ -481,7 +481,7 @@ bptest(mod)
 ```{r}
 msg_bad <- "That is not correct!"
 msg_success <- "Exactly! The null cannot be rejected. We conclude that there is homoskedasticity."
-test_mc(correct = 2, feedback_msgs = c(msg_bad, msg_correct, msg_bad, msg_bad))
+test_mc(correct = 2, feedback_msgs = c(msg_bad, msg_success, msg_bad, msg_bad))
 ```
 
 --- type:MultipleChoiceExercise lang:r xp:100 skills:1 key:726a6d460b
