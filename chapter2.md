@@ -404,7 +404,7 @@ This test checks for heteroskedasticity by fitting a linear model to regression 
 
 The null hypothesis is no heteroskedasticity.
 
-An R implementation can be found in the package `lmtest`. The function is named `bptest`. It uses regressors from the original regression by default.
+An R implementation can be found in the package `lmtest`. The function is named `bptest`. By default, regressors from the original regression are used.
 
 *** =pre_exercise_code
 ```{r}
