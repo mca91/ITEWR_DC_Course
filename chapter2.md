@@ -399,7 +399,7 @@ test_student_typed("plot(mod,1)", not_typed_msg = "Make sure to call the plot as
 --- type:NormalExercise lang:r xp:100 skills:1 key:2905f44fda
 ## Heteroskedasticity III
 
-A formal test for heteroskedasticity was proposed by Breusch & Pagan in 1979.\newline 
+A formal test for heteroskedasticity was proposed by Breusch & Pagan in 1979.<br>
 This test checks for heteroskedasticity by fitting a linear model to regression residuals and then tests if regressors are significant in explaining observed variance in the residuals. 
 
 The null hypothesis is no heteroskedasticity.
