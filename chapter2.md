@@ -402,6 +402,13 @@ test_student_typed("plot(mod,1)", not_typed_msg = "Make sure to call the plot as
 A formal test for heteroskedasticity was proposed by Breusch & Pagan in 1979. This test checks for heteroskedasticity by fitting a linear model to regression residuals and then tests if regressors are significant in explaining observed variance in the residuals. The null hypothesis is no heteroskedasticity.
 An R implementation can be found in the package `lmtest`. The function is named `bptest`.
 
+*** =pre_exercise_code
+```{r}
+library(AER)
+plot(cars$speed, cars$dist)
+mod <- lm(cars$dist ~ cars$speed)
+```
+
 *** =instructions
 ```{r}
 The object `mod` from the previous exercise is available in Your R session. 
@@ -411,7 +418,7 @@ The object `mod` from the previous exercise is available in Your R session.
 - Conduct the Breusch-Pagan test
 ```
 
-*** =pre_exercise_code
+*** =sample_code
 ```{r}
 # Load the `lmtest` package
 
