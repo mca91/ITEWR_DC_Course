@@ -386,7 +386,6 @@ plot(mod)
 
 # See how fitted values relate to residuals
 plot(mod,1)
-
 ```
 
 *** =sct
@@ -395,6 +394,52 @@ test_function("abline")
 test_function("plot", index=1)
 test_function("plot", index=2)
 test_student_typed("plot(mod,1)", not_typed_msg = "Make sure to call the plot as proposed in the instruction.")
+```
+
+--- type:NormalExercise lang:r xp:100 skills:1 key:2905f44fda
+## Heteroskedasticity III
+
+A formal test for heteroskedasticity was proposed by Breusch & Pagan in 1979. This test checks for heteroskedasticity by fitting a linear model to regression residuals and then tests if regressors are significant in explaining observed variance in the residuals. The null hypothesis is no heteroskedasticity.
+An R implementation can be found in the package `lmtest`. The function is named `bptest`.
+
+*** =instructions
+```{r}
+The object `mod` from the previous exercise is available in Your R session. 
+
+- Load the `lmtest` package
+- Check the help file entry for `bptest`
+- Conduct the Breusch-Pagan test
+```
+
+*** =pre_exercise_code
+```{r}
+# Load the `lmtest` package
+
+
+# Check the help file entry for `bptest`
+
+
+# Conduct the Breusch-Pagan test
+```
+
+*** =solution
+```{r}
+# Load the `lmtest` package
+library(lmtest)
+
+# Check the help file entry for `bptest`
+?bptest
+
+# Conduct the Breusch-Pagan test
+bptest(mod)
+```
+
+*** =sct
+```{r}
+test_student_typed("library(lmtest)")
+test_student_typed("?bptest")
+test_function_result
+
 ```
 
 
