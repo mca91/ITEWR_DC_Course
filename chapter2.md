@@ -497,7 +497,7 @@ test_mc(correct = 2, feedback_msgs = c(msg_bad, msg_success, msg_bad, msg_bad))
 We stored the results from the previously conducted Breusch-Pagan test for You. The object's name is `bp`. Use the console to convince yourself that it exisits and what info is stored using the `$` operator.
 
 
-Put simply, the Breusch-Pagan test statistic is $\chi_v^2$ with $v = 1$ degrees of freedom. $v$ equals the number of regressors used in the residual regression. Thus, it is a right-sided test.
+Put simply, the Breusch-Pagan test is a right-sided where the test statistic is $\tau \sim \chi_v^2$ with $v = 1$ degrees of freedom. $v$ equals the number of regressors used in the residual regression. Thus, it .
 
 
 *** =instructions
