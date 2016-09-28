@@ -472,7 +472,7 @@ Check the help file entry!
 *** =pre_exercise_code
 ```{r}
 library(AER)
-library(Lmtest)
+library(lmtest)
 mod <- lm(cars$dist ~ cars$speed)
 bptest(mod)
 ```
