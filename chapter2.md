@@ -479,7 +479,7 @@ bptest(mod)
 
 *** =sct
 ```{r}
-msg_bad <- "That is not correct!"
+msg_bad <- "No, that is not correct! You solely have to apply basic knowledge about hypothesis testing... "
 msg_success <- "Exactly! The null cannot be rejected. We conclude that there is homoskedasticity."
 test_mc(correct = 2, feedback_msgs = c(msg_bad, msg_success, msg_bad, msg_bad))
 ```
