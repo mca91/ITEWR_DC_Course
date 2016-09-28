@@ -494,24 +494,54 @@ test_mc(correct = 2, feedback_msgs = c(msg_bad, msg_success, msg_bad, msg_bad))
 --- type:NormalExercise lang:r xp: skills: key:3734662b44
 ## Heteroskedasticity V 
 
+We stored the results from the previously conducted Breusch-Pagan test for You. The object's name is `bp`. Use the console to convince yourself that it exisits and what info is stored using the `$` operator.
+
+
+Put simply, the Breusch-Pagan test statistic is $\chi_v^2$ with $v = 1$ degrees of freedom. $v$ equals the number of regressors used in the residual regression. Thus, it is a right-sided test.
+
 
 *** =instructions
+
+- Compute the $p$-value yourself: $p$-value $=1-F(\tau)$ wherby $\tau$ is the observed test statistic and $F$ is the cummulative distribution function of a $\chi_1^2$ random variable. Hint: Use `pchisq()`
+- Build a vector `chi` containing the density of the $\chi_1^2$ distribution at `seq(0,6,0.01)` using `dchisq()`. Save `seq(0,6,0.01)` to `X`
+- Draw a simple line plot depicting the density at `seq(0,6,0.01)`. Complete the code suggested in Your script.
 
 *** =hint
 
 *** =pre_exercise_code
 ```{r}
-
+library(AER)
+library(lmtest)
+mod <- lm(cars$dist ~ cars$speed)
+bp <- bptest(mod)
 ```
 
 *** =sample_code
 ```{r}
+# compute the p-value
 
+
+# Build vectors X and chi
+
+
+# Draw a line plot depicting the density
+plot(type = "l", col="steelblue")
+
+
+#
 ```
 
 *** =solution
 ```{r}
+# compute the p-value
+1-pchsq(bp$statistic, df=1)
 
+# Build the vectors X and chi
+X <- seq(0,6,0.01)
+chi <- dchisq(X, df=1)
+
+# Draw a line plot depicting the density
+plot(X, chi, type = "l", col="steelblue")
 ```
 
 *** =sct
