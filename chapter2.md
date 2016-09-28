@@ -438,8 +438,7 @@ bptest(mod)
 ```{r}
 test_student_typed("library(lmtest)")
 test_student_typed("?bptest")
-test_function_result
-
+test_function("bptest", args = "formula", eq_condition = "equal")
 ```
 
 
