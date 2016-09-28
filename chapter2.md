@@ -457,7 +457,7 @@ test_function("bptest", args = "formula", eq_condition = "equal")
 
 Let us have another look on the results of the Breusch-Pagan test.
 
-We have printed the test function's ouput to the console. Which statement is correct?
+We have printed the test function's ouput to your script. Which statement is correct?
 
 *** =instructions
 
@@ -474,7 +474,14 @@ Check the help file entry!
 library(AER)
 library(lmtest)
 mod <- lm(cars$dist ~ cars$speed)
-bptest(mod)
+```
+
+*** =sample_code
+```{r}
+#	studentized Breusch-Pagan test
+
+# data:  mod
+# BP = 3.2149, df = 1, p-value = 0.07297
 ```
 
 *** =sct
