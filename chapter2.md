@@ -457,14 +457,13 @@ test_function("bptest", args = "formula", eq_condition = "equal")
 
 Let us have another look on the results of the Breusch-Pagan test.
 
-We have printed the test function's ouput to your script. Which statement is correct?
+We have printed the test function's ouput. Which statement is correct?
 
-`
-	studentized Breusch-Pagan test
 
- data:  mod
- BP = 3.2149, df = 1, p-value = 0.07297
-`
+`studentized Breusch-Pagan test`
+`data:  mod`
+`BP = 3.2149, df = 1, p-value = 0.07297`
+
 
 *** =instructions
 
