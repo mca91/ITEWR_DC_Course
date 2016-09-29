@@ -541,7 +541,7 @@ X <- seq(0,6,0.01)
 chi <- dchisq(X, df=1)
 
 # Draw a line plot depicting the density
-plot(X, chi, type = "l", col="steelblue")
+plot(X, chi, type = "l", col="steelblue", lwd=2)
 ```
 
 *** =sct
