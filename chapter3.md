@@ -11,20 +11,24 @@ attachments :
 - Attach the package `MASS`
 - Load the Boston housing data set (`Boston`)
 - Regress the median housing value in a destrict `medv` on the average age of the buildings `age` and the crime rate `crim`
-
+- Inspect the model summary.
 
 *** =hint
 Have a look at the plot. What can you say about the dispersion of observations?
 
 *** =sample_code
 ```{r}
-# Attach the package
+# Load the package
 
 
 # Load the data set   
 
 
 # Conduct the regression
+
+
+# Inspect the model summary
+
 
 ```
 
@@ -35,7 +39,7 @@ library(MASS)
 
 *** =solution
 ```{r}
-# Attach the package
+# Load the package
 library(MASS)
 
 # Load the data set   
@@ -43,6 +47,11 @@ data("Boston")
 
 # Conduct the regression
 mod <- lm(medv ~ age + crim, data = Boston)
+
+# Inspect the model summary
+summary(mod)
+
+
 ```
 
 
@@ -54,4 +63,5 @@ test_or(
   test_function("lm", eq_condition = "equivalent")
 )
 test_object("mod", eval=F)
+test_function("summary", args="object")
 ```
