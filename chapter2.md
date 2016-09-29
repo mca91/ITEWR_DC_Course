@@ -525,7 +525,7 @@ bp <- bptest(mod)
 
 
 # Draw a line plot depicting the density
-plot(type = "l", col="steelblue")
+plot(type = "l", col="steelblue", lwd=2)
 
 
 #
