@@ -9,7 +9,7 @@ attachments :
 
 *** =instructions
 - Attach the package `MASS`
-- Load the Boston housing data set (`Boston`)
+- Load the Boston housing data set `Boston`
 - Regress the median housing value in a destrict `medv` on the average age of the buildings `age` and the crime rate `crim`
 - Inspect the model summary.
 
