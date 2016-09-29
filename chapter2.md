@@ -505,7 +505,7 @@ Put simply, the Breusch-Pagan test is a right-sided test where the test statisti
 - Compute the $p$-value yourself: $p$-value $=1-F(\tau)$ wherby $\tau$ is the observed test statistic and $F$ is the cummulative distribution function of a $\chi_1^2$ random variable. Hint: Use `pchisq()`
 - Build a vector `chi` containing the density of the $\chi_1^2$ distribution at `seq(0,6,0.01)` using `dchisq()`. Save `seq(0,6,0.01)` to `X`
 - Draw a simple line plot depicting the density at `seq(0,6,0.01)`. Complete the code suggested in `script.R`.
-- Add a vertical line to the plot that divides the area under the curve (i.e. the probability mass) into $1-p\text{-value}$ and $p\text{-value}$
+- Add a vertical line to the plot that divides the area under the density curve (i.e. the probability mass) into $1-p\text{-value}$ and $p\text{-value}$. Hint: Use `segments()`
 
 *** =hint
 
@@ -528,7 +528,9 @@ bp <- bptest(mod)
 # Draw a line plot depicting the density
 plot(    type = "l", col="steelblue", lwd=2)
 
-# Add a vertical line dividing the 
+# Add the dividing vertical line 
+segments(bp,0,bp,dchisq(bp,1))
+
 ```
 
 *** =solution
