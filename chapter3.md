@@ -14,7 +14,7 @@ attachments :
 - Inspect the model summary.
 
 *** =hint
-Have a look at the plot. What can you say about the dispersion of observations?
+You only need basic functions here: `library()`, `data()`, `lm()` and `summary`.
 
 *** =sample_code
 ```{r}
