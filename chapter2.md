@@ -502,10 +502,10 @@ Put simply, the Breusch-Pagan test is a right-sided test where the test statisti
 
 *** =instructions
 
-- Compute the $p$-value yourself: $p$-value $=1-F(\tau)$ wherby $\tau$ is the observed test statistic and $F$ is the cummulative distribution function of a $\chi_1^2$ random variable. Hint: Use `pchisq()`
+- Save the test statistic to `tau`. Compute the $p$-value yourself: $p$-value $=1-F(\tau)$ wherby $\tau$ is the observed test statistic and $F$ is the cummulative distribution function of a $\chi_1^2$ random variable.  Hint: Use `pchisq()`
 - Build a vector `chi` containing the density of the $\chi_1^2$ distribution at `seq(0,6,0.01)` using `dchisq()`. Save `seq(0,6,0.01)` to `X`
 - Draw a simple line plot depicting the density at `seq(0,6,0.01)`. Complete the code suggested in `script.R`.
-- Add a vertical line to the plot that divides the area under the density curve (i.e. the probability mass) into $1-p\text{-value}$ and $p\text{-value}$. Hint: Use `segments()`
+- Add a point to the plot indicating the density value of the density function at `tau`.
 
 *** =hint
 
@@ -528,31 +528,35 @@ bp <- bptest(mod)
 # Draw a line plot depicting the density
 plot(    type = "l", col="steelblue", lwd=2)
 
-# Add the dividing vertical line 
-segments(bp,0,bp,dchisq(bp,1))
-
+# Mark the density at tau
 ```
 
 *** =solution
 ```{r}
-# compute the p-value
-1-pchisq(bp$statistic, df=1)
+# Create tau and compute the p-value
+tau <- bp$statistic
+1-pchisq(tau, df=1)
 
 # Build the vectors X and chi
 X <- seq(0,6,0.01)
 chi <- dchisq(X, df=1)
 
-# Draw a line plot depicting the density
+# Draw a line plot depicting the density of the test statistic
 plot(X, chi, type = "l", col="steelblue", lwd=2)
+
+# Mark the density at tau
+points(tau,dchisq(tau,1))
 ```
 
 *** =sct
 ```{r}
+test_object("tau", undefined_msg = "Seems like you did not define `tau`.",
+            incorrect_msg = "`tau` does not correspond to the test statistic of the Breusch-Pagan test.")
 test_output_contains("1-pchisq(bp$statistic, df=1)")
 test_object("X")
 test_object("chi")
 test_function("plot", args=c("x","y","type"))
-
+test_function("points", args=c("x","y"))
 ```
 
 --- type:MultipleChoiceExercise lang:r xp:100 skills:1 key:726a6d460b
