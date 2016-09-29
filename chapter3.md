@@ -53,5 +53,9 @@ test_function("lm", args = "formula",
               not_called_msg = "You didn't call `lm()`!",
               incorrect_msg = "You didn't call `lm()` with the correct argument, `formula`.")
 
-test_object("mod")
+test_or(
+  test_function("lm", eq_condition = "equal"),
+  test_function("lm", eq_condition = "equivalent")
+)
+test_object("mod", eval=F)
 ```
