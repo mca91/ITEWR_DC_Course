@@ -545,7 +545,7 @@ chi <- dchisq(X, df=1)
 plot(X, chi, type = "l", col="steelblue", lwd=2)
 
 # Mark the density at tau
-points(tau,dchisq(tau,1))
+points(tau,dchisq(tau,1),pch=19, col="red")
 ```
 
 *** =sct
