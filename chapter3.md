@@ -1,5 +1,5 @@
 ---
-title       : Test Run 
+title       : Multiple Regression (test)
 description : This section contains exercises dealing with the simple linear regression model and estimation using ordinary least squares. 
 attachments :
   slides_link : https://github.com/Emwikts1970/URFITE_DC/raw/master/Econometrics
@@ -10,7 +10,7 @@ attachments :
 *** =instructions
 - Attach the package `MASS`
 - Load the Boston housing data set (`Boston`)
-- Regress the median housing value in a destrict (`medv`) on the average age of the buildings (`age`) and the crime rate (`crim`) 
+- Regress the median housing value in a destrict `medv` on the average age of the buildings `age` and the crime rate `crim`
 
 
 *** =hint
