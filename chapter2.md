@@ -509,6 +509,10 @@ Put simply, the Breusch-Pagan test is a right-sided test where the test statisti
 
 *** =hint
 
+- Use the `$` operator to access the value of the test statistic stored in `bp`
+- Remember the help function! See what `pchisq()` and `dchisq()` can do for you.
+- Points can be added to an existing plot with `points`. 
+
 *** =pre_exercise_code
 ```{r}
 library(AER)
