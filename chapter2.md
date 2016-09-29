@@ -448,7 +448,7 @@ bptest(mod)
 ```{r}
 test_student_typed("library(lmtest)")
 test_student_typed("?bptest")
-test_function("bptest", args = "formula", eq_condition = "equal")
+test_function("bptest", args = "formula")
 ```
 
 
@@ -549,7 +549,7 @@ plot(X, chi, type = "l", col="steelblue", lwd=2)
 test_output_contains("1-pchisq(bp$statistic, df=1)")
 test_object("X")
 test_object("chi")
-test_function("plot", args=c("x","y","type"), eq_condition="equal")
+test_function("plot", args=c("x","y","type"))
 
 ```
 
