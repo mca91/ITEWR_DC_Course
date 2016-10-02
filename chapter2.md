@@ -630,10 +630,23 @@ test_mc(correct = 1, feedback_msgs = c(msg_success, msg_bad, msg_bad))
 ## Test
 
 
-\begin{tabular}{ccccccccccc} \toprule
- $KG$ & 23 & 19 & 30 & 22 & 23 & 29 & 35 & 36 & 33 & 25  \\
- $TS$ & 430 & 430 & 333 & 410 & 390 & 377 &325 &310 &328 &375  \\ \bottomrule
-\end{tabular}
+  <table>
+      <tr>
+        <th>Berlin</th>
+        <th>Hamburg</th>
+        <th>München</th>
+      </tr>
+      <tr>
+        <td>Miljöh</td>
+        <td>Kiez</td>
+        <td>Bierdampf</td>
+      </tr>
+      <tr>
+        <td>Buletten</td>
+        <td>Frikadellen</td>
+        <td>Fleischpflanzerl</td>
+      </tr>
+    </table>
 
 
 *** =instructions
