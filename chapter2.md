@@ -243,7 +243,7 @@ success_msg("Good work!")
 --- type:MultipleChoiceExercise lang:r xp:50 skills:1 key:13d4cf0fb6
 ## Interpreting OLS Regressions I
 
-Suppose that a researcher, using data on class size, $CS$, and average test score, $TestScore$, from 50 third-grade classes, estimates the OLS regression:
+Suppose that a researcher, using data on class size ($CS$), and average test score, ($TestScore$), from 50 third-grade classes, estimates the OLS regression:
 
 $$ \widehat{TestScore} = 640.3 - 4.93 \times CS, R^2 = 0.11, SER= 8.7 $$
 
