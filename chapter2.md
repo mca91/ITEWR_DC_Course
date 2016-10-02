@@ -714,8 +714,8 @@ var(ts)
 sd(ts)
 
 # Compute the covariance and the correlation coefficient
-cov(ts)
-cor(ts)
+cov(cs,ts)
+cor(cs,ts)
 
 # Estimate the regression model and store it in mod
 mod <- lm(ts ~ cs)
