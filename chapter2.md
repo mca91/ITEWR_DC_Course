@@ -625,3 +625,37 @@ test_mc(correct = 1, feedback_msgs = c(msg_success, msg_bad, msg_bad))
 --- type:NormalExercise lang:r xp:100 skills:1 key:9ad3c5911e
 ## Introduction to Multiple Regression
 
+
+--- type:NormalExercise lang:r xp: skills: key:9d4515394d
+## Test
+
+
+\begin{tabular}{ccccccccccc} \toprule
+ $KG$ & 23 & 19 & 30 & 22 & 23 & 29 & 35 & 36 & 33 & 25  \\
+ $TS$ & 430 & 430 & 333 & 410 & 390 & 377 &325 &310 &328 &375  \\ \bottomrule
+\end{tabular}
+
+
+*** =instructions
+
+*** =hint
+
+*** =pre_exercise_code
+```{r}
+
+```
+
+*** =sample_code
+```{r}
+
+```
+
+*** =solution
+```{r}
+
+```
+
+*** =sct
+```{r}
+
+```
