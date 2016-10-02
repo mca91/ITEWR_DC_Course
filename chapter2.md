@@ -629,6 +629,7 @@ test_mc(correct = 1, feedback_msgs = c(msg_success, msg_bad, msg_bad))
 --- type:NormalExercise lang:r xp: skills: key:9d4515394d
 ## Test
 
+A researcher wants to analyse the relationship between class size and pupils' average test score. Therefore he measures both variables in 10 different classes obtaining the following results:
 
   <table>
       <tr>
@@ -661,6 +662,12 @@ test_mc(correct = 1, feedback_msgs = c(msg_success, msg_bad, msg_bad))
 
 
 *** =instructions
+
+- Create vectors, `cs` for class sizes and `ts` for test scores, containing the results
+- Draw a scatter plot of the results
+- Compute mean, median and variance and standard deviation of test scores
+- Compute the covariance as well as pearson's correlation coefficient for `cs` and `ts`
+- Compute the linear regression model
 
 *** =hint
 
