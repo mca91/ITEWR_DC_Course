@@ -732,7 +732,7 @@ abline(mod)
 test_object("cs")
 test_object("ts")
 
-test_function("plot", args=c("x","y"))
+test_function("plot")
 
 test_function("mean")
 test_function("median")
@@ -750,5 +750,5 @@ test_or(
 
 test_object("mod")
 test_function_result("summary")
-test_function("abline", args="reg")
+test_function("abline")
 ```
