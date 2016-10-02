@@ -97,8 +97,6 @@ abline(mod)
 
 *** =sct
 ```{r}
-# SCT written with testwhat: https://github.com/datacamp/testwhat/wiki
-
 test_function("lm", args = "formula",
               not_called_msg = "You didn't call `lm()`!",
               incorrect_msg = "You didn't call `lm()` with the correct argument, `formula`.")
@@ -665,30 +663,88 @@ A researcher wants to analyse the relationship between class size and pupils' av
 
 - Create vectors, `cs` for class sizes and `ts` for test scores, containing the results
 - Draw a scatter plot of the results using `plot`
-- Compute mean, median and variance and standard deviation of test scores
-- Compute both the covariance and pearson's correlation coefficient for `cs` and `ts`
+- Compute mean, median and variance and standard deviation of test scores. Use existing R functions!
+- Compute both the covariance and pearson's correlation coefficient for `cs` and `ts` using R functions
 - Estimate a linear regression of test score on class size. Store the result in `mod`
 - Obtain an overview over the model object `mod` using `summary()`
 - Add the regression line to the scatterplot. Hint: use `abline()`
 
 *** =hint
 
-*** =pre_exercise_code
-```{r}
 
-```
 
 *** =sample_code
 ```{r}
+# Create both vectors
+
+
+# Draw the scatter plot
+
+
+# Compute mean, median, variance & standard deviation of test score
+
+
+# Compute the covariance and the correlation coefficient
+
+
+# Estimate the regression model and store it in mod
+
+
+# Use summary() the get an overview over your model
+
+
+# Add the regression line the the scatterplot
 
 ```
 
 *** =solution
 ```{r}
+# Create both vectors
+cs <- c(23, 19, 30, 22, 23, 29, 35, 36, 33, 25)
+ts <- c(430, 430, 333, 410, 390, 377, 325, 310, 328, 375)
 
+# Draw the scatter plot
+plot(cs,ts)
+
+
+# Compute mean, median, variance & standard deviation of test score
+mean(ts); median(ts); var(ts); sd(ts)
+
+# Compute the covariance and the correlation coefficient
+cov(ts), cor(ts)
+
+# Estimate the regression model and store it in mod
+mod <- lm(ts ~ cs)
+
+# Use summary() the get an overview over your model
+summary(mod)
+
+# Add the regression line the the scatterplot
+abline(mod)
 ```
 
 *** =sct
 ```{r}
+test_object("cs")
+test_object("ts")
 
+test_function("plot", args=c("x","y"))
+
+test_function("mean")
+test_function("median")
+test_function("var")
+test_function("sd")
+test_function("cov")
+test_function("cor")
+
+test_or(
+  test_function("lm", eq_condition = "equal", not_called_msg = "You didn't call `lm()`!",
+              incorrect_msg = "You didn't call `lm()` with the correct argument, `formula`."),
+  test_function("lm", eq_condition = "equivalent", not_called_msg = "You didn't call `lm()`!",
+              incorrect_msg = "You didn't call `lm()` with the correct argument, `formula`.")
+)
+
+test_object("mod")
+test_function_result("summary")
+test_function("abline", args="reg")
 ```
