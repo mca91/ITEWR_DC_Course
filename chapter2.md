@@ -706,7 +706,6 @@ ts <- c(430, 430, 333, 410, 390, 377, 325, 310, 328, 375)
 # Draw the scatter plot
 plot(cs,ts)
 
-
 # Compute mean, median, variance & standard deviation of test score
 mean(ts)
 median(ts)
