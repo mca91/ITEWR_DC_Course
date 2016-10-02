@@ -36,7 +36,7 @@ test_mc(correct = 2, feedback_msgs = c(msg_bad, msg_success, msg_bad, msg_bad))
 ```
 
 --- type:NormalExercise lang:r xp: skills: key:9d4515394d
-## Regression: Class Sizes and Test Scores
+## Regression I: Class Sizes and Test Scores 
 
 A researcher wants to analyse the relationship between class size and pupils' average test score. Therefore he measures both variables in 10 different classes obtaining the following results:
 
@@ -161,6 +161,43 @@ test_or(
 test_object("mod")
 test_function_result("summary")
 test_function("abline")
+```
+
+--- type:NormalExercise lang:r xp: skills: key:6e64f67c78
+## Regression II: Class Sizes and Test Scores
+
+Consider again the relation of class size and test score. The model object `mod` from the previous exercise is available in your workspace. This means you can use it for subsequent tasks. Convince yourself by typing `summary(mod)` in to the console and get yet again detailed information on the estimated model!
+
+
+
+*** =instructions
+
+- Store the regression summary into `summary`. Discover what information you can extract from `summary` by use of the `$` operator
+- Suppose you are interested in how good the model fits the data. Create a new variable `R2` storing the regression's $R^2$
+- You can extract a named $2\times4$ matrix with, amongst other things, estimated coefficients and standard errors. Save this matrix to an object named `coef`
+
+*** =hint
+
+*** =pre_exercise_code
+```{r}
+cs <- c(23, 19, 30, 22, 23, 29, 35, 36, 33, 25)
+ts <- c(430, 430, 333, 410, 390, 377, 325, 310, 328, 375)
+mod <- lm(ts ~ cs)
+```
+
+*** =sample_code
+```{r}
+
+```
+
+*** =solution
+```{r}
+
+```
+
+*** =sct
+```{r}
+
 ```
 
 --- type:NormalExercise lang:r xp:100 skills:1 key:d71e82b5ef
@@ -747,6 +784,3 @@ msg_bad <- "That is not correct!"
 msg_success <- "Exactly!"
 test_mc(correct = 1, feedback_msgs = c(msg_success, msg_bad, msg_bad))
 ```
-
---- type:NormalExercise lang:r xp:100 skills:1 key:9ad3c5911e
-## Introduction to Multiple Regression
