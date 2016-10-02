@@ -35,6 +35,134 @@ msg_success <- "Exactly! There seems to be heteroskedasticity: Dispersion increa
 test_mc(correct = 2, feedback_msgs = c(msg_bad, msg_success, msg_bad, msg_bad))
 ```
 
+--- type:NormalExercise lang:r xp: skills: key:9d4515394d
+## Regression: Class Sizes and Test Scores
+
+A researcher wants to analyse the relationship between class size and pupils' average test score. Therefore he measures both variables in 10 different classes obtaining the following results:
+
+  <table>
+      <tr>
+        <td><b>Class Size</b></td>
+        <td>23</td>
+        <td>19</td>
+        <td>30</td>
+        <td>22</td>
+        <td>23</td>
+        <td>29</td>
+        <td>35</td>
+        <td>36</td>
+        <td>33</td>
+        <td>25</td>
+      </tr>
+      <tr>
+        <td><b>Test Score</b></td>
+        <td>430</td>
+        <td>430</td>
+        <td>333</td>
+        <td>410</td>
+        <td>390</td>
+        <td>377</td>
+        <td>325</td>
+        <td>310</td>
+        <td>328</td>
+        <td>375</td>
+      </tr>
+    </table>
+
+
+*** =instructions
+
+- Create vectors, `cs` for class sizes and `ts` for test scores, containing the results
+- Draw a scatter plot of the results using `plot`
+- Compute mean, median and variance and standard deviation of test scores. Use existing R functions!
+- Compute both the covariance and pearson's correlation coefficient for `cs` and `ts` using R functions
+- Estimate a linear regression of test score on class size. Store the result in `mod`
+- Obtain an overview over the model object `mod` using `summary()`
+- Add the regression line to the scatterplot. Hint: use `abline()`
+
+*** =hint
+
+
+
+*** =sample_code
+```{r}
+# Create both vectors
+
+
+# Draw the scatter plot
+
+
+# Compute mean, median, variance & standard deviation of test score
+
+
+# Compute the covariance and the correlation coefficient
+
+
+# Estimate the regression model and store it in mod
+
+
+# Use summary() the get an overview over your model
+
+
+# Add the regression line the the scatterplot
+
+```
+
+*** =solution
+```{r}
+# Create both vectors
+cs <- c(23, 19, 30, 22, 23, 29, 35, 36, 33, 25)
+ts <- c(430, 430, 333, 410, 390, 377, 325, 310, 328, 375)
+
+# Draw the scatter plot
+plot(cs,ts)
+
+# Compute mean, median, variance & standard deviation of test score
+mean(ts)
+median(ts)
+var(ts)
+sd(ts)
+
+# Compute the covariance and the correlation coefficient
+cov(cs,ts)
+cor(cs,ts)
+
+# Estimate the regression model and store it in mod
+mod <- lm(ts ~ cs)
+
+# Use summary() the get an overview over your model
+summary(mod)
+
+# Add the regression line the the scatterplot
+abline(mod)
+```
+
+*** =sct
+```{r}
+test_object("cs")
+test_object("ts")
+
+test_function("plot")
+
+test_function("mean")
+test_function("median")
+test_function("var")
+test_function("sd")
+test_function("cov")
+test_function("cor")
+
+test_or(
+  test_function("lm", eq_condition = "equal", not_called_msg = "You didn't call `lm()`!",
+              incorrect_msg = "You didn't call `lm()` with the correct argument, `formula`."),
+  test_function("lm", eq_condition = "equivalent", not_called_msg = "You didn't call `lm()`!",
+              incorrect_msg = "You didn't call `lm()` with the correct argument, `formula`.")
+)
+
+test_object("mod")
+test_function_result("summary")
+test_function("abline")
+```
+
 --- type:NormalExercise lang:r xp:100 skills:1 key:d71e82b5ef
 ## Regression and Robust Standard Errors
 
@@ -622,132 +750,3 @@ test_mc(correct = 1, feedback_msgs = c(msg_success, msg_bad, msg_bad))
 
 --- type:NormalExercise lang:r xp:100 skills:1 key:9ad3c5911e
 ## Introduction to Multiple Regression
-
-
---- type:NormalExercise lang:r xp: skills: key:9d4515394d
-## Test
-
-A researcher wants to analyse the relationship between class size and pupils' average test score. Therefore he measures both variables in 10 different classes obtaining the following results:
-
-  <table>
-      <tr>
-        <td><b>Class Size</b></td>
-        <td>23</td>
-        <td>19</td>
-        <td>30</td>
-        <td>22</td>
-        <td>23</td>
-        <td>29</td>
-        <td>35</td>
-        <td>36</td>
-        <td>33</td>
-        <td>25</td>
-      </tr>
-      <tr>
-        <td><b>Test Score</b></td>
-        <td>430</td>
-        <td>430</td>
-        <td>333</td>
-        <td>410</td>
-        <td>390</td>
-        <td>377</td>
-        <td>325</td>
-        <td>310</td>
-        <td>328</td>
-        <td>375</td>
-      </tr>
-    </table>
-
-
-*** =instructions
-
-- Create vectors, `cs` for class sizes and `ts` for test scores, containing the results
-- Draw a scatter plot of the results using `plot`
-- Compute mean, median and variance and standard deviation of test scores. Use existing R functions!
-- Compute both the covariance and pearson's correlation coefficient for `cs` and `ts` using R functions
-- Estimate a linear regression of test score on class size. Store the result in `mod`
-- Obtain an overview over the model object `mod` using `summary()`
-- Add the regression line to the scatterplot. Hint: use `abline()`
-
-*** =hint
-
-
-
-*** =sample_code
-```{r}
-# Create both vectors
-
-
-# Draw the scatter plot
-
-
-# Compute mean, median, variance & standard deviation of test score
-
-
-# Compute the covariance and the correlation coefficient
-
-
-# Estimate the regression model and store it in mod
-
-
-# Use summary() the get an overview over your model
-
-
-# Add the regression line the the scatterplot
-
-```
-
-*** =solution
-```{r}
-# Create both vectors
-cs <- c(23, 19, 30, 22, 23, 29, 35, 36, 33, 25)
-ts <- c(430, 430, 333, 410, 390, 377, 325, 310, 328, 375)
-
-# Draw the scatter plot
-plot(cs,ts)
-
-# Compute mean, median, variance & standard deviation of test score
-mean(ts)
-median(ts)
-var(ts)
-sd(ts)
-
-# Compute the covariance and the correlation coefficient
-cov(cs,ts)
-cor(cs,ts)
-
-# Estimate the regression model and store it in mod
-mod <- lm(ts ~ cs)
-
-# Use summary() the get an overview over your model
-summary(mod)
-
-# Add the regression line the the scatterplot
-abline(mod)
-```
-
-*** =sct
-```{r}
-test_object("cs")
-test_object("ts")
-
-test_function("plot")
-
-test_function("mean")
-test_function("median")
-test_function("var")
-test_function("sd")
-test_function("cov")
-test_function("cor")
-
-test_or(
-  test_function("lm", eq_condition = "equal", not_called_msg = "You didn't call `lm()`!",
-              incorrect_msg = "You didn't call `lm()` with the correct argument, `formula`."),
-  test_function("lm", eq_condition = "equivalent", not_called_msg = "You didn't call `lm()`!",
-              incorrect_msg = "You didn't call `lm()` with the correct argument, `formula`.")
-)
-
-test_object("mod")
-test_function_result("summary")
-test_function("abline")
-```
