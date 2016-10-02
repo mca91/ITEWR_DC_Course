@@ -664,10 +664,12 @@ A researcher wants to analyse the relationship between class size and pupils' av
 *** =instructions
 
 - Create vectors, `cs` for class sizes and `ts` for test scores, containing the results
-- Draw a scatter plot of the results
+- Draw a scatter plot of the results using `plot`
 - Compute mean, median and variance and standard deviation of test scores
-- Compute the covariance as well as pearson's correlation coefficient for `cs` and `ts`
-- Compute the linear regression model
+- Compute both the covariance and pearson's correlation coefficient for `cs` and `ts`
+- Estimate a linear regression of test score on class size. Store the result in `mod`
+- Obtain an overview over the model object `mod` using `summary()`
+- Add the regression line to the scatterplot. Hint: use `abline()`
 
 *** =hint
 
