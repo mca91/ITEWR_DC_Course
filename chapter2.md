@@ -708,10 +708,14 @@ plot(cs,ts)
 
 
 # Compute mean, median, variance & standard deviation of test score
-mean(ts); median(ts); var(ts); sd(ts)
+mean(ts)
+median(ts)
+var(ts)
+sd(ts)
 
 # Compute the covariance and the correlation coefficient
-cov(ts), cor(ts)
+cov(ts)
+cor(ts)
 
 # Estimate the regression model and store it in mod
 mod <- lm(ts ~ cs)
