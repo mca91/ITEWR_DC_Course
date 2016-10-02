@@ -632,19 +632,30 @@ test_mc(correct = 1, feedback_msgs = c(msg_success, msg_bad, msg_bad))
 
   <table>
       <tr>
-        <th>Berlin</th>
-        <th>Hamburg</th>
-        <th>München</th>
+        <td><b>Class Size</b></td>
+        <td>23</td>
+        <td>19</td>
+        <td>30</td>
+        <td>22</td>
+        <td>23</td>
+        <td>29</td>
+        <td>35</td>
+        <td>36</td>
+        <td>33</td>
+        <td>25</td>
       </tr>
       <tr>
-        <td>Miljöh</td>
-        <td>Kiez</td>
-        <td>Bierdampf</td>
-      </tr>
-      <tr>
-        <td>Buletten</td>
-        <td>Frikadellen</td>
-        <td>Fleischpflanzerl</td>
+        <td><b>Test Score</b></td>
+        <td>430</td>
+        <td>430</td>
+        <td>333</td>
+        <td>410</td>
+        <td>390</td>
+        <td>377</td>
+        <td>325</td>
+        <td>310</td>
+        <td>328</td>
+        <td>375</td>
       </tr>
     </table>
 
