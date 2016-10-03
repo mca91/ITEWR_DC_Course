@@ -291,8 +291,8 @@ coef <- summary(mod_ni)$coefficients
 
 # Plot regression lines for both models
 plot(cs,ts)
-abline("mod")
-abline("mod_ni")
+abline(mod)
+abline(mod_ni)
 
 ```
 
