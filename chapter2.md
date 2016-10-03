@@ -326,10 +326,12 @@ $$ \widehat{TestScore} = 567.43 - 7.15 \times ClassSize, \, R^2 = 0.89, \, SER=1
 *You can check this as `mod` is available in your working environment again.*
 
 *** =instructions
-- Compute $SSR$, the sum of squared residuals, and save it to `ssr`. Hint: This can be solved in several ways, e.g. using formulas and/or knowledge about the structure of `lm` objects
+- Compute $SSR$, the sum of squared residuals, and save it to `ssr`. 
+- Compute $TSS$, 
 
 *** =hint
 
+The solutions can be found in several ways, e.g. using formulas and/or knowledge about the structure of `lm` objects. Don't forget about the `$` operator!
 
 *** =pre_exercise_code
 ```{r}
