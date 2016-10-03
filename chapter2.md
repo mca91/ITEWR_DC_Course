@@ -316,6 +316,37 @@ test_function("abline", index=2)
 
 ```
 
+--- type:NormalExercise lang:r xp: skills: key:673ab4d8fc
+## Regression IV: Class Size and Test Score  
+
+We now go back to the model including an intercept. The estimated regression line was
+
+$$ \widehat{TestScore} = 567.43 - 7.15 \times ClassSize $$
+
+*** =instructions
+
+*** =hint
+
+*** =pre_exercise_code
+```{r}
+
+```
+
+*** =sample_code
+```{r}
+
+```
+
+*** =solution
+```{r}
+
+```
+
+*** =sct
+```{r}
+
+```
+
 --- type:NormalExercise lang:r xp:100 skills:1 key:d71e82b5ef
 ## Regression and Robust Standard Errors
 
