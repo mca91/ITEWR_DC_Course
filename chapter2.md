@@ -321,13 +321,15 @@ test_function("abline", index=2)
 
 We now go back to the simple model including an intercept. The estimated regression line for `mod` was
 
-$$ \widehat{TestScore} = 567.43 - 7.15 \times ClassSize, \, R^2 = 0.89, \, SER=15.19 $$
+$$ \widehat{TestScore} = 567.43 - 7.15 \times ClassSize, \, R^2 = 0.8976, \, SER=15.19 $$
 
-*You can check this as `mod` is available in your working environment again.*
+*You can check this as `mod` and vectores `cs` and `ts` are available in your working environment again.*
 
 *** =instructions
-- Compute $SSR$, the sum of squared residuals, and save it to `ssr`. 
-- Compute $TSS$, 
+- Compute $SSR$, the sum of squared residuals, and save it to `ssr`
+- Compute $TSS$, the total sum of squares, and save it to `tss`
+- Use `ssr` and `tss` to compute $R^2$, the coefficient of determination. Save it to R2.
+- Use the logical expression `==` to check whether your result for $R^2$ equals the one provided in the model summary for `mod` 
 
 *** =hint
 
@@ -345,16 +347,42 @@ mod <- lm(ts ~ cs)
 # Compute the SSR and save it to ssr
 
 
-#
+# Compute the TSS and save it to tss
+
+
+# Compute R^2 and save it to R2
+
+
+# Check whether your result is correct
+
+
 ```
 
 *** =solution
 ```{r}
+# Compute the SSR and save it to ssr
+ssr <- sum(mod$residuals^2)
+
+# Compute the TSS and save it to tss
+tss <- 9*var(ts) # var() computes the unbiased sample variance! => Correct by multiplying with n-1 = 9
+
+# Compute R^2 and save it to R2
+R2 <- 1-ssr/tss
+
+# Check whether your result is correct
+R2 == summary(mod)$r.squared
 
 ```
 
 *** =sct
 ```{r}
+test_object("ssr")
+test_object("tss")
+test_object("R2")
+
+test_predefined_objects("mod")
+test_student_typed("R2 == summary(mod)$r.squared")
+test_output_contains("R2 == summary(mod)$r.squared")
 
 ```
 
