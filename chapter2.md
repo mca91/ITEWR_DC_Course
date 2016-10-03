@@ -252,7 +252,7 @@ estimate regression models without the intercept and how to conduct regression o
 
 *** =instructions
 
-- Use the help function (`?lm`) to find out how to specify a `formula` for a regression of `ts` solely on `cs`, i.e. a regression witouh intercept
+- Use the help function on `lm` (`?lm`) to find out how to specify a `formula` for a regression of `ts` solely on `cs`, i.e. a regression witouh intercept
 - Estimate the regression model without intercept and store it in `mod_ni`
 - Convince yourself that everything went right. Extract the coefficient matrix from the models summary and store it to `coef`
 - Plot again
