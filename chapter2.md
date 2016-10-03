@@ -319,12 +319,14 @@ test_function("abline", index=2)
 --- type:NormalExercise lang:r xp: skills: key:673ab4d8fc
 ## Regression IV: Class Size and Test Score  
 
-We now go back to the model including an intercept. The estimated regression line was
+We now go back to the simple model including an intercept. The estimated regression line for `mod` was
 
 $$ \widehat{TestScore} = 567.43 - 7.15 \times ClassSize, \, R^2 = 0.89, \, SER=15.19 $$
 
+*Again, you can check this as `mod` is available in your working environment)*
+
 *** =instructions
-- 
+- Compute $SSR$, the sum of squared residuals and save it to `ssr`. Hint: This can be solved using formulas or the 
 
 *** =hint
 
