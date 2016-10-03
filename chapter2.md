@@ -216,6 +216,7 @@ plot(cs,ts)
 summary(mod)
 
 # Add the regression line the the scatterplot
+plot(cs,ts)
 abline(mod)
 
 # Store summary(mod) into summary
