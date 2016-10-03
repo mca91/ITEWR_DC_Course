@@ -385,7 +385,7 @@ test_function("round", args="digits", eq_condition="equal")
 
 test_or(
     test_student_typed("R2 == 0.8976"),
-    test_student_typed("R2 == round(summary(mod)$r.squared)")
+    test_student_typed("R2 ==")
 )
 
 test_output_contains("R2 == 0.8976")
