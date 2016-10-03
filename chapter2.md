@@ -199,23 +199,45 @@ mod <- lm(ts ~ cs)
 
 
 # Add the regression line the the scatterplot
+plot(cs,ts)
+
+# Store summary(mod) into summary
+
+
+# Store the regression's R^2 in R2
+
+
+# Save the coefficient matrix to coef
 ```
 
 *** =solution
 ```{r}
-
 # Use summary() the get an overview over your model
 summary(mod)
 
 # Add the regression line the the scatterplot
 abline(mod)
+
+# Store summary(mod) into summary
+summary <- summary(mod)
+
+# Store the regression's R^2 in R2
+R2 <- summary$r.squared
+
+# Save the coefficient matrix to coef
+coef <- summary$coefficients
+
 ```
 
 *** =sct
 ```{r}
-test_object("mod")
-test_function_result("summary")
+test_predefined_objects("mod")
+test_function("summary")
 test_function("abline")
+test_object("summary")
+test_object("R2")
+test_object("coef")
+
 ```
 
 --- type:NormalExercise lang:r xp:100 skills:1 key:d71e82b5ef
