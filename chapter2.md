@@ -383,10 +383,7 @@ test_predefined_objects("mod")
 
 test_function("round", args="digits", eq_condition="equal")
 
-test_or(
-    test_student_typed("R2 == 0.8976"),
-    test_student_typed("R2==")
-)
+test_student_typed("R2 == 0.8976", not_typed_msg = "Something is wrong. Make sure You type `R2 ==` followed by the R^2 mentioned above.")
 
 test_output_contains("R2 == 0.8976")
 
