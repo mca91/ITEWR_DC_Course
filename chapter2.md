@@ -245,7 +245,7 @@ test_object("coef")
 ## Regression III: Class Size and Test Score 
 
 $$ TestScore_i $$
-= \beta_0 + $$
+$$ = \beta_0 + $$
 
 *** =instructions
 
