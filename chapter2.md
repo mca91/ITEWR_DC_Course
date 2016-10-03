@@ -370,7 +370,7 @@ tss <- 9*var(ts) # var() computes the unbiased sample variance! => Correct by mu
 R2 <- round(1-ssr/tss,4)
 
 # Check whether your result is correct
-R2 == round(summary(mod)$r.squared, 4)
+R2 == 0.8976
 ```
 
 *** =sct
@@ -381,8 +381,14 @@ test_object("R2")
 
 test_predefined_objects("mod")
 
-test_function("round")
-test_student_typed("R2 == 0.8976")
+test_function("round", args="digits", eq_condition="equal")
+
+test_correct(test_student_typed("R2 == 0.8976"),
+    {
+    test_student_typed("R2 == round(summary(mod)$r.squared, 4)")
+    }
+)
+
 test_output_contains("R2 ==  0.8976")
 
 ```
