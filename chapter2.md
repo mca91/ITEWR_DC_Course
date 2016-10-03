@@ -321,7 +321,7 @@ test_function("abline", index=2)
 
 We now go back to the model including an intercept. The estimated regression line was
 
-$$ \widehat{TestScore} = 567.43 - 7.15 \times ClassSize, R^2 = 0.89, SER=15.19 $$
+$$ \widehat{TestScore} = 567.43 - 7.15 \times ClassSize, \, R^2 = 0.89, SER=15.19 $$
 
 *** =instructions
 - 
