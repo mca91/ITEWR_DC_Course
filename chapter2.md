@@ -300,11 +300,7 @@ abline(mod_ni)
 ```{r}
 test_predefined_objects("mod")
 
-test_or(
-    test_function("lm", args="formula"),
-    test_function("lm", args="formula", eq_condition = "equal")
-)
-
+test_function_result("lm")
 
 test_object("mod_ni")
 test_object("coef")
