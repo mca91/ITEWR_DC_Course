@@ -300,13 +300,21 @@ abline(mod_ni)
 ```{r}
 test_predefined_objects("mod")
 
-test_function_result("lm")
+test_correct(test_function("lm"),
+    {
+    test_or(
+        test_student_typed("ts ~ cs - 1"),
+        test_student_typed("ts ~ cs + 0")
+    }
+)
 
-test_object("mod_ni")
+test_function("lm")
+
+test_object("mod_ni", eval=F)
 test_object("coef")
 
 test_function("abline", index=1)
-test_function("abline",index=2)
+test_function("abline", index=2)
 
 ```
 
