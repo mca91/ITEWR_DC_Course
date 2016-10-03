@@ -245,7 +245,7 @@ test_object("coef")
 ## Regression III: Class Size and Test Score 
 
 So far, You have conducted regressions where the model consisted of an intercept and another regressor. In this exercise you will learn ways to specify and to 
-estimate regression models without the intercept and how to conduct regression on a constant.
+estimate regression models without the intercept.
 
 *Vectors `cs` and `ts` as well as the list object `mod` from previous exercises are availabe in your working environment.*
 
