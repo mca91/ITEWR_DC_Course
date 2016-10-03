@@ -384,7 +384,7 @@ test_predefined_objects("mod")
 test_function("round", args="digits", eq_condition="equal")
 
 test_student_typed("R2 == 0.8976")
-test_error()
+
 
 test_output_contains("R2 == 0.8976")
 
