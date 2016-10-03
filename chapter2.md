@@ -244,7 +244,7 @@ test_object("coef")
 --- type:NormalExercise lang:r xp: skills: key:449f4c19de
 ## Regression III: Class Size and Test Score 
 
-$$ \beta_0 $$
+$$ TestScore = \beta_0 $$
 
 *** =instructions
 
