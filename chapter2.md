@@ -244,8 +244,8 @@ test_object("coef")
 --- type:NormalExercise lang:r xp: skills: key:449f4c19de
 ## Regression III: Class Size and Test Score 
 
-$$ TestScore_i $$
-$$ = \beta_0 + $$
+So far, You have conducted regressions where the model consisted of an intercept and another regressor. In this exercise you will learn ways to specify and to 
+estimate regression models without the intercept or how to conduct regression on a constant.
 
 *** =instructions
 
