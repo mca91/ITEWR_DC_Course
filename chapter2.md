@@ -328,8 +328,8 @@ $$ \widehat{TestScore} = 567.43 - 7.15 \times ClassSize, \, R^2 = 0.8976, \, SER
 *** =instructions
 - Compute $SSR$, the sum of squared residuals, and save it to `ssr`
 - Compute $TSS$, the total sum of squares, and save it to `tss`
-- Use `ssr` and `tss` to compute $R^2$, the coefficient of determination. Save it to R2.
-- Use the logical expression `==` to check whether your result for $R^2$ equals the one provided in the model summary for `mod` 
+- Use `ssr` and `tss` to compute $R^2$, the coefficient of determination. Save it to R2
+- Use the logical expression `==` to check whether your result for $R^2$ equals the one mentioned above
 
 *** =hint
 
@@ -366,12 +366,11 @@ ssr <- sum(mod$residuals^2)
 # Compute the TSS and save it to tss
 tss <- 9*var(ts) # var() computes the unbiased sample variance! => Correct by multiplying with n-1 = 9
 
-# Compute R^2 and save it to R2
-R2 <- 1-ssr/tss
+# Compute R^2, round it by 4 decimal places and save it to R2
+R2 <- round(1-ssr/tss,4)
 
 # Check whether your result is correct
-R2 == summary(mod)$r.squared
-
+R2 == round(summary(mod)$r.squared, 4)
 ```
 
 *** =sct
@@ -381,8 +380,10 @@ test_object("tss")
 test_object("R2")
 
 test_predefined_objects("mod")
-test_student_typed("R2 == summary(mod)$r.squared")
-test_output_contains("R2 == summary(mod)$r.squared")
+
+test_function("round")
+test_student_typed("R2 == 0.8976")
+test_output_contains("R2 ==  0.8976")
 
 ```
 
