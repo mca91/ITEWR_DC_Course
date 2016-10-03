@@ -77,8 +77,9 @@ A researcher wants to analyse the relationship between class size and pupils' av
 - Compute mean, median and variance and standard deviation of test scores. Use existing R functions!
 - Compute both the covariance and pearson's correlation coefficient for `cs` and `ts` using R functions
 - Estimate a linear regression of test score on class size. Store the result in `mod`
-- Obtain an overview over the model object `mod` using `summary()`
-- Add the regression line to the scatterplot. Hint: use `abline()`
+- `mod` is an object of type `list` with named entries. Check this using the function `is.list()`
+- See what information you can obtain from `mod` using the `$` operator. Read out an arbitrary entry of `mod` 
+
 
 *** =hint
 
@@ -101,10 +102,11 @@ A researcher wants to analyse the relationship between class size and pupils' av
 # Estimate the regression model and store it in mod
 
 
-# Use summary() the get an overview over your model
+# Check that mod is an object of type list 
 
 
-# Add the regression line the the scatterplot
+# Read out some arbitrary entry of mod using $
+
 
 ```
 
@@ -130,11 +132,12 @@ cor(cs,ts)
 # Estimate the regression model and store it in mod
 mod <- lm(ts ~ cs)
 
-# Use summary() the get an overview over your model
-summary(mod)
+# Check that mod is an object of type list 
+is.list(mod)
 
-# Add the regression line the the scatterplot
-abline(mod)
+# Read out some arbitrary entry of mod using. E.g. fitted values:
+mod$fitted.values
+
 ```
 
 *** =sct
@@ -159,8 +162,11 @@ test_or(
 )
 
 test_object("mod")
-test_function_result("summary")
-test_function("abline")
+
+test_function("is.list", args="x")
+
+test_student_typed("mod$")
+
 ```
 
 --- type:NormalExercise lang:r xp: skills: key:6e64f67c78
@@ -172,6 +178,8 @@ Consider again the relation of class size and test score. The model object `mod`
 
 *** =instructions
 
+- Obtain an overview over the model object `mod` using `summary()`
+- Add the regression line to the scatterplot. Hint: use `abline()`
 - Store the regression summary into `summary`. Discover what information you can extract from `summary` by use of the `$` operator
 - Suppose you are interested in how good the model fits the data. Create a new variable `R2` storing the regression's $R^2$
 - You can extract a named $2\times4$ matrix with, amongst other things, estimated coefficients and standard errors. Save this matrix to an object named `coef`
@@ -187,17 +195,27 @@ mod <- lm(ts ~ cs)
 
 *** =sample_code
 ```{r}
+# Use summary() the get an overview over your model
 
+
+# Add the regression line the the scatterplot
 ```
 
 *** =solution
 ```{r}
 
+# Use summary() the get an overview over your model
+summary(mod)
+
+# Add the regression line the the scatterplot
+abline(mod)
 ```
 
 *** =sct
 ```{r}
-
+test_object("mod")
+test_function_result("summary")
+test_function("abline")
 ```
 
 --- type:NormalExercise lang:r xp:100 skills:1 key:d71e82b5ef
