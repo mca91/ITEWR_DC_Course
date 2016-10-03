@@ -326,7 +326,7 @@ $$ \widehat{TestScore} = 567.43 - 7.15 \times ClassSize, \, R^2 = 0.89, \, SER=1
 *You can check this as `mod` is available in your working environment again.*
 
 *** =instructions
-- Compute $SSR$, the sum of squared residuals, and save it to `ssr`. Hint: This can be solved using formulas or knowledge about the structure of `lm` objects
+- Compute $SSR$, the sum of squared residuals, and save it to `ssr`. Hint: This can be solved in several ways, e.g. using formulas and/or knowledge about the structure of `lm` objects
 
 *** =hint
 
@@ -340,7 +340,10 @@ mod <- lm(ts ~ cs)
 
 *** =sample_code
 ```{r}
+# Compute the SSR and save it to ssr
 
+
+#
 ```
 
 *** =solution
