@@ -303,7 +303,7 @@ test_predefined_objects("mod")
 test_correct(test_function("lm"),
     {
     test_student_typed("ts ~ cs - 1")
-    }
+    },
     {
     test_student_typed("ts ~ cs + 0")
     }
