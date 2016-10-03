@@ -76,7 +76,7 @@ A researcher wants to analyse the relationship between class size and pupils' av
 - Draw a scatter plot of the results using `plot`
 - Compute mean, median and variance and standard deviation of test scores. Use existing R functions!
 - Compute both the covariance and pearson's correlation coefficient for `cs` and `ts` using R functions
-- Estimate a linear regression of test score on class size. Store the result in `mod`
+- Estimate a linear regression of test score on class size using `lm()`. Store the result in `mod`
 - `mod` is an object of type `list` with named entries. Check this using the function `is.list()`
 - See what information you can obtain from `mod` using the `$` operator. Read out an arbitrary entry of `mod` 
 
@@ -245,15 +245,27 @@ test_object("coef")
 ## Regression III: Class Size and Test Score 
 
 So far, You have conducted regressions where the model consisted of an intercept and another regressor. In this exercise you will learn ways to specify and to 
-estimate regression models without the intercept or how to conduct regression on a constant.
+estimate regression models without the intercept and how to conduct regression on a constant.
+
+*Vectors `cs` and `ts` as well as the list object `mod` from previous exercises are availabe in your working environment*
+
 
 *** =instructions
 
+- Use the help function (`?lm`) to find out how to specify a `formula` for a regression of `ts` solely on `cs`, i.e. a regression witouh intercept
+- Estimate the regression model without intercept and store it in `mod_ni`
+- Convince yourself that everything went right. Extract the coefficient matrix from the models summary and store it to `coef`
+- Plot again
+
 *** =hint
+
+- In `lm()` use `ts ~ cs - 1` as the `formula` argument to estimate a regession model lacking an intercept
 
 *** =pre_exercise_code
 ```{r}
-
+cs <- c(23, 19, 30, 22, 23, 29, 35, 36, 33, 25)
+ts <- c(430, 430, 333, 410, 390, 377, 325, 310, 328, 375)
+mod <- lm(ts ~ cs)
 ```
 
 *** =sample_code
