@@ -36,7 +36,7 @@ test_mc(correct = 2, feedback_msgs = c(msg_bad, msg_success, msg_bad, msg_bad))
 ```
 
 --- type:NormalExercise lang:r xp: skills: key:9d4515394d
-## Regression I: Class Sizes and Test Scores 
+## Regression I: Class Size and Test Score
 
 A researcher wants to analyse the relationship between class size and pupils' average test score. Therefore he measures both variables in 10 different classes obtaining the following results:
 
@@ -170,7 +170,7 @@ test_student_typed("mod$")
 ```
 
 --- type:NormalExercise lang:r xp: skills: key:6e64f67c78
-## Regression II: Class Sizes and Test Scores
+## Regression II: Class Size and Test Score
 
 Consider again the relation of class size and test score. The model object `mod` from the previous exercise is available in your workspace. This means you can use it for subsequent tasks. Convince yourself by typing `summary(mod)` in to the console and get yet again detailed information on the estimated model!
 
@@ -238,6 +238,34 @@ test_function("abline")
 test_object("summary")
 test_object("R2")
 test_object("coef")
+
+```
+
+--- type:NormalExercise lang:r xp: skills: key:449f4c19de
+## Regression III: Class Size and Test Score 
+
+
+*** =instructions
+
+*** =hint
+
+*** =pre_exercise_code
+```{r}
+
+```
+
+*** =sample_code
+```{r}
+
+```
+
+*** =solution
+```{r}
+
+```
+
+*** =sct
+```{r}
 
 ```
 
