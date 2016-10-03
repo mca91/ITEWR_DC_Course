@@ -255,7 +255,7 @@ estimate regression models without the intercept and how to conduct regression o
 - Use the help function on `lm` (`?lm`) to find out how to specify a `formula` for a regression of `ts` solely on `cs`, i.e. a regression witouh intercept
 - Estimate the regression model without intercept and store it in `mod_ni`
 - Convince yourself that everything went right. Extract the coefficient matrix from the models summary and store it to `coef`
-- Plot again
+- Plot both regression lines
 
 *** =hint
 
@@ -270,16 +270,40 @@ mod <- lm(ts ~ cs)
 
 *** =sample_code
 ```{r}
+# Regress ts solely and cs, sore it to mod_ni
+
+
+# Extract the coefficient matrix from the models summary, save it to coef
+
+
+# Plot regression lines for both models
+plot(cs,ts)
 
 ```
 
 *** =solution
 ```{r}
+# Regress ts solely and cs, sore it to mod_ni
+mod_ni <- lm(ts ~ cs - 1)
+
+# Extract the coefficient matrix from the models summary, save it to coef
+coef <- summary(mod_ni)$coefficients
+
+# Plot regression lines for both models
+plot(cs,ts)
+abline("mod")
+abline("mod_ni")
 
 ```
 
 *** =sct
 ```{r}
+test_predefined_objects("mod")
+test_object("mod_ni")
+test_object("coef")
+
+test_function("abline", args="reg", index=1)
+test_function("abline", args="reg", index=2)
 
 ```
 
