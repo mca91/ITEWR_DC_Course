@@ -385,11 +385,11 @@ test_function("round", args="digits", eq_condition="equal")
 
 test_correct(test_student_typed("R2 == 0.8976"),
     {
-    test_student_typed("R2 == round(summary(mod)$r.squared, 4)")
+    test_error()")
     }
 )
 
-test_output_contains("R2 ==  0.8976")
+test_output_contains("R2 == 0.8976")
 
 ```
 
