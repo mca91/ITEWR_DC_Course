@@ -302,8 +302,8 @@ test_predefined_objects("mod")
 test_object("mod_ni")
 test_object("coef")
 
-test_function("abline", args="reg", index=1)
-test_function("abline", args="reg", index=2)
+test_function("abline", index=1)
+test_function("abline",index=2)
 
 ```
 
