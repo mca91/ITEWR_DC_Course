@@ -284,7 +284,7 @@ plot(cs,ts)
 *** =solution
 ```{r}
 # Regress ts solely and cs, sore it to mod_ni
-mod_ni <- lm(ts ~ cs - 1)
+mod_ni <- lm(ts ~ cs - 1) # or: lm(ts ~ cs + 0)
 
 # Extract the coefficient matrix from the models summary, save it to coef
 coef <- summary(mod_ni)$coefficients
