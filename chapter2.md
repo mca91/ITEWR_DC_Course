@@ -321,15 +321,19 @@ test_function("abline", index=2)
 
 We now go back to the model including an intercept. The estimated regression line was
 
-$$ \widehat{TestScore} = 567.43 - 7.15 \times ClassSize $$
+$$ \widehat{TestScore} = 567.43 - 7.15 \times ClassSize, R^2 = 0.89, SER=15.19 $$
 
 *** =instructions
+- 
 
 *** =hint
 
+
 *** =pre_exercise_code
 ```{r}
-
+cs <- c(23, 19, 30, 22, 23, 29, 35, 36, 33, 25)
+ts <- c(430, 430, 333, 410, 390, 377, 325, 310, 328, 375)
+mod <- lm(ts ~ cs)
 ```
 
 *** =sample_code
