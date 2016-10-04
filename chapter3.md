@@ -73,7 +73,15 @@ test_or({
   fun %>% check_arg('formula') %>% check_equal()
 })
 
-test_function("summary", index=2)
+test_or({
+  fun <- ex() %>% check_function('summary', index=2)
+  fun %>% check_arg('object') %>% check_equal()
+}, {
+  fun <- ex() %>% override_solution('summary(lm(Boston$medv ~ Boston$lstat))') %>% check_function('summary', index=2)
+  fun %>% check_arg('object') %>% check_equal()
+})
+
+
 ```
 
 
