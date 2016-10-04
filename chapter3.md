@@ -63,14 +63,16 @@ test_function("library")
 test_function("data")
 test_function("summary")
 
-test_correct(test_function("lm", args="formula"),
-    {
-    test_or(
-        test_student_typed("Boston$medv"),
-        test_student_typed("Boston$lstat")
-        )
-    }
-)
+
+test_or({
+  fun <- ex() %>% check_function('lm')
+  fun %>% check_arg('formula') %>% check_equal()
+  fun %>% check_arg('data') %>% check_equal()
+}, {
+  fun <- ex() %>% override_solution('lm(Boston$medv ~ Boston$lstat)') %>% check_function('lm')
+  fun %>% check_arg('formula') %>% check_equal()
+})
+
 
 test_function("summary", args="object")
 ```
