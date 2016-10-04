@@ -63,7 +63,7 @@ test_function("library")
 test_function("data")
 test_function("summary")
 
-test_correct(test_function("lm"),
+test_correct(test_function("lm", args="formula"),
     {
     test_or(
         test_student_typed("Boston$medv"),
