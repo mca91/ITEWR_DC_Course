@@ -160,7 +160,7 @@ percentage of low income individuals
 
 *** =hint
 
-Think about the relations of house value and used regressors. Use `?Boston` to check what variables measure exactly.  
+Think about the relations of housing values and used regressors. Use `?Boston` to check what exactly the variables measure.  
 
 *** =pre_exercise_code
 ```{r}
@@ -168,7 +168,6 @@ library(MASS)
 data("Boston")
 mod <- lm(medv ~ lstat + age + crim, data = Boston)
 ```
-
 
 *** =sct
 ```{r}
