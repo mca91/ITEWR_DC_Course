@@ -75,7 +75,7 @@ test_or({
 test_or({
     test_function("summary", args="object", index=2)
 }, {
-    fun <- ex() %>% override_solution("summary(lm(Boston$medv ~ Boston$lstat))") %>% check_function('summary') %>% check_arg('object') %>% check_equal()
+    ex() %>% override_solution("summary(lm(Boston$medv ~ Boston$lstat))") %>% check_function('summary') %>% check_arg('object') %>% check_equal()
 })
 ```
 
@@ -124,13 +124,18 @@ summary(mod)
 *** =sct
 ```{r}
 
-test_correct(test_function("lm", args=c("formula","data")),
-    {
-    test_function("attach")
-    test_function("lm", args=c("formula"), eq_condition = "equivalent")
-    }
-)
-test_function("summary")
+test_or({
+  ex() %>% check_function('lm') %>% check_result()
+}, {
+  ex() %>% override_solution('lm(Boston$medv ~ Boston$lstat + Boston$crim + Boston$age)') %>% check_function('lm') %>% check_result()
+})
+
+test_or({
+    test_function("summary", args="object", index=2)
+}, {
+    fun <- ex() %>% override_solution("summary(lm(Boston$medv ~ Boston$lstat + Boston$crim + Boston$age))") %>% check_function('summary') %>% check_arg('object') %>% check_equal()
+})
+
 ```
 
 
