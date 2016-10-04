@@ -118,6 +118,7 @@ summary(mod)
 
 test_correct(test_function("lm", args=c("formula","data")),
     {
+    test_function("attach")
     test_function("lm", args=c("formula"), eq_condition = "equivalent")
     }
 )
