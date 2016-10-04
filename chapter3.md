@@ -75,10 +75,12 @@ test_function("summary", args="object")
 --- type:NormalExercise lang:r xp:50 skills:1 key:35167f113b
 ## Multiple Regression: Boston Housing Data II
 
+Now, let us expand the idea from the previous exercise by adding additional regressors `age` and `crim` to the model and estimate it again.
+
 *** =instructions
 
-- Regress the median housing value in a destrict `medv` on the average age of the buildings `age` and the crime rate `crim`
-- Inspect the model summary.
+- Regress the median housing value in a destrict, `medv`, on the average age of the buildings, `age`, the per capita crime rate by town, `crim` and a constant
+- Inspect the model summary
 
 *** =hint
 You only need basic functions here: `library()`, `data()`, `lm()` and `summary`.
