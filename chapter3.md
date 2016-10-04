@@ -73,7 +73,7 @@ test_or({
   fun %>% check_arg('formula') %>% check_equal()
 })
 
-test_function("summary", index=2)
+test_function("summary", args="object", index=2)
 
 
 ```
