@@ -103,7 +103,7 @@ library(MASS)
 *** =solution
 ```{r}
 # Conduct the regression
-mod <- lm(medv ~ lstat + age + crim, data = Boston)
+lm(medv ~ lstat + age + crim, data = Boston)
 
 # Inspect the model summary
 summary(mod)
@@ -119,7 +119,7 @@ test_or(
   test_function("lm", eq_condition = "equal"),
   test_function("lm", eq_condition = "equivalent")
 )
-test_object("mod", eval=F)
+
 test_function("summary", args="object")
 ```
 
