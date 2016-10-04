@@ -47,7 +47,6 @@ library(MASS)
 library(MASS)
 data("Boston")
 
-
 # Get yourself an overview over the data set
 summary(Boston)
 
@@ -60,6 +59,10 @@ summary(lm(medv ~ lstat, data = Boston))
 
 *** =sct
 ```{r}
+test_function("library")
+test_function("data")
+test_function("summary")
+
 test_or(
   test_function("lm", eq_condition = "equal"),
   test_function("lm", eq_condition = "equivalent")
