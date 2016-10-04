@@ -63,10 +63,10 @@ test_function("library")
 test_function("data")
 test_function("summary")
 
-  test_function("lm", eq_condition = "equal")
+test_function("lm", eq_condition = "equal")
 
 
-test_function("summary", args="object")
+test_function("summary", args="object", eq_condition = "equal")
 ```
 
 
