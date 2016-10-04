@@ -174,5 +174,5 @@ msg_bad1 <- "No, not necessairily. Think e.g. about about old mansions."
 msg_bad2 <- "The intercept might not be that realistic but it certainly is not $32.82. See `?Boston`."
 msg_bad3 <- "Bias might be a problem. But You were asked if your expectations are met by the result."
 msg_success <- "Right, that sounds plausible. Good job!"
-test_mc(correct = 2, feedback_msgs = c(msg_bad1, msg_bad2, msg_success, msg_bad3))
+test_mc(correct = 3, feedback_msgs = c(msg_bad1, msg_bad2, msg_success, msg_bad3))
 ```
