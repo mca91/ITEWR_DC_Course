@@ -116,7 +116,7 @@ summary(mod)
 *** =sct
 ```{r}
 
-test_function("lm", args="formula", eq_condition = "equivalent")
+test_function("lm", args=c("formula","data"), eq_condition = "equivalent")
 
 test_function("summary")
 ```
