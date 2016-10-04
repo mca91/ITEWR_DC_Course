@@ -69,15 +69,13 @@ test_or({
   fun %>% check_arg('formula') %>% check_equal()
   fun %>% check_arg('data') %>% check_equal()
 }, {
-  fun <- ex() %>% override_solution('lm(Boston$medv ~ Boston$lstat)') %>% check_function('lm')
-  fun %>% check_arg('formula') %>% check_equal()
+  ex() %>% override_solution('lm(Boston$medv ~ Boston$lstat)') %>% check_function('lm') %>% check_arg('formula') %>% check_equal()
 })
 
 test_or({
     test_function("summary", args="object", index=2)
 }, {
-    fun <- ex() %>% override_solution("summary(lm(Boston$medv ~ Boston$lstat))") %>% check_function('summary')
-    fun %>% check_arg('object') %>% check_equal()
+    fun <- ex() %>% override_solution("summary(lm(Boston$medv ~ Boston$lstat))") %>% check_function('summary') %>% check_arg('object') %>% check_equal()
 })
 ```
 
