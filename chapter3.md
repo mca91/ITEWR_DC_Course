@@ -152,8 +152,8 @@ Do the signs of the coefficient estimates correspond with your expectations?
 
 *** =instructions
 
-- No, the sign of age is implausible since old houses are decripit such that their value should decrease with their age
-- No, the intercept is just around 32.82$ what is far to low for new build houses in districts with zero crime rate and only high-income people
+- No, the sign of age is implausible since old houses are always decripit such that their value decreases with their age
+- No, the intercept is just around $32.82 what is far to low for new build houses in districts with zero crime rate and only high-income people
 - One would expect a nonnegative intercept ($house \, value \geq 0$). House values should be lower in districts with high crime rates and a high percentage of low income individuals
 - It can hardly be said if the signs of the estimated coefficients are right as coefficients could be biased
 
@@ -170,5 +170,9 @@ mod <- lm(medv ~ lstat + age + crim, data = Boston)
 
 *** =sct
 ```{r}
-
+msg_bad1 <- "No, not necessairily. Think e.g. about about old mansions."
+msg_bad2 <- "The intercept might not be that realistic but it certainly is not $32.82. See `?Boston`."
+msg_bad3 <- "Bias might be a problem. But You were asked if your expectations are met by the result."
+msg_success <- "Right, that sounds plausible. Good job!"
+test_mc(correct = 2, feedback_msgs = c(msg_bad1, msg_bad2, msg_success, msg_bad3))
 ```
