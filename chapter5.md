@@ -318,3 +318,80 @@ test_object("chi")
 test_function("plot", args=c("x","y","type"))
 test_function("points", args=c("x","y"))
 ```
+
+--- type:NormalExercise lang:r xp:100 skills:1 key:d71e82b5ef
+## Regression and Robust Standard Errors
+
+In the previous exercise, you saw example data exhibiting heteroskedasticity. In this exercise, we'll have a look at how 
+we can get a regression summary reporting robust standard errors.
+
+A data set consisting of observations you have seen before is now available in the workspace.
+
+*** =instructions
+- Regress `y` on `x` and a constant. Store the result in `mod`
+- Report coefficients and robust standard errors.
+- Plot the regression line.
+
+*** =hint
+- Use `lm()` for the first instruction.
+- Use the `coeftest()` function. See how you can specify a robust variance-covariance estimator to be used. coeftest has an argument were this can be specified. A look at the help file might be useful: `?coeftest`.
+- For the plot, use `abline()` on your model object.
+
+*** =pre_exercise_code
+```{r}
+library(sandwich)
+library(AER)
+set.seed(1)
+x <- runif(500, 0, 1)
+y <- 5 * rnorm(500, x, x)
+```
+
+*** =sample_code
+```{r}
+# Data vectors `x` and `y` are now available in your workspace.
+
+
+# Regress y on x. Store the model in `mod`.
+
+
+# Report coefficients and robust standard errors.
+
+
+# Add the regression line to the plot created by the code below.
+plot(y ~ x, col = "steelblue", pch = 19)
+
+
+```
+
+*** =solution
+```{r}
+# Data vectors `x` and `y` are now available in your workspace.
+
+
+# Regress y on x. Store the model in `mod`.
+mod <- lm(y~x)
+
+# Report coefficients and robust standard errors.
+coeftest(mod, vcov.=vcovHC(mod, type="HC0"))
+
+# Add the regression line to the plot created by the code below.
+plot(y ~ x, col = "steelblue", pch = 19)
+abline(mod)
+```
+
+*** =sct
+```{r}
+test_function("lm", args = "formula",
+              not_called_msg = "You didn't call `lm()`!",
+              incorrect_msg = "You didn't call `lm()` with the correct argument, `formula`.")
+
+test_object("mod")
+
+test_function("coeftest", args = c("x","vcov."))
+test_function("abline")
+
+
+test_error()
+
+success_msg("Good work!")
+```
