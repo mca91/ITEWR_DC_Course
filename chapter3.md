@@ -87,12 +87,6 @@ You only need basic functions here: `library()`, `data()`, `lm()` and `summary`.
 
 *** =sample_code
 ```{r}
-# Load the package
-
-
-# Load the data set   
-
-
 # Conduct the regression
 
 
@@ -108,14 +102,8 @@ library(MASS)
 
 *** =solution
 ```{r}
-# Load the package
-library(MASS)
-
-# Load the data set   
-data("Boston")
-
 # Conduct the regression
-mod <- lm(medv ~ age + crim, data = Boston)
+mod <- lm(medv ~ lstat + age + crim, data = Boston)
 
 # Inspect the model summary
 summary(mod)
