@@ -116,10 +116,7 @@ summary(mod)
 *** =sct
 ```{r}
 
-test_or(
-  test_function("lm", eq_condition = "equal"),
-  test_function("lm", eq_condition = "equivalent")
-)
+test_function("lm", eq_condition = "equivalent")
 
 test_function("summary")
 ```
