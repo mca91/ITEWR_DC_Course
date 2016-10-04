@@ -74,10 +74,10 @@ test_or({
 })
 
 test_or({
-  fun <- ex() %>% check_function('summary', index=2)
+  fun <- ex() %>% check_function('summary')
   fun %>% check_arg('object') %>% check_equal()
 }, {
-  fun <- ex() %>% override_solution('summary(lm(Boston$medv ~ Boston$lstat))') %>% check_function('summary', index=2)
+  fun <- ex() %>% override_solution('summary(lm(Boston$medv ~ Boston$lstat))') %>% check_function('summary')
   fun %>% check_arg('object') %>% check_equal()
 })
 
