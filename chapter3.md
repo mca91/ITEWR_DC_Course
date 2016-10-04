@@ -61,7 +61,6 @@ summary(lm(medv ~ lstat, data = Boston))
 ```{r}
 test_function("library")
 test_function("data")
-test_function("summary")
 
 
 test_or({
