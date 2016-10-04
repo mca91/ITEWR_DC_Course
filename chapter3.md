@@ -61,6 +61,7 @@ summary(lm(medv ~ lstat, data = Boston))
 ```{r}
 test_function("library")
 test_function("data")
+test_function("summary", index=1, args="object")
 
 
 test_or({
@@ -72,7 +73,7 @@ test_or({
   fun %>% check_arg('formula') %>% check_equal()
 })
 
-test_function_result("summary")
+test_function_result("summary", index=2)
 ```
 
 
