@@ -152,10 +152,9 @@ Do the signs of the coefficient estimates correspond with your expectations?
 
 *** =instructions
 
-- No: The sign of age is implausible since old houses are decripit such that their value should decrease with their age
-- No: The intercept is just around 32.82$ what is far to low for new build houses in districts with zero crime rate and only high-income people
-- Probably: We expect a nonnegative intercept ($house \, value \geq 0$). House values should be lower in districts with high crime rates and a high 
-percentage of low income individuals
+- No, the sign of age is implausible since old houses are decripit such that their value should decrease with their age
+- No, the intercept is just around 32.82$ what is far to low for new build houses in districts with zero crime rate and only high-income people
+- One would expect a nonnegative intercept ($house \, value \geq 0$). House values should be lower in districts with high crime rates and a high percentage of low income individuals
 - It can hardly be said if the signs of the estimated coefficients are right as coefficients could be biased
 
 *** =hint
