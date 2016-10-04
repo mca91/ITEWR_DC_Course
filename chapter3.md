@@ -131,7 +131,7 @@ test_or({
 })
 
 test_or({
-    test_function("summary", args="object")
+    test_function("summary")
 }, {
     ex() %>% override_solution("summary(lm(Boston$medv ~ Boston$lstat + Boston$crim + Boston$age))") %>% check_function('summary') %>% check_arg('object') %>% check_equal()
 })
