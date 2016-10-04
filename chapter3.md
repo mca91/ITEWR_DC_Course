@@ -139,3 +139,26 @@ test_or({
 ```
 
 
+
+--- type:MultipleChoiceExercise lang:r xp: skills: key:e71f15da13
+## <<<TITLE>>> 
+
+`             Estimate Std. Error t value Pr(>|t|)    `
+`(Intercept)  32.82804    0.74774  43.903  < 2e-16 ***`
+`Boston$lstat -0.99409    0.05075 -19.587  < 2e-16 ***`
+`Boston$crim  -0.08262    0.03594  -2.299  0.02193 *  `
+`Boston$age    0.03765    0.01225   3.074  0.00223 ** `
+
+*** =instructions
+
+*** =hint
+
+*** =pre_exercise_code
+```{r}
+
+```
+
+*** =sct
+```{r}
+
+```
