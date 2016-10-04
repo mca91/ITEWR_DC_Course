@@ -5,7 +5,7 @@ attachments :
   slides_link : https://github.com/Emwikts1970/URFITE_DC/raw/master/Econometrics
 
 --- type:NormalExercise lang:r xp: skills: key:af07cdc945
-## Multiple Regression: Boston Housing Data I
+## Multiple Regression: Boston Housing Data
 
 For the course of this section, we will use the `Boston` data set which contains 506 observations concerning housing values in suburbs of Boston. The data set comes with the package `MASS`.
 
