@@ -67,6 +67,7 @@ test_correct(test_function_result("lm"),
     {
     test_or(
         test_student_typed("Boston$medv")
+        test_student_typed("Boston$lstat")
         )
     }
 )
