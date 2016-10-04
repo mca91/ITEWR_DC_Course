@@ -154,8 +154,13 @@ test_or({
 ```{r}
 library(MASS)
 data("Boston")
-lm(medv ~ lstat + age + crim, data = Boston)
+mod <- lm(medv ~ lstat + age + crim, data = Boston)
 ```
+The multiple regression model from the previous exercise is available in your environment (`mod`). 
+
+Use the summary function again and have a look at the coefficient section of the output printed to the console.
+
+Do the signs of the coefficient estimates correspond with your expectations? 
 
 *** =sct
 ```{r}
