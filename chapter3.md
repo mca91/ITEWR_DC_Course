@@ -103,10 +103,10 @@ library(MASS)
 *** =solution
 ```{r}
 # Conduct the regression
-lm(medv ~ lstat + age + crim, data = Boston)
+mod <- lm(medv ~ lstat + age + crim, data = Boston)
 
 # Inspect the model summary
-summary(mod)
+summary()
 
 
 ```
