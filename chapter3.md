@@ -74,7 +74,8 @@ test_or({
 })
 
 test_or({
-  ex() %>% check_function('summary', index=2) %>% check_result()
+  fun <- ex() %>% check_function('summary', index=2) %>% check_result()
+  fun %>% check_arg('object') %>% check_equal()
 }, {
   ex() %>% override_solution('summary(lm(Boston$medv ~ Boston$lstat))') %>% check_function('summary') %>% check_result()
 })
