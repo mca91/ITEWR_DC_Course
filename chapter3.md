@@ -159,11 +159,11 @@ success_msg("Great! We see that the extended Model's R^2 is bigger than for the 
 --- type:MultipleChoiceExercise lang:r xp: skills: key:e71f15da13
 ## Multiple Regression: Boston Housing Data III
 
-The multiple regression model from the previous exercise is available in your environment (`mod`). 
-
 Use the summary function again and have a look at the coefficient section of the output printed to the console.
 
 Do the signs of the coefficient estimates correspond with your expectations? 
+
+*The multiple regression model from the previous exercise is available in your environment (`mod`).* 
 
 
 *** =instructions
@@ -191,4 +191,30 @@ msg_bad2 <- "The intercept might not be that realistic but it certainly is not $
 msg_bad3 <- "Bias might be a problem. But You were asked if your expectations are met by the result."
 msg_success <- "Right, that sounds plausible. Good job!"
 test_mc(correct = 3, feedback_msgs = c(msg_bad1, msg_bad2, msg_success, msg_bad3))
+```
+
+--- type:MultipleChoiceExercise lang:r xp: skills: key:76501d8817
+## Validity of Model Assumptions 
+
+Think about $p$-values and parameter estimates. As in the simple regression model, You should only trust the results if the conditions for the regression do meet your assumptions reasonably well. Can You conclude that this holds using diagnostic plots?
+
+*The multiple regression model from the previous exercise is available in your environment (`mod`).* 
+
+*** =instructions
+
+- Yes
+- No
+
+*** =hint
+
+*** =pre_exercise_code
+```{r}
+library(MASS)
+data("Boston")
+mod <- lm(medv ~ lstat + age + crim, data = Boston)
+```
+
+*** =sct
+```{r}
+
 ```
