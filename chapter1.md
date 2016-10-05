@@ -75,8 +75,8 @@ success_msg("Great!")
 
 - Define a vector `x` containing all even numbers from 1 to 10. Hint: Use `seq()`
 - Define a vector `y` ontaining all even numbers from 12 to 20
-- Calculate x^y, y^x, log(x), exp(x) and sqrt(x)
-- Calculate x+y, x-z, x*y and x/y
+- Calculate $x^y$, $y^x$, $log(x)$, $exp(x)$ and $sqrt(x)$
+- Calculate $x+y$, $x-z$, $x*y$ and $x/y$
 
 *** =sample_code
 ```{r}
