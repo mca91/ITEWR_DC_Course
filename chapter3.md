@@ -217,6 +217,6 @@ mod <- lm(medv ~ lstat + age + crim, data = Boston)
 *** =sct
 ```{r}
 msg_success <- "Right. Diagnostic plots 1 and 3 indicate heteroskedasticity. You should be careful judging parameter significance here."
-msg_bad1 <- "No, that is not right. Look again at the plots."
+msg_bad <- "No, that is not right. Look again at the plots."
 test_mc(correct = 2, feedback_msgs = c(msg_bad, msg_success))
 ```
