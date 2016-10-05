@@ -226,6 +226,8 @@ It is important to use quotes here to make sure R interprets the url as as strin
 
 - Print the data to the console: `my_data`
 
+- Have a look at the first few observations using `head(my_data)`
+
 *** =hint
 
 See `?read.table` for further help.
@@ -238,7 +240,7 @@ See `?read.table` for further help.
 # Print the data to the console
 
 
-# Have a look at the first few observations using head(my_data)
+# Have a look at the first few observations
 
 
 ```
