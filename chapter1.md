@@ -159,7 +159,7 @@ y <- seq(12,20,2)
 *** =sample_code
 
 ```{r}
-# Use `c()` to combine both vectors in a new one and store the result in, say `z`
+# Use c() to combine both vectors in a new one and store the result in, say z
 
 
 # Figure out the length of the new vector
@@ -176,7 +176,7 @@ y <- seq(12,20,2)
 *** =solution
 
 ```{r}
-# Use `c()` to combine both vectors in a new one and store the result in, say `z`
+# Use c() to combine both vectors in a new one and store the result in, say z
 z <- c(x,y)
 
 # Figure out the length of the new vector
