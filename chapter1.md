@@ -209,30 +209,59 @@ success_msg("Great!")
 --- type:NormalExercise lang:r xp: skills: key:d42a7e12e7
 ## Load data from .csv files into R
 
+In R, it is often fairly easy to import data. This exercise will teach you how to import .csv files into R 
+
+The data set *cps_ch3.csv* is a sample of the current population survey data base. We have uploaded it so you can use the following url as path:
+
+*http://s3.amazonaws.com/assets.datacamp.com/production/course_1276/datasets/cps_ch3.csv*
+
+The cool thing about this is: You can access the data from anywhere. Try it yourself: Copy & Paste the call of `read.table()` to the R version's console you have installed on your computer!
+
+Notice that it is also possible to read data from Your hard disk (the general case). The path then only needs to be set accordingly i.e. it needs to point to file on your hard disk.
 
 *** =instructions
 
+- Load in the data set with the help of the function `read.table()`. Assign the result to the object `cps`. 
+Your code should look something like: read.table("dataset_url"). 
+
+It is important to use quotes here to make sure R interprets the url as as string – a sequence of characters – instead of an object.
+
+- Print the data to the console: `my_data`
+
 *** =hint
 
-*** =pre_exercise_code
-```{r}
-
-```
+See `?read.table` for further help.
 
 *** =sample_code
 ```{r}
+# Read in the data set and assign it to my_data
+
+
+# Print the data to the console
+
+
+# Have a look at the first few observations using head(my_data)
+
 
 ```
 
 *** =solution
 ```{r}
+# Read in the data set and assign it to my_data
+my_data <- read.table("http://s3.amazonaws.com/assets.datacamp.com/production/course_1276/datasets/cps_ch3.csv")
 
+# Print the data to the console
+my_data
+
+# Have a look at the first few observations using head(my_data)
+head(my_data)
 ```
 
 *** =sct
 ```{r}
-
-```
+test_object("my_data")
+test_output_contains("my_data")
+test_function("head")
 ```
 
 --- type:NormalExercise lang:r xp: skills: key:711663e93b
@@ -261,7 +290,6 @@ success_msg("Great!")
 *** =sct
 ```{r}
 
-```
 ```
 
 --- type:NormalExercise lang:r xp:100 skills:1 key:e5dc4639f7
