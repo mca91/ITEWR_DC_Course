@@ -89,6 +89,7 @@ Now, let us expand the idea from the previous exercise by adding additional regr
 
 - Regress the median housing value in a destrict, `medv`, on the average age of the buildings, `age`, the per capita crime rate, `crim`, the percentage of individuals with low socioeconomic status, `lstat`, and a constant. 
 - Inspect the model summary
+- The simple regression model's R^2 is stored in `R2_res`. Check whether the multiple regression model yield a higher $R^2$. Hint: Use operators `<` or `>`.
 
 *** =hint
 You only need basic functions here: `library()`, `data()`, `lm()` and `summary`.
@@ -102,11 +103,14 @@ Use the help function to see how to specify additional regressors in the `formul
 # Inspect the model summary
 
 
+# Compare the determination coefficients
+
 ```
 
 ***=pre_exercise_code
 ```{r}
 library(MASS)
+R2_res <- summary(lm(medv ~ lstat, data = Boston))$r.squared
 ```
 
 *** =solution
@@ -117,6 +121,8 @@ mod <- lm(medv ~ lstat + age + crim, data = Boston)
 # Inspect the model summary
 summary(mod)
 
+# Compare the determination coefficients
+summary(mod)$r.squared > R2_res
 
 ```
 
@@ -134,6 +140,12 @@ test_or({
     test_function_result("summary")
 }, {
     ex() %>% override_solution("summary(lm(Boston$medv ~ Boston$lstat + Boston$crim + Boston$age))") %>% check_function('summary') %>% check_arg('object') %>% check_equal()
+})
+
+test_predefined_objects("R2_res")
+
+test_or({
+    test_
 })
 
 ```
