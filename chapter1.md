@@ -70,6 +70,9 @@ success_msg("Great!")
 --- type:NormalExercise lang:r xp:100 skills:1 key:a15675d543
 ## R as a calculator II
 
+
+***=instructions
+
 - Define a vector `x` containing all even numbers from 1 to 10. Hint: Use `seq()`
 - Define a vector `y` ontaining all even numbers from 12 to 20
 - Calculate x^y, y^x, log(x), exp(x) and sqrt(x)
@@ -77,10 +80,10 @@ success_msg("Great!")
 
 *** =sample_code
 ```{r}
-# Define a vector `x` containing all even numbers from 1 to 10
+# Define a vector x containing all even numbers from 1 to 10
 
 
-# Define a vector `y` ontaining all even numbers from 12 to 20
+# Define a vector y ontaining all even numbers from 12 to 20
 
 
 # Calculate x^y, y^x, log(x), exp(x) and sqrt(x)
