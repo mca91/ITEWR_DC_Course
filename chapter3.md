@@ -146,10 +146,10 @@ test_or({
 test_object("R2_unres")
 test_predefined_objects("R2_res")
 
-test_or({
+test_or(
     test_student_typed("R2_unres > R2_res"),
     test_student_typed("R2_unres < R2_res")
-})
+)
 
 ```
 
