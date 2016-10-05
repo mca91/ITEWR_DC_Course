@@ -262,7 +262,7 @@ head(my_data)
 test_object("my_data")
 test_output_contains("my_data")
 test_function("head")
-success_msg("The cool thing about this is: You can access the data from anywhere. Try it yourself: Copy, paste and execute Your call of `read.table()` to the console of the R version You have installed on Your computer!")
+#success_msg("The cool thing about this is: You can access the data from anywhere. Try it yourself: Copy, paste and execute Your call of `read.table()` to the console of the R version You have installed on Your computer!")
 ```
 
 --- type:NormalExercise lang:r xp: skills: key:711663e93b
