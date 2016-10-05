@@ -215,7 +215,7 @@ The data set *cps_ch3.csv* is a sample of the current population survey data bas
 
 *http://s3.amazonaws.com/assets.datacamp.com/production/course_1276/datasets/cps_ch3.csv*
 
-The cool thing about this is: You can access the data from anywhere. Try it yourself: Copy & Paste the call of `read.table()` to the R version's console you have installed on your computer!
+The cool thing about this is: You can access the data from anywhere. Try it yourself: Copy, paste and execute the call of `read.table()` to the console of the R version You have installed on Your computer!
 
 Notice that it is also possible to read data from Your hard disk (the general case). The path then only needs to be set accordingly i.e. it needs to point to file on your hard disk.
 
