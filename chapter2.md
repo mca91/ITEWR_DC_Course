@@ -207,7 +207,6 @@ test_function("abline")
 test_object("summary")
 test_object("R2")
 test_object("coef")
-
 ```
 
 --- type:NormalExercise lang:r xp: skills: key:449f4c19de
@@ -282,7 +281,6 @@ test_object("coef")
 
 test_function("abline", index=1)
 test_function("abline", index=2)
-
 ```
 
 --- type:NormalExercise lang:r xp: skills: key:673ab4d8fc
@@ -355,7 +353,6 @@ test_function("round", args="digits", eq_condition="equal")
 test_student_typed("R2 == 0.8976", not_typed_msg = "Something is wrong. Make sure You type `R2 ==` followed by the value for R^2 mentioned above.")
 
 test_output_contains("R2 == 0.8976")
-
 ```
 
 --- type:MultipleChoiceExercise lang:r xp:50 skills:1 key:13d4cf0fb6
