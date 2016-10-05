@@ -121,8 +121,9 @@ mod <- lm(medv ~ lstat + age + crim, data = Boston)
 # Inspect the model summary
 summary(mod)
 
-# Compare the determination coefficients
-summary(mod)$r.squared > R2_res
+# Save the R^2 to R_unres. Compare the determination coefficients
+R2_unres <- summary(mod)$r.squared
+R2_unres > R2_res
 
 ```
 
