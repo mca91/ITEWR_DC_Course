@@ -211,7 +211,7 @@ success_msg("Great!")
 
 In R, it is often fairly easy to import data. This exercise will teach you how to import .csv files.
 
-The data set *cps_ch3.csv* is a sample of the current population survey data base. We have uploaded it so you can use the following url as path:
+The data set *cps_ch3.csv* is a sample from the current population survey data base. We have uploaded it so you can use the following url as path:
 
 *http://s3.amazonaws.com/assets.datacamp.com/production/course_1276/datasets/cps_ch3.csv*
 
