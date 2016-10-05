@@ -151,7 +151,7 @@ test_or(
     test_student_typed("R2_unres < R2_res")
 )
 
-
+success_msg("Great! We see that the extended Model's R^2 is bigger than for the simple model. The extended model adapts better to the sample data.")
 ```
 
 
