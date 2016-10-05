@@ -175,7 +175,7 @@ Do the signs of the coefficient estimates correspond with your expectations?
 
 *** =hint
 
-Think about the relations of housing values and used regressors. Use `?Boston` to check what exactly the variables measure.  
+Think about how housing value relates to the regressors used. Execute `?Boston` to check what exactly the variables measure.  
 
 *** =pre_exercise_code
 ```{r}
