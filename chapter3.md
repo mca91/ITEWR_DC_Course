@@ -89,7 +89,7 @@ Now, let us expand the idea from the previous exercise by adding additional regr
 
 - Regress the median housing value in a destrict, `medv`, on the average age of the buildings, `age`, the per capita crime rate, `crim`, the percentage of individuals with low socioeconomic status, `lstat`, and a constant. 
 - Inspect the model summary
-- The simple regression model's R^2 is stored in `R2_res`. Check whether the multiple regression model yield a higher $R^2$. Hint: Use operators `<` or `>`.
+- The simple regression model's R^2 is stored in `R2_res`. Save the multiple regression model's $R^2$ to `R2_unres` and check whether the extended model yields a higher $R^2$. Hint: Use operators `<` or `>`.
 
 *** =hint
 You only need basic functions here: `library()`, `data()`, `lm()` and `summary`.
@@ -142,10 +142,12 @@ test_or({
     ex() %>% override_solution("summary(lm(Boston$medv ~ Boston$lstat + Boston$crim + Boston$age))") %>% check_function('summary') %>% check_arg('object') %>% check_equal()
 })
 
+test_object("R2_unres")
 test_predefined_objects("R2_res")
 
 test_or({
-    test_
+    test_student_typed("R2_unres > R2_res")
+    test_student_typed("R2_unres < R2_res")
 })
 
 ```
