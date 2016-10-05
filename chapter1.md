@@ -2,6 +2,64 @@
 title       : Basics in R
 description : This section teaches you basic commands in R.
 
+--- type:NormalExercise lang:r xp: skills: key:d42a7e12e7
+## Load data from .csv files into R
+
+
+*** =instructions
+
+*** =hint
+
+*** =pre_exercise_code
+```{r}
+
+```
+
+*** =sample_code
+```{r}
+
+```
+
+*** =solution
+```{r}
+
+```
+
+*** =sct
+```{r}
+
+```
+```
+
+--- type:NormalExercise lang:r xp: skills: key:711663e93b
+## Load data from .txt files into R
+
+
+*** =instructions
+
+*** =hint
+
+*** =pre_exercise_code
+```{r}
+
+```
+
+*** =sample_code
+```{r}
+
+```
+
+*** =solution
+```{r}
+
+```
+
+*** =sct
+```{r}
+
+```
+```
+
 --- type:NormalExercise lang:r xp:100 skills:1 key:3db79c581d
 ## R as a calculator I
 
@@ -65,7 +123,8 @@ test_function("round", args=c("x","digits"))
 
 test_error()
 success_msg("Great!")
-```
+
+
 --- type:NormalExercise lang:r xp:100 skills:1 key:a15675d543
 ## R as a calculator II
 
