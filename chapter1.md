@@ -96,7 +96,7 @@ success_msg("Great!")
 
 *** =solution
 ```{r}
-# Define a vector `x` containing all even numbers from 1 to 10
+# Define a vector x containing all even numbers from 1 to 10
 x <- seq(2,10,2)
 
 Define a vector `y` ontaining all even numbers from 12 to 20
