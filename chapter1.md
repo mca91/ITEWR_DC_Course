@@ -209,13 +209,11 @@ success_msg("Great!")
 --- type:NormalExercise lang:r xp: skills: key:d42a7e12e7
 ## Load data from .csv files into R
 
-In R, it is often fairly easy to import data. This exercise will teach you how to import .csv files into R 
+In R, it is often fairly easy to import data. This exercise will teach you how to import .csv files.
 
 The data set *cps_ch3.csv* is a sample of the current population survey data base. We have uploaded it so you can use the following url as path:
 
 *http://s3.amazonaws.com/assets.datacamp.com/production/course_1276/datasets/cps_ch3.csv*
-
-The cool thing about this is: You can access the data from anywhere. Try it yourself: Copy, paste and execute the call of `read.table()` to the console of the R version You have installed on Your computer!
 
 Notice that it is also possible to read data from Your hard disk (the general case). The path then only needs to be set accordingly i.e. it needs to point to file on your hard disk.
 
@@ -262,6 +260,7 @@ head(my_data)
 test_object("my_data")
 test_output_contains("my_data")
 test_function("head")
+success_msg("The cool thing about this is: You can access the data from anywhere. Try it yourself: Copy, paste and execute the call of `read.table()` to the console of the R version You have installed on Your computer!")
 ```
 
 --- type:NormalExercise lang:r xp: skills: key:711663e93b
