@@ -317,7 +317,7 @@ To circumvent this, You need to tell R that the first row of the table is the he
 
 *** =hint
 
-For further information on functions `read.table` and `head()` use the help function `?` in conjunction with the functions name, e.g. `?head`
+For further information on functions `read.table` and `head()` use the help function `?` in conjunction with the functions name, e.g. `?head`.
 
 *** =pre_exercise_code
 ```{r}
@@ -361,29 +361,44 @@ success_msg("Cool! The next exercise shows You how to read in data from .txt fil
 --- type:NormalExercise lang:r xp: skills: key:711663e93b
 ## Load data from .txt files into R
 
+We have prepared another data set containing observations from the 1985 Current Population Survey, this time in a .txt file to be found at
+
+*http://s3.amazonaws.com/assets.datacamp.com/production/course_1276/datasets/CPS1985.txt*
+
 
 *** =instructions
 
+- Load the data set and store it to `cps1985`. Make sure to specify the correct field seperator and to set the first row as the table header.
+- Convince Yourself that everything went right by inspecting the first few observations with a call of the function `head()`.
+
 *** =hint
-
-*** =pre_exercise_code
-```{r}
-
-```
+For further information on functions `read.table` and `head()` use the help function `?` in conjunction with the functions name, e.g. `?head`.
 
 *** =sample_code
 ```{r}
+# Read in the data set
+
+
+# Inspect the result using head()
+
 
 ```
 
 *** =solution
 ```{r}
+# Load the data set from the CPS1985.txt file
+cps1985 <- read.table("http://s3.amazonaws.com/assets.datacamp.com/production/course_1276/datasets/CPS1985.txt", sep=",", header=TRUE)
+
+# Inspect the result using head()
+head("cps1985")
 
 ```
 
 *** =sct
 ```{r}
-
+test_function("read.table")
+test_object("cps1985")
+test_output_contains("head(cps1985)")
 ```
 
 --- type:NormalExercise lang:r xp:100 skills:1 key:e5dc4639f7
