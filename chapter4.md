@@ -7,7 +7,7 @@ description : Insert the chapter description here
 
 Suppose you got the regression model
 
-$$ y_i=b_0 $$
+$$ y_i=\beta $$
 
 i.e. a regression of some variable $y_i$ solely on a constant or, put differently, the regressor is a values of ones
 
