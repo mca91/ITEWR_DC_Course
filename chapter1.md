@@ -307,7 +307,7 @@ R did not recognise the first row as the table header and interpreted the variab
 
 *Convince Yourself: Type and execute* `head(my_data)`.
 
-To circumvent this, You need to tell R that the first row of the table is the header providing variable names and how variables are seperated (here, `;` is used as the seperator. You can think of it as a vertical line seperating values). 
+To circumvent this, You need to tell R that the first row of the table is the header providing variable names and how variables are seperated (here, `;` is used as the seperator. You can think of it as a vertical line seperating variables in a table). 
 
 *** =instructions
 
