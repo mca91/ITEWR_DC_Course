@@ -263,19 +263,20 @@ head(my_data)
 test_object("my_data")
 test_output_contains("my_data")
 test_function("head")
-#success_msg("The cool thing about this is: You can access the data from anywhere. Try it yourself: Copy, paste and execute Your call of `read.table()` to the console of the R version You have installed on Your computer!")
+success_msg("The cool thing about this is: You can access the data from anywhere. Try it yourself: Copy, paste and execute Your call of `read.table()` to the console of the R version You have installed on Your computer!")
 ```
 
 --- type:NormalExercise lang:r xp: skills: key:710866a669
 ## Wait ... something's not right
 
+The data set should look something like:
 
   <table>
       <tr>
         <th>a_sex</th>
         <th>year</th>
         <th>ahe_12</th>
-      </th>
+      </tr>
       <tr>
         <td>1</td>
         <td>1992</td>
@@ -286,13 +287,23 @@ test_function("head")
         <td>1992</td>
         <td>1.636.428.452</td>
       </tr>
-            <tr>
-        <td>1</td>
-        <td>1992</td>
-        <td>2.447.649.384</td>
+  </table>
+
+Instead we have:
+
+  <table>
+      <tr>
+        <th>V1</th>
+      <tr>
+        <td>1;1992;1.830.968.857</td>
+      </tr>
+      <tr>
+        <td>1;1992;1.636.428.452</td>
       </tr>
   </table>
 
+
+But R did not 
 
 *** =instructions
 
