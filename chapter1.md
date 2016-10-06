@@ -266,6 +266,39 @@ test_function("head")
 #success_msg("The cool thing about this is: You can access the data from anywhere. Try it yourself: Copy, paste and execute Your call of `read.table()` to the console of the R version You have installed on Your computer!")
 ```
 
+--- type:NormalExercise lang:r xp: skills: key:710866a669
+## Wait ... something's not right
+
+a_sex	year	ahe12
+1	1992	1.830.968.857
+1	1992	1.636.428.452
+1	1992	2.447.649.384
+
+*** =instructions
+
+*** =hint
+
+*** =pre_exercise_code
+```{r}
+my_data <- read.table("http://s3.amazonaws.com/assets.datacamp.com/production/course_1276/datasets/cps_ch3.csv")
+```
+
+*** =sample_code
+```{r}
+# Check that my_data consists of one variable V1
+
+```
+
+*** =solution
+```{r}
+
+```
+
+*** =sct
+```{r}
+
+```
+
 --- type:NormalExercise lang:r xp: skills: key:711663e93b
 ## Load data from .txt files into R
 
