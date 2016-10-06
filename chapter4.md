@@ -20,7 +20,7 @@ Is the result consistent with what you expect beeing aware of the Gauss-Markov T
 *** =instructions
 - Yes, both estimators seem to be unbiased but the OLS estimator has less dispersion.
 - No, the distribution of $\overset{\sim}{\beta}$ looks more like a standard normal distribution.
-- Cannot be answered without prior inspection of data.
+- Cannot be answered without prior inspection of the underlying data.
 
 *** =pre_exercise_code
 ```{r}
