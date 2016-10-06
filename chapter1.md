@@ -351,7 +351,7 @@ head(my_data)
 *** =sct
 ```{r}
 test_function("head", index=1)
-test_function("read.table", arguments=c("header","sep"))
+test_function("read.table", args=c("header","sep"))
 test_object("my_data")
 test_function("head", index=2)
 ```
