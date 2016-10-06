@@ -305,11 +305,19 @@ Instead we have:
 
 R did not recognise the first row as the table header and interpreted the variables `sex`, `year` and `ahe_12` to be a single variable. As a result, R established a new variable `V1` where each observation consists of the respective three values merged in a string.
 
-To circumvent this, You need to tell R that the first row of the table is the header providing variable names and how variables are seperated (here, `;` is used as the seperator). 
+*convince Yourself: Type and execute `head(my_data)`*
+
+To circumvent this, You need to tell R that the first row of the table is the header providing variable names and how variables are seperated (here, `;` is used as the seperator. You can think of it as a vertical line seperating values). 
 
 *** =instructions
 
+- Load the data set again. Set `header=TRUE` to tell R that the first line contains variable names and set `sep=";"` for setting the field seprator to `;`. Override the object `my_data` from the previous exercise with the correct table. 
+
+- Have a look at the first few observations again by executing `head(my_data)` to see the effect of the additional arguments.
+
 *** =hint
+
+For further information on functions `read.table` and `head()` use the help function `?` in conjunction with the functions name, e.g. `?head`
 
 *** =pre_exercise_code
 ```{r}
@@ -318,18 +326,34 @@ my_data <- read.table("http://s3.amazonaws.com/assets.datacamp.com/production/co
 
 *** =sample_code
 ```{r}
-# Check that my_data consists of one variable V1
+# Check again that my_data consists of one variable V1
+head(my_data)
+
+# Load the data set again, this time using arguments sep and header
+
+
+# Inspect the data sets' head again
 
 ```
 
 *** =solution
 ```{r}
+# Check again that my_data consists of one variable V1
+head(my_data)
 
+# Load the data set again, this time using arguments sep and header
+my_data <- read.table("http://s3.amazonaws.com/assets.datacamp.com/production/course_1276/datasets/cps_ch3.csv", header = TRUE, sep =";")
+
+# Inspect the data sets' header again
+head(my_data)
 ```
 
 *** =sct
 ```{r}
-
+test_function("head", index=1)
+test_function("read.table", arguments=c("header","sep"))
+test_object("my_data")
+test_function("head", index=2)
 ```
 
 --- type:NormalExercise lang:r xp: skills: key:711663e93b
