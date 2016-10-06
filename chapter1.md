@@ -399,6 +399,7 @@ head(cps1985)
 test_function("read.table")
 test_object("cps1985")
 test_output_contains("head(cps1985)")
+success_msg("This looks right! Keep up the good work!")
 ```
 
 --- type:NormalExercise lang:r xp:100 skills:1 key:e5dc4639f7
