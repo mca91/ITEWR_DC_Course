@@ -303,7 +303,9 @@ Instead we have:
   </table>
 <br>
 
-R did not recognise the first row as the table header. 
+R did not recognise the first row as the table header and interpreted the variables `sex`, `year` and `ahe_12` to be a single variable. As a result, R established a new variable `V1` where each observation consists of the respective three values merged in a string.
+
+To circumvent this, You need to tell R that the first row of the table is the header providing variable names and how observations on variables are seperated (here, `;` is used as the seperator). 
 
 *** =instructions
 
