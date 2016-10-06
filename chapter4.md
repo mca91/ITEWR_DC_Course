@@ -38,6 +38,7 @@ w <- c( rep((1+epsilon)/n,n/2), rep((1-epsilon)/n,n/2) )
 ols <- rep(NA,reps)
 weightedestimator <- rep(NA,reps)
 
+set.seed(123)
 for (i in 1:reps)
 {
   y <- rnorm(n)
