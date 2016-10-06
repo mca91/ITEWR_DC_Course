@@ -51,7 +51,7 @@ for (i in 1:reps)
 plot(density(ols),col="purple", lwd=3, main="Density of OLS and Weighted Estimator",xlab="")
 lines(density(weightedestimator),col="steelblue", lwd=3) 
 abline(v=0,lty=2)
-legend('topright', c(quote(widehat("beta")),"weighted"), col=c("purple","steelblue"),lwd=3)
+legend('topright', c("OLS","Weighted"), col=c("purple","steelblue"),lwd=3)
 ```
 *** =sct
 ```{r}
