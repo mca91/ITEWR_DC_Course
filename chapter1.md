@@ -288,7 +288,7 @@ The data set should look something like:
         <td>1.636.428.452</td>
       </tr>
   </table>
-
+<br>
 Instead we have:
 
   <table>
@@ -301,9 +301,9 @@ Instead we have:
         <td>1;1992;1.636.428.452</td>
       </tr>
   </table>
+<br>
 
-
-But R did not 
+R did not recognise the first row as the table header. 
 
 *** =instructions
 
