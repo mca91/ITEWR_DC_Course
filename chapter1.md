@@ -355,7 +355,7 @@ test_function("read.table", args=c("header","sep"))
 test_object("my_data")
 test_function("head", index=2)
 test_output_contains("head(my_data)")
-success_msg("Cool! The next exercise shows you how to read in data from .txt files :-)")
+success_msg("Cool! The next exercise shows You how to read in data from .txt files :-)")
 ```
 
 --- type:NormalExercise lang:r xp: skills: key:711663e93b
