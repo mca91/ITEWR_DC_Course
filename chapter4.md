@@ -3,7 +3,7 @@ title       : The Gauss-Markov Theorem
 description : Insert the chapter description here
 
 --- type:MultipleChoiceExercise lang:r xp:100 skills:1 key:726a6d460b
-## A Simulation Study
+## A Simulation Study I
 
 Suppose you got the regression model
 
