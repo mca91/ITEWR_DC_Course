@@ -390,7 +390,7 @@ For further information on functions `read.table` and `head()` use the help func
 cps1985 <- read.table("http://s3.amazonaws.com/assets.datacamp.com/production/course_1276/datasets/CPS1985.txt", sep=",", header=TRUE)
 
 # Inspect the result using head()
-head("cps1985")
+head(cps1985)
 
 ```
 
