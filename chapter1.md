@@ -271,22 +271,28 @@ test_function("head")
 
 
   <table>
-      <th>
-        <td>a_sex</td>
-        <td>year</td>
-        <td>ahe_12</td>
+      <tr>
+        <th>a_sex</th>
+        <th>year</th>
+        <th>ahe_12</th>
       </th>
       <tr>
-        <td>222</td>
-        <td>430</td>
-        <td>375</td>
+        <td>1</td>
+        <td>1992</td>
+        <td>1.830.968.857</td>
       </tr>
-    </table>
+      <tr>
+        <td>1</td>
+        <td>1992</td>
+        <td>1.636.428.452</td>
+      </tr>
+            <tr>
+        <td>1</td>
+        <td>1992</td>
+        <td>2.447.649.384</td>
+      </tr>
+  </table>
 
-a_sex	year	ahe12
-1	1992	1.830.968.857
-1	1992	1.636.428.452
-1	1992	2.447.649.384
 
 *** =instructions
 
