@@ -269,6 +269,20 @@ test_function("head")
 --- type:NormalExercise lang:r xp: skills: key:710866a669
 ## Wait ... something's not right
 
+
+  <table>
+      <th>
+        <td>a_sex</td>
+        <td>year</td>
+        <td>ahe_12</td>
+      </th>
+      <tr>
+        <td>222</td>
+        <td>430</td>
+        <td>375</td>
+      </tr>
+    </table>
+
 a_sex	year	ahe12
 1	1992	1.830.968.857
 1	1992	1.636.428.452
