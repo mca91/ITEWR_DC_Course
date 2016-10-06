@@ -11,7 +11,7 @@ $$ y_i=\beta $$
 
 i.e. a regression of some variable $y_i$ solely on a constant or, put differently: the regressor is a values of ones
 
-$$\mathbf{X} = (1 \dots 1)'$$
+$$\mathbf{X} = (1 \dots 1)'.$$
 
 In the plotting area on the right you see the result of a Monte Carlo simulation analysing distributional properties of the OLS estimator for $ \beta $ in the model above and another linear estimator $\overset{\sim}{\beta}$ which uses different weights than OLS. Say, $\beta=0$. Is the result consistent with what you expect beeing aware of the Gauss-Markov Theorem?  
 
