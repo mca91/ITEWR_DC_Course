@@ -305,7 +305,7 @@ Instead we have:
 
 R did not recognise the first row as the table header and interpreted the variables `sex`, `year` and `ahe_12` to be a single variable. As a result, R established a new variable `V1` where each observation consists of the respective three values merged in a string.
 
-*Convince Yourself: Type and execute `head(my_data)`*
+*Convince Yourself: Type and execute* `head(my_data)`.
 
 To circumvent this, You need to tell R that the first row of the table is the header providing variable names and how variables are seperated (here, `;` is used as the seperator. You can think of it as a vertical line seperating values). 
 
