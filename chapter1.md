@@ -210,7 +210,7 @@ success_msg("Great!")
 --- type:NormalExercise lang:r xp: skills: key:d42a7e12e7
 ## Load data from .csv files into R
 
-In R, it is often fairly easy to import data. This exercise will teach you how to import .csv files.
+In R, it is often fairly easy to import data. This exercise will teach you how to import .csv files. "csv" means "comma seperated values".
 
 The data set *cps_ch3.csv* is a sample from the current population survey data base. We have uploaded it so you can use the following url as path:
 
@@ -354,6 +354,7 @@ test_function("head", index=1)
 test_function("read.table", args=c("header","sep"))
 test_object("my_data")
 test_function("head", index=2)
+success_msg("Cool! The next exercise shows you how to read in data from .txt files :-)")
 ```
 
 --- type:NormalExercise lang:r xp: skills: key:711663e93b
