@@ -9,7 +9,7 @@ Suppose you got the regression model
 
 $$ y_i=\beta $$
 
-i.e. a regression of some variable $y_i$ solely on a constant or, put differently: the regressor is a values of ones
+i.e. a regression of some variable $y_i$ solely on a constant or, put differently: the regressor is a vector of ones
 
 $$\mathbf{X} = (1 \dots 1)'.$$
 
