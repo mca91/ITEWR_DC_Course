@@ -220,3 +220,32 @@ msg_success <- "Right. Diagnostic plots 1 and 3 indicate heteroskedasticity. You
 msg_bad <- "No, that is not right. Look again at the plots."
 test_mc(correct = 2, feedback_msgs = c(msg_bad, msg_success))
 ```
+
+--- type:NormalExercise lang:r xp: skills: key:2b32755b9d
+## A Fully Fledged Model for Housing Values
+
+
+
+*** =instructions
+
+*** =hint
+
+*** =pre_exercise_code
+```{r}
+
+```
+
+*** =sample_code
+```{r}
+
+```
+
+*** =solution
+```{r}
+
+```
+
+*** =sct
+```{r}
+
+```
