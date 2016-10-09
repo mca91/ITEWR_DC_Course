@@ -222,22 +222,30 @@ test_mc(correct = 2, feedback_msgs = c(msg_bad, msg_success))
 ```
 
 --- type:NormalExercise lang:r xp: skills: key:2b32755b9d
-## A Fully Fledged Model for Housing Values
+## A Fully Fledged Model for Housing Values?
 
-
+*The multiple regression model from the previous exercise, `mod`, is available in your environment.* 
 
 *** =instructions
+
+- Regress `medv` on all remaining variables that You find in the `Boston` data set. 
+- Have a look at the model summary.
+- What can you say about the regression's (adjusted) $R^2$? Does this model improve on the previous one?
 
 *** =hint
 
 *** =pre_exercise_code
 ```{r}
-
+library(MASS)
+data("Boston")
 ```
 
 *** =sample_code
 ```{r}
+# Regress medv on all other variables provided with the Boston data set
 
+
+# Inspect the model summary
 ```
 
 *** =solution
