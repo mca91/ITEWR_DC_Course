@@ -380,7 +380,7 @@ data("Boston")
 
 *** =sct
 ```{r}
-msg_bad <- "Nope, hope You are not guessing?"
+msg_bad <- "Nope, that is wrong. We hope You are not guessing!"
 msg_success <- "Right! Well done!"
 test_mc(correct = 7, feedback_msgs = c(rep(msg_bad,6),msg_success,rep(msg_bad,6)))
 ```
