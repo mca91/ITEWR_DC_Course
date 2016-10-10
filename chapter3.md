@@ -241,7 +241,7 @@ test_object("t_crim")
 
 $$ \widehat{medv} = \underset{(0.74774)}{32.82804} + \underset{(0.05075)}{-0.99409} \times lstat + \underset{(0.01225)}{0.03765} \times age + \underset{(0.03594)}{-0.08262} \times crim  $$
 
-*$t$-statistics form the previous exercise are available in your working environment*
+*$t$-statistics form the previous exercise are available in your working environment.*
 
 *** =instructions
 
