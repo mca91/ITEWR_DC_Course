@@ -194,7 +194,7 @@ test_mc(correct = 3, feedback_msgs = c(msg_bad1, msg_bad2, msg_success, msg_bad3
 ```
 
 --- type:MultipleChoiceExercise lang:r xp: skills: key:e6bcd06795
-## Inference in the Multiple Regression Model
+## Inference in the Multiple Regression Models
 
 $$ \widehat{medv} = \underbrace{32.82}{(0.7477)} + \hat{b}_1  $$
 
