@@ -250,7 +250,7 @@ round(32.82804/0.74774,4)
 *** =instructions
 
 - Compute two-sided $p$-values using the test statistics computed beforehand and assign the values to the objects suggested in Script.R.
-
+- Check which $p$-values exceed the level of $\alpha=0.05$.
 *** =hint
 
 - Remember to compute *two-sided* $p$-values.
