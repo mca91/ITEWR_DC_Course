@@ -249,7 +249,7 @@ round(32.82804/0.74774,4)
 
 *** =instructions
 
-- Compute two-sided $p$-values using the test statistics computed beforehand.
+- Compute two-sided $p$-values using the test statistics computed beforehand and assign the values to the objects suggested in Script.R.
 
 *** =hint
 
