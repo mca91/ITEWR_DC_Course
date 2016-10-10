@@ -376,12 +376,18 @@ Use your results from the previous exercise!
 ```{r}
 library(MASS)
 data("Boston")
+l <- list()
+for (i in 1:13) {
+  d <- Boston[,-i]
+  l[[i]] <- summary(lm(medv ~., data=d))$adj.r.squared # save each adj. R^2 as a list entry in l
+}
+names(l) <- names(Boston[,1:13]) # assign variable names to the list entries
 ```
 
 *** =sct
 ```{r}
 msg_bad <- "Nope, that is wrong. We hope You are not guessing!"
 msg_success <- "Right, removing age leads to an $adj. R^2$ of $0.7343$ which is slighly higher than the corresponding value for the full model. <br> Notice that removing regressors is not a good idea at all in most cases:
-For most variables, omission leads to a reduction in $adj. R^2$. <br>Well done!"
+For most variables, omission leads to a reduction in $adj. R^2$. You can check this by having a look at the list object `l` we prepared for You (just type `l` to the console on the right on press *enter*) <br>Well done!"
 test_mc(correct = 7, feedback_msgs = c(rep(msg_bad,6),msg_success,rep(msg_bad,6)))
 ```
