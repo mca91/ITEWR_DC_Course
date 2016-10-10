@@ -346,3 +346,41 @@ which.max(l)
 ```{r}
 success_msg("Okay. The next exercise will ask You for Your results.")
 ```
+
+--- type:MultipleChoiceExercise lang:r xp: skills: key:3286e4408d
+## Model Selection with Adjusted R squared ctd. 
+
+Name the variable which omission leads to the highest improvement in the fit of the model judging from $adj. R^2$.
+
+*** =instructions
+
+- The crime rate, `crim`.
+- The proportion of residential land zoned for lots over 25,000 sq.ft., `zn`.
+- The proportion of non-retail business acres per town, `indus`.
+- Charles River dummy variable, `chas`.
+- The nitrogen oxides concentration (parts per 10 million), `nox`.
+- Average number of rooms per dwelling, `rm`.
+- The proportion of owner-occupied units built prior to 1940, `age`.
+- Weighted mean of distances to five Boston employment centres, `dist`.
+- Index of accessibility to radial highways, `rad`.
+- Full-value property-tax rate per \$10,000, `tax`.
+- The pupil-teacher ratio by town, `ptratio`.
+- The proportion of blacks by town, `black`.
+- Lower status of the population (percent), `lstat`.
+
+*** =hint
+
+Use your results from the previous exercise!
+
+*** =pre_exercise_code
+```{r}
+library(MASS)
+data("Boston")
+```
+
+*** =sct
+```{r}
+msg_bad <- "Nope, hope You are not guessing?"
+msg_success <- "Right! Well done!"
+test_mc(correct = 7, feedback_msgs = c(rep("msg_bad",6),"msg_success",rep("msg_bad",6)))
+```
