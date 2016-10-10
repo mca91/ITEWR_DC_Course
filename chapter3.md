@@ -344,5 +344,5 @@ which.max(l)
 
 *** =sct
 ```{r}
-success_msg("Okay. The next exercise will ask you for your results.")
+success_msg("Okay. The next exercise will ask You for Your results.")
 ```
