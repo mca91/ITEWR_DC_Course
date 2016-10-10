@@ -243,10 +243,6 @@ $$ \widehat{medv} = \underset{(0.74774)}{32.82804} + \underset{(0.05075)}{-0.994
 
 *$t$-statistics form the previous exercise are available in your working environment.*
 
-```{r, eval=T}
-round(32.82804/0.74774,4)
-```
-
 *** =instructions
 
 - Compute two-sided $p$-values using the test statistics computed beforehand and assign the values to the objects suggested in Script.R.
