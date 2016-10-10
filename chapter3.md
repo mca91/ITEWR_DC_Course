@@ -193,6 +193,84 @@ msg_success <- "Right, that sounds plausible. Good job!"
 test_mc(correct = 3, feedback_msgs = c(msg_bad1, msg_bad2, msg_success, msg_bad3))
 ```
 
+--- type:MultipleChoiceExercise lang:r xp: skills: key:e6bcd06795
+## Inference in the Multiple Regression Model
+
+\begin{tabular}{@{\extracolsep{5pt}}lc} 
+\\[-1.8ex]\hline 
+\hline \\[-1.8ex] 
+ & \multicolumn{1}{c}{\textit{Dependent variable:}} \\ 
+\cline{2-2} 
+\\[-1.8ex] & medv \\ 
+\hline \\[-1.8ex] 
+ lstat & $-$0.994$^{***}$ \\ 
+  & (0.051) \\ 
+  & \\ 
+ age & 0.038$^{***}$ \\ 
+  & (0.012) \\ 
+  & \\ 
+ crim & $-$0.083$^{**}$ \\ 
+  & (0.036) \\ 
+  & \\ 
+ Constant & 32.828$^{***}$ \\ 
+  & (0.748) \\ 
+  & \\ 
+\hline \\[-1.8ex] 
+Observations & 506 \\ 
+R$^{2}$ & 0.556 \\ 
+Adjusted R$^{2}$ & 0.553 \\ 
+Residual Std. Error & 6.147 (df = 502) \\ 
+F Statistic & 209.495$^{***}$ (df = 3; 502) \\ 
+\hline 
+\hline \\[-1.8ex] 
+\textit{Note:}  & \multicolumn{1}{r}{$^{*}$p$<$0.1; $^{**}$p$<$0.05; $^{***}$p$<$0.01} \\ 
+\end{tabular} 
+
+
+*** =instructions
+
+*** =hint
+
+*** =pre_exercise_code
+```{r}
+library(MASS)
+data("Boston")
+mod <- lm(medv ~ lstat + age + crim, data = Boston)
+```
+
+*** =sct
+```{r}
+
+```
+
+--- type:NormalExercise lang:r xp: skills: key:fc5e7319e1
+## Inference in the Multiple Regression Model
+
+
+*** =instructions
+
+*** =hint
+
+*** =pre_exercise_code
+```{r}
+
+```
+
+*** =sample_code
+```{r}
+
+```
+
+*** =solution
+```{r}
+
+```
+
+*** =sct
+```{r}
+
+```
+
 --- type:MultipleChoiceExercise lang:r xp: skills: key:76501d8817
 ## Validity of Model Assumptions 
 
