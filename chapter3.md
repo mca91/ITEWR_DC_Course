@@ -246,7 +246,7 @@ $$ \widehat{medv} = \underset{(0.74774)}{32.82804} + \underset{(0.05075)}{-0.994
 *** =instructions
 
 - Compute two-sided $p$-values using the test statistics computed beforehand and assign the values to the objects suggested in Script.R.
-- Check which $p$-values exceed the level of $\alpha=0.05$.
+- Use logical operators to check which $p$-values exceed the level of $\alpha=0.05$.
 *** =hint
 
 - Remember to compute *two-sided* $p$-values.
