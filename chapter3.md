@@ -230,22 +230,28 @@ test_mc(correct = 2, feedback_msgs = c(msg_bad, msg_success))
 
 - Regress `medv` on all remaining variables that You find in the `Boston` data set. 
 - Have a look at the model summary.
-- What can you say about the regression's (adjusted) $R^2$? Does this model improve on the previous one?
+- What can you say about the regression's (adjusted) $R^2$? Does this model improve on the previous one? (*no code submission needed*)
 
 *** =hint
+
+- For brevity, you may use the regression formula `medv ~.`. This specifies a regression of `medv` on *all* remaining variables in the selected data set.
 
 *** =pre_exercise_code
 ```{r}
 library(MASS)
 data("Boston")
+mod <- lm(medv ~ lstat + age + crim, data = Boston)
 ```
 
 *** =sample_code
 ```{r}
 # Regress medv on all other variables provided with the Boston data set
-
+mod <- lm(medv ~., data = Boston)
 
 # Inspect the model summary
+summary(mod)
+
+# Compare R^2
 ```
 
 *** =solution
