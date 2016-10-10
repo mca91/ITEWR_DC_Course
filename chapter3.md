@@ -306,7 +306,7 @@ Remember the results from last exercise (or skip back). Which statement about th
 ```{r}
 msg_bad <- "Nope, that is wrong. We hope You are not guessing!"
 msg_success <- "Right: $p$-value $< \alpha = 0.05$ for all coefficients."
-test_mc(correct = 3, feedback_msgs = c(rep(msg_bad,6),msg_success,rep(msg_bad,6)))
+test_mc(correct = 3, feedback_msgs = c(msg_bad,msg_bad,msg_success,msg_bad)
 ```
 
 --- type:MultipleChoiceExercise lang:r xp: skills: key:76501d8817
