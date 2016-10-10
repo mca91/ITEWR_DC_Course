@@ -305,7 +305,7 @@ Remember the results from last exercise (or skip back). Which statement about th
 *** =sct
 ```{r}
 msg_bad <- "Nope, that is wrong. We hope You are not guessing!"
-msg_success <- "Right: $p$-value < 0.05 for all coefficients. Thus we can reject the hypothesis that the respective true coefficient is 0 for all coefficients."
+msg_success <- "Right: $p$-value < 0.05 for all coefficients. Thus we can reject the hypothesis that the respective true coefficient is 0 for *all* coefficients."
 test_mc(correct = 3, feedback_msgs = c(msg_bad,msg_bad,msg_success,msg_bad))
 ```
 
