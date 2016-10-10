@@ -277,7 +277,7 @@ success_msg("Okay. You can see that the full models $adj. R^2$ is about $0.73$ r
 ```
 
 --- type:NormalExercise lang:r xp: skills: key:d9760cf640
-## Model Selection: Adjusted $R^2$  
+## Model Selection: Adjusted R squared  
 
 Maybe we can improve the model by dropping a variable? 
 
