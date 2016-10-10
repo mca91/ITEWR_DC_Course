@@ -381,6 +381,7 @@ data("Boston")
 *** =sct
 ```{r}
 msg_bad <- "Nope, that is wrong. We hope You are not guessing!"
-msg_success <- "Right: Removing age leads to an $adj. R^2$ of $0.7343$ which is slighly higher than the corresponding value for the full model. Well done!"
+msg_success <- "Right, removing age leads to an $adj. R^2$ of $0.7343$ which is slighly higher than the corresponding value for the full model. Notice that removing regressors is not a good idea at all in most cases:
+For most variables, omission leads to a reduction in $adj. R^2$. <br>Well done!"
 test_mc(correct = 7, feedback_msgs = c(rep(msg_bad,6),msg_success,rep(msg_bad,6)))
 ```
