@@ -194,11 +194,11 @@ test_mc(correct = 3, feedback_msgs = c(msg_bad1, msg_bad2, msg_success, msg_bad3
 ```
 
 --- type:NormalExercise lang:r xp: skills: key:e6bcd06795
-## Inference in the Multiple Regression Model
+## Inference in the Multiple Regression Model – t-statistics
 
 Look at the regression equation below describing the previously estimated model. 
 
-$$ \widehat{medv} = \underset{(0.75)}{32.83} + \underset{(0.05)}{-0.99} \times lstat + \underset{(0.01)}{0.04} \times age + \underset{(0.04)}{-0.08} \times crim  $$
+$$ \widehat{medv} = \underset{(0.74774)}{32.82804} + \underset{(0.05075)}{-0.99409} \times lstat + \underset{(0.01225)}{0.03765} \times age + \underset{(0.03594)}{-0.08262} \times crim  $$
 
 *** =instructions
 - For every estimated coefficient, compute $t$-statistics for the hypothesis that the true coefficient is zero.
@@ -222,10 +222,10 @@ mod <- lm(medv ~ lstat + age + crim, data = Boston)
 *** =solution
 ```{r}
 # Compute the t-statistics
-t_intercept <- round(32.83/0.75,4)
-t_lstat <- round(-0.99/0.05,4)
-t_age <- round(0.04/0.01,4)
-t_crim <- round(-0.08/0.04,4)
+t_intercept <- round(32.82804/0.74774,4)
+t_lstat <- round(-0.99409/0.05075,4)
+t_age <- round(0.03765/0.01225,4)
+t_crim <- round(-0.08262/0.03594,4)
 ```
 
 *** =sct
@@ -237,10 +237,13 @@ test_object("t_crim")
 ```
 
 --- type:NormalExercise lang:r xp: skills: key:fc5e7319e1
-## Inference in the Multiple Regression Model
+## Inference in the Multiple Regression Model – p-values
 
+$$ \widehat{medv} = \underset{(0.74774)}{32.82804} + \underset{(0.05075)}{-0.99409} \times lstat + \underset{(0.01225)}{0.03765} \times age + \underset{(0.03594)}{-0.08262} \times crim  $$
 
 *** =instructions
+
+- Compute $p$-values using the test statistics computed beforehand.
 
 *** =hint
 
