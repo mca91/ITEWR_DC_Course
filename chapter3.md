@@ -273,7 +273,7 @@ test_or({
   ex() %>% override_solution('lm(medv ~ lstat + crim + age + black + chas + dis + indus + nox + ptratio + rad + rm + tax + zn, data = Boston)') %>% check_function('lm') %>% check_result()
 })
 test_function("summary")
-success_msg("Okay. You can see that the full models $adj. R^2$ is about $0.73$ renders it better than the model `medv ~ lstat + age + crim`")
+success_msg("Okay. You can see that the full models $adj. R^2$ is about $0.73$ renders it better than the model `medv ~ lstat + age + crim` ($adj. R^2 = 0.55$)")
 ```
 
 --- type:NormalExercise lang:r xp: skills: key:d9760cf640
