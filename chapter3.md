@@ -288,6 +288,8 @@ In this exercise, you will create several new models, each time dropping one of 
 
 *** =instructions
 
+You are totally free to choose a way to solve this. We recommend the following approach:
+
 - Start by estimating a model, `mod_new` say, where you remove e.g. `lstat` from the list of explanatory variables.
 - Next, access this model's $adj. R^2$ using the `summary()`. You can do this by `summary(mod_new)$adj.r.squared`
 - Compare the model's $adj. R^2$ to the $adj. R^2$ of the full model ($0.7338$). 
@@ -342,5 +344,5 @@ which.max(l)
 
 *** =sct
 ```{r}
-
+success_msg("Okay. The next exercise will ask you for your results.")
 ```
