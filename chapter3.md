@@ -196,7 +196,7 @@ test_mc(correct = 3, feedback_msgs = c(msg_bad1, msg_bad2, msg_success, msg_bad3
 --- type:MultipleChoiceExercise lang:r xp: skills: key:e6bcd06795
 ## Inference in the Multiple Regression Model
 
-$$ \widehat{medv} = \underset{(0.75)}{32.83} + \underset{(0.05)}{-0.99} \times lstat + \underbrace{(0.01)}{0.04} \times age + \underbrace{(0.04)}{-0.08}  $$
+$$ \widehat{medv} = \underset{(0.75)}{32.83} + \underset{(0.05)}{-0.99} \times lstat + \underset(0.01)}{0.04} \times age + \underset{(0.04)}{-0.08}  $$
 
 *** =instructions
 
