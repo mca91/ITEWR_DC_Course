@@ -311,7 +311,7 @@ mod_new <- lm(medv ~., data=d)
 summary(mod_new)$adj.r.squared
 
 # Estimate a model using all variables as regressors but zn (the second column) and extract adj. R^2
-d <- Boston[,-]
+d <- Boston[,-2]
 mod_new <- lm(medv ~., data=d)
 summary(mod_new)$adj.r.squared
 
