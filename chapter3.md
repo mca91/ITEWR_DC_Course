@@ -277,27 +277,53 @@ success_msg("Okay. You can see that the full models $adj. R^2$ is about $0.73$ r
 ```
 
 --- type:NormalExercise lang:r xp: skills: key:d9760cf640
-## Model Selection: Adjusted R^2  
+## Model Selection: Adjusted $R^2$  
+
+Maybe we can improve the model by dropping a variable? 
+
+In this exercise, you will create several new models, each time dropping one of the explanatory variables used in the previous regression and control for the models $adj. R^2$
+
+*The full regression model from the previous exercise, `mod`, is available in your environment.* 
 
 
 *** =instructions
+
+- Start by estimating a model, `mod_new` say, where you remove e.g. `lstat` from the list of explanatory variables.
+- Next, access this model's $adj. R^2$ using the `summary()`. You can do this by `summary(mod_new)$adj.r.squared`
+- Compare the model's $adj. R^2$ to the $adj. R^2$ of the full model ($0.7338$). 
+- Repeat this for all explanatory variables used in the full regression model from the previous exercise
+- Memorize the variable which removal leads to the highest improvement in $adj. R^2$ and the corresponding value.
 
 *** =hint
 
 *** =pre_exercise_code
 ```{r}
-
+library(MASS)
+data("Boston")
+mod <- lm(medv ~., data = Boston)
 ```
 
 *** =sample_code
 ```{r}
-
+# 
 ```
 
 *** =solution
 ```{r}
+# This solution is a bit technical but efficient
 
+# Looped estimation of models
+l <- list()
+for (i in 1:13) {
+  d <- Boston[,-i]
+  l[[i]] <- summary(lm(medv ~., data=d))$adj.r.squared # save each adj. R^2 as a list entry in l
+}
+names(l) <- names(Boston[,1:13]) # assign variable names to the list entries
+
+# select the variable which omission leads to the highest improvement in adj. R^2
+which.max(l)
 ```
+`
 
 *** =sct
 ```{r}
