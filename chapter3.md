@@ -246,7 +246,7 @@ $$ \widehat{medv} = \underset{(0.74774)}{32.82804} + \underset{(0.05075)}{-0.994
 *** =instructions
 
 - Compute two-sided $p$-values using the test statistics computed beforehand and assign the values to the objects suggested in Script.R.
-- Use logical operators to check which $p$-values exceed the level of $\alpha=0.05$.
+- Use logical operators to check which $p$-values exceed the level of $\alpha=0.05$. Memorize the result! You will need in in the next exercise!
 *** =hint
 
 - Remember to compute *two-sided* $p$-values.
@@ -283,6 +283,28 @@ test_object("p_intercept")
 test_object("p_lstat")
 test_object("p_age")
 test_object("p_crim")
+```
+
+--- type:MultipleChoiceExercise lang:r xp: skills: key:91e960796d
+## Which coefficients are significantly different from zero? 
+
+$$ \widehat{medv} = \underset{(0.74774)}{32.82804} + \underset{(0.05075)}{-0.99409} \times lstat + \underset{(0.01225)}{0.03765} \times age + \underset{(0.03594)}{-0.08262} \times crim  $$
+
+Remember the results from last exercise (or skip back). Which statement about the model about is right?
+
+*** =instructions
+
+- All coefficients are significant at the $0.05$ level.
+- `crim` is significant at the $0.001$ level.
+- None of the coefficients are significant to the $0.05$ level.
+- None of the coefficients are significant to any level of significance used in pratice.
+
+*** =hint
+
+
+*** =sct
+```{r}
+
 ```
 
 --- type:MultipleChoiceExercise lang:r xp: skills: key:76501d8817
