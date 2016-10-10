@@ -294,9 +294,9 @@ Remember the results from last exercise (or skip back). Which statement about th
 
 *** =instructions
 
-- All coefficients are significant at the $0.05$ level.
 - `crim` is significant at the $0.001$ level.
 - None of the coefficients are significant to the $0.05$ level.
+- All coefficients are significant at the $0.05$ level.
 - None of the coefficients are significant to any level of significance used in pratice.
 
 *** =hint
@@ -304,7 +304,9 @@ Remember the results from last exercise (or skip back). Which statement about th
 
 *** =sct
 ```{r}
-
+msg_bad <- "Nope, that is wrong. We hope You are not guessing!"
+msg_success <- "Right: $p$-value $< \alpha = 0.05$ for all coefficients."
+test_mc(correct = 3, feedback_msgs = c(rep(msg_bad,6),msg_success,rep(msg_bad,6)))
 ```
 
 --- type:MultipleChoiceExercise lang:r xp: skills: key:76501d8817
