@@ -363,7 +363,7 @@ Name the variable which omission leads to the highest improvement in the fit of 
 - The proportion of owner-occupied units built prior to 1940, `age`.
 - Weighted mean of distances to five Boston employment centres, `dist`.
 - Index of accessibility to radial highways, `rad`.
-- Full-value property-tax rate per \$10,000, `tax`.
+- Full-value property-tax rate per $10,000, `tax`.
 - The pupil-teacher ratio by town, `ptratio`.
 - The proportion of blacks by town, `black`.
 - Lower status of the population (percent), `lstat`.
