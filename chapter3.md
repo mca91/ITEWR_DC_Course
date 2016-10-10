@@ -230,11 +230,12 @@ test_mc(correct = 2, feedback_msgs = c(msg_bad, msg_success))
 
 - Regress `medv` on all remaining variables that You find in the `Boston` data set. 
 - Have a look at the model summary.
-- What can you say about the regression's (adjusted) $R^2$? Does this model improve on the previous one? (*no code submission needed*)
+- What can you say about the regression's *adjusted* $R^2$? Does this model improve on the previous one? (*no code submission needed*)
 
 *** =hint
 
 - For brevity, you may use the regression formula `medv ~.`. This specifies a regression of `medv` on *all* remaining variables in the selected data set.
+- Use `summary` on both models for comparison of adjusted R^2.
 
 *** =pre_exercise_code
 ```{r}
@@ -272,4 +273,33 @@ test_or({
   ex() %>% override_solution('lm(medv ~ lstat + crim + age + black + chas + dis + indus + nox + ptratio + rad + rm + tax + zn, data = Boston)') %>% check_function('lm') %>% check_result()
 })
 test_function("summary")
+success_msg("Okay. You can see that the full models R^2 is about $0.73$ renders it better than the model `medv ~ lstat + age + crim` ($adj \, R^2 = 0.55).")
+```
+
+--- type:NormalExercise lang:r xp: skills: key:d9760cf640
+## Model Selection: Adjusted R^2  
+
+
+*** =instructions
+
+*** =hint
+
+*** =pre_exercise_code
+```{r}
+
+```
+
+*** =sample_code
+```{r}
+
+```
+
+*** =solution
+```{r}
+
+```
+
+*** =sct
+```{r}
+
 ```
