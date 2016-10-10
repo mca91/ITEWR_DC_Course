@@ -188,18 +188,21 @@ mod <- lm(medv ~ lstat + age + crim, data = Boston)
 ```{r}
 msg_bad1 <- "No, not necessairily. Think about old mansions."
 msg_bad2 <- "The intercept might not be that realistic but it certainly is not $32.82. See `?Boston`."
-msg_bad3 <- "Bias might be a problem. But You were asked if your expectations are met by the result."
+msg_bad3 <- "Bias might be a problem. But You were asked if Your expectations are met by the result."
 msg_success <- "Right, that sounds plausible. Good job!"
 test_mc(correct = 3, feedback_msgs = c(msg_bad1, msg_bad2, msg_success, msg_bad3))
 ```
 
---- type:MultipleChoiceExercise lang:r xp: skills: key:e6bcd06795
+--- type:NormalExercise lang:r xp: skills: key:e6bcd06795
 ## Inference in the Multiple Regression Model
+
+Look at the regression equation below describing the previously estimated model. 
 
 $$ \widehat{medv} = \underset{(0.75)}{32.83} + \underset{(0.05)}{-0.99} \times lstat + \underset{(0.01)}{0.04} \times age + \underset{(0.04)}{-0.08} \times crim  $$
 
 *** =instructions
-
+- For every estimated coefficient, compute $t$-statistics for the hypothesis that the true coefficient is zero.
+- Round values by four decimal places and store them to `t_intercept`,`t_age`, `t_lstat` and `t_crim`.
 *** =hint
 
 *** =pre_exercise_code
@@ -209,9 +212,28 @@ data("Boston")
 mod <- lm(medv ~ lstat + age + crim, data = Boston)
 ```
 
+*** =sample_code
+```{r}
+# Compute the t-statistics
+
+
+```
+
+*** =solution
+```{r}
+# Compute the t-statistics
+t_intercept <- round(32.83/0.75,4)
+t_lstat <- round(-0.99/0.05,4)
+t_age <- round(0.04/0.01,4)
+t_crim <- round(-0.08/0.04,4)
+```
+
 *** =sct
 ```{r}
-
+test_object("t_intercept")
+test_object("t_lstat")
+test_object("t_age")
+test_object("t_crim")
 ```
 
 --- type:NormalExercise lang:r xp: skills: key:fc5e7319e1
