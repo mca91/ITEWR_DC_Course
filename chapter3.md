@@ -292,7 +292,7 @@ In this exercise, you will create several new models, each time dropping one of 
 - Next, access this model's $adj. R^2$ using the `summary()`. You can do this by `summary(mod_new)$adj.r.squared`
 - Compare the model's $adj. R^2$ to the $adj. R^2$ of the full model ($0.7338$). 
 - Repeat this for all explanatory variables used in the full regression model from the previous exercise
-- Memorize the variable which removal leads to the highest improvement in $adj. R^2$ and the corresponding value.
+- Memorize the variable which removal leads to the highest improvement in $adj. R^2$ and the corresponding value. *You will need it in the next exercise!*
 
 *** =hint
 
@@ -305,7 +305,22 @@ mod <- lm(medv ~., data = Boston)
 
 *** =sample_code
 ```{r}
-# 
+# Estimate a model using all variables as regressors but crim (the first column) and extract adj. R^2
+d <- Boston[,-1]
+mod_new <- lm(medv ~., data=d)
+summary(mod_new)$adj.r.squared
+
+# Estimate a model using all variables as regressors but zn (the second column) and extract adj. R^2
+d <- Boston[,-]
+mod_new <- lm(medv ~., data=d)
+summary(mod_new)$adj.r.squared
+
+# Repeat this for all remaining variables
+# ...
+# Select the variable which omission leads to the highest improvement in adj. R^2
+
+# Hint: Do it with a loop! 
+
 ```
 
 *** =solution
@@ -323,7 +338,7 @@ names(l) <- names(Boston[,1:13]) # assign variable names to the list entries
 # select the variable which omission leads to the highest improvement in adj. R^2
 which.max(l)
 ```
-`
+
 
 *** =sct
 ```{r}
