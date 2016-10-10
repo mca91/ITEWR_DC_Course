@@ -246,13 +246,23 @@ mod <- lm(medv ~ lstat + age + crim, data = Boston)
 *** =sample_code
 ```{r}
 # Regress medv on all other variables provided with the Boston data set
+
+
+# Inspect the model summary
+
+
+```
+
+*** =solution
+```{r}
+# Regress medv on all other variables provided with the Boston data set
 mod <- lm(medv ~., data = Boston)
 
 # Inspect the model summary
 summary(mod)
 ```
 
-*** =solution
+*** =sct
 ```{r}
 test_or({
   ex() %>% check_function('lm') %>% check_result()
@@ -262,9 +272,4 @@ test_or({
   ex() %>% override_solution('lm(medv ~ lstat + crim + age + black + chas + dis + indus + nox + ptratio + rad + rm + tax + zn, data = Boston)') %>% check_function('lm') %>% check_result()
 })
 test_function("summary")
-```
-
-*** =sct
-```{r}
-
 ```
