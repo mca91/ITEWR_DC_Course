@@ -241,30 +241,48 @@ test_object("t_crim")
 
 $$ \widehat{medv} = \underset{(0.74774)}{32.82804} + \underset{(0.05075)}{-0.99409} \times lstat + \underset{(0.01225)}{0.03765} \times age + \underset{(0.03594)}{-0.08262} \times crim  $$
 
+*$t$-statistics form the previous exercise are available in your working environment*
+
 *** =instructions
 
-- Compute $p$-values using the test statistics computed beforehand.
+- Compute two-sided $p$-values using the test statistics computed beforehand.
 
 *** =hint
 
+- Remember to compute *two-sided* $p$-values.
+- Use `pnorm()` for standard normal probabilities. See `?pnorm`
+
 *** =pre_exercise_code
 ```{r}
-
+t_intercept <- round(32.82804/0.74774,4)
+t_lstat <- round(-0.99409/0.05075,4)
+t_age <- round(0.03765/0.01225,4)
+t_crim <- round(-0.08262/0.03594,4)
 ```
 
 *** =sample_code
 ```{r}
-
+# Compute and assign the p-values
+p_intercept <- 
+p_lstat <- 
+p_age <- 
+p_crim <- 
 ```
 
 *** =solution
 ```{r}
-
+p_intercept <- 2*(1-pnorm(t_intercept))
+p_lstat <- 2*(1-pnorm(t_lstat))
+p_age <- 2*(1-pnorm(t_age))
+p_crim <- 2*(1-pnorm(t_crim))
 ```
 
 *** =sct
 ```{r}
-
+test_object("p_intercept")
+test_object("p_lstat")
+test_object("p_age")
+test_object("p_crim")
 ```
 
 --- type:MultipleChoiceExercise lang:r xp: skills: key:76501d8817
