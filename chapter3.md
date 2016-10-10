@@ -260,7 +260,6 @@ test_or({
   ex() %>% override_solution('lm(Boston$medv ~ Boston$lstat + Boston$crim + Boston$age + Boston$black + Boston$chas + Boston$dis + Boston$indus + Boston$nox + Boston$ptratio + Boston$rad + Boston$rm + Boston$tax + Boston$zn)') %>% check_function('lm') %>% check_result()
 }, {
   ex() %>% override_solution('lm(medv ~ lstat + crim + age + black + chas + dis + indus + nox + ptratio + rad + rm + tax + zn, data = Boston)') %>% check_function('lm') %>% check_result()
-}
 })
 test_function("summary")
 ```
