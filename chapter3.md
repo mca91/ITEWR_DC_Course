@@ -326,7 +326,7 @@ mod <- lm(medv ~ lstat + age + crim, data = Boston)
  
 
 # Store the test statistic to f
-f <- as.vector(f_stat[1])
+f <- as.vector(         )
 
 # Compute the p-value by hand
 
