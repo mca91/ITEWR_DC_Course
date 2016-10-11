@@ -342,7 +342,7 @@ f_stat <- summary(mod)$fstatistic
 *** =sct
 ```{r}
 test_object("f_stat")
-test_output_contains("1-pf(f_stat, df1 = 3, df2 = 502)")
+test_output_contains("1-pf(f_stat[1], df1 = 3, df2 = 502)")
 ```
 
 --- type:MultipleChoiceExercise lang:r xp: skills: key:91e960796d
