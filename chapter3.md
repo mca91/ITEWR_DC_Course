@@ -290,7 +290,7 @@ test_object("p_crim")
 
 $$ \widehat{medv} = \underset{(0.74774)}{32.82804} + \underset{(0.05075)}{-0.99409} \times lstat + \underset{(0.01225)}{0.03765} \times age + \underset{(0.03594)}{-0.08262} \times crim $$
 
-$$ \text{F-statistic: } 209.5 \, \text{on } 3 \, \text{and } 502 \, \text{DF}, \,  p-\text{value: } < 2.2e-16 $$
+$$ \text{F-statistic: } 209.5 \, \text{on } 3 \, \text{and } 502 \, \text{DF}, \,  p\text{-value: } < 2.2e-16 $$
 
 
 *** =instructions
