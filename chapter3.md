@@ -351,6 +351,7 @@ f <- as.vector(f_stat[1])
 test_object("f_stat")
 test_object("f")
 test_output_contains("1-pf(f, df1 = 3, df2 = 502)")
+success_msg("Great! You can see the $p$-value printed to the console. It should be approximately 0 since the test statistic lies very far in the assumed null distribution distribution's right flank and thus we expect the $p$-value to be very small.")
 ```
 
 --- type:MultipleChoiceExercise lang:r xp: skills: key:91e960796d
