@@ -427,7 +427,7 @@ mod_full <- lm(medv ~., data = Boston)
 ```{r}
 msg_bad <- "Nope, that is wrong. Hope You are not guessing!"
 msg_success <- "Right, in the current setting, it seems that these regressors are not deciding factors in determining housing values."
-test_mc(correct = 4, feedback_msgs = c(msg_bad,msg_bad,msg_bad,msg_success,msg_bad)
+test_mc(correct = 4, feedback_msgs = c(msg_bad,msg_bad,msg_bad,msg_success,msg_bad))
 ```
 
 --- type:NormalExercise lang:r xp: skills: key:1269599081
