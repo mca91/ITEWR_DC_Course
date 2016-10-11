@@ -304,7 +304,7 @@ The test statistic is <a href="https://en.wikipedia.org/wiki/F-distribution"> F-
 *** =instructions
 
 
-- Extract info on the F-statistic from the models summary and store it to `f_stat`. Covince Youself that the values are equal to the ones given above. 
+- Extract info on the F-statistic from the models summary and store it to `f_stat`. Use `as.vector` to drop names of the result. Covince Youself that the values are equal to the ones given above. 
 - Compute the $p$-value yourself using the CDF of the F-distribution, see `?pf`.
 
 *** =hint
@@ -322,7 +322,7 @@ mod <- lm(medv ~ lstat + age + crim, data = Boston)
 *** =sample_code
 ```{r}
 # Extract the F-statistic from the models summary
-f_stat <-
+f_stat <- as.vector(     )
 
 # Compute the p-value by hand
 
@@ -332,7 +332,7 @@ f_stat <-
 *** =solution
 ```{r}
 # Extract the F-statistic from the models summary
-f_stat <- summary(mod)$fstatistic
+f_stat <- as.vector(sum$fstatistic)
 
 # Compute the p-value by hand
 1-pf(f_stat[1], df1 = 3, df2 = 502)
@@ -341,6 +341,7 @@ f_stat <- summary(mod)$fstatistic
 
 *** =sct
 ```{r}
+test_function("summary")
 test_object("f_stat")
 test_output_contains("1-pf(f_stat[1], df1 = 3, df2 = 502)")
 ```
