@@ -495,7 +495,7 @@ test_function("coeftest", args = "vcov.")
 --- type:MultipleChoiceExercise lang:r xp: skills: key:863492d367
 ##  The Impact of Robust Standard Errors II 
 
-In the last exercise, You learned how to produce a summary reporting robust inference about linear regression models estimated with `lm`.
+In the last exercise, You learned how to produce a summary reporting robust inference about coefficient in linear regression models estimated with `lm`.
 
 Did usage of the huber-white robust variance-covariance estimator render coefficients of regressors `indus` and `age` to be significantly different from zero at the level of $\alpha=0.05$?
 
