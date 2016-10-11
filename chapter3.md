@@ -457,7 +457,6 @@ names(l) <- names(Boston[,1:13]) # assign variable names to the list entries
 which.max(l)
 ```
 
-
 *** =sct
 ```{r}
 success_msg("Okay. The next exercise will ask You for Your results.")
