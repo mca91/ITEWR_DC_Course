@@ -502,7 +502,7 @@ names(l) <- names(Boston[,1:13]) # assign variable names to the list entries
 *** =sct
 ```{r}
 msg_bad <- "Nope, that is wrong. Hope You are not guessing!"
-msg_success <- "Right, removing age leads to an $adj. R^2$ of $0.7343$ which is slighly higher than the corresponding value for the full model. <br> Notice that removing explanatory variables is not necessairily a good idea for most regressors here:
+msg_success <- "Right, removing age leads to an $adj. R^2$ of $0.7343$ which is slighly higher than the corresponding value for the full model. <br> Notice that removing explanatory variables from the full model is not always a good idea here:
 for most variables, omission leads to a reduction in $adj. R^2$. You can check this by having a look at the list object `l` we prepared for You (just type `l` to the console on the right on press *enter*) <br>Well done!"
 test_mc(correct = 7, feedback_msgs = c(rep(msg_bad,6),msg_success,rep(msg_bad,6)))
 ```
