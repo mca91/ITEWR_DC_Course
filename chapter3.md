@@ -431,7 +431,7 @@ test_mc(correct = 4, feedback_msgs = c(msg_bad,msg_bad,msg_bad,msg_success,msg_b
 ```
 
 --- type:NormalExercise lang:r xp: skills: key:1269599081
-## Using Robust Standard Errors
+## The impact of Robust Standard Errors
 
 Do the significant levels for regressors `age` and `indus` change if You employ heterskedasticity robust standard errors?
 
@@ -444,7 +444,7 @@ A Summary reporting information for robust inference can be invoked with the fun
 - Estimate the full model again.
 - Load libraries `sandwich` and `AER`
 - Complete the suggested code in `Skript.R` and report robust inference using the Huber-White estimator for error variances (`HC0`).
-- Do the results change for regressors `age` and `indus`? Memorize this, you will be asked about in in the next Question.
+- Do the results change for regressors `age` and `indus`? Memorize this, you will be asked about in in the subsequent Exercise.
 
 *** =hint
 
