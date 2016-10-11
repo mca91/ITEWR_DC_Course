@@ -451,8 +451,10 @@ See the help files for `coeftest` and `vcovHC`.
 
 *** =pre_exercise_code
 ```{r}
+library(MASS)
 library(AER)
 library(sandwich)
+data("Boston")
 ```
 
 *** =sample_code
