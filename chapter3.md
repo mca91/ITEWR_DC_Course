@@ -430,6 +430,41 @@ msg_success <- "Right, in the current setting, it seems that these regressors ar
 test_mc(correct = 4, feedback_msgs = c(msg_bad,msg_bad,msg_bad,msg_success,msg_bad)
 ```
 
+--- type:NormalExercise lang:r xp: skills: key:1269599081
+## Using Robust Standard Errors
+
+Do the significant levels for regressors `age` and `indus` change if You employ heterskedasticity robust standard errors?
+
+Robust 
+
+*** =instructions
+
+- Estimate the full model again.
+- Load the `sandwich` library
+
+
+*** =hint
+
+*** =pre_exercise_code
+```{r}
+
+```
+
+*** =sample_code
+```{r}
+
+```
+
+*** =solution
+```{r}
+
+```
+
+*** =sct
+```{r}
+
+```
+
 --- type:NormalExercise lang:r xp: skills: key:d9760cf640
 ## Model Selection: Adjusted R squared  
 
