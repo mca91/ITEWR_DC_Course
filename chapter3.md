@@ -296,15 +296,20 @@ $$ \text{F-statistic: } 209.5 \, \text{on } 3 \, \text{and } 502 \, \text{DF}, \
 
 The second line of the output reports the test statistic, corresponding degrees of freedom and the $p$-value for a test of the null hypothesis that the estimated model above does not fit the data significantly better than the mean of the dependend variable, i.e. a regression model consisting solely of an intercept. 
 
-The test statistic is <a href="https://en.wikipedia.org/wiki/F-distribution"> F-distributed </a>.
+The test statistic is <a href="https://en.wikipedia.org/wiki/F-distribution"> F-distributed </a> with abovementioned degrees of freedom.
+
+*The multiple regression model from the previous exercise is available in your environment (`mod`).* 
 
 
 *** =instructions
 
-Can You reject the 
+
+- Extract info on the F-statistic from the models summary and store it to `f_stat`. Covince Youself that the values are equal to the ones given above. 
+- Compute the $p$-value yourself using the CDF of the F-distribution, see `?pf`.
 
 *** =hint
 
+This is a right-sided test, i.e. we reject the null if the corresonding test statistic exceeds a critical value located in the right tail of the corresponding F-distribution.
 
 *** =pre_exercise_code
 ```{r}
@@ -316,17 +321,28 @@ mod <- lm(medv ~ lstat + age + crim, data = Boston)
 
 *** =sample_code
 ```{r}
+# Extract the F-statistic from the models summary
+f_stat <-
+
+# Compute the p-value by hand
+
 
 ```
 
 *** =solution
 ```{r}
+# Extract the F-statistic from the models summary
+f_stat <- summary(mod)$fstatistic
+
+# Compute the p-value by hand
+1-pf(f_stat, df1 = 3, df2 = 502)
 
 ```
 
 *** =sct
 ```{r}
-
+test_object("f_stat")
+test_output_contains("1-pf(f_stat, df1 = 3, df2 = 502)")
 ```
 
 --- type:MultipleChoiceExercise lang:r xp: skills: key:91e960796d
