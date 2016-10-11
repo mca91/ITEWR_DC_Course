@@ -346,7 +346,7 @@ Behold again the description of variables provided with the `Boston` data set. T
 
 *** =instructions
 
-- Regress `medv` on all remaining variables that You find in the `Boston` data set. 
+- Regress `medv` on all remaining variables that You find in the `Boston` data set. Hint: use `medv ~.` as the formula argument in the call of `lm`. This is a shorthand for regression on all remaining variables provided with the data set.
 - Have a look at the model summary.
 - What can you say about the regression's *adjusted* $R^2$? Does this model improve on the previous one? (*no code submission needed*)
 
