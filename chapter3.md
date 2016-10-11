@@ -285,6 +285,74 @@ test_object("p_age")
 test_object("p_crim")
 ```
 
+--- type:NormalExercise lang:r xp: skills: key:905ec30cf5
+## Inference in the Multiple Regression Model - F-Statistic 
+
+Now, consider the following, extended output:
+
+$$ \widehat{medv} = \underset{(0.74774)}{32.82804} + \underset{(0.05075)}{-0.99409} \times lstat + \underset{(0.01225)}{0.03765} \times age + \underset{(0.03594)}{-0.08262} \times crim $$
+
+$$ \text{F-statistic: } 209.5 \, \text{on } 3 \, \text{and } 502 \, \text{DF}, \,  p\text{-value: } < 2.2e-16 $$
+
+The second line of the output reports the test statistic, corresponding degrees of freedom and the $p$-value for a test of the null hypothesis that the estimated model above does not fit the data significantly better than the mean of the dependend variable, i.e. a regression model consisting solely of an intercept. 
+
+The test statistic is <a href="https://en.wikipedia.org/wiki/F-distribution"> F-distributed </a> with abovementioned degrees of freedom.
+
+*The multiple regression model from the previous exercise is available in your environment (`mod`).* 
+
+
+*** =instructions
+
+
+- Extract info on the F-statistic from the models summary and store it to `f_stat`. Covince Youself that the values are equal to the ones given above. 
+- Save the value of the test statistic to `f`. Make sure You use `as.vector()` to drop names. 
+- Compute the $p$-value yourself using the CDF of the F-distribution, see `?pf`.
+
+*** =hint
+
+This is a right-sided test, i.e. we reject the null if the corresonding test statistic exceeds a critical value located in the right tail of the corresponding F-distribution.
+
+*** =pre_exercise_code
+```{r}
+library(MASS)
+data("Boston")
+mod <- lm(medv ~ lstat + age + crim, data = Boston)
+```
+
+
+*** =sample_code
+```{r}
+# Extract the F-statistic from the models summary
+ 
+
+# Store the test statistic to f
+f <- as.vector(f_stat[1])
+
+# Compute the p-value by hand
+
+
+```
+
+*** =solution
+```{r}
+# Extract the F-statistic from the models summary
+f_stat <- summary(mod)$fstatistic
+
+# Store the test statistic to f
+f <- as.vector(f_stat[1])
+
+# Compute the p-value by hand
+1-pf(f, df1 = 3, df2 = 502)
+
+```
+
+*** =sct
+```{r}
+test_object("f_stat")
+test_object("f")
+test_output_contains("1-pf(f, df1 = 3, df2 = 502)")
+```
+
 --- type:MultipleChoiceExercise lang:r xp: skills: key:91e960796d
 ## Which coefficients are significantly different from zero? 
 
