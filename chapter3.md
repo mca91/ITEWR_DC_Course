@@ -431,7 +431,7 @@ test_mc(correct = 4, feedback_msgs = c(msg_bad,msg_bad,msg_bad,msg_success,msg_b
 ```
 
 --- type:NormalExercise lang:r xp: skills: key:1269599081
-## The impact of Robust Standard Errors
+## The Impact of Robust Standard Errors I
 
 Do the significant levels for regressors `age` and `indus` change if You employ heteroskedasticity robust standard errors?
 
@@ -490,6 +490,25 @@ test_object("mod_full")
 test_student_typed("library(AER)")
 test_student_typed("library(sandwich)")
 test_function("coeftest", args = "vcov.")
+```
+
+--- type:MultipleChoiceExercise lang:r xp: skills: key:863492d367
+##  The Impact of Robust Standard Errors II 
+
+In the last exercise, You learned how to produce a summary reporting robust inference about linear regression models estimated with `lm`.
+
+Did usage of the huber-white robust variance-covariance estimator render coefficients of regressors `indus` and `age` to be significantly different from zero at the level of $\alpha=0.05$?
+
+*** =instructions
+
+- No
+- Yes
+
+*** =sct
+```{r}
+msg_bad <- "Nope, that is wrong. Hope You are not guessing!"
+msg_success <- "Right, using robust standard errors did not change the results dramatically. We draw the same inference about both regression coefficients."
+test_mc(correct = 1, feedback_msgs = c(msg_success,msg_bad)
 ```
 
 --- type:NormalExercise lang:r xp: skills: key:d9760cf640
