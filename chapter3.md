@@ -335,7 +335,7 @@ f_stat <-
 f_stat <- summary(mod)$fstatistic
 
 # Compute the p-value by hand
-1-pf(f_stat, df1 = 3, df2 = 502)
+1-pf(f_stat[1], df1 = 3, df2 = 502)
 
 ```
 
