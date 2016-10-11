@@ -418,6 +418,8 @@ Have a look at the model summary!
 
 *** =pre_exercise_code
 ```{r}
+library(MASS)
+data(Boston)
 mod_full <- lm(medv ~., data = Boston)
 ```
 
