@@ -517,7 +517,7 @@ mod_robust <- coeftest(mod_full, vcov.= vcovHC(mod_full, type="HC0"))
 *** =sct
 ```{r}
 msg_bad <- "Nope, that is wrong. Hope You are not guessing!"
-msg_success <- "Right, using robust standard errors did not change the results dramatically. We draw the same inference about both regression coefficients. You can check this again
+msg_success <- "Right. Using robust standard errors did not change the results dramatically. We draw the same inference about both regression coefficients. You can check this again
 using the console panel on the right. The robust summary is stored in `mod_robust`. Have a look at the significance codes."
 test_mc(correct = 1, feedback_msgs = c(msg_success,msg_bad))
 ```
