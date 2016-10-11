@@ -444,10 +444,11 @@ A Summary reporting information for robust inference can be invoked with the fun
 - Estimate the full model again.
 - Load libraries `sandwich` and `AER`
 - Complete the suggested code in `Skript.R` and report robust inference using the Huber-White estimator for error variances (`HC0`).
+- Do the results change for regressors `age` and `indus`? Memorize this, you will be asked about in in the next Question.
 
 *** =hint
 
-See the help files for `coeftest` and `vcovHC`.
+See the help files for functions `coeftest` and `vcovHC`.
 
 *** =pre_exercise_code
 ```{r}
