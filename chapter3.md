@@ -435,34 +435,58 @@ test_mc(correct = 4, feedback_msgs = c(msg_bad,msg_bad,msg_bad,msg_success,msg_b
 
 Do the significant levels for regressors `age` and `indus` change if You employ heterskedasticity robust standard errors?
 
-Robust 
+Implementations of robust variance-covariance estimators come with the `sandwich` package. See `?vcovHC`.
+
+A Summary reporting information for robust inference can be invoked with the function `coeftest()` from the `AER` package. 
 
 *** =instructions
 
 - Estimate the full model again.
-- Load the `sandwich` library
-
+- Load libraries `sandwich` and `AER`
+- Complete the suggested code in `Skript.R` and report robust inference using the Huber-White estimator for error variances (`HC0`).
 
 *** =hint
 
+See the help files for `coeftest` and `vcovHC`.
+
 *** =pre_exercise_code
 ```{r}
-
+library(AER)
+library(sandwich)
 ```
 
 *** =sample_code
 ```{r}
+# Estimate the full model
+mod_new <-
+
+# Load the libraries
+
+
+# Report robust inference
+coeftest(    , vcov.= vcovHC(    , type=    ))
 
 ```
 
 *** =solution
 ```{r}
+# Estimate the full model
+mod_full <- lm(medv ~., data = Boston)
 
+# Load the libraries
+library(AER)
+library(sandwich)
+
+# Report robust inference
+coeftest(mod_full, vcov.= vcovHC(mod_full, type="HC0"))
 ```
 
 *** =sct
 ```{r}
-
+test_object("mod_full")
+test_student_typed("library(AER)")
+test_student_typed("library(sandwich)")
+test_function(coeftest, args = "vcov.")
 ```
 
 --- type:NormalExercise lang:r xp: skills: key:d9760cf640
