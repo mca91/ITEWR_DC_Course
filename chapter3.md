@@ -354,6 +354,23 @@ test_output_contains("1-pf(f, df1 = 3, df2 = 502)")
 success_msg("Great! You can see the $p$-value printed to the console. It should be approximately $0$ since the test statistic lies very far in the assumed null distribution distribution's right flank and thus we expect the $p$-value to be very small.")
 ```
 
+--- type:MultipleChoiceExercise lang:r xp: skills: key:10d4b718b1
+## Does the F-Test Reject? 
+
+Having in mind the results from the previous exercise, which of the following statements is true?
+
+*** =instructions
+
+- The null cannot be rejected. Thus, the fit of the intercept-only model and the model using `lstat`, `age` and `crim` as regressors are *not* significantly different from each other. 
+- The null can be rejected clearly. The fit of the intercept-only model and the model using `lstat`, `age` and `crim` as regressors are significantly different from each other. Thus we conclude that the extendend model does outperform the simple intercept-only model.
+
+*** =sct
+```{r}
+msg_bad <- "No, that's wrong..."
+msg_success <- "Right, that sounds plausible. We reject the null hypothesis at every commonly used level of significance and conclude that the extended model does a better job. Good work!"
+test_mc(correct = 2, feedback_msgs = c(msg_bad, msg_success))
+```
+
 --- type:MultipleChoiceExercise lang:r xp: skills: key:91e960796d
 ## Which coefficients are significantly different from zero? 
 
