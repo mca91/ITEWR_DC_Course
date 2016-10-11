@@ -508,7 +508,7 @@ Did usage of the huber-white robust variance-covariance estimator render coeffic
 ```{r}
 msg_bad <- "Nope, that is wrong. Hope You are not guessing!"
 msg_success <- "Right, using robust standard errors did not change the results dramatically. We draw the same inference about both regression coefficients."
-test_mc(correct = 1, feedback_msgs = c(msg_success,msg_bad)
+test_mc(correct = 1, feedback_msgs = c(msg_success,msg_bad))
 ```
 
 --- type:NormalExercise lang:r xp: skills: key:d9760cf640
