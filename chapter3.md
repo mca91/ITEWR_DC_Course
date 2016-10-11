@@ -245,7 +245,7 @@ $$ \widehat{medv} = \underset{(0.74774)}{32.82804} + \underset{(0.05075)}{-0.994
 
 *** =instructions
 
-- Compute two-sided $p$-values using the test statistics computed beforehand and assign the values to the objects suggested in Script.R.
+- Compute two-sided $p$-values using the test statistics computed beforehand and assign values to the objects suggested in Script.R.
 - Use logical operators to check which $p$-values exceed the level of $\alpha=0.05$. Memorize the result! You will need in in the next exercise!
 *** =hint
 
@@ -283,6 +283,34 @@ test_object("p_intercept")
 test_object("p_lstat")
 test_object("p_age")
 test_object("p_crim")
+```
+
+--- type:NormalExercise lang:r xp: skills: key:905ec30cf5
+## Inference in the Multiple Regression Model - F-Statistic 
+
+
+*** =instructions
+
+*** =hint
+
+*** =pre_exercise_code
+```{r}
+
+```
+
+*** =sample_code
+```{r}
+
+```
+
+*** =solution
+```{r}
+
+```
+
+*** =sct
+```{r}
+
 ```
 
 --- type:MultipleChoiceExercise lang:r xp: skills: key:91e960796d
