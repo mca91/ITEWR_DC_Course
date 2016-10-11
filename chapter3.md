@@ -296,9 +296,8 @@ $$ \text{F-statistic: } 209.5 \, \text{on } 3 \, \text{and } 502 \, \text{DF}, \
 
 The second line of the output reports the test statistic, corresponding degrees of freedom and the $p$-value for a test of the null hypothesis that the estimated model above does not fit the data significantly better than the mean of the dependend variable, i.e. a regression model consisting solely of an intercept. 
 
-The test statistic is F-distributed 
+The test statistic is <a href="https://en.wikipedia.org/wiki/F-distribution"> F-distributed </a>.
 
-$$ F_{stat} = \frac{X/v1}{Y/v2} $$
 
 *** =instructions
 
