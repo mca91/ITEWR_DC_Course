@@ -322,7 +322,7 @@ mod <- lm(medv ~ lstat + age + crim, data = Boston)
 
 *** =sample_code
 ```{r}
-# Extract the F-statistic from the models summary
+# Extract the F-statistic from the model's summary; save it to f_stat
  
 
 # Store the test statistic to f
