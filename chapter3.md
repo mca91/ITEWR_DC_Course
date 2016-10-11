@@ -488,7 +488,7 @@ coeftest(mod_full, vcov.= vcovHC(mod_full, type="HC0"))
 test_object("mod_full")
 test_student_typed("library(AER)")
 test_student_typed("library(sandwich)")
-test_function(coeftest, args = "vcov.")
+test_function("coeftest", args = "vcov.")
 ```
 
 --- type:NormalExercise lang:r xp: skills: key:d9760cf640
