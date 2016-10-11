@@ -1,5 +1,5 @@
 ---
-title       : Multiple Regression (test)
+title       : Multiple Regression
 description : This section contains exercises dealing with the multiple linear regression model and discusses estimation using ordinary least squares. 
 attachments :
   slides_link : https://github.com/Emwikts1970/URFITE_DC/raw/master/Econometrics
@@ -342,6 +342,8 @@ test_mc(correct = 2, feedback_msgs = c(msg_bad, msg_success))
 
 *The multiple regression model from the previous exercise, `mod`, is available in your environment.* 
 
+Behold again the description of variables provided with the `Boston` data set. Think about which variable You would expect to have the highest $p$-value in a model including all variables as regressors and why.
+
 *** =instructions
 
 - Regress `medv` on all remaining variables that You find in the `Boston` data set. 
@@ -390,6 +392,40 @@ test_or({
 })
 test_function("summary")
 success_msg("Okay. You can see that the full models $adj. R^2$ is about $0.73$ renders it better than the model `medv ~ lstat + age + crim` ($adj. R^2 = 0.55$)")
+```
+
+
+
+
+--- type:MultipleChoiceExercise lang:r xp: skills: key:d3b0623549
+## Insignificant Regressors in the Full Model
+
+Which of the regressors are not significant at the $0.05$ level?
+
+*The full regression model from the previous exercise is available in your environment (`mod_full`).* 
+
+*** =instructions
+
+- The nitrogen oxides concentration `nox` and the average number of rooms per dwelling `rm`.
+- Index of accessibility to radial highways `rad` and the full-value property-tax rate `tax`.
+- Lower status of the population `lstat` and the pupil-teacher ratio by town `ptratio`.
+- The proportion of non-retail business acres per town `indus` and the proportion of owner-occupied units built prior to 1940 `age`.
+- The `intercept` and the proportion of residential land zoned `zn`.
+
+*** =hint
+
+Have a look at the model summary!
+
+*** =pre_exercise_code
+```{r}
+mod_full <- lm(medv ~., data = Boston)
+```
+
+*** =sct
+```{r}
+msg_bad <- "Nope, that is wrong. Hope You are not guessing!"
+msg_success <- "Right, in the current setting, it seems that these regressors are not deciding factors in determining housing values."
+test_mc(correct = 4, feedback_msgs = c(msg_bad,msg_bad,msg_bad,msg_success,msg_bad)
 ```
 
 --- type:NormalExercise lang:r xp: skills: key:d9760cf640
@@ -478,7 +514,7 @@ Name the variable which omission leads to the highest improvement in the fit of 
 - The proportion of owner-occupied units built prior to 1940, `age`.
 - Weighted mean of distances to five Boston employment centres, `dist`.
 - Index of accessibility to radial highways, `rad`.
-- Full-value property-tax rate per $10,000, `tax`.
+- Full-value property-tax rate per $10.000, `tax`.
 - The pupil-teacher ratio by town, `ptratio`.
 - The proportion of blacks by town, `black`.
 - Lower status of the population (percent), `lstat`.
