@@ -435,9 +435,9 @@ test_mc(correct = 4, feedback_msgs = c(msg_bad,msg_bad,msg_bad,msg_success,msg_b
 
 Do the significant levels for regressors `age` and `indus` change if You employ heterskedasticity robust standard errors?
 
-Implementations of robust variance-covariance estimators come with the `sandwich` package. See `?vcovHC`.
+Implementations of robust variance-covariance estimators come with the `sandwich` package.
 
-A Summary reporting information for robust inference can be invoked with the function `coeftest()` from the `AER` package. 
+A Summary reporting information for robust inference can be invoked with the function `coeftest()` from the `AER` package if an appropriate estimate of the variance-covariance matrix is supplied. See `?vcovHC`.
 
 *** =instructions
 
