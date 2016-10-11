@@ -294,9 +294,15 @@ $$ \widehat{medv} = \underset{(0.74774)}{32.82804} + \underset{(0.05075)}{-0.994
 
 $$ \text{F-statistic: } 209.5 \, \text{on } 3 \, \text{and } 502 \, \text{DF}, \,  p\text{-value: } < 2.2e-16 $$
 
-The second line of the output reports the test statistic, corresponding degrees of freedom and the $p$-value for a test of the hypothesis that the estimated model above fits the significantly data better than the mean of the dependend variable.
+The second line of the output reports the test statistic, corresponding degrees of freedom and the $p$-value for a test of the null hypothesis that the estimated model above does not fit the data significantly better than the mean of the dependend variable, i.e. a regression model consisting solely of an intercept. 
+
+The test statistic is F-distributed 
+
+$$ F_{stat} = \frac{X/{dfX}}{Y/dfY} $$
 
 *** =instructions
+
+Can You reject the 
 
 *** =hint
 
