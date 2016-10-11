@@ -346,7 +346,7 @@ Behold again the description of variables provided with the `Boston` data set. T
 
 *** =instructions
 
-- Regress `medv` on all remaining variables that You find in the `Boston` data set. Hint: use `medv ~.` as the formula argument in the call of `lm`. This is a shorthand for regression on all remaining variables provided with the data set.
+- Regress `medv` on all remaining variables that You find in the `Boston` data set.
 - Have a look at the model summary.
 - What can you say about the regression's *adjusted* $R^2$? Does this model improve on the previous one? (*no code submission needed*)
 
@@ -433,9 +433,9 @@ test_mc(correct = 4, feedback_msgs = c(msg_bad,msg_bad,msg_bad,msg_success,msg_b
 --- type:NormalExercise lang:r xp: skills: key:1269599081
 ## The impact of Robust Standard Errors
 
-Do the significant levels for regressors `age` and `indus` change if You employ heterskedasticity robust standard errors?
+Do the significant levels for regressors `age` and `indus` change if You employ heteroskedasticity robust standard errors?
 
-Implementations of robust variance-covariance estimators come with the `sandwich` package.
+Implementations of robust variance-covariance estimators cand be found in the `sandwich` package.
 
 A Summary reporting information for robust inference can be invoked with the function `coeftest()` from the `AER` package if an appropriate estimate of the variance-covariance matrix is supplied. See `?vcovHC`.
 
