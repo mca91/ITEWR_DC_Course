@@ -298,7 +298,7 @@ The second line of the output reports the test statistic, corresponding degrees 
 
 The test statistic is F-distributed 
 
-$$ F_{stat} = \frac{X/{dfX}}{Y/dfY} $$
+$$ F_{stat} = \frac{X/df_{x}}{Y/dfY} $$
 
 *** =instructions
 
