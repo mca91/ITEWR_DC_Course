@@ -526,20 +526,23 @@ Using R, one way to do this is as follows:
 D <- c()
 # Assign values accordingly using a loop
 for (i in 1:length(cs)) {
-  if (cs[i] < 26) { 
-    D[i] <- 1
+  if (cs[i] < ???) { 
+    D[i] <- ???
     } else {
       D[i] <- 0
     }
   }
 ```
+
+Notice that the code above contains two gaps indicated by `???`. Can you replace them with the right expressions?
+
 <br>
 *Vectors `cs` and `ts` are availabe in your working environment.*
 <br>
 
 ***=instructions
 
-- Create the dummy regressor `D` using the loop above.
+- Replace the `???` and create the dummy regressor `D` using the proposed loop above.
 - Convince yourself that `D` is a vector. Check its length.
 - Estimate a regression of $cs$ on $D$.
 - Call summary on Your model. Think about how the estimated coefficients are interpreted!
