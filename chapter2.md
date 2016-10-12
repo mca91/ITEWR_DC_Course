@@ -510,9 +510,14 @@ sigma_hat
 test_output_contains("sigma_hat", incorrect_msg = "Something's wrong... Did you use the forumula for sample standard deviation?")
 ```
 
+--- type:NormalExercise lang:r xp:100 skills:1 key:c4b2c27865
+## Regression when X is a Dummy Variable
+
+Instead of using a continuous regressor $X$, we might be interested in running the regression 
+
+\[ Y_i = \beta_0 + \beta_1 D_i + u_i \]
+
+
 --- type:NormalExercise lang:r xp:100 skills:1 key:2d231a7828
 ## Inference in the Simple Regression Model
-
---- type:NormalExercise lang:r xp:100 skills:1 key:c4b2c27865
-## Dummy Variables
 
