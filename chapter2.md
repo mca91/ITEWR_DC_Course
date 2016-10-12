@@ -517,7 +517,7 @@ Instead of using a continuous regressor $X$, we might be interested in running a
 
 For example, we define $X_i$ in the following way:
 
-D_i = \begin{cases} 1 \ \ \text{if $stratio$ in $i^{th}$ district < 20} \\\\ 0 \ \ \text{if $stratio$ in $i^{th}$ district $\geq$ 20} \end{cases} 
+$$ D_i = \begin{cases} 1 \ \ \text{if $stratio$ in $i^{th}$ district < 20} \\\\ 0 \ \ \text{if $stratio$ in $i^{th}$ district $\geq$ 20} \end{cases} $$
 
 
 
