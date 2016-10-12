@@ -517,9 +517,7 @@ Instead of using a continuous regressor $X$, we might be interested in running a
 
 For example, we define $X_i$ in the following way:
 
-
-
-
+\begin{align} A & = B \\ & = C \end{align}
 
 
 --- type:NormalExercise lang:r xp:100 skills:1 key:2d231a7828
