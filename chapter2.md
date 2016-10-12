@@ -550,9 +550,16 @@ cs <- c(23, 19, 30, 22, 23, 29, 35, 36, 33, 25)
 ts <- c(430, 430, 333, 410, 390, 377, 325, 310, 328, 375)
 ```
 
+***=hint
+- Check if an object is a vector using the function `is.vector()`
+- An object's length can be checked with `length`
+
 ***=sample_code
 ```{r}
 # Create D
+
+
+# Convince yourself that D is a vector. Check its length.
 
 
 # Regress ts on D and constant
@@ -575,6 +582,10 @@ for (i in 1:length(cs)) {
     }
   }
 
+# Convince yourself that D is a vector and Check its length
+is.vector(D)
+length(D)
+
 # Regress ts on D and constant
 mod <- lm(ts ~ D)
 
@@ -585,6 +596,8 @@ summary(mod)
 *** =sct
 ```{r}
 test_object("D")
+test_function("length")
+test_function("is.vector")
 test_function_result("lm")
 test_output_contains("lm(ts ~ D)")
 ```
