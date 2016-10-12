@@ -513,9 +513,13 @@ test_output_contains("sigma_hat", incorrect_msg = "Something's wrong... Did you 
 --- type:NormalExercise lang:r xp:100 skills:1 key:c4b2c27865
 ## Regression when X is a Dummy Variable
 
-Instead of using a continuous regressor $X$, we might be interested in running the regression 
+Instead of using a continuous regressor $X$, we might be interested in running a regression where the regressor $X_i$ is binary variable or so-called *dummy variable*. 
+For example, we define $X_i$ in the following way:
 
-[code][$$ left( sum_{k=1}^n a_k b_k right)^2leq left( sum_{k=1}^n a_k^2 right)left( sum_{k=1}^n b_k^2 right) $$][/code]
+\[ D_i = \begin{cases}
+        1 \ \ \text{if $stratio$ in $i^{th}$ district < 20} \\
+        0 \ \ \text{if $stratio$ in $i^{th}$ district $\geq$ 20} \\
+\end{cases} \]
 
 
 
