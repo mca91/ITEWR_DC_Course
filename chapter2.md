@@ -515,7 +515,10 @@ test_output_contains("sigma_hat", incorrect_msg = "Something's wrong... Did you 
 
 Instead of using a continuous regressor $X$, we might be interested in running the regression 
 
-\[ Y_i = \beta_0 + \beta_1 D_i + u_i \]
+\begin{align}
+    y = b_0 + b
+\end{align}
+
 
 
 --- type:NormalExercise lang:r xp:100 skills:1 key:2d231a7828
