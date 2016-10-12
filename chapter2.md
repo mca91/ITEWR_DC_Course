@@ -519,7 +519,62 @@ For example, we may define $D_i$ in the following way:
 
 $$ D_i = \begin{cases} 1 \ \ \text{if $CS$ in the $i^{th}$ class < 20} \\\\ 0 \ \ \text{if $CS$ in the $i^{th}$ class $\geq$ 20} \end{cases} $$
 
+Using R, one way to do this is as follows:
 
+```{r}
+# Define an empty vector D
+D <- c()
+# Assign values accordingly using a loop
+for (i in 1:length(cs)) {
+  if (cs[i] < 20) { 
+    D[i] <- 1
+    } else {
+      D[i] <- 0
+    }
+  }
+```
+
+***=instructions
+
+*** =pre_exercise_code
+```{r}
+cs <- c(23, 19, 30, 22, 23, 29, 35, 36, 33, 25)
+ts <- c(430, 430, 333, 410, 390, 377, 325, 310, 328, 375)
+```
+
+***=sample_code
+
+```{r}
+# Create D
+
+
+# Regress ts on D and constant
+
+
+# Inspect the your model using summary
+```
+
+***=solution
+```{r}
+## Create D
+# Define an empty vector D
+D <- c()
+# Assign values accordingly using a loop
+for (i in 1:length(cs)) {
+  if (cs[i] < 20) { 
+    D[i] <- 1
+    } else {
+      D[i] <- 0
+    }
+  }
+
+# Regress ts on D and constant
+mod <- lm(ts ~ D)
+
+# Regress ts on D and constant
+summary(mod)
+
+```
 
 --- type:NormalExercise lang:r xp:100 skills:1 key:2d231a7828
 ## Inference in the Simple Regression Model
