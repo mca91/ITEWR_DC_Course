@@ -599,7 +599,7 @@ test_object("D")
 test_function("length")
 test_function("is.vector")
 test_function_result("lm")
-test_output_contains("summary(lm(ts ~ D))")
+test_function("summary")
 ```
 
 --- type:NormalExercise lang:r xp:100 skills:1 key:2d231a7828
