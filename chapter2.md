@@ -589,7 +589,7 @@ length(D)
 # Regress ts on D and constant
 mod <- lm(ts ~ D)
 
-# Regress ts on D and constant
+# Call summary on the model object
 summary(mod)
 ```
 
@@ -599,7 +599,7 @@ test_object("D")
 test_function("length")
 test_function("is.vector")
 test_function_result("lm")
-test_output_contains("lm(ts ~ D)")
+test_output_contains("summary(lm(ts ~ D))")
 ```
 
 --- type:NormalExercise lang:r xp:100 skills:1 key:2d231a7828
