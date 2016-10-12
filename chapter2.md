@@ -515,9 +515,7 @@ test_output_contains("sigma_hat", incorrect_msg = "Something's wrong... Did you 
 
 Instead of using a continuous regressor $X$, we might be interested in running the regression 
 
-$a_1$
-
-$b_2$
+$$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
 
 
 
