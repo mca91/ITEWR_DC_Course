@@ -534,7 +534,14 @@ for (i in 1:length(cs)) {
   }
 ```
 
+*Vectors `cs` and `ts` are availabe in your working environment.*
+
+
 ***=instructions
+
+- Create the dummy regressor $D$ using the loop above.
+- Estimate a regression of $cs$ on $D$.
+- Call summary on Your model. Think about how the estimated coefficients are interpreted!
 
 *** =pre_exercise_code
 ```{r}
@@ -543,7 +550,6 @@ ts <- c(430, 430, 333, 410, 390, 377, 325, 310, 328, 375)
 ```
 
 ***=sample_code
-
 ```{r}
 # Create D
 
@@ -573,7 +579,13 @@ mod <- lm(ts ~ D)
 
 # Regress ts on D and constant
 summary(mod)
+```
 
+*** =sct
+```{r}
+test_object("D")
+test_function_result("lm")
+test_output_contains("lm(ts ~ D)")
 ```
 
 --- type:NormalExercise lang:r xp:100 skills:1 key:2d231a7828
