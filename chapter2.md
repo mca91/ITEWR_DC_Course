@@ -517,7 +517,7 @@ Instead of using the regressor $CS$, we might be interested in running a regress
 
 For example, we may define $D_i$ in the following way:
 
-$$ D_i = \begin{cases} 1 \ \ \text{if $CS$ in the $i^{th}$ class < 20} \\\\ 0 \ \ \text{if $CS$ in the $i^{th}$ class $\geq$ 20} \end{cases} $$
+$$ D_i = \begin{cases} 1 \ \ \text{if $CS$ in the $i^{th}$ class < 26} \\\\ 0 \ \ \text{if $CS$ in the $i^{th}$ class $\geq$ 26} \end{cases} $$
 
 Using R, one way to do this is as follows:
 
@@ -526,7 +526,7 @@ Using R, one way to do this is as follows:
 D <- c()
 # Assign values accordingly using a loop
 for (i in 1:length(cs)) {
-  if (cs[i] < 20) { 
+  if (cs[i] < 26) { 
     D[i] <- 1
     } else {
       D[i] <- 0
@@ -539,7 +539,8 @@ for (i in 1:length(cs)) {
 
 ***=instructions
 
-- Create the dummy regressor $D$ using the loop above.
+- Create the dummy regressor `D` using the loop above.
+- Convince yourself that `D` is a vector. Check its length.
 - Estimate a regression of $cs$ on $D$.
 - Call summary on Your model. Think about how the estimated coefficients are interpreted!
 
@@ -567,7 +568,7 @@ ts <- c(430, 430, 333, 410, 390, 377, 325, 310, 328, 375)
 D <- c()
 # Assign values accordingly using a loop
 for (i in 1:length(cs)) {
-  if (cs[i] < 20) { 
+  if (cs[i] < 26) { 
     D[i] <- 1
     } else {
       D[i] <- 0
