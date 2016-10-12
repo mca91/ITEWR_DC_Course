@@ -516,7 +516,8 @@ test_output_contains("sigma_hat", incorrect_msg = "Something's wrong... Did you 
 Instead of using a continuous regressor $X$, we might be interested in running a regression where the regressor $X_i$ is binary variable or so-called *dummy variable*. 
 For example, we define $X_i$ in the following way:
 
-$$ D_i = \begin{cases} 1 \ \ \text{if $stratio$ in $i^{th}$ district < 20} <br> 0 \ \ \text{if $stratio$ in $i^{th}$ district $\geq$ 20} \end{cases} $$
+$$ D_i = \begin{cases} 1 \ \ \text{if $stratio$ in $i^{th}$ district < 20} 
+0 \ \ \text{if $stratio$ in $i^{th}$ district $\geq$ 20} \end{cases} $$
 
 
 
