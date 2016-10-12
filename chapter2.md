@@ -598,6 +598,13 @@ summary(mod)
 
 *** =sct
 ```{r}
+test_student_typed("for (i in 1:length(cs)) {
+  if (cs[i] < 26) { 
+    D[i] <- 1
+    } else {
+      D[i] <- 0
+    }
+  }")
 test_object("D")
 test_function("length")
 test_function("is.vector")
