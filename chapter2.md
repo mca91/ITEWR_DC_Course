@@ -543,7 +543,7 @@ Notice that the code above contains two gaps indicated by `???`. Can you replace
 ***=instructions
 
 - Replace the `???` and create the dummy regressor `D` using the proposed loop above.
-- Convince yourself that `D` is a vector. Check its length.
+- Convince Yourself that `D` is a vector. Check its length.
 - Estimate a regression of $cs$ on $D$.
 - Call summary on Your model. Think about how the estimated coefficients are interpreted!
 
