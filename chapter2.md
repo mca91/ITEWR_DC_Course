@@ -604,7 +604,7 @@ test_student_typed("for (i in 1:length(cs)) {
     } else {
       D[i] <- 0
     }
-  }", not_typed_msg="Make sure You use the loop proposed above. If you have done so, check Your replacement for the `???`.")
+  }", not_typed_msg="Make sure You use the loop proposed above. If you have done so, check Your replacement for both `???`.")
 test_object("D")
 test_function("length")
 test_function("is.vector")
