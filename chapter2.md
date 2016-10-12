@@ -513,7 +513,7 @@ test_output_contains("sigma_hat", incorrect_msg = "Something's wrong... Did you 
 --- type:NormalExercise lang:r xp:100 skills:1 key:c4b2c27865
 ## Regression when X is a Dummy Variable
 
-Instead of using a continuous regressor $X$, we might be interested in running a regression where the regressor $D_i$ is binary variable or so-called dummy variable. 
+Instead of using a continuous regressor $X$, we might be interested in running a regression where the regressor, $D_i$ say, is binary variable or so-called dummy variable. 
 
 For example, we define $X_i$ in the following way:
 
