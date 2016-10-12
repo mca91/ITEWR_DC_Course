@@ -516,8 +516,10 @@ test_output_contains("sigma_hat", incorrect_msg = "Something's wrong... Did you 
 Instead of using a continuous regressor $X$, we might be interested in running the regression 
 
 \begin{align}
-    y = \index{b ! 0} + b_0
+    y = b_0 + b0 \times Di
 \end{align}
+
+
 
 
 
