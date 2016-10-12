@@ -517,15 +517,8 @@ Instead of using a continuous regressor $X$, we might be interested in running a
 
 For example, we define $X_i$ in the following way:
 
-\begin{align} A & = B \\\\ & = C \end{align}
+D_i = \begin{cases} 1 \ \ \text{if $stratio$ in $i^{th}$ district < 20} \\\\ 0 \ \ \text{if $stratio$ in $i^{th}$ district $\geq$ 20} \end{cases} 
 
-\displaystyle i \hbar \frac{ \partial \psi }{\partial t}
-=\frac{\hbar c}{i}
-\left(\alpha_1 \frac{\partial \psi}
-{\partial x^1} +\alpha_2 \frac{\partial \psi}
-{\partial x^2} +\alpha_3 \frac{\partial \psi}
-{\partial x^3}\right)
-+\alpha_4 m c^2 \psi
 
 
 --- type:NormalExercise lang:r xp:100 skills:1 key:2d231a7828
