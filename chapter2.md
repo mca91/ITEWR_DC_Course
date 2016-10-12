@@ -516,7 +516,7 @@ test_output_contains("sigma_hat", incorrect_msg = "Something's wrong... Did you 
 Instead of using a continuous regressor $X$, we might be interested in running the regression 
 
 \begin{align}
-    y = b_0 + b
+    y = b_0 + b_0
 \end{align}
 
 
