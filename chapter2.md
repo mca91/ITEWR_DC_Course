@@ -576,7 +576,7 @@ ts <- c(430, 430, 333, 410, 390, 377, 325, 310, 328, 375)
 ## Create D
 # Define an empty vector D
 D <- c()
-# Assign values accordingly using a loop
+# Assign values accordingly using the loop
 for (i in 1:length(cs)) {
   if (cs[i] < 26) { 
     D[i] <- 1
