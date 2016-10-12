@@ -533,9 +533,9 @@ for (i in 1:length(cs)) {
     }
   }
 ```
-
+<br>
 *Vectors `cs` and `ts` are availabe in your working environment.*
-
+<br>
 
 ***=instructions
 
