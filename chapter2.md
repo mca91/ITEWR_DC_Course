@@ -734,7 +734,7 @@ test_student_typed("plot(x = D , y = ts,
 test_predefined_objects("mod")
 test_function("abline")
 test_function("points", index = 1)
-test_function("points", index = 2, args="x")
+test_function("points", index = 2, args=c("x","y"))
 ```
 
 --- type:NormalExercise lang:r xp:100 skills:1 key:2d231a7828
