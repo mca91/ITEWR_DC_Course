@@ -656,7 +656,7 @@ $$ \widehat{TestScore} = 334.60 + 72.40 \times D $$
 
 In this exercise, you will visualize some of the results from the last exercise. 
 
-Start by drawing a visually appealing plot of observations with the folling code chunk:
+Start by drawing a visually appealing plot of observations based on the following code chunk:
 
 ```{r}
 plot(x = ??? , y = ???, 
