@@ -668,6 +668,7 @@ plot(x = ??? , y = ???,
 
 Can you replace the `???` with correct arguments?
 
+<br>
 *Vectors `D` and `ts` as well as the model object `mod` are available in your workspace.*
 
 *** =instructions
