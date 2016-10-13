@@ -660,10 +660,10 @@ Start by drawing a visually appealing plot of observations based on the followin
 
 ```{r}
 plot(x = ??? , y = ???, 
-     pch=20, cex=1 ,col="Steelblue",
-     xlab=expression(D[i]), ylab="Test Score",
-     main = "Dummy Regression"
-     )
+     pch=20, cex=1 ,col='Steelblue',
+     xlab=expression(D[i]), ylab='Test Score',
+     main = 'Dummy Regression'
+     )"
 ```
 
 Can you replace the `???` with correct arguments?
