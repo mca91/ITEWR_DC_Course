@@ -675,7 +675,7 @@ Can you replace the `???` with correct arguments?
 
 - Draw a scatter plot of observations using the code snippet above. Replace the `???` with the correct expressions!
 - Add the regression line to the plot using `abline()`.
-- Draw in the group specific means using `points()`
+- Draw in the group specific means using `points()`. Orientate on the snippet provided in `script.R`. What has to be changed to also get the mean test score for classes with size < 26?
 
 *** =hint
 
