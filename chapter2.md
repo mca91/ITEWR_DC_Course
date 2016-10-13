@@ -652,7 +652,11 @@ test_mc(correct = 2, feedback_msgs = c(msg_bad, msg_success, msg_bad, msg_bad))
 --- type:NormalExercise lang:r xp: skills: key:2bb531e9cd
 ## Regression when X is a Dummy Variable 
 
-In this exercise, you will visualize some of the results from the last exercise.
+$$ \widehat{TestScore} = 334.60 + 72.40 \times D $$
+
+In this exercise, you will visualize some of the results from the last exercise. 
+
+Start by drawing a visually appealing plot of observations with the folling code chunk:
 
 ```{r}
 plot(x = ??? , y = ???, 
@@ -661,6 +665,8 @@ plot(x = ??? , y = ???,
      main = "Dummy Regression"
      )
 ```
+
+Can you replace the `???` with correct arguments?
 
 *** =instructions
 
