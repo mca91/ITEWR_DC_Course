@@ -668,6 +668,8 @@ plot(x = ??? , y = ???,
 
 Can you replace the `???` with correct arguments?
 
+*Vectors `D` and `ts` as well as the model object `mod` are available in your workspace.*
+
 *** =instructions
 
 - Draw a scatter plot of observations using the code snippet above. Replace the `???` with the correct expressions!
