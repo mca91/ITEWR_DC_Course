@@ -698,7 +698,7 @@ mod <- lm(ts ~ D)
 
 
 # Add the mean test score for classes with size >= 26 to the plot
-points(x = 0, y = mean(ts[cs>=26]), col = "red", pch=20, cex=1.8 )
+points(x = 0, y = mean(ts[cs>=26]), col = "red", pch=20, cex=1.8)
 
 # Add the mean test score for classes with size < 26 to the plot
 
@@ -718,15 +718,23 @@ plot(x = D , y = ts,
 abline(mod)
 
 # Add the mean test score for classes with size >= 26 to the plot
-points(x = 0, y = mean(ts[cs>=26]), col = "red", pch=20, cex=1.8 )
+points(x = 0, y = mean(ts[cs>=26]), col = "red", pch=20, cex=1.8)
 
 # Add the mean test score for classes with size < 26 to the plot
-points(x = 0, y = mean(ts[cs<26]), col = "red", pch=20, cex=1.8 )
+points(x = 0, y = mean(ts[cs<26]), col = "red", pch=20, cex=1.8)
 ```
 
 *** =sct
 ```{r}
-
+test_student_typed("plot(x = D , y = ts, 
+     pch=20, cex=1 ,col="Steelblue",
+     xlab=expression(D[i]), ylab="Test Score",
+     main = "Dummy Regression"
+     )")
+test_predefined_objects("mod")
+test_function("abline")
+test_function("points", index = 1)
+test_function("points", index = 2)
 ```
 
 --- type:NormalExercise lang:r xp:100 skills:1 key:2d231a7828
