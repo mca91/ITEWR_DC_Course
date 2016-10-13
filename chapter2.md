@@ -620,6 +620,7 @@ $$ \widehat{TestScore} = 334.60 + 72.40 \times D $$
 
 *The model object is available in your workspace (`mod`)*
 
+
 Which of the following statements is *wrong*?
 
 *** =instructions
