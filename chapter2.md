@@ -642,9 +642,8 @@ mod <- lm(ts ~ D)
 
 *** =sct
 ```{r}
-msg_bad <- "That is not correct!"
-msg_success <- "Exactly! $334.60$ can be interpreted as the estimated average test scrore among classes with at least 26 pupils. For classes with less than 26 pupils, the dummy $D$ switches to one such that 
-the estimated average test score in classes with less than 26 pupils is $334.60 + 72.40 = 407$. This indicates that test score is higher for smaller class sizes. <br> Good Job!"
+msg_bad <- "Sorry, this statement is correct..."
+msg_success <- "Exactly! Remember: $D$ is now a dummy variable! <br> The intercept, $334.60$, can be interpreted as the estimated average test scrore among classes with at least 26 pupils. For classes with less than 26 pupils, the dummy $D$ switches to one such that the estimated average test score in classes with less than 26 pupils is $334.60 + 72.40 = 407$. This indicates that test score is higher for smaller class sizes. <br> Good Job!"
 test_mc(correct = 2, feedback_msgs = c(msg_bad, msg_success, msg_bad, msg_bad))
 ```
 
