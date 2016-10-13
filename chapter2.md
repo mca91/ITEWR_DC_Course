@@ -620,8 +620,9 @@ $$ \widehat{TestScore} = 334.60 + 72.40 \times D $$
 
 *The model object is available in your workspace (`mod`)*
 
+Which of the following statements is *wrong*?
+
 *** =instructions
-Which of the following statements is wrong?
 
 - The intercept can be interpreted as the estimated average test scrore among classes with at least 26 pupils. 
 - Increasing the class size by one unit leads to an estimated increase of 72.40 in test score on average.
