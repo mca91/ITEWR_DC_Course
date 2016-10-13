@@ -649,6 +649,61 @@ test_mc(correct = 2, feedback_msgs = c(msg_bad, msg_success, msg_bad, msg_bad))
 
 
 
+--- type:NormalExercise lang:r xp: skills: key:2bb531e9cd
+## Regression when X is a Dummy Variable 
+
+
+```{r}
+plot(x = ??? , y = ???, 
+     pch=20, cex=1 ,col="Steelblue",
+     xlab=expression(D[i]), ylab="Test Score",
+     main = "Dummy Regression"
+     )
+```
+
+*** =instructions
+
+- Draw a scatter plot of observations using the code snippet above. Replace the `???` with the correct expressions!
+- Add the regression line to the plot using `abline()`.
+- Draw in the group specific means using `points()`
+
+*** =hint
+
+*** =pre_exercise_code
+```{r}
+cs <- c(23, 19, 30, 22, 23, 29, 35, 36, 33, 25)
+ts <- c(430, 430, 333, 410, 390, 377, 325, 310, 328, 375)
+D <- c(1,1,0,1,1,0,0,0,0,1)
+mod <- lm(ts ~ D)
+```
+
+*** =sample_code
+```{r}
+
+```
+
+*** =solution
+```{r}
+# Plot the data
+plot(x = D , y = ts, 
+     pch=20, cex=1 ,col="Steelblue",
+     xlab=expression(D[i]), ylab="Test Score",
+     main = "Dummy Regression"
+     )
+
+# Add the regression line
+abline(mod)
+
+# Draw in group specific means
+points(0,mean(ts[D]))
+
+```
+
+*** =sct
+```{r}
+
+```
+
 --- type:NormalExercise lang:r xp:100 skills:1 key:2d231a7828
 ## Inference in the Simple Regression Model
 
