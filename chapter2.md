@@ -652,9 +652,9 @@ test_mc(correct = 2, feedback_msgs = c(msg_bad, msg_success, msg_bad, msg_bad))
 --- type:NormalExercise lang:r xp: skills: key:2bb531e9cd
 ## Regression when X is a Dummy Variable 
 
-$$ \widehat{TestScore} = 334.60 + 72.40 \times D $$
-
 In this exercise, you will visualize some of the results from the previously conducted dummy regression. 
+
+$$ \widehat{TestScore} = 334.60 + 72.40 \times D $$
 
 Start by drawing a visually appealing plot of observations based on the following code chunk:
 
