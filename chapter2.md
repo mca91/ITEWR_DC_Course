@@ -379,8 +379,7 @@ Have a look at the regression equation. How can you interpret the relation on th
 ```{r}
 msg_bad <- "That is not correct!"
 msg_success <- "Exactly!"
-msg_joke <- "LoL, your definitely not 1337!"
-test_mc(correct = 1, feedback_msgs = c(msg_success, msg_joke, msg_bad, msg_bad))
+test_mc(correct = 1, feedback_msgs = c(msg_success, msg_bad, msg_bad, msg_bad))
 ```
 
 --- type:NormalExercise lang:r xp:50 skills:1 key:b0b7650bb3
@@ -432,7 +431,7 @@ Review the formulas for the OLS estimators!
 
 *** =sample_code
 ```{}
-# What is sample average of the test score across the 50 classrooms?
+# What is the sample average of the test score across the 50 classrooms?
 
 
 ```
@@ -511,7 +510,7 @@ test_output_contains("sigma_hat", incorrect_msg = "Something's wrong... Did you 
 ```
 
 --- type:NormalExercise lang:r xp:100 skills:1 key:c4b2c27865
-## Regression when X is a Dummy Variable
+## Regression when X is a Dummy Variable I
 
 Instead of using the regressor $CS$, we might be interested in running a regression where the regressor, $D$ say, is binary variable or so-called dummy variable. 
 
@@ -612,6 +611,43 @@ test_function_result("lm")
 test_function("summary")
 ```
 
+--- type:MultipleChoiceExercise lang:r xp: skills: key:b496c011e5
+## Regression when X is a Dummy Variable – Interpretation
+
+Consider again the dummy regression model from the previous exervise. The estimated regression equation was:
+
+$$ \widehat{TestScore} = 334.60 + 72.40 \times D $$
+
+*The model object is available in your workspace (`mod`)*
+
+*** =instructions
+Which of the following statements is wrong?
+
+- The intercept can be interpreted as the estimated average test scrore among classes with at least 26 pupils. 
+- Increasing the class size by one unit leads to an estimated increase of 72.40 in test score on average.
+- The estimated average test score in classes with less than 26 pupils is 407.
+- The regression equation indicates that test score is higher for smaller class sizes.
+
+*** =hint
+
+*** =pre_exercise_code
+```{r}
+cs <- c(23, 19, 30, 22, 23, 29, 35, 36, 33, 25)
+ts <- c(430, 430, 333, 410, 390, 377, 325, 310, 328, 375)
+mod <- lm(ts ~ D)
+```
+
+*** =sct
+```{r}
+msg_bad <- "That is not correct!"
+msg_success <- "Exactly! $334.60$ can be interpreted as the estimated average test scrore among classes with at least 26 pupils. For classes with less than 26 pupils, the dummy $D$ switches to one such that 
+the estimated average test score in classes with less than 26 pupils is $334.60 + 72.40 = 407$. This indicates that test score is higher for smaller class sizes. <br> Good Job!"
+test_mc(correct = 2, feedback_msgs = c(msg_bad, msg_success, msg_bad, msg_bad))
+```
+
+
+
 --- type:NormalExercise lang:r xp:100 skills:1 key:2d231a7828
 ## Inference in the Simple Regression Model
+
 
