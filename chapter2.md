@@ -619,6 +619,7 @@ Consider again the dummy regression model from the previous exervise. The estima
 $$ \widehat{TestScore} = 334.60 + 72.40 \times D $$
 
 *The model object is available in your workspace (`mod`)*
+
 <br>
 Which of the following statements is *wrong*?
 
