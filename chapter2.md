@@ -652,6 +652,7 @@ test_mc(correct = 2, feedback_msgs = c(msg_bad, msg_success, msg_bad, msg_bad))
 --- type:NormalExercise lang:r xp: skills: key:2bb531e9cd
 ## Regression when X is a Dummy Variable 
 
+In this exercise, you will visualize some of the results from the last exercise.
 
 ```{r}
 plot(x = ??? , y = ???, 
@@ -679,6 +680,18 @@ mod <- lm(ts ~ D)
 
 *** =sample_code
 ```{r}
+# Plot the data
+
+
+
+
+# Add the regression line
+
+
+# Add the mean test score for classes with size >= 26 to the plot
+points(x = 0, y = mean(ts[cs>=26]), col = "red", pch=20, cex=1.8 )
+
+# Add the mean test score for classes with size < 26 to the plot
 
 ```
 
@@ -694,9 +707,11 @@ plot(x = D , y = ts,
 # Add the regression line
 abline(mod)
 
-# Draw in group specific means
-points(0,mean(ts[D]))
+# Add the mean test score for classes with size >= 26 to the plot
+points(x = 0, y = mean(ts[cs>=26]), col = "red", pch=20, cex=1.8 )
 
+# Add the mean test score for classes with size < 26 to the plot
+points(x = 0, y = mean(ts[cs<26]), col = "red", pch=20, cex=1.8 )
 ```
 
 *** =sct
