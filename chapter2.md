@@ -721,7 +721,7 @@ abline(mod)
 points(x = 0, y = mean(ts[cs>=26]), col = "red", pch=20, cex=1.8)
 
 # Add the mean test score for classes with size < 26 to the plot
-points(x = 0, y = mean(ts[cs<26]), col = "red", pch=20, cex=1.8)
+points(x = 1, y = mean(ts[cs<26]), col = "red", pch=20, cex=1.8)
 ```
 
 *** =sct
