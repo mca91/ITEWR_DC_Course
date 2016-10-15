@@ -95,7 +95,9 @@ test_function("median")
 test_function("var")
 test_function("sd")
 test_function("cov")
+test_output_contains("cov(cs,ts)")
 test_function("cor")
+test_output_contains("cor(cs,ts)")
 ```
 
 --- type:MultipleChoiceExercise lang:r xp: skills: key:2ad42e1384
