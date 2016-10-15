@@ -141,7 +141,9 @@ test_mc(correct = 1, feedback_msgs = c(msg_success, msg_bad, msg_bad, msg_bad))
 
 In this exercise, you will learn how to estimate a simple linear regression model.
 
-In R, linear models can be fitted by use of the `lm()` function. An argument to be always specified in `lm()` is a regression formula of the form `y ~ x`. This expression states that you want to estimate a linear model of `y` as a function of `x`. 
+In R, linear models can be fitted by use of the `lm()` function. 
+
+An argument to be always specified in `lm()` is a regression formula of the form `y ~ x`. This expression states that you want to estimate a linear model of `y` as a function of `x`.  Typ and execute `?lm` or `?formula` for further info on subjects.
 
 *Data vectors from the previous exercise is available in your workspace.*
 
