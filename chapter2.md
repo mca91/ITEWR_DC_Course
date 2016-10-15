@@ -542,7 +542,7 @@ $ SSR = \sum_{i=1}^n u^2 $
 
 *** =sample_code
 ```{r}
-# What is sample standard deviation of test scores across the 50 classrooms?
+# What is the sample standard deviation of test scores across the 50 classrooms?
 
 
 ```
