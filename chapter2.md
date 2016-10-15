@@ -117,6 +117,41 @@ test_function("cov")
 test_function("cor")
 ```
 
+--- type:MultipleChoiceExercise lang:r xp: skills: key:2ad42e1384
+## Linear Relationship? 
+
+Have a look at the scatter plot again (we made it a little bit more fancy here) and remember the result of the `cor()` function:
+
+```{r}
+> cor(cs,ts)
+[1] -0.9474424 
+```
+
+Which of the following statements describes best the relationship between both variables?
+
+*** =instructions
+
+- The relationship is negative, linear and strong. There are no outliers.
+- Both variables relate in a strongly nonlinear manner of unkown kind.
+- The relationship is positive, linear and weak. There are outliers.
+- It seems that $ClassSize = e^{TestScore}$.
+
+*** =hint
+
+*** =pre_exercise_code
+```{r}
+cs <- c(23, 19, 30, 22, 23, 29, 35, 36, 33, 25)
+ts <- c(430, 430, 333, 410, 390, 377, 325, 310, 328, 375)
+plot(cs,ts, cex=20, col="steelblue", ylab="Test Score", xlab="Class Size", main="Scatter Plot")
+```
+
+*** =sct
+```{r}
+msg_bad <- "That is not correct!"
+msg_success <- "Exactly! Remember that the empirical correlation between both variables is about $-0.95$ indicating a strongly negative linear relation. The scatter plot delivers visual evidence."
+test_mc(correct = 1, feedback_msgs = c(msg_success, msg_bad, msg_bad, msg_bad))
+```
+
 --- type:NormalExercise lang:r xp: skills: key:54c5e502ca
 ## A Linear Model 
 
