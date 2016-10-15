@@ -143,7 +143,7 @@ In this exercise, you will learn how to estimate a simple linear regression mode
 
 In R, linear models can be fitted by use of the `lm()` function. 
 
-An argument to be always specified in `lm()` is a regression formula of the form `y ~ x`. This expression states that you want to estimate a linear model of `y` as a function of `x`.  Typ and execute `?lm` or `?formula` for further info on subjects.
+An argument to be always specified in `lm()` is a regression formula of the form `y ~ x`. This expression states that you want to estimate a linear model of `y` as a function of `x`.  Type and execute `?lm` or `?formula` for further info on subjects.
 
 *Data vectors from the previous exercise is available in your workspace.*
 
@@ -347,7 +347,7 @@ test_function("abline", index=2)
 ```
 
 --- type:NormalExercise lang:r xp: skills: key:673ab4d8fc
-## Regression IV: Class Size and Test Score  
+## The R^2 of a Regression Model  
 
 We now go back to the simple model including an intercept. The estimated regression line for `mod` was
 
