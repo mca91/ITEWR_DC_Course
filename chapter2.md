@@ -526,6 +526,8 @@ $$ \widehat{TestScore} = 640.3 - 4.93 \times CS, R^2 = 0.11, SER= 8.7 $$
 *** =instructions
 What is the sample standard deviation of test scores across the 50 classrooms?
 
+Hint: Remember Your regression formulas! For correct evaluation of this exercise, it suffices if You print the solution to the console.
+
 *** =hint
 
 Review the formulas for the $R^2$ and $SER$ 
