@@ -5,7 +5,7 @@ attachments :
   slides_link : https://github.com/Emwikts1970/URFITE_DC/raw/master/Econometrics
 
 --- type:NormalExercise lang:r xp: skills: key:9d4515394d
-## Regression I: Class Size and Test Score
+## Class Sizes and Test Scores
 
 A researcher wants to analyse the relationship between class size and pupils' average test score. Therefore he measures both variables in 10 different classes obtaining the following results:
 
@@ -41,18 +41,11 @@ A researcher wants to analyse the relationship between class size and pupils' av
 
 *** =instructions
 
-- Create vectors, `cs` for class sizes and `ts` for test scores, containing the results
-- Draw a scatter plot of the results using `plot`
-- Compute mean, median and variance and standard deviation of test scores. Use existing R functions!
-- Compute both the covariance and pearson's correlation coefficient for `cs` and `ts` using R functions
-- Estimate a linear regression of test score on class size using `lm()`. Store the result in `mod`
-- `mod` is an object of type `list` with named entries. Check this using the function `is.list()`
-- See what information you can obtain from `mod` using the `$` operator. Read out an arbitrary entry of `mod` 
-
-
-*** =hint
-
-
+- Create vectors, `cs` for class sizes and `ts` for test scores, containing the obeservations above.
+- Draw a scatter plot of the results using `plot`.
+Use <b>*existing*</b> R functions for the following exercises.
+- Compute mean, median and variance and standard deviation of test scores.
+- Compute both the covariance and pearson's correlation coefficient for `cs` and `ts`.
 
 *** =sample_code
 ```{r}
@@ -122,7 +115,52 @@ test_function("var")
 test_function("sd")
 test_function("cov")
 test_function("cor")
+```
 
+--- type:NormalExercise lang:r xp: skills: key:54c5e502ca
+## A Linear Model 
+
+*Data vectors from the previous exercise is available in your workspace.*
+
+*** =instructions
+- Estimate a linear regression of test score on class size using `lm()`. Store the result in `mod`.
+- `mod` is an object of type `list` with named entries. Check this using the function `is.list()`.
+- See what information you can obtain from `mod` using the `$` operator. Read out an arbitrary property of the object `mod`.
+
+
+*** =pre_exercise_code
+```{r}
+cs <- c(23, 19, 30, 22, 23, 29, 35, 36, 33, 25)
+ts <- c(430, 430, 333, 410, 390, 377, 325, 310, 328, 375)
+```
+
+*** =sample_code
+```{r}
+# Estimate the regression model and store it in mod
+
+
+# Check that mod is an object of type list 
+
+
+# Read out some arbitrary entry of mod using. E.g. fitted values:
+
+
+```
+
+*** =solution
+```{r}
+# Estimate the regression model and store it in mod
+mod <- lm(ts ~ cs)
+
+# Check that mod is an object of type list 
+is.list(mod)
+
+# Read out some arbitrary entry of mod using. E.g. fitted values:
+mod$fitted.values
+```
+
+*** =sct
+```{r}
 test_or(
   test_function("lm", eq_condition = "equal", not_called_msg = "You didn't call `lm()`!",
               incorrect_msg = "You didn't call `lm()` with the correct argument, `formula`."),
@@ -135,7 +173,6 @@ test_object("mod")
 test_function("is.list", args="x")
 
 test_student_typed("mod$")
-
 ```
 
 --- type:NormalExercise lang:r xp: skills: key:6e64f67c78
