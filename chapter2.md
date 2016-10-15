@@ -418,6 +418,36 @@ test_student_typed("R2 == 0.8976", not_typed_msg = "Something is wrong. Make sur
 test_output_contains("R2 == 0.8976")
 ```
 
+--- type:MultipleChoiceExercise lang:r xp: skills: key:c0b8375eb8
+## What was R^2 again?  
+
+The coefficient of determination, denoted $R^2$, is a measure of a model's goodness of fit. It is defined as
+
+$$ R^2 = \frac{ESS}{TSS} = 1 - \frac{SSR}{TSS}. $$
+
+Where $TSS = \text{total sum of squares}$, $ESS = \text{explained sum of squares}$ and $TSS = \text{sum of squared residuals}$.
+
+Which of the following statements about $R^2$ is right?
+
+*** =instructions
+
+- The coefficient of determination can only be computed for linear regression models.
+- $R^2$ is a measure indicating the proportion of the variance in the dependent variable that is explained by the independent variable(s).
+- A model's $R^2$ shrinks if the absolute value of the residual sum grows.
+- The coefficient of determination is always defined on $[-1,1]$. 
+
+*** =hint
+
+*** =pre_exercise_code
+```{r}
+
+```
+
+*** =sct
+```{r}
+
+```
+
 --- type:MultipleChoiceExercise lang:r xp:50 skills:1 key:13d4cf0fb6
 ## Interpreting OLS Regressions I
 
