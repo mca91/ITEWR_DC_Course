@@ -266,10 +266,11 @@ test_object("coef")
 ```
 
 --- type:NormalExercise lang:r xp: skills: key:449f4c19de
-## Regression III: Class Size and Test Score 
+## Dropping the Intercept
 
-So far, You have conducted regressions where the model consisted of an intercept and another regressor. In this exercise you will learn ways to specify and to 
-estimate regression models without the intercept.
+So far, You have conducted regressions where the model consisted of an intercept and another regressor. In this exercise you will learn ways to specify and to estimate regression models without the intercept.
+
+Notice that excluding the intercept from Your regression model might be a dodgy practice in some models as You impose the mean of the dependend variable to be zero if all other regressors are zero.
 
 *Vectors `cs` and `ts` as well as the list object `mod` from previous exercises are availabe in your working environment.*
 
