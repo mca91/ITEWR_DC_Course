@@ -13,9 +13,9 @@ i.e. a regression of some variable $y_i$ solely on a constant or, put differentl
 
 $$\mathbf{X} = (1 \dots 1)'.$$
 
-In the plotting area on the right you see the result of a *Monte Carlo Simulation* analysing distributional properties of the OLS estimator for $ \beta $ in the model above and another linear estimator $\overset{\sim}{\beta}$ which uses different weights than OLS. Say, $\beta=0$. 
+In the plotting area on the right You see the result of a *Monte Carlo Simulation* analysing distributional properties of the OLS estimator for $ \beta $ in the model above and another linear estimator $\overset{\sim}{\beta}$ which uses different weights than OLS. Say, $\beta=0$. 
 
-Is the result consistent with what you expect beeing aware of the Gauss-Markov Theorem?  
+Is the result consistent with what You expect beeing aware of the Gauss-Markov Theorem?  
 
 *** =instructions
 - Yes, both estimators seem to be unbiased but the OLS estimator has less dispersion.
