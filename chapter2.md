@@ -132,7 +132,7 @@ plot(cs,ts, pch=20, cex=1.8, col="steelblue", ylab="Test Score", xlab="Class Siz
 *** =sct
 ```{r}
 msg_bad <- "That is not correct!"
-msg_success <- "Exactly! Remember that the empirical correlation between both variables is about $-0.95$ indicating a strongly negative linear relation. The scatter plot delivers visual evidence."
+msg_success <- "Exactly! Remember that the empirical correlation between both variables is about $-0.95$ indicating a strongly negative linear relation. The scatter plot delivers visual evidence. Furthermore, there are no outliers."
 test_mc(correct = 1, feedback_msgs = c(msg_success, msg_bad, msg_bad, msg_bad))
 ```
 
