@@ -421,7 +421,7 @@ test_output_contains("R2 == 0.8976")
 --- type:MultipleChoiceExercise lang:r xp:50 skills:1 key:13d4cf0fb6
 ## Interpreting OLS Regressions I
 
-Suppose that a researcher, using data on class size ($CS$) and average test score ($TestScore$) from 50 third-grade classes, estimates the OLS regression:
+Suppose that a researcher, using data on class size $CS$, and average test score, $TestScore$, from 50 third-grade classes, estimates the OLS regression:
 
 $$ \widehat{TestScore} = 640.3 - 4.93 \times CS, R^2 = 0.11, SER= 8.7 $$
 
@@ -481,7 +481,7 @@ test_output_contains("(640.3-4.93*24) - (640.3-4.93*21)", incorrect_msg = "No, t
 --- type:NormalExercise lang:r xp:50 skills:1 key:250d5774a4
 ## Interpreting OLS Regressions III
 
-Suppose that a researcher, using data on class size $CS$ and average test scores from 50 third-grade classes, estimates the OLS regression:
+Suppose that a researcher, using data on class size $CS$, and average test score, $TestScore$, from 50 third-grade classes, estimates the OLS regression:
 
 $$ \widehat{TestScore} = 640.3 - 4.93 \times CS, R^2 = 0.11, SER= 8.7 $$
 
@@ -519,7 +519,7 @@ test_output_contains("527.896", incorrect_msg = "Not correct...")
 --- type:NormalExercise lang:r xp:50 skills:1 key:39aef8ac4c
 ## Interpreting OLS Regressions IV
 
-Suppose that a researcher, using data on class size $CS$ and average test scores from 50 third-grade classes, estimates the OLS regression:
+Suppose that a researcher, using data on class size $CS$, and average test score, $TestScore$, from 50 third-grade classes, estimates the OLS regression:
 
 $$ \widehat{TestScore} = 640.3 - 4.93 \times CS, R^2 = 0.11, SER= 8.7 $$
 
