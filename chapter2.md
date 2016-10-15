@@ -703,7 +703,7 @@ test_function("summary")
 ```
 
 --- type:MultipleChoiceExercise lang:r xp: skills: key:b496c011e5
-## Regression when X is a Dummy Variable – Interpretation
+## Interpretation When X is a Dummy Variable 
 
 Consider again the dummy regression model from the previous exervise. The estimated regression equation was:
 
