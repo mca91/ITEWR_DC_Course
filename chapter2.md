@@ -61,15 +61,6 @@ Use <b>*existing*</b> R functions for the following exercises.
 # Compute the covariance and the correlation coefficient
 
 
-# Estimate the regression model and store it in mod
-
-
-# Check that mod is an object of type list 
-
-
-# Read out some arbitrary entry of mod using $
-
-
 ```
 
 *** =solution
@@ -90,16 +81,6 @@ sd(ts)
 # Compute the covariance and the correlation coefficient
 cov(cs,ts)
 cor(cs,ts)
-
-# Estimate the regression model and store it in mod
-mod <- lm(ts ~ cs)
-
-# Check that mod is an object of type list 
-is.list(mod)
-
-# Read out some arbitrary entry of mod using. E.g. fitted values:
-mod$fitted.values
-
 ```
 
 *** =sct
