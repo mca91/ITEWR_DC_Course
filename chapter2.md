@@ -103,12 +103,13 @@ test_output_contains("cor(cs,ts)")
 --- type:MultipleChoiceExercise lang:r xp: skills: key:2ad42e1384
 ## Linear Relationship? 
 
-Have a look at the scatter plot again (we made it a little bit more fancy here) and remember the result of the `cor()` function:
+Have a look at the scatter plot again (we made it a little bit more fancy here) and remember the result of the `cor()` function
 
 ```{r}
 > cor(cs,ts)
 [1] -0.9474424 
 ```
+providing the empirical correlation coefficient of class size and test score.
 
 Which of the following statements describes best the relationship between both variables?
 
