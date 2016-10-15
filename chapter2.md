@@ -419,7 +419,7 @@ test_output_contains("R2 == 0.8976")
 ```
 
 --- type:MultipleChoiceExercise lang:r xp: skills: key:c0b8375eb8
-## What was R^2 again?  
+## What was $R^2$ again?  
 
 The coefficient of determination, denoted $R^2$, is a measure of a model's goodness of fit. It is defined as
 
