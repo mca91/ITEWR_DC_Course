@@ -679,7 +679,7 @@ success_msg("Okay. The next exercise will ask You for Your results.")
 ```
 
 --- type:MultipleChoiceExercise lang:r xp: skills: key:3286e4408d
-## Model Selection with Adjusted R squared ctd. 
+## Model Selection: Adjusted R squared – ctd. 
 
 Name the variable which omission leads to the highest improvement in the fit of the model judging from $adj. R^2$.
 
