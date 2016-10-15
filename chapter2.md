@@ -726,6 +726,7 @@ points(x = 1, y = mean(ts[cs<26]), col = "red", pch=20, cex=1.8)
 
 *** =sct
 ```{r}
+test_function("plot", args=c(x = D , y = ts))
 test_predefined_objects("mod")
 test_function("abline")
 test_function("points", index = 1, args=c("x","y"))
