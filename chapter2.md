@@ -125,7 +125,7 @@ Which of the following statements describes best the relationship between both v
 ```{r}
 cs <- c(23, 19, 30, 22, 23, 29, 35, 36, 33, 25)
 ts <- c(430, 430, 333, 410, 390, 377, 325, 310, 328, 375)
-plot(cs,ts, cex=20, col="steelblue", ylab="Test Score", xlab="Class Size", main="Scatter Plot")
+plot(cs,ts, pch=20, col="steelblue", ylab="Test Score", xlab="Class Size", main="Scatter Plot")
 ```
 
 *** =sct
