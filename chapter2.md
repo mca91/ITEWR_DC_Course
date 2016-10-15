@@ -101,7 +101,7 @@ test_output_contains("cor(cs,ts)")
 ```
 
 --- type:MultipleChoiceExercise lang:r xp: skills: key:2ad42e1384
-## Linear Relationship? 
+## A Linear Relationship? 
 
 Have a look at the scatter plot again (we made it a little bit more fancy here) and remember the result of the `cor()` function
 
@@ -137,7 +137,7 @@ test_mc(correct = 1, feedback_msgs = c(msg_success, msg_bad, msg_bad, msg_bad))
 ```
 
 --- type:NormalExercise lang:r xp: skills: key:54c5e502ca
-## A Linear Model 
+## The Linear Model 
 
 In this exercise, you will learn how to estimate a simple linear regression model.
 
