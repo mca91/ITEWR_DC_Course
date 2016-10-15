@@ -432,7 +432,7 @@ Which of the following statements about $R^2$ is right?
 *** =instructions
 
 - The coefficient of determination can only be computed for linear regression models.
-- A model's $R^2$ shrinks if the absolute value of the residual sum grows.
+- A model's $R^2$ shrinks if the absolute value of the residual sum decreases.
 - The coefficient of determination is always defined on $[-1,1]$. 
 - $R^2$ is a measure indicating the proportion of the variance in the dependent variable that is explained by the independent variable(s).
 
