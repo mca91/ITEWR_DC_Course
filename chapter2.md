@@ -726,11 +726,6 @@ points(x = 1, y = mean(ts[cs<26]), col = "red", pch=20, cex=1.8)
 
 *** =sct
 ```{r}
-test_student_typed("plot(x = D , y = ts, 
-     pch=20, cex=1 ,col='Steelblue',
-     xlab=expression(D[i]), ylab='Test Score',
-     main = 'Dummy Regression'
-     )")
 test_predefined_objects("mod")
 test_function("abline")
 test_function("points", index = 1, args=c("x","y"))
