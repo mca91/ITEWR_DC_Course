@@ -521,7 +521,7 @@ test_mc(correct = 2, feedback_msgs = c(msg_bad, msg_success, msg_bad, msg_bad))
 ```
 
 --- type:NormalExercise lang:r xp: skills: key:4d6c0982cd
-## Two Null Hypotheses You Can't Reject... Can You?
+## Two Null Hypotheses
 
 Now consider again the estimated regression line
 
@@ -560,6 +560,30 @@ p_cs <- 2*(1-pnorm(t_cs))
 ```{r}
 test_object("p_int")
 test_object("p_cs")
+```
+
+
+
+--- type:MultipleChoiceExercise lang:r xp: skills: key:9bf182dbda
+## Two Null Hypotheses You Can't Reject... Can You?
+
+$$ \widehat{TestScore} = \underset{(23.9606)}{567.43} - \underset{(0.8536)}{7.15} \times cs, \, R^2 = 0.8976, \, SER=15.19 $$
+
+Can you reject the null hypotheses discussed in the previous code exercise?
+
+*** =instructions
+
+- Yes
+- No
+
+*** =hint
+
+
+*** =sct
+```{r}
+msg_bad <- "No, that is not correct..."
+msg_success <- "Exactly!"
+test_mc(correct = 1, feedback_msgs = c(msg_success, msg_bad))
 ```
 
 --- type:MultipleChoiceExercise lang:r xp:50 skills:1 key:13d4cf0fb6
