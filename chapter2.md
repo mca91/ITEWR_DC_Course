@@ -444,6 +444,39 @@ msg_success <- "Wow!"
 test_mc(correct = 4, feedback_msgs = c(msg_bad, msg_bad, msg_bad, msg_success))
 ```
 
+--- type:NormalExercise lang:r xp:100 skills:1 key:2d231a7828
+## Inference in the Simple Regression Model
+
+***=pre_exercise_code
+```{r}
+# Plot the standard normal density
+z <- seq(-6,6,0.01)
+tact <- -4.75
+plot(z, dnorm(z,0,1), type = "l", col="steelblue", lwd=2, yaxs="i", bty = "n", axes=F, ylab = "", cex.lab=0.7)
+axis(1, at = c(0,-1.96,1.96,-tact,tact), cex.axis=0.7)
+
+# Shade the critical regions
+polygon(c(-6,seq(-6,-1.96,0.01),-1.96),c(0,dnorm(seq(-6,-1.96,0.01)),0),col='orange')
+polygon(c(1.96,seq(1.96,6,0.01),6),c(0,dnorm(seq(1.96,6,0.01)),0),col='orange')
+
+# Add arrows and text indicating critical regions and the p-value
+arrows(-3.5,0.2,-2.5,0.02, length = 0.1)
+arrows(3.5,0.2,2.5,0.02, length = 0.1)
+
+arrows(-5,0.16,-4.75,0, length = 0.1)
+arrows(5,0.16,4.75,0, length = 0.1)
+
+text(-3.5,0.22, labels = "p-value/2", cex = 0.7)
+text(3.5,0.22, labels = "p-value/2", cex = 0.7)
+
+text(-5,0.18, labels = expression(t^{act}), cex = 0.7)
+text(5,0.18, labels = expression(t^{act}), cex = 0.7)
+
+# Add ticks indicating critical values at the 0.05-level, t^act and -t^act 
+rug(c(-1.96,1.96), ticksize  = 0.145, lwd = 2, col = "darkred")
+rug(c(-tact,tact), ticksize  = -0.0451, lwd = 2, col = "darkgreen")
+```
+
 --- type:MultipleChoiceExercise lang:r xp:50 skills:1 key:13d4cf0fb6
 ## Interpreting OLS Regressions I
 
@@ -824,8 +857,3 @@ test_function("points", index = 1, args=c("x","y"))
 test_function("points", index = 2, args=c("x","y"))
 success_msg("Great!")
 ```
-
---- type:NormalExercise lang:r xp:100 skills:1 key:2d231a7828
-## Inference in the Simple Regression Model
-
-
