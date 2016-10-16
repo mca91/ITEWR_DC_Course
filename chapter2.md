@@ -451,9 +451,9 @@ Suppose You are confronted with the following regression output.
 
 ```{r}
 Coefficients:
-            Estimate Std. Error t value Pr(>|t|)    
-(Intercept) 567.4272    23.9606  23.682 1.08e-08 ***
-cs           -7.1501     0.8536  -8.376 3.13e-05 ***
+            Std. Error  t value Pr(>|t|)    
+(Intercept) 23.9606     23.682 1.08e-08 ***
+cs          0.8536      -8.376 3.13e-05 ***
 ---
 Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
 ```
