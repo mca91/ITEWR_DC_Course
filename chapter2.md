@@ -444,24 +444,33 @@ msg_success <- "Wow!"
 test_mc(correct = 4, feedback_msgs = c(msg_bad, msg_bad, msg_bad, msg_success))
 ```
 
---- type:NormalExercise lang:r xp:100 skills:1 key:2d231a7828
+--- type:MultipleChoiceExercise lang:r xp:50 skills:1 key:2d231a7828
 ## Inference in the Simple Regression Model
 
-Suppose You are confronted with the following regression output.
+Suppose You are confronted with the following regression output providing the t-statistic for the hypothesis $\beta_{cs} = 0$ and the corresponding $p$-value.
 
 ```{r}
 Coefficients:
           t value   Pr(>|t|)    
-cs        -1.4      3.13e-05 ***
+cs        -1.1      0.27133
 ---
 Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
 ```
+
+Which of the following statements is *false*?
+
+***=instructions
+
+- The coefficient of $cs$ *is not* statistically significantly different from zero at any level of significance used in practice.
+- We can reject the hypothsis at the $0.05$ level of significant since $p\text{-value} > 0.05$.
+- The value of the t-statistic is not an element of the set of values for which the null would be rejected.
+- Given the info above, it is not possible to say whether the null is rejected.
 
 ***=pre_exercise_code
 ```{r}
 # Plot the standard normal density
 z <- seq(-6,6,0.01)
-tact <- -1.4
+tact <- -1.1
 plot(z, dnorm(z,0,1), type = "l", col="steelblue", lwd=2, yaxs="i", bty = "n", axes=F, ylab = "", cex.lab=0.7)
 axis(1, at = c(0,-1.96,1.96,-tact,tact), cex.axis=0.7)
 
@@ -475,7 +484,7 @@ arrows(2,0.16,-tact,0, length = 0.1)
 arrows(-2,0.16,tact,0, length = 0.1)
 
 text(-2,0.18, labels = expression(t^{act}), cex = 0.7)
-text(2,0.18, labels = expression(t^{act}), cex = 0.7)
+text(2.3,0.18, labels = expression(t^{act}), cex = 0.7)
 
 # Add ticks indicating critical values at the 0.05-level, t^act and -t^act 
 rug(c(-1.96,1.96), ticksize  = 0.145, lwd = 2, col = "darkred")
