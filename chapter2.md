@@ -527,7 +527,7 @@ Now consider again the estimated regression line
 
 $$ \widehat{TestScore} = \underset{(23.9606)}{567.43} - \underset{(0.8536)}{7.15} \times cs, \, R^2 = 0.8976, \, SER=15.19 $$
 
-with standard errors in parantheses.
+with standard errors in parentheses.
 
 *** =instructions
 
