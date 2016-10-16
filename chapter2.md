@@ -525,7 +525,7 @@ test_mc(correct = 2, feedback_msgs = c(msg_bad, msg_success, msg_bad, msg_bad))
 
 Now consider again the estimated regression line
 
-$$ \widehat{TestScore} = \underset{(23.9606)}{567.43} - \underset{(0.8536)}{7.15} \times Cs, \, R^2 = 0.8976, \, SER=15.19 $$
+$$ \widehat{TestScore} = \underset{(23.9606)}{567.43} - \underset{(0.8536)}{7.15} \times cs, \, R^2 = 0.8976, \, SER=15.19 $$
 
 with standard errors in parantheses.
 
