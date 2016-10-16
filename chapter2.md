@@ -446,6 +446,46 @@ test_mc(correct = 4, feedback_msgs = c(msg_bad, msg_bad, msg_bad, msg_success))
 
 
 
+--- type:MultipleChoiceExercise lang:r xp: skills: key:01c813746a
+## The P-Value 
+
+
+*** =instructions
+
+*** =hint
+
+*** =pre_exercise_code
+
+***=pre_exercise_code
+```{r}
+# Plot the standard normal density
+z <- seq(-6,6,0.01)
+tact <- -1.1
+plot(z, dnorm(z,0,1), type = "l", col="steelblue", lwd=2, yaxs="i", bty = "n", axes=F, ylab = "", cex.lab=0.7)
+axis(1, at = c(0,-1.96,1.96,-tact,tact), cex.axis=0.7)
+
+# Shade the critical regions
+polygon(c(-6,seq(-6,-1.96,0.01),-1.96),c(0,dnorm(seq(-6,-1.96,0.01)),0),col='orange')
+polygon(c(1.96,seq(1.96,6,0.01),6),c(0,dnorm(seq(1.96,6,0.01)),0),col='orange')
+
+# Add arrows and text indicating critical regions
+
+arrows(2,0.16,-tact,0, length = 0.1)
+arrows(-2,0.16,tact,0, length = 0.1)
+
+text(-2,0.18, labels = expression(t^{act}), cex = 0.7)
+text(2.3,0.18, labels = expression(t^{act}), cex = 0.7)
+
+# Add ticks indicating critical values at the 0.05-level, t^act and -t^act 
+rug(c(-1.96,1.96), ticksize  = 0.145, lwd = 2, col = "darkred")
+rug(c(-tact,tact), ticksize  = -0.0451, lwd = 2, col = "darkgreen")
+```
+
+*** =sct
+```{r}
+
+```
+
 --- type:MultipleChoiceExercise lang:r xp:50 skills:1 key:7860286aef
 ## A Null Hypothesis You Can't Reject... Can You?
 
@@ -473,31 +513,6 @@ Which of the following statements is *false*?
 msg_bad <- "No, that is not correct!"
 msg_success <- "Exactly!"
 test_mc(correct = 2, feedback_msgs = c(msg_bad, msg_success, msg_bad, msg_bad))
-```
-
-***=pre_exercise_code
-```{r}
-# Plot the standard normal density
-z <- seq(-6,6,0.01)
-tact <- -1.1
-plot(z, dnorm(z,0,1), type = "l", col="steelblue", lwd=2, yaxs="i", bty = "n", axes=F, ylab = "", cex.lab=0.7)
-axis(1, at = c(0,-1.96,1.96,-tact,tact), cex.axis=0.7)
-
-# Shade the critical regions
-polygon(c(-6,seq(-6,-1.96,0.01),-1.96),c(0,dnorm(seq(-6,-1.96,0.01)),0),col='orange')
-polygon(c(1.96,seq(1.96,6,0.01),6),c(0,dnorm(seq(1.96,6,0.01)),0),col='orange')
-
-# Add arrows and text indicating critical regions
-
-arrows(2,0.16,-tact,0, length = 0.1)
-arrows(-2,0.16,tact,0, length = 0.1)
-
-text(-2,0.18, labels = expression(t^{act}), cex = 0.7)
-text(2.3,0.18, labels = expression(t^{act}), cex = 0.7)
-
-# Add ticks indicating critical values at the 0.05-level, t^act and -t^act 
-rug(c(-1.96,1.96), ticksize  = 0.145, lwd = 2, col = "darkred")
-rug(c(-tact,tact), ticksize  = -0.0451, lwd = 2, col = "darkgreen")
 ```
 
 --- type:MultipleChoiceExercise lang:r xp:50 skills:1 key:13d4cf0fb6
