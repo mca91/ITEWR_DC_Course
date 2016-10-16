@@ -558,8 +558,8 @@ p_cs <- 2*(1-pnorm(t_cs))
 
 *** =sct
 ```{r}
-test_object(p_int)
-test_object(p_cs)
+test_object("p_int")
+test_object("p_cs")
 ```
 
 --- type:MultipleChoiceExercise lang:r xp:50 skills:1 key:13d4cf0fb6
