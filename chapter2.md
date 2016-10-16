@@ -523,9 +523,11 @@ test_mc(correct = 2, feedback_msgs = c(msg_bad, msg_success, msg_bad, msg_bad))
 --- type:NormalExercise lang:r xp: skills: key:4d6c0982cd
 ## <<<TITLE>>> 
 
-Now consider again the following regression model
+Now consider again the estimated regression line
 
-$$ TestScore = \alpha + \beta \times Cs $$
+$$ \widehat{TestScore} = \underset{(23.9606)}{567.43} - \underset{(0.8536)}{7.15} \times Cs, \, R^2 = 0.8976, \, SER=15.19 $$
+
+with standard errors in parantheses.
 
 *** =instructions
 
