@@ -472,8 +472,8 @@ polygon(c(1.96,seq(1.96,6,0.01),6),c(0,dnorm(seq(1.96,6,0.01)),0),col='orange')
 
 # Add arrows and text indicating critical regions
 
-arrows(-2,0.16,-tact,0, length = 0.1)
-arrows(2,0.16,tact,0, length = 0.1)
+arrows(2,0.16,-tact,0, length = 0.1)
+arrows(-2,0.16,tact,0, length = 0.1)
 
 text(-2,0.18, labels = expression(t^{act}), cex = 0.7)
 text(2,0.18, labels = expression(t^{act}), cex = 0.7)
