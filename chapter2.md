@@ -520,6 +520,37 @@ msg_success <- "Exactly!"
 test_mc(correct = 2, feedback_msgs = c(msg_bad, msg_success, msg_bad, msg_bad))
 ```
 
+--- type:NormalExercise lang:r xp: skills: key:4d6c0982cd
+## <<<TITLE>>> 
+
+Now consider again the following regression model
+
+$$ TestScore = \alpha + \beta \times Cs $$
+
+*** =instructions
+
+*** =hint
+
+*** =pre_exercise_code
+```{r}
+
+```
+
+*** =sample_code
+```{r}
+
+```
+
+*** =solution
+```{r}
+
+```
+
+*** =sct
+```{r}
+
+```
+
 --- type:MultipleChoiceExercise lang:r xp:50 skills:1 key:13d4cf0fb6
 ## Interpreting OLS Regressions I
 
