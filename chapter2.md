@@ -444,7 +444,7 @@ msg_success <- "Wow!"
 test_mc(correct = 4, feedback_msgs = c(msg_bad, msg_bad, msg_bad, msg_success))
 ```
 
---- type:MultipleChoiceExercise lang:r xp:50 skills:1 key:2d231a7828
+--- type:MultipleChoiceExercise lang:r xp:50 skills:1 key:7860286aef
 ## Inference in the Simple Regression Model
 
 Suppose You are confronted with the following regression output providing the t-statistic for the hypothesis $\beta_{cs} = 0$ and the corresponding $p$-value.
@@ -459,7 +459,7 @@ Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’
 
 Which of the following statements is *false*?
 
-***=instructions
+*** =instructions
 
 - The coefficient of $cs$ *is not* statistically significantly different from zero at any level of significance used in practice.
 - We can reject the hypothsis at the $0.05$ level of significant since $p\text{-value} > 0.05$.
