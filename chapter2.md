@@ -466,8 +466,8 @@ arrows(3.5,0.2,2.5,0.02, length = 0.1)
 arrows(-5,0.16,-4.75,0, length = 0.1)
 arrows(5,0.16,4.75,0, length = 0.1)
 
-text(-3.5,0.22, labels = "p-value/2", cex = 0.7)
-text(3.5,0.22, labels = "p-value/2", cex = 0.7)
+text(-3.5,0.22, labels = "alpha/2", cex = 0.7)
+text(3.5,0.22, labels = "alpha/2", cex = 0.7)
 
 text(-5,0.18, labels = expression(t^{act}), cex = 0.7)
 text(5,0.18, labels = expression(t^{act}), cex = 0.7)
