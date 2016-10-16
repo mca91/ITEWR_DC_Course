@@ -451,7 +451,7 @@ test_mc(correct = 4, feedback_msgs = c(msg_bad, msg_bad, msg_bad, msg_success))
 
 What was the definition of the $p$-value again? 
 
-Maybe the plot displayed on the right may help You to remember. It depicts the case of a two-sided test where $|tact|$ is the computed test statistic.
+Maybe the plot displayed on the right may help You to remember. It depicts the case of a two-sided test where $|t|$ is the computed test statistic.
 
 Choose the *right* statement.
 
