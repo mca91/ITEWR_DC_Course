@@ -521,7 +521,7 @@ test_mc(correct = 2, feedback_msgs = c(msg_bad, msg_success, msg_bad, msg_bad))
 ```
 
 --- type:NormalExercise lang:r xp: skills: key:4d6c0982cd
-## <<<TITLE>>> 
+## Two p-values to reject them all. 
 
 Now consider again the estimated regression line
 
@@ -531,26 +531,35 @@ with standard errors in parentheses.
 
 *** =instructions
 
-*** =hint
-
-*** =pre_exercise_code
-```{r}
-
-```
+- Compute the $p$-value for a test of the hypothesis that the intercept is zero. Save the result to `p_int`
+- Compute the $p$-value for a test of the hypothesis that the coefficient of $cs$ is zero. Save the result to `p_cs`
+- Think about the inference drawn from these results. Can you reject the null hypotheses? You will be asked about this in the next exercise.
 
 *** =sample_code
 ```{r}
+# Compute the p-value p_int
+
+
+# Compute the p-value p_cs
+
 
 ```
 
 *** =solution
 ```{r}
+# Compute the p-value p_int
+t_int <- 567.43/23.9606
+p_int <- 2*(1-pnorm(t_int))
 
+# Compute the p-value p_cs
+t_cs <- 7.15/0.8536
+p_cs <- 2*(1-pnorm(t_cs))
 ```
 
 *** =sct
 ```{r}
-
+test_object(p_int)
+test_object(p_cs)
 ```
 
 --- type:MultipleChoiceExercise lang:r xp:50 skills:1 key:13d4cf0fb6
