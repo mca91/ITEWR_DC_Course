@@ -492,9 +492,9 @@ test_mc(correct = 3, feedback_msgs = c(msg_bad, msg_bad, msg_bad, msg_success))
 ```
 
 --- type:MultipleChoiceExercise lang:r xp:50 skills:1 key:7860286aef
-## A Null Hypothesis You Can't Reject... Can You?
+## Inference using p-values
 
-Suppose You are confronted with the following regression output providing the t-statistic for the hypothesis $\beta_{cs} = 0$ and the corresponding $p$-value.
+Suppose You are confronted with the following output providing the t-statistic for the hypothesis $\beta_{cs} = 0$ and the corresponding $p$-value.
 
 ```{r}
 Coefficients:
@@ -521,7 +521,7 @@ test_mc(correct = 2, feedback_msgs = c(msg_bad, msg_success, msg_bad, msg_bad))
 ```
 
 --- type:NormalExercise lang:r xp: skills: key:4d6c0982cd
-## Two p-values to reject them all. 
+## Two Null Hypotheses You Can't Reject... Can You?
 
 Now consider again the estimated regression line
 
