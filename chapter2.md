@@ -451,9 +451,8 @@ Suppose You are confronted with the following regression output.
 
 ```{r}
 Coefficients:
-            Std. Error  t value Pr(>|t|)    
-(Intercept) 23.9606     23.682 1.08e-08 ***
-cs          0.8536      -8.376 3.13e-05 ***
+          t value   Pr(>|t|)    
+cs        -1.4      3.13e-05 ***
 ---
 Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
 ```
@@ -462,7 +461,7 @@ Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’
 ```{r}
 # Plot the standard normal density
 z <- seq(-6,6,0.01)
-tact <- -1.7
+tact <- -1.4
 plot(z, dnorm(z,0,1), type = "l", col="steelblue", lwd=2, yaxs="i", bty = "n", axes=F, ylab = "", cex.lab=0.7)
 axis(1, at = c(0,-1.96,1.96,-tact,tact), cex.axis=0.7)
 
