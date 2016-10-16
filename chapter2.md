@@ -447,11 +447,22 @@ test_mc(correct = 4, feedback_msgs = c(msg_bad, msg_bad, msg_bad, msg_success))
 --- type:NormalExercise lang:r xp:100 skills:1 key:2d231a7828
 ## Inference in the Simple Regression Model
 
+Suppose You are confronted with the following regression output.
+
+```{r}
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept) 567.4272    23.9606  23.682 1.08e-08 ***
+cs           -7.1501     0.8536  -8.376 3.13e-05 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+```
+
 ***=pre_exercise_code
 ```{r}
 # Plot the standard normal density
 z <- seq(-6,6,0.01)
-tact <- -4.75
+tact <- -1.7
 plot(z, dnorm(z,0,1), type = "l", col="steelblue", lwd=2, yaxs="i", bty = "n", axes=F, ylab = "", cex.lab=0.7)
 axis(1, at = c(0,-1.96,1.96,-tact,tact), cex.axis=0.7)
 
@@ -466,8 +477,8 @@ arrows(3.5,0.2,2.5,0.02, length = 0.1)
 arrows(-5,0.16,-4.75,0, length = 0.1)
 arrows(5,0.16,4.75,0, length = 0.1)
 
-text(-3.5,0.22, labels = "alpha/2", cex = 0.7)
-text(3.5,0.22, labels = "alpha/2", cex = 0.7)
+text(-3.5,0.22, labels = "0.05/2", cex = 0.7)
+text(3.5,0.22, labels = "0.05/2", cex = 0.7)
 
 text(-5,0.18, labels = expression(t^{act}), cex = 0.7)
 text(5,0.18, labels = expression(t^{act}), cex = 0.7)
