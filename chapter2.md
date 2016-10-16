@@ -447,7 +447,7 @@ test_mc(correct = 4, feedback_msgs = c(msg_bad, msg_bad, msg_bad, msg_success))
 
 
 --- type:MultipleChoiceExercise lang:r xp: skills: key:01c813746a
-## The P-Value 
+## Recap: The P-Value 
 
 
 *** =instructions
