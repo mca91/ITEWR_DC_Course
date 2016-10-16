@@ -444,8 +444,10 @@ msg_success <- "Wow!"
 test_mc(correct = 4, feedback_msgs = c(msg_bad, msg_bad, msg_bad, msg_success))
 ```
 
+
+
 --- type:MultipleChoiceExercise lang:r xp:50 skills:1 key:7860286aef
-## Inference in the Simple Regression Model
+## A Null Hypothesis You Can't Reject... Can You?
 
 Suppose You are confronted with the following regression output providing the t-statistic for the hypothesis $\beta_{cs} = 0$ and the corresponding $p$-value.
 
@@ -465,6 +467,13 @@ Which of the following statements is *false*?
 - We can reject the hypothsis at the $0.05$ level of significant since $p\text{-value} > 0.05$.
 - The value of the t-statistic is not an element of the set of values for which the null would be rejected.
 - Given the info above, it is not possible to say whether the null is rejected.
+
+*** =sct
+```{r}
+msg_bad <- "No, that is not correct!"
+msg_success <- "Exactly!"
+test_mc(correct = 2, feedback_msgs = c(msg_bad, msg_success, msg_bad, msg_bad))
+```
 
 ***=pre_exercise_code
 ```{r}
