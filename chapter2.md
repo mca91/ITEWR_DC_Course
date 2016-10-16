@@ -449,12 +449,19 @@ test_mc(correct = 4, feedback_msgs = c(msg_bad, msg_bad, msg_bad, msg_success))
 --- type:MultipleChoiceExercise lang:r xp: skills: key:01c813746a
 ## Recap: The P-Value 
 
+What was the definition of the $p$-value again? 
+
+Choose the right statement. Maybe the plot displayed on the right may help You remember.
 
 *** =instructions
 
+- The $p$-value is the proportion of cases for which we can reject the null hypothesis.
+- The $p$-value is a measure for the probability that the null hypothesis is true.
+- The $p$-value is defined as the probabilty of observing a result that is at least as extrem as the observed result, provided the null hypothesis is true. If the $p$-value is less or equals the choosen level of significance, the null is rejected.
+- The $p$-value has to be choosen before conducting a significance test. If the t-statistic exceeds the $p$-value, the null hypothesis is kept.
+
 *** =hint
 
-*** =pre_exercise_code
 
 ***=pre_exercise_code
 ```{r}
@@ -477,7 +484,9 @@ arrows(-3,0.16,tact,0, length = 0.1)
 
 *** =sct
 ```{r}
-
+msg_bad <- "That is not correct!"
+msg_success <- "Wow!"
+test_mc(correct = 3, feedback_msgs = c(msg_bad, msg_bad, msg_bad, msg_success))
 ```
 
 --- type:MultipleChoiceExercise lang:r xp:50 skills:1 key:7860286aef
