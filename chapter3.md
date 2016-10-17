@@ -710,7 +710,7 @@ data("Boston")
 l <- list()
 for (i in 1:13) {
   d <- Boston[,-i]
-  l[[i]] <- summary(lm(medv ~., data=d))$adj.r.squared # save each adj. R^2 as a list entry in l
+  l[[i]] <- summary(lm(medv ~., data=d))$adj.r.squared # save each adj. R^2 as an entry in list l
 }
 names(l) <- names(Boston[,1:13]) # assign variable names to the list entries
 ```
