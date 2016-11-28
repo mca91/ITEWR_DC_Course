@@ -212,9 +212,7 @@ success_msg("Great!")
 
 In R, it is often fairly easy to import data. This exercise will teach you how to import .csv files. "csv" means "comma seperated values".
 
-The data set *cps_ch3.csv* is a sample from the current population survey data base. We have uploaded it so you can use the following url as path:
-
-*http://s3.amazonaws.com/assets.datacamp.com/production/course_1276/datasets/cps_ch3.csv*
+The data set *cps_ch3.csv* is a sample from the current population survey data base. We have uploaded it so you can use url given in the Script as path.
 
 Notice that it is also possible to read data from Your hard disk (the general case). The path then only needs to be set accordingly i.e. it needs to point to file on your hard disk.
 
@@ -236,7 +234,7 @@ See `?read.table` for further help.
 *** =sample_code
 ```{r}
 # Read in the data set and assign it to my_data
-
+# URL: http://s3.amazonaws.com/assets.datacamp.com/production/course_1276/datasets/cps_ch3.csv
 
 # Print the data to the console
 
