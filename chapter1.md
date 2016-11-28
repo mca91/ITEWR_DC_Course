@@ -311,7 +311,7 @@ To circumvent this, You need to tell R that the first row of the table is the he
 
 *** =instructions
 
-- Load the data set again. Set `header=TRUE` to tell R that the first line contains variable names and set `sep=";"` for setting the field seprator to `;`. Override the object `my_data` from the previous exercise with the correct table. 
+- Load the data set again. Set `header=TRUE` to tell R that the first line contains variable names and set `sep=";"` for setting the field seprator to `;`. Overwrite the object `my_data` from the previous exercise with the correct table. 
 
 - Have a look at the first few observations again by executing `head(my_data)` to see the effect of the additional arguments.
 
