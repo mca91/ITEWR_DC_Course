@@ -2,7 +2,7 @@
 title       : Basics in R
 description : This section teaches you basic commands in R.
 
---- type:NormalExercise lang:r xp:100 skills:1 key:3db79c581d
+--- type:NormalExercise lang:r xp:150 skills:1 key:3db79c581d
 ## R as a calculator I
 
 ***=instructions
