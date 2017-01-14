@@ -323,7 +323,7 @@ success_msg("Well done!")
 ```
 
 --- type:NormalExercise lang:r xp: skills: key:710866a669
-## Wait ... something's not right
+## Wait ... Something's Not Right
 
 The data set should look something like:
 
@@ -359,26 +359,24 @@ Instead we have:
   </table>
 <br>
 
-R did not recognise the first row as the table header and interpreted the variables `sex`, `year` and `ahe_12` to be a single variable. As a result, R established a new variable `V1` where each observation consists of the respective three values merged in a string.
+R did not recognise the first row as the table header and instead interpreted the variables `sex`, `year` and `ahe_12` to be one single variable. As a result, R established a new variable `V1` where each observation consists of the respective three values merged in one string.
 
-*Convince Yourself: Type and execute* `head(my_data)`.
+*Convince Yourself again: Type and execute* `head(my_data)`.
 
 To circumvent this, You need to tell R that the first row of the table is the header providing variable names and how variables are seperated (here, `;` is used as the seperator. You can think of it as a vertical line seperating variables in a table). 
-
-*** =instructions
-
-- Load the data set again. Set `header=TRUE` to tell R that the first line contains variable names and set `sep=";"` for setting the field seprator to `;`. Overwrite the object `my_data` from the previous exercise with the correct table. 
-
-- Have a look at the first few observations again by executing `head(my_data)` to see the effect of the additional arguments.
-
-*** =hint
-
-For further information on functions `read.table` and `head()` use the help function `?` in conjunction with the functions name, e.g. `?head`.
 
 *** =pre_exercise_code
 ```{r}
 my_data <- read.table("http://s3.amazonaws.com/assets.datacamp.com/production/course_1276/datasets/cps_ch3.csv")
 ```
+
+*** =instructions
+
+- Load the data set again. Set `header=TRUE` to tell R that the first line contains variable names and set `sep=";"` for setting the field seprator to `;`. Overwrite the object `my_data` from the previous exercise with the correct table. 
+
+*** =hint
+
+For further information on functions `read.table` and `head()` use the help function `?` in conjunction with the functions name, e.g. `?head`.
 
 *** =sample_code
 ```{r}
@@ -386,9 +384,6 @@ my_data <- read.table("http://s3.amazonaws.com/assets.datacamp.com/production/co
 head(my_data)
 
 # Load the data set again, this time using arguments sep and header
-
-
-# Inspect the data sets' head again
 
 ```
 
@@ -399,17 +394,74 @@ head(my_data)
 
 # Load the data set again, this time using arguments sep and header
 my_data <- read.table("http://s3.amazonaws.com/assets.datacamp.com/production/course_1276/datasets/cps_ch3.csv", header = TRUE, sep =";")
+```
 
+*** =sct
+```{r}
+test_function("head")
+test_function("read.table", args=c("header","sep"))
+test_object("my_data")
+success_msg("Cool!")
+```
+
+
+--- type:NormalExercise lang:r xp: skills: key:7131f0e223
+## Yes, That Looks Better!
+
+The data set should now look something like:
+
+  <table>
+      <tr>
+        <th>a_sex</th>
+        <th>year</th>
+        <th>ahe_12</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>1992</td>
+        <td>1.830.968.857</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>1992</td>
+        <td>1.636.428.452</td>
+      </tr>
+  </table>
+<br>
+
+R did not recognise the first row as the table header and instead interpreted the variables `sex`, `year` and `ahe_12` to be one single variable. As a result, R established a new variable `V1` where each observation consists of the respective three values merged in one string.
+
+*Convince Yourself: Type and execute* `head(my_data)`.
+
+To circumvent this, You need to tell R that the first row of the table is the header providing variable names and how variables are seperated (here, `;` is used as the seperator. You can think of it as a vertical line seperating variables in a table). 
+
+*** =instructions
+
+- Have a look at the first few observations again by executing `head(my_data)` to see the effect of the additional arguments.
+
+*** =hint
+
+For further information on functions `read.table` and `head` use the help function `?` in conjunction with the functions name, e.g. `?head`.
+
+*** =pre_exercise_code
+```{r}
+my_data <- read.table("http://s3.amazonaws.com/assets.datacamp.com/production/course_1276/datasets/cps_ch3.csv")
+```
+
+*** =sample_code
+```{r}
+# Inspect the data sets' first observations again using head
+
+```
+
+*** =solution
+```{r}
 # Inspect the data sets' header again
 head(my_data)
 ```
 
 *** =sct
 ```{r}
-test_function("head", index=1)
-test_function("read.table", args=c("header","sep"))
-test_object("my_data")
-test_function("head", index=2)
 test_output_contains("head(my_data)")
 success_msg("Cool! The next exercise shows You how to read in data from .txt files :-)")
 ```
