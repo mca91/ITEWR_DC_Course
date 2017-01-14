@@ -291,6 +291,10 @@ A better approach to inspect the data set in such cases is to use the `head` fun
 <br>
 By default, `head` prints only the first 6 observations of a data set to the console.
 
+***=pre_exercise_code
+```{r}
+my_data <- read.table("http://s3.amazonaws.com/assets.datacamp.com/production/course_1276/datasets/cps_ch3.csv")
+```
 
 ***=instructions
 
