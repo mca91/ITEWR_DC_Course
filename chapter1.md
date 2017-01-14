@@ -820,7 +820,7 @@ Store all variables contained in `cps1985` except for `union` in a new object na
 *** =solution
 ```{r}
 # Create a new object cps1985new containing all variables from cps1985 except for union
-cps1985new <- cps1985[,-1]
+cps1985new <- cps1985[,-10]
 ```
 
 *** =sct
