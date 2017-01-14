@@ -250,7 +250,7 @@ success_msg("The cool thing about this is: You can access the data from anywhere
 --- type:NormalExercise lang:r xp: skills: key:8b0e455baf
 ## Print the Data Set
 
-Great! If you want to print your the contents of the `my_data` object, you simply have to type its name and execute. 
+Great! If you want to print your the contents of the object `my_data`, you simply have to type its name (to the console or in your script) and execute. 
 
 ***=pre_exercise_code
 ```{r}
