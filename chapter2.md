@@ -113,6 +113,7 @@ A researcher wants to analyse the relationship between class size and pupils' av
       </tr>
     </table>
 
+<br>
 The vectors You created in the previous exercise are available in Your working environment.
 
 ***=pre_exercise_code
@@ -207,12 +208,12 @@ In R, linear models can be fitted by use of the `lm()` function.
 
 An argument to be always specified in `lm()` is a regression formula of the form `y ~ x`. This expression states that you want to estimate a linear model of `y` as a function of `x`.  Type and execute `?lm` or `?formula` for further info on subjects.
 
-*Data vectors from the previous exercise is available in your workspace.*
+*Data vectors from the previous exercise are available in Your workspace.*
 
 *** =instructions
 - Estimate a linear regression of test score on class size using `lm()`. Store the result in `mod`.
 - `mod` is an object of type `list` with named entries. Check this using the function `is.list()`.
-- See what information you can obtain from `mod` using the `$` operator. Read out an arbitrary property of the object `mod`.
+- See what information You can obtain from `mod` using the `$` operator. Read out an arbitrary property of the object `mod`.
 
 
 *** =pre_exercise_code
