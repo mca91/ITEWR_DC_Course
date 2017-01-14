@@ -404,7 +404,6 @@ test_object("my_data")
 success_msg("Cool!")
 ```
 
-
 --- type:NormalExercise lang:r xp: skills: key:7131f0e223
 ## Yes, That Looks Better!
 
@@ -466,8 +465,9 @@ test_output_contains("head(my_data)")
 success_msg("Cool! The next exercise shows You how to read in data from .txt files :-)")
 ```
 
---- type:NormalExercise lang:r xp: skills: key:711663e93b
-## Load data from .txt files into R
+
+--- type:NormalExercise lang:r xp: skills: key:75120820eb
+## Load Data From .txt Files Into R
 
 We have prepared another data set containing observations from the 1985 Current Population Survey, this time in a .txt file to be found at
 
@@ -509,6 +509,43 @@ test_object("cps1985")
 test_output_contains("head(cps1985)")
 success_msg("This looks right! Keep up the good work!")
 ```
+
+--- type:NormalExercise lang:r xp: skills: key:711663e93b
+## Now Have a Look Again ...
+
+Okay. The data set You imported in the last exercise is available in Your environment.
+
+***pre_exercise_code
+```{r}
+cps1985 <- read.table("http://s3.amazonaws.com/assets.datacamp.com/production/course_1276/datasets/CPS1985.txt", sep=",", header=TRUE)
+```
+
+***=instructions
+
+Convince Yourself that everything went right by inspecting the first few observations with a call of the function `head`.
+
+*** =hint
+For further information on functions `read.table` and `head()` use the help function `?` in conjunction with the functions name, e.g. `?head`.
+
+*** =sample_code
+```{r}
+# Inspect the result yet again using head()
+
+```
+
+*** =solution
+```{r}
+# Inspect the result using head()
+head(cps1985)
+```
+
+*** =sct
+```{r}
+test_predefined_object("cps1985")
+test_output_contains("head(cps1985)")
+success_msg("This looks right! Keep up the good work!")
+```
+
 
 --- type:NormalExercise lang:r xp:100 skills:1 key:e5dc4639f7
 ## Data Handling I
