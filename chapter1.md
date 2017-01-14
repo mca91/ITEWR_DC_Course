@@ -207,6 +207,155 @@ test_error()
 success_msg("Great!")
 ```
 
+--- type:NormalExercise lang:r xp:100 skills:1  key:e0d56bf08c
+## Create Your Own Matrix
+
+***=instructions
+
+Construct a 3x3 matrix `X` containing numbers from 1 to 9 rowwise using `matrix()`
+
+***=hint
+
+See `?matrix`.
+
+***=sample_code
+```{r}
+# Construct a 3x3 matrix `X` containing numbers from 1 to 9 rowwise using the matrix function
+
+```
+
+***=solution
+```{r}
+# Construct a 3x3 matrix `X` containing numbers from 1 to 9 rowwise using the matrix function
+X <- matrix(c(1,2,3,4,5,6,7,8,9), nrow=3, byrow=T)
+```
+
+***=sct
+```{r}
+test_object("X",
+            undefined_msg = "You did not define an object named `X`!",
+            incorrect_msg = "The matrix does not look the way it is supposed to be... Maybe you confused rows with columns?")
+```
+
+--- type:NormalExercise lang:r xp:100 skills:1 key:d1339599b1
+## Joining Vectors Columnwise
+
+You can also join vectors to Matrices. 
+
+*** =instructions
+
+Create two arbitrary numeric column vectors of length three named `x` and `y` and join them columnwise using `cbind()`. Store the resulting 3x2 matrix in `Y`.
+
+*** =sample_code
+```{r}
+# Create two vectors x = (1 2 3)'  and y = (4 5 6)' and join them using cbind. Store the result in Y.
+
+```
+
+*** =solution
+```{r}
+# Create two vectors x = (1 2 3)'  and y = (4 5 6)' and join them using cbind. Store the result in Y.
+x <- c(1,2,3)
+y <- c(4,5,6)
+Y <- cbind(x,y)
+```
+
+***=sct
+```{r}
+test_object("x",
+            undefined_msg = "You did not define an object named `x`!",
+            incorrect_msg = "The vector does not look the way it is supposed to be... Print it to the console and see what's wrong!")
+
+
+test_object("y",
+            undefined_msg = "You did not define an object named `y`!",
+            incorrect_msg = "The vector does not look the way it is supposed to be... Print it to the console and see what's wrong!")
+
+test_function("cbind")
+
+test_object("Y",
+            undefined_msg = "You did not define an object named `Y`!",
+            incorrect_msg = "The matrix does not look the way it is supposed to be...")
+```
+
+--- type:NormalExercise lang:r xp:100 skills:1 key:9d7d7fe36b
+## Matrix Product
+
+This exercise teaches You how to compute a matrix product using R.
+
+The matrices `X` and `Y` from the previous exercises are available in your working environment.
+
+***pre_exercise_code
+```{r}
+X <- matrix(c(1,2,3,4,5,6,7,8,9), nrow=3, byrow=T)
+x <- c(1,2,3)
+y <- c(4,5,6)
+Y <- cbind(x,y)
+```
+
+*** =instructions
+
+Compute the matrix product of `X` and `Y` using the `%*%` operator. Store the resulting 3x2 matrix in `A`.
+
+***=sample_code
+```{r}
+# Determine the matrix product of X and Y. Store the result in A.
+
+```
+
+*** =solution
+```{r}
+# Determine the matrix product of X and Y. Store the result in A.
+A <- X %*% Y
+```
+
+***=sct
+```{r}
+test_predefined_objects(c("X","Y"))
+test_object("A")
+```
+
+--- type:NormalExercise lang:r xp:100 skills:1 key:a6094cd18c
+## Transposing Matrices
+
+Matrices can be transposed using the `t` function.
+
+The Matrix `A` from the last exercise is available in your working environment.
+
+***=pre_exercise_code
+```{r}
+X <- matrix(c(1,2,3,4,5,6,7,8,9), nrow=3, byrow=T)
+x <- c(1,2,3)
+y <- c(4,5,6)
+Y <- cbind(x,y)
+A <- X %*% Y
+```
+
+*** =instructions
+
+Transpose `A` using `t`.
+
+*** =sample_code
+```{r}
+# Transpose A
+
+```
+
+*** =solution
+```{r}
+# Transpose A
+t(A)
+```
+
+*** =sct
+```{r}
+test_predefined_objects("A")
+test_output_contains("t(A)",
+                         incorrect_msg = "Have you used `t` to transpose `A`?")
+test_error()
+success_msg("Nicely Done!")
+```
+
 --- type:NormalExercise lang:r xp: skills: key:d42a7e12e7
 ## Loading Data into R – .csv Files
 
@@ -831,153 +980,4 @@ test_object("cps1985new",
 
 test_error()
 success_msg("Good work!")
-```
-
---- type:NormalExercise lang:r xp:100 skills:1  key:e0d56bf08c
-## Create Your Own Matrix
-
-***=instructions
-
-Construct a 3x3 matrix `X` containing numbers from 1 to 9 rowwise using `matrix()`
-
-***=hint
-
-See `?matrix`.
-
-***=sample_code
-```{r}
-# Construct a 3x3 matrix `X` containing numbers from 1 to 9 rowwise using the matrix function
-
-```
-
-***=solution
-```{r}
-# Construct a 3x3 matrix `X` containing numbers from 1 to 9 rowwise using the matrix function
-X <- matrix(c(1,2,3,4,5,6,7,8,9), nrow=3, byrow=T)
-```
-
-***=sct
-```{r}
-test_object("X",
-            undefined_msg = "You did not define an object named `X`!",
-            incorrect_msg = "The matrix does not look the way it is supposed to be... Maybe you confused rows with columns?")
-```
-
---- type:NormalExercise lang:r xp:100 skills:1 key:d1339599b1
-## Joining Vectors Columnwise
-
-You can also join vectors to Matrices. 
-
-*** =instructions
-
-Create two arbitrary numeric column vectors of length three named `x` and `y` and join them columnwise using `cbind()`. Store the resulting 3x2 matrix in `Y`.
-
-*** =sample_code
-```{r}
-# Create two vectors x = (1 2 3)'  and y = (4 5 6)' and join them using cbind. Store the result in Y.
-
-```
-
-*** =solution
-```{r}
-# Create two vectors x = (1 2 3)'  and y = (4 5 6)' and join them using cbind. Store the result in Y.
-x <- c(1,2,3)
-y <- c(4,5,6)
-Y <- cbind(x,y)
-```
-
-***=sct
-```{r}
-test_object("x",
-            undefined_msg = "You did not define an object named `x`!",
-            incorrect_msg = "The vector does not look the way it is supposed to be... Print it to the console and see what's wrong!")
-
-
-test_object("y",
-            undefined_msg = "You did not define an object named `y`!",
-            incorrect_msg = "The vector does not look the way it is supposed to be... Print it to the console and see what's wrong!")
-
-test_function("cbind")
-
-test_object("Y",
-            undefined_msg = "You did not define an object named `Y`!",
-            incorrect_msg = "The matrix does not look the way it is supposed to be...")
-```
-
---- type:NormalExercise lang:r xp:100 skills:1 key:9d7d7fe36b
-## Matrix Product
-
-This exercise teaches You how to compute a matrix product using R.
-
-The matrices `X` and `Y` from the previous exercises are available in your working environment.
-
-***pre_exercise_code
-```{r}
-X <- matrix(c(1,2,3,4,5,6,7,8,9), nrow=3, byrow=T)
-x <- c(1,2,3)
-y <- c(4,5,6)
-Y <- cbind(x,y)
-```
-
-*** =instructions
-
-Compute the matrix product of `X` and `Y` using the `%*%` operator. Store the resulting 3x2 matrix in `A`.
-
-***=sample_code
-```{r}
-# Determine the matrix product of X and Y. Store the result in A.
-
-```
-
-*** =solution
-```{r}
-# Determine the matrix product of X and Y. Store the result in A.
-A <- X %*% Y
-```
-
-***=sct
-```{r}
-test_predefined_objects(c("X","Y"))
-test_object("A")
-```
-
---- type:NormalExercise lang:r xp:100 skills:1 key:a6094cd18c
-## Transposing Matrices
-
-Matrices can be transposed using the `t` function.
-
-The Matrix `A` from the last exercise is available in your working environment.
-
-***=pre_exercise_code
-```{r}
-X <- matrix(c(1,2,3,4,5,6,7,8,9), nrow=3, byrow=T)
-x <- c(1,2,3)
-y <- c(4,5,6)
-Y <- cbind(x,y)
-A <- X %*% Y
-```
-
-*** =instructions
-
-Transpose `A` using `t`.
-
-*** =sample_code
-```{r}
-# Transpose A
-
-```
-
-*** =solution
-```{r}
-# Transpose A
-t(A)
-```
-
-*** =sct
-```{r}
-test_predefined_objects("A")
-test_output_contains("t(A)",
-                         incorrect_msg = "Have you used `t` to transpose `A`?")
-test_error()
-success_msg("Nicely Done!")
 ```
