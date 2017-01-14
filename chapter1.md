@@ -905,6 +905,8 @@ test_object("Y",
 --- type:NormalExercise lang:r xp:100 skills:1 key:9d7d7fe36b
 ## Matrix Product
 
+This exercise teaches You how to compute a matrix product using R.
+
 The matrices `X` and `Y` from the previous exercises are available in your working environment.
 
 ***pre_exercise_code
@@ -973,7 +975,7 @@ t(A)
 ```{r}
 test_predefined_objects("A")
 test_output_contains("t(A)",
-                         incorrect_msg = "Have you used `t` to transpose A?")
+                         incorrect_msg = "Have you used `t` to transpose `A`?")
 test_error()
 success_msg("Nicely Done!")
 ```
