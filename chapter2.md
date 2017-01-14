@@ -120,10 +120,10 @@ The vectors You created in the previous exercise are available in Your working e
 cs <- c(23, 19, 30, 22, 23, 29, 35, 36, 33, 25)
 ts <- c(430, 430, 333, 410, 390, 377, 325, 310, 328, 375)
 ```
+Use <b>*existing*</b> R functions for the following exercises.
 
 *** =instructions
 
-Use <b>*existing*</b> R functions for the following exercises.
 - Compute mean, median and variance and standard deviation of test scores.
 - Compute both the covariance and pearson's correlation coefficient for `cs` and `ts`.
 
