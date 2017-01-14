@@ -728,10 +728,12 @@ success_msg("Well done! In the next exercise, You will learn some more data wran
 ```
 
 --- type:NormalExercise lang:r xp:100 skills:1  key:89349eccc2
-## Data Handling II
+## Data Wrangling with the CPS Data Set
 
-In this exercise, you will learn some more tricks in data wrangling. We already loaded the `cps1985` dataset for you, it is now available in the environment of you R session.
+In this exercise, you will learn some more tricks in data wrangling. We already loaded the `cps1985` dataset for you, it is available in the environment of you R session for the next bunch of exercises.
+<br>
 `cps1985` contains a subset of observations from the <a href="http://www.census.gov/programs-surveys/cps.html">Current Population Survey</a>.   
+
 
 *** =pre_exercise_code
 ```{r}
@@ -739,21 +741,11 @@ cps1985 <- read.table("http://s3.amazonaws.com/assets.datacamp.com/production/co
 ```
 
 *** =instructions
-- Get an overview over the data set. Check its dimensions using `dim()` and compute some descriptive statistics with `summary()`
-- Print the first 100 observations of `wage` to the console using `[]`
-- Store all variables contained in `cps1985` except for `union` in a new object named `cps1985new`
+Get an overview over the data set. Check its dimensions using the function `dim` and compute some descriptive statistics with `summary`.
 
 *** =sample_code
 ```{r}
 # Check dimensions and compute descriptive statistics
-
-
-# Use the [] operators to print the first 100 observations of `wage` to the console
-
-
-# Create a new object `cps1985new` containing all variables from `cps1985` except for `union`
-
-
 ```
 
 *** =solution
@@ -761,13 +753,6 @@ cps1985 <- read.table("http://s3.amazonaws.com/assets.datacamp.com/production/co
 # Check dimensions and compute descriptive statistics
 dim(cps1985)
 summary(cps1985)
-
-# Use the [] operators to print the first 100 observations of `wage` to the console
-cps1985[100,1]
-
-# Create a new object `cps1985new` containing all variables from `cps1985` except for `union`
-cps1985new <- cps1985[,-1]
-
 ```
 
 *** =sct
@@ -779,10 +764,67 @@ test_function("dim", args="x",
 test_function("summary", args = "object",
               not_called_msg = "You didn't call `summary()`!",
               incorrect_msg = "You did call `summary()` with the wrong argument, `object`!")
+```
 
+--- type:NormalExercise lang:r xp:100 skills:1 key:ef9f334525
+## CPS Data -  Subsetting
+
+Let's see how You can extract a subset of observations for a certain variable... 
+
+***=pre_exercise_code
+```{r}
+cps1985 <- read.table("http://s3.amazonaws.com/assets.datacamp.com/production/course_1276/datasets/CPS1985.txt", sep=",", header=TRUE)
+```
+
+***=instructions
+Print the first 100 observations of the variable `wage` to the console using operators `[` and `]`. Example: `cps1985$wage[1:10]` prints the first 10 observations for wage.
+
+***=sample_code
+```{r}
+# Use the [ ] operators to print the first 100 observations of wage
+
+```
+
+***=solution
+```{r}
+# Use the [ ] operators to print the first 100 observations of `wage` to the console
+cps1985[100,1]
+```
+
+***=sct
+```{r}
 test_output_contains("cps1985[100,1]",
                          incorrect_msg = "Have you used `[100, 1]` to print the first 100 obs. from `wage` in `cps1985`?")
-                         
+```
+
+--- type:NormalExercise lang:r xp:100 skills:1 key:335ebfa520
+## If You Don't Care About Union Status...
+
+If You are only interested in some variables of your data set, it might come handy to exclude uninteresting ones.
+
+*** =pre_exercise_code
+```{r}
+cps1985 <- read.table("http://s3.amazonaws.com/assets.datacamp.com/production/course_1276/datasets/CPS1985.txt", sep=",", header=TRUE)
+```
+
+*** =instructions
+Store all variables contained in `cps1985` except for `union` in a new object named `cps1985new`.
+
+*** =sample_code
+```{r}
+# Create a new object cps1985new containing all variables from cps1985 except for union
+
+
+```
+
+*** =solution
+```{r}
+# Create a new object cps1985new containing all variables from cps1985 except for union
+cps1985new <- cps1985[,-1]
+```
+
+*** =sct
+```{r}
 test_object("cps1985new",
             undefined_msg = "You did not define an object named `cps1985new`!",
             incorrect_msg = "The data set does not look the way it is supposed to be... Maybe you did somethind wrong with the indexing?")
