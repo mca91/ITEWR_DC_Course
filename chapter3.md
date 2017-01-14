@@ -1,6 +1,6 @@
 ---
 title       : Multiple Regression
-description : This section contains exercises dealing with the multiple linear regression model and discusses estimation using ordinary least squares. 
+description : In this chapter, we provide exercises dealing with multiple linear regression models and teach You how to estimate these models using R. 
 attachments :
   slides_link : https://github.com/Emwikts1970/URFITE_DC/raw/master/Econometrics
 

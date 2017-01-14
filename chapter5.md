@@ -1,6 +1,6 @@
 ---
 title       : Heteroskedasticity
-description : Insert the chapter description here
+description : This chapter teaches you how to detect and how to deal with heteroskedasticity when estimating linear models with R.
 
 --- type:MultipleChoiceExercise lang:r xp:50 skills:1 key:35167f113b
 ## Violation of OLS Assumptions

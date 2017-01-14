@@ -1,6 +1,6 @@
 ---
 title       : The Gauss-Markov Theorem
-description : Insert the chapter description here
+description : We revisit a central statement of the Gauss-Markov theorem. You will also get a glimpse of how to conduct simulation studies in R. 
 
 --- type:MultipleChoiceExercise lang:r xp:100 skills:1 key:726a6d460b
 ## A Simulation Study I
