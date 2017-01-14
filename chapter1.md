@@ -208,7 +208,7 @@ success_msg("Great!")
 ```
 
 --- type:NormalExercise lang:r xp: skills: key:d42a7e12e7
-## Load data from .csv files into R
+## Loading Data into R – .csv Files
 
 In R, it is often fairly easy to import data. This exercise will teach you how to import .csv files. "csv" means "comma seperated values".
 
@@ -218,14 +218,10 @@ Notice that it is also possible to read data from Your hard disk (the general ca
 
 *** =instructions
 
-- Load in the data set with the help of the function `read.table()`. Assign the result to the object `cps`. 
+- Load the data set with the help of the function `read.table()`. Assign the result to the object `my_data`. 
 Your code should look something like: read.table("dataset_url"). 
 
 It is important to use quotes here to make sure R interprets the url as as string – a sequence of characters – instead of an object.
-
-- Print the data to the console: `my_data`
-
-- Have a look at the first few observations using `head(my_data)`
 
 *** =hint
 
@@ -236,32 +232,90 @@ See `?read.table` for further help.
 # Read in the data set and assign it to my_data
 # URL: http://s3.amazonaws.com/assets.datacamp.com/production/course_1276/datasets/cps_ch3.csv
 
-# Print the data to the console
-
-
-# Have a look at the first few observations
-
-
 ```
 
 *** =solution
 ```{r}
 # Read in the data set and assign it to my_data
 my_data <- read.table("http://s3.amazonaws.com/assets.datacamp.com/production/course_1276/datasets/cps_ch3.csv")
+```
 
+*** =sct
+```{r}
+test_function("read.table")
+test_object("my_data")
+success_msg("The cool thing about this is: You can access the data from anywhere. Try it yourself: copy, paste and execute Your call of `read.table()` to the console of the R version You have installed on Your computer!")
+```
+
+--- type:NormalExercise lang:r xp: skills: key:8b0e455baf
+## Print the Data Set
+
+Great! If you want to print your the contents of the `my_data` object, you simply have to type its name and execute. 
+
+***=pre_exercise_code
+```{r}
+my_data <- read.table("http://s3.amazonaws.com/assets.datacamp.com/production/course_1276/datasets/cps_ch3.csv")
+```
+
+***=instructions
+
+- Print the data to the console: `my_data`
+
+*** =hint
+
+Write `my_data` into your script.
+
+*** =sample_code
+```{r}
+# Print the data to the console
+
+```
+
+***=solution
+```{r}
 # Print the data to the console
 my_data
+```
 
+*** =sct
+```{r}
+test_predefined_objects("my_data")
+test_output_contains("my_data")
+```
+
+--- type:NormalExercise lang:r xp: skills: key:dfeef3533a
+## How to get an Overview
+
+When there are many variables and/or many observations, printing the data set can be really messy. 
+A better approach to inspect the data set in such cases is to use the `head` function. 
+<br>
+By default, `head` prints only the first 6 observations of a data set to the console.
+
+
+***=instructions
+
+- Have a look at the first few observations using `head(my_data)`
+
+*** =hint
+
+See `?head` for further help.
+
+*** =sample_code
+```{r}
+# Have a look at the first few observations
+
+```
+
+*** =solution
+```{r}
 # Have a look at the first few observations using head(my_data)
 head(my_data)
 ```
 
 *** =sct
 ```{r}
-test_object("my_data")
-test_output_contains("my_data")
 test_function("head")
-success_msg("The cool thing about this is: You can access the data from anywhere. Try it yourself: Copy, paste and execute Your call of `read.table()` to the console of the R version You have installed on Your computer!")
+success_msg("Well done!")
 ```
 
 --- type:NormalExercise lang:r xp: skills: key:710866a669
