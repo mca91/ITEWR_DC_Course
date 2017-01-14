@@ -293,16 +293,13 @@ test_student_typed("mod$")
 ```
 
 --- type:NormalExercise lang:r xp: skills: key:6e64f67c78
-## More on Model Objects
+## summary() and Model Objects
 
-Consider again the relation of class size and test score. The model object `mod` from the previous exercise is available in your workspace. This means you can use it for subsequent tasks. Convince yourself by typing `summary(mod)` in to the console and get yet again detailed information on the estimated model!
-
-
+Consider again the relation of class size and test score. The model object `mod` from the previous exercise is available in Your workspace so You can use it for subsequent tasks. Convince Yourself by typing `summary(mod)` in to the console and get detailed information on the estimated model!
 
 *** =instructions
 
 - Obtain an overview over the model object `mod` using `summary()`
-- Add the regression line to the scatterplot. Hint: use `abline()`
 - Store the regression summary into `summary`. Discover what information you can extract from `summary` by use of the `$` operator
 - Suppose you are interested in how good the model fits the data. Create a new variable `R2` storing the regression's $R^2$
 - You can extract a named $2\times4$ matrix with, amongst other things, estimated coefficients and standard errors. Save this matrix to an object named `coef`
@@ -321,9 +318,6 @@ mod <- lm(ts ~ cs)
 # Use summary() the get an overview over your model
 
 
-# Add the regression line the the scatterplot
-plot(cs,ts)
-
 # Store summary(mod) into summary
 
 
@@ -337,10 +331,6 @@ plot(cs,ts)
 ```{r}
 # Use summary() the get an overview over your model
 summary(mod)
-
-# Add the regression line the the scatterplot
-plot(cs,ts)
-abline(mod)
 
 # Store summary(mod) into summary
 summary <- summary(mod)
@@ -357,10 +347,47 @@ coef <- summary$coefficients
 ```{r}
 test_predefined_objects("mod")
 test_function("summary")
-test_function("abline")
 test_object("summary")
 test_object("R2")
 test_object("coef")
+```
+
+--- type:NormalExercise lang:r xp: skills: key:e67a8693c9
+## Plotting the Regression Line
+
+So far so good. Now, we would like to add a regression line to the scatter plot considered a few exercises before.
+
+You are provided with the code for the scatter plot in Your script.
+
+The object `mod` is available in Your working environment.
+
+***=instructions
+Add the regression line to the scatterplot. Hint: use `abline`. If you have no idea how to proceed, see `?abline`. `abline` will not work if you have not already executed the code to draw the scatterplot!
+
+*** =pre_exercise_code
+```{r}
+cs <- c(23, 19, 30, 22, 23, 29, 35, 36, 33, 25)
+ts <- c(430, 430, 333, 410, 390, 377, 325, 310, 328, 375)
+mod <- lm(ts ~ cs)
+```
+
+*** =sample_code
+```{r}
+# Add the regression line the the scatterplot
+plot(cs,ts)
+```
+
+*** =solution
+```{r}
+# Add the regression line the the scatterplot
+plot(cs,ts)
+abline(mod)
+```
+
+*** =sct
+```{r}
+test_predefined_objects("mod")
+test_function("abline")
 ```
 
 --- type:NormalExercise lang:r xp: skills: key:449f4c19de
