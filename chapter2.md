@@ -202,18 +202,17 @@ test_mc(correct = 1, feedback_msgs = c(msg_success, msg_bad, msg_bad, msg_bad))
 --- type:NormalExercise lang:r xp: skills: key:54c5e502ca
 ## The Linear Model 
 
-In this exercise, you will learn how to estimate a simple linear regression model.
+In this exercise, You will learn how to estimate a simple linear regression model.
 
-In R, linear models can be fitted by use of the `lm()` function. 
+In R, linear models can be fitted by use of the `lm` function. 
 
-An argument to be always specified in `lm()` is a regression formula of the form `y ~ x`. This expression states that you want to estimate a linear model of `y` as a function of `x`.  Type and execute `?lm` or `?formula` for further info on subjects.
+An argument to be always specified in `lm` is a regression formula of the form `y ~ x`. This expression states that You want to estimate a linear model of `y` as a function of `x`.  Type and execute `?lm` or `?formula` for further info on subjects.
 
 *Data vectors from the previous exercise are available in Your workspace.*
 
 *** =instructions
-- Estimate a linear regression of test score on class size using `lm()`. Store the result in `mod`.
-- `mod` is an object of type `list` with named entries. Check this using the function `is.list()`.
-- See what information You can obtain from `mod` using the `$` operator. Read out an arbitrary property of the object `mod`.
+Estimate a linear regression of test score on class size using `lm`. Store the result in `mod`. Use the help function if you do not know how to start.
+
 
 
 *** =pre_exercise_code
@@ -227,24 +226,12 @@ ts <- c(430, 430, 333, 410, 390, 377, 325, 310, 328, 375)
 # Estimate the regression model and store it in mod
 
 
-# Check that mod is an object of type list 
-
-
-# Read out some arbitrary entry of mod using. E.g. fitted values:
-
-
 ```
 
 *** =solution
 ```{r}
 # Estimate the regression model and store it in mod
 mod <- lm(ts ~ cs)
-
-# Check that mod is an object of type list 
-is.list(mod)
-
-# Read out some arbitrary entry of mod using. E.g. fitted values:
-mod$fitted.values
 ```
 
 *** =sct
@@ -257,6 +244,48 @@ test_or(
 )
 
 test_object("mod")
+```
+
+--- type:NormalExercise lang:r xp: skills: key:8a5bb363c3
+## The Linear Model - ctd.
+
+Okay, now let's see how a model object is structured. 
+
+*Data vectors and the model object `mod` from the previous exercise are available in Your workspace.*
+
+*** =instructions
+- `mod` is an object of type `list` with named entries. Check this using the function `is.list`.
+- See what information You can obtain from `mod` using the `$` operator. Read out an arbitrary property of the object `mod`.
+
+*** =pre_exercise_code
+```{r}
+cs <- c(23, 19, 30, 22, 23, 29, 35, 36, 33, 25)
+ts <- c(430, 430, 333, 410, 390, 377, 325, 310, 328, 375)
+mod <- lm(ts ~ cs)
+```
+
+*** =sample_code
+```{r}
+# Check that mod is an object of type list 
+
+
+# Read out some arbitrary entry of mod e.g. fitted values:
+
+
+```
+
+*** =solution
+```{r}
+# Check that mod is an object of type list 
+is.list(mod)
+
+# Read out some arbitrary entry of mod e.g. fitted values:
+mod$fitted.values
+```
+
+*** =sct
+```{r}
+test_predefined_objects("mod")
 
 test_function("is.list", args="x")
 
