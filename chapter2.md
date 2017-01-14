@@ -521,7 +521,7 @@ test_mc(correct = 2, feedback_msgs = c(msg_bad, msg_success, msg_bad, msg_bad))
 ```
 
 --- type:NormalExercise lang:r xp: skills: key:4d6c0982cd
-## Two Null Hypotheses
+## Testing Two Null Hypotheses Individually
 
 Now consider again the estimated regression line
 
