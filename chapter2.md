@@ -43,9 +43,7 @@ A researcher wants to analyse the relationship between class size and pupils' av
 
 - Create vectors, `cs` for class sizes and `ts` for test scores, containing the obeservations above.
 - Draw a scatter plot of the results using `plot`.
-Use <b>*existing*</b> R functions for the following exercises.
-- Compute mean, median and variance and standard deviation of test scores.
-- Compute both the covariance and pearson's correlation coefficient for `cs` and `ts`.
+
 
 *** =sample_code
 ```{r}
@@ -71,7 +69,76 @@ ts <- c(430, 430, 333, 410, 390, 377, 325, 310, 328, 375)
 
 # Draw the scatter plot
 plot(cs,ts)
+```
 
+*** =sct
+```{r}
+test_object("cs")
+test_object("ts")
+
+test_function("plot")
+```
+
+--- type:NormalExercise lang:r xp: skills: key:12a508f3c8
+## Class Sizes and Test Scores - ctd.
+
+A researcher wants to analyse the relationship between class size and pupils' average test score. Therefore he measures both variables in 10 different classes and obtains the following results:
+
+  <table>
+      <tr>
+        <td><b>Class Size</b></td>
+        <td>23</td>
+        <td>19</td>
+        <td>30</td>
+        <td>22</td>
+        <td>23</td>
+        <td>29</td>
+        <td>35</td>
+        <td>36</td>
+        <td>33</td>
+        <td>25</td>
+      </tr>
+      <tr>
+        <td><b>Test Score</b></td>
+        <td>430</td>
+        <td>430</td>
+        <td>333</td>
+        <td>410</td>
+        <td>390</td>
+        <td>377</td>
+        <td>325</td>
+        <td>310</td>
+        <td>328</td>
+        <td>375</td>
+      </tr>
+    </table>
+
+The vectors You created in the previous exercise are available in the working environment.
+
+***=pre_exercise_code
+```{r}
+cs <- c(23, 19, 30, 22, 23, 29, 35, 36, 33, 25)
+ts <- c(430, 430, 333, 410, 390, 377, 325, 310, 328, 375)
+```
+
+*** =instructions
+
+Use <b>*existing*</b> R functions for the following exercises.
+- Compute mean, median and variance and standard deviation of test scores.
+- Compute both the covariance and pearson's correlation coefficient for `cs` and `ts`.
+
+*** =sample_code
+```{r}
+# Compute mean, median, variance & standard deviation of test score
+
+
+# Compute the covariance and the correlation coefficient
+
+
+```
+
+*** =solution
+```{r}
 # Compute mean, median, variance & standard deviation of test score
 mean(ts)
 median(ts)
@@ -85,11 +152,6 @@ cor(cs,ts)
 
 *** =sct
 ```{r}
-test_object("cs")
-test_object("ts")
-
-test_function("plot")
-
 test_function("mean")
 test_function("median")
 test_function("var")
