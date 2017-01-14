@@ -450,7 +450,7 @@ coef <- summary$coefficients
 
 *** =sct
 ```{r}
-test_predefined_objects("mod","summary")
+test_predefined_objects("summary")
 test_object("coef")
 ```
 
