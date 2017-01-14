@@ -410,7 +410,7 @@ R2 <- summary$r.squared
 
 *** =sct
 ```{r}
-test_predefined_objects("mod","summary")
+test_predefined_objects("summary")
 test_object("R2")
 ```
 
