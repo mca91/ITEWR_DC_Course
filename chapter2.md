@@ -293,7 +293,7 @@ test_student_typed("mod$")
 ```
 
 --- type:NormalExercise lang:r xp: skills: key:6e64f67c78
-## summary() and Model Objects
+## Summary and Model Objects
 
 Consider again the relation of class size and test score. The model object `mod` from the previous exercise is available in Your workspace so You can use it for subsequent tasks. Convince Yourself by typing `summary(mod)` in to the console and get detailed information on the estimated model!
 
@@ -301,8 +301,6 @@ Consider again the relation of class size and test score. The model object `mod`
 
 - Obtain an overview over the model object `mod` using `summary()`
 - Store the regression summary into `summary`. Discover what information you can extract from `summary` by use of the `$` operator
-- Suppose you are interested in how good the model fits the data. Create a new variable `R2` storing the regression's $R^2$
-- You can extract a named $2\times4$ matrix with, amongst other things, estimated coefficients and standard errors. Save this matrix to an object named `coef`
 
 *** =hint
 
@@ -321,26 +319,14 @@ mod <- lm(ts ~ cs)
 # Store summary(mod) into summary
 
 
-# Store the regression's R^2 in R2
-
-
-# Save the coefficient matrix to coef
 ```
 
 *** =solution
 ```{r}
-# Use summary() the get an overview over your model
+# Use summary the get an overview over your model
 summary(mod)
-
-# Store summary(mod) into summary
+# Store summary(mod) in summary
 summary <- summary(mod)
-
-# Store the regression's R^2 in R2
-R2 <- summary$r.squared
-
-# Save the coefficient matrix to coef
-coef <- summary$coefficients
-
 ```
 
 *** =sct
@@ -348,8 +334,6 @@ coef <- summary$coefficients
 test_predefined_objects("mod")
 test_function("summary")
 test_object("summary")
-test_object("R2")
-test_object("coef")
 ```
 
 --- type:NormalExercise lang:r xp: skills: key:e67a8693c9
@@ -388,6 +372,86 @@ abline(mod)
 ```{r}
 test_predefined_objects("mod")
 test_function("abline")
+```
+
+--- type:NormalExercise lang:r xp: skills: key:56b6e9c688
+## Extract Components from a Model Object's Summary
+
+Let us now read out and store some information of `summary`
+
+The objects `mod` and `summary` are available in Your working environment.
+
+*** =instructions
+
+Suppose You are interested in how good the model fits the data. Create a new variable `R2` storing the regression's $R^2$.
+
+*** =hint
+
+*** =pre_exercise_code
+```{r}
+cs <- c(23, 19, 30, 22, 23, 29, 35, 36, 33, 25)
+ts <- c(430, 430, 333, 410, 390, 377, 325, 310, 328, 375)
+mod <- lm(ts ~ cs)
+summary <- summary(mod)
+```
+
+*** =sample_code
+```{r}
+# Store the regression's R^2 in R2
+
+
+```
+
+*** =solution
+```{r}
+# Store the regression's R^2 in R2
+R2 <- summary$r.squared
+```
+
+*** =sct
+```{r}
+test_predefined_objects("mod","summary")
+test_object("R2")
+```
+
+--- type:NormalExercise lang:r xp: skills: key:a775931dd8
+## Coefficients
+
+It might also be interesting to extract statistical information on the estimated coefficients of the model.
+
+The objects `mod` and `summary` are available in Your working environment.
+
+*** =instructions
+
+You can extract a named $2\times4$ matrix with, amongst other things, estimated coefficients and standard errors from the `summary`. Save this matrix to an object named `coef`.
+
+***=hint
+
+*** =pre_exercise_code
+```{r}
+cs <- c(23, 19, 30, 22, 23, 29, 35, 36, 33, 25)
+ts <- c(430, 430, 333, 410, 390, 377, 325, 310, 328, 375)
+mod <- lm(ts ~ cs)
+summary <- summary(mod)
+```
+
+*** =sample_code
+```{r}
+# Save the coefficient matrix to coef
+
+
+```
+
+*** =solution
+```{r}
+# Save the coefficient matrix to coef
+coef <- summary$coefficients
+```
+
+*** =sct
+```{r}
+test_predefined_objects("mod","summary")
+test_object("coef")
 ```
 
 --- type:NormalExercise lang:r xp: skills: key:449f4c19de
