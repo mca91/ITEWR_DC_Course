@@ -293,7 +293,7 @@ test_student_typed("mod$")
 ```
 
 --- type:NormalExercise lang:r xp: skills: key:6e64f67c78
-## Model Objects
+## More on Model Objects
 
 Consider again the relation of class size and test score. The model object `mod` from the previous exercise is available in your workspace. This means you can use it for subsequent tasks. Convince yourself by typing `summary(mod)` in to the console and get yet again detailed information on the estimated model!
 
