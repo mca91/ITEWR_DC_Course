@@ -113,7 +113,7 @@ A researcher wants to analyse the relationship between class size and pupils' av
       </tr>
     </table>
 
-The vectors You created in the previous exercise are available in the working environment.
+The vectors You created in the previous exercise are available in Your working environment.
 
 ***=pre_exercise_code
 ```{r}
