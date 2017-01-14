@@ -546,56 +546,34 @@ test_output_contains("head(cps1985)")
 success_msg("This looks right! Keep up the good work!")
 ```
 
-
 --- type:NormalExercise lang:r xp:100 skills:1 key:e5dc4639f7
-## Data Handling I
+## How to Load a Package
 
-In this exercise, you will learn how to use data that comes with R packages. We use the `CPSSWEducation` data set contained in the AER package.
+In the subsequent exercises, You will learn how to use data that comes with R packages. We use the `CPSSWEducation` data set contained in the AER package.
 
 *** =instructions
-- Load the AER package using the `library()` function by executing `library(AER)`. Add the `CPSSWEducation` data set to the workspace with `data("CPSSWEducation")` 
-- Get an overview over the data stored in `CPSSWEducation` with help of the `summary()` function. Type and execute `summary(CPSSWEducation)`. Notice that `summary()` is called on an object. In R, an object's name has to be given without quotation marks.
-- `CPSSWEducation` is a `data.frame` object. For now, you can think of it as a matrix where variables are stored in named columns. You can select a specific variable using the `$` operator. Print observations for `education` using the command `CPSSWEducation$education` 
-- Use the `attach(CPSSWEducation)` command to attach the data set to R's search path. You are now able to access variables stored in the dataset by simply giving their names. Have a try: Execute `education`!
-- Now suppose you are interested in the relation between earnings and education. Use `plot(education, earnings)` to create a scatter plot of observations on these variables
+ Load the AER package using the `library` function by executing `library(AER)`. Add the `CPSSWEducation` data set to the workspace with `data("CPSSWEducation")` 
+
+***=hint
+
+For more info on the functions `library` and `data` use the help function!
 
 *** =sample_code
 ```{r}
-# Load the AER package and add data to workspace
+# Load the AER package
 
 
-# Use the summary() function on the CPSSWEducation data set 
-
-
-# Print observations of `education`.
-
-
-# Attach the data set to R's search path
-
-
-# Plot observations on education and earnings
+# Add the data to workspace
 
 
 ```
 
 *** =solution
 ```{r}
-# Load the AER package and add data to workspace
+# Load the AER package add the data to workspace
 library(AER)
+# Add the data to workspace
 data("CPSSWEducation")
-
-# Use the summary() function on the CPSSWEducation data set 
-summary(object=CPSSWEducation)
-
-# Print observations of `education`
-CPSSWEducation$education
-
-# Attach the data set to R's search path
-attach(CPSSWEducation)
-
-# Plot observations on education and earnings
-plot(education, earnings)
-
 ```
 
 *** =sct
@@ -606,24 +584,147 @@ test_function("library")
 test_function("data",
               not_called_msg = "You didn't call `data()`!",
               incorrect_msg = "You did call `data()` with the wrong argument")
-              
+```
+
+--- type:NormalExercise lang:r xp:100 skills:1 key:8a35320e10
+## Summarise Your Data
+
+So far so good. Now, if we are interested in computing some descriptive statistics about a data set at hand, the `summary` function is quite convenient.
+Check it out!
+
+***=pre_exercise_code
+```{r}
+library(AER)
+data("CPSSWEducation")
+```
+
+*** =instructions
+
+Get an overview over the data stored in `CPSSWEducation` with help of the `summary()` function. Type and execute `summary(CPSSWEducation)`. Notice that `summary` is called on an object. In R, an object's name has to be given without quotation marks.
+
+*** =sample_code
+```{r}
+# Use the summary function on the CPSSWEducation data set 
+
+```
+
+*** =solution
+```{r}
+# Use the summary function on the CPSSWEducation data set 
+summary(object=CPSSWEducation)
+```
+
+*** =sct
+```{r}
 test_function("summary", args = "object",
               not_called_msg = "You didn't call `summary()`!",
               incorrect_msg = "You did call `summary()` with the wrong argument, `object`!")
+```
 
+--- type:NormalExercise lang:r xp:100 skills:1 key:ad8022dbb5
+## Your First data.frame
+
+`CPSSWEducation` is a `data.frame` object. For now, you can think of it as a matrix where variables are stored in named columns. You can select a specific variable using the `$` operator.
+
+***=pre_exercise_code
+```{r}
+library(AER)
+data("CPSSWEducation")
+```
+
+***=instructions
+
+Print observations for `education` using the command `CPSSWEducation$education`. 
+
+*** =sample_code
+```{r}
+# Print observations of `education`.
+
+```
+
+*** =solution
+```{r}
+# Print observations of `education`
+CPSSWEducation$education
+```
+
+***=sct
+```{r}
 test_student_typed("CPSSWEducation$education", 
-                    not_typed_msg = "You failed printing observations of `education`. There must be a typo! Look again at your Code!")
+                    not_typed_msg = "You failed printing observations of `education`. There must be a typo! Look again at Your Code!")
+```
 
+--- type:NormalExercise lang:r xp:100 skills:1 key:96ffc27bc6
+## Attaching Data Sets
+
+Use the `attach` function, You can add data set to R's search path. You are then able to access variables stored in the dataset by simply naming them.
+
+***=pre_exercise_code
+```{r}
+library(AER)
+data("CPSSWEducation")
+```
+
+*** =instructions
+
+Type `attach(CPSSWEducation)`. Then, check if it worked: Execute `education`!
+
+*** =sample_code
+```{r}
+# Attach the data set to R's search path
+
+```
+
+*** =solution
+```{r}
+# Attach the data set to R's search path
+attach(CPSSWEducation)
+```
+
+***=sct
+```{r}
 test_function("attach", args = "what",
               not_called_msg = "You didn't call `attach()`!",
               incorrect_msg = "You did call `attach()` with the wrong argument, `what`!")
+```
 
+--- type:NormalExercise lang:r xp:100 skills:1 key:e2c89224e2
+## Your First Scatter Plot
+
+Now suppose you are interested in the relation between earnings and education. As a first step, it might be a good idea to create a simple plot to
+visualise the relationship. In R, you can do this by means of the `plot` function.
+
+***=pre_exercise_code
+```{r}
+library(AER)
+data("CPSSWEducation")
+attach(CPSSWEducation)
+```
+
+*** =instructions
+
+Use `plot(education, earnings)` to create a scatter plot of observations on these variables
+
+*** =sample_code
+```{r}
+# Plot observations on education and earnings
+
+```
+
+*** =solution
+```{r}
+# Plot observations on education and earnings
+plot(education, earnings)
+```
+
+*** =sct
+```{r}
 test_function("plot", args = c("x","y"),
               not_called_msg = "You didn't call `plot()`!",
               incorrect_msg = "You did call `attach()` with the arguments, `x` and `y`!")
 
 test_error()
-success_msg("Great! In the next exercise, You will learn some basic data wrangling techniques.")
+success_msg("Well done! In the next exercise, You will learn some more data wrangling techniques.")
 ```
 
 --- type:NormalExercise lang:r xp:100 skills:1  key:89349eccc2
