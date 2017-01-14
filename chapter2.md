@@ -7,7 +7,7 @@ attachments :
 --- type:NormalExercise lang:r xp: skills: key:9d4515394d
 ## Class Sizes and Test Scores
 
-A researcher wants to analyse the relationship between class size and pupils' average test score. Therefore he measures both variables in 10 different classes obtaining the following results:
+A researcher wants to analyse the relationship between class size and pupils' average test score. Therefore he measures both variables in 10 different classes and obtains the following results:
 
   <table>
       <tr>
@@ -419,7 +419,7 @@ test_output_contains("R2 == 0.8976")
 ```
 
 --- type:MultipleChoiceExercise lang:r xp: skills: key:c0b8375eb8
-## What was R^2 again?  
+## What Was R^2 Again?  
 
 The coefficient of determination, denoted $R^2$, is a measure of a model's goodness of fit. It is defined as
 
@@ -492,7 +492,7 @@ test_mc(correct = 3, feedback_msgs = c(msg_bad, msg_bad, msg_bad, msg_success))
 ```
 
 --- type:MultipleChoiceExercise lang:r xp:50 skills:1 key:7860286aef
-## Inference using p-values
+## Inference Using $p$-Values
 
 Suppose You are confronted with the following output providing the t-statistic for the hypothesis $\beta_{cs} = 0$ and the corresponding $p$-value.
 
