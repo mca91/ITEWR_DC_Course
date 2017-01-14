@@ -866,6 +866,8 @@ test_object("X",
 --- type:NormalExercise lang:r xp:100 skills:1 key:d1339599b1
 ## Joining Vectors Columnwise
 
+You can also join vectors to Matrices. 
+
 *** =instructions
 
 Create two arbitrary numeric column vectors of length three named `x` and `y` and join them columnwise using `cbind()`. Store the resulting 3x2 matrix in `Y`.
