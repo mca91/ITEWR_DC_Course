@@ -3,7 +3,7 @@ title       : Basics in R
 description : This section teaches you basic commands in R.
 
 --- type:NormalExercise lang:r xp:150 skills:1 key:3db79c581d
-## R as a calculator I
+## R as a Calculator I
 
 ***=instructions
 
@@ -68,7 +68,7 @@ success_msg("Great!")
 ```
 
 --- type:NormalExercise lang:r xp:100 skills:1 key:a15675d543
-## R as a calculator II
+## R as a Calculator II
 
 
 ***=instructions
@@ -140,7 +140,7 @@ success_msg("Great!")
 ```
 
 --- type:NormalExercise lang:r xp:100 skills:1 key:f8c346e680
-## R as a calculator III
+## R as a Calculator III
 
 *** =instructions
 - Vectors `x` and `y` from the previous exercise are available in the environment. Use `c()` to combine both vectors in a new one and store the result in, say `z`.
@@ -433,7 +433,7 @@ test_output_contains("my_data")
 ```
 
 --- type:NormalExercise lang:r xp: skills: key:dfeef3533a
-## How to get an Overview
+## How to Get an Overview
 
 When there are many variables and/or many observations, printing the data set can be really messy. 
 A better approach to inspect the data set in such cases is to use the `head` function. 
