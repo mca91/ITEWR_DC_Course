@@ -568,6 +568,61 @@ test_function("abline", index=1)
 test_function("abline", index=2)
 ```
 
+--- type:NormalExercise lang:r xp: skills: key:a6e79f9788
+## Two Regression Lines, One Plot
+
+The two estimated regression eqations are
+
+$$ \widehat{score} = \underset{(1.36)}{12.65} \times size $$.
+
+and
+
+$$ \widehat{score} = \underset{(23.9606)}{567.4272} + \underset{(0.8536)}{-7.1501} \times size $$.
+
+In this exercise, you have to represent the situation graphically. 
+<br>
+Hint: You are provided with the code line `plot(cs,ts)` which creates a scatter plot of `ts` and `cs`. It must be executed before calling `abline`!
+
+*Vectors `cs` and `ts` as well as the list objects `mod` and `mod_ni` from previous exercises are availabe in your working environment.*
+
+*** =instructions
+
+Plot the regression lines for the regression models `mod` and `mod_ni`.
+
+*** =hint
+
+Use the `abline` function as before. See `?abline` for further help.
+
+*** =pre_exercise_code
+```{r}
+cs <- c(23, 19, 30, 22, 23, 29, 35, 36, 33, 25)
+ts <- c(430, 430, 333, 410, 390, 377, 325, 310, 328, 375)
+mod <- lm(ts ~ cs)
+mod_ni <- lm(ts ~ cs - 1)
+```
+
+*** =sample_code
+```{r}
+# Plot regression lines for both models
+plot(cs,ts)
+
+```
+
+*** =solution
+```{r}
+# Plot regression lines for both models
+plot(cs,ts)
+abline(mod)
+abline(mod_ni)
+
+```
+
+*** =sct
+```{r}
+test_function("abline", index=1)
+test_function("abline", index=2)
+```
+
 --- type:NormalExercise lang:r xp: skills: key:673ab4d8fc
 ## The R^2 of a Regression Model  
 
