@@ -565,11 +565,11 @@ $$ \widehat{score} = \underset{(1.36)}{12.65} \times size $$
 
 and
 
-$$ \widehat{score} = \underset{(23.9606)}{567.4272} + \underset{(0.8536)}{-7.1501} \times size. $$
+$$ \widehat{score} = \underset{(23.9606)}{567.4272} \underset{(0.8536)}{-7.1501} \times size. $$
 
 <br>
 
-In this exercise, you have to represent the situation graphically. 
+In this exercise, You have to represent the situation graphically. 
 
 <br>
 
