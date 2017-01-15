@@ -567,9 +567,15 @@ and
 
 $$ \widehat{score} = \underset{(23.9606)}{567.4272} + \underset{(0.8536)}{-7.1501} \times size. $$
 
-In this exercise, you have to represent the situation graphically. 
 <br>
+
+In this exercise, you have to represent the situation graphically. 
+
+<br>
+
 Hint: You are provided with the code line `plot(cs,ts)` which creates a scatter plot of `ts` and `cs`. It must be executed before calling `abline`!
+
+<br>
 
 *Vectors `cs` and `ts` as well as the list objects `mod` and `mod_ni` from previous exercises are availabe in your working environment.*
 
