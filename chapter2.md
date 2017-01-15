@@ -573,7 +573,7 @@ In this exercise, You have to represent the situation graphically.
 
 <br>
 
-Hint: You are provided with the code line `plot(cs,ts)` which creates a scatter plot of `ts` and `cs`. It must be executed before calling `abline`! You may color the regression lines by using e.g. `col="red"` or `col="blue"` as an additional argument to `abline`.
+Hint: You are provided with the code line `plot(cs,ts)` which creates a scatter plot of `ts` and `cs`. It must be executed before calling `abline`! You may color the regression lines by using e.g. `col="red"` or `col="blue"` as an additional argument to `abline` to make them distinguishable.
 
 <br>
 
@@ -606,8 +606,8 @@ plot(cs,ts)
 ```{r}
 # Plot regression lines for both models
 plot(cs,ts)
-abline(mod)
-abline(mod_ni)
+abline(mod, col="blue")
+abline(mod_ni, col="red")
 
 ```
 
