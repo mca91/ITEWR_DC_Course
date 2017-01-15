@@ -561,7 +561,7 @@ test_object("coef")
 
 The two estimated regression eqations are
 
-$$ \widehat{score} = \underset{(1.36)}{12.65} \times size $$.
+$$ \widehat{score} = \underset{(1.36)}{12.65} \times size $$
 
 and
 
