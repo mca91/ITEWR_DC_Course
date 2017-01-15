@@ -459,21 +459,14 @@ test_object("coef")
 
 So far, You have conducted regressions where the model consisted of an intercept and another regressor. In this exercise you will learn ways to specify and to estimate regression models without the intercept.
 
-Notice that excluding the intercept from Your regression model might be a dodgy practice in some models as You impose the mean of the dependend variable to be zero if all other regressors are zero.
+Notice that excluding the intercept from Your regression model might be a dodgy practice in some models as You impose the mean of the dependend variable to be zero if all other regressors are also set zero.
 
 *Vectors `cs` and `ts` as well as the list object `mod` from previous exercises are availabe in your working environment.*
-
 
 *** =instructions
 
 - Use the help function on `lm` (`?lm`) to find out how to specify a `formula` for a regression of `ts` solely on `cs`, i.e. a regression witouh intercept
 - Estimate the regression model without intercept and store it in `mod_ni`
-- Convince yourself that everything went right. Extract the coefficient matrix from the models summary and store it to `coef`
-- Plot both regression lines
-
-*** =hint
-
-- In `lm()` use `ts ~ cs - 1` as the `formula` argument to estimate a regession model lacking an intercept
 
 *** =pre_exercise_code
 ```{r}
@@ -482,16 +475,14 @@ ts <- c(430, 430, 333, 410, 390, 377, 325, 310, 328, 375)
 mod <- lm(ts ~ cs)
 ```
 
+*** =hint
+
+- In `lm()` use `ts ~ cs - 1` as the `formula` argument to estimate a regession model lacking an intercept
+
 *** =sample_code
 ```{r}
 # Regress ts solely and cs, sore it to mod_ni
 
-
-# Extract the coefficient matrix from the models summary, save it to coef
-
-
-# Plot regression lines for both models
-plot(cs,ts)
 
 ```
 
@@ -499,15 +490,6 @@ plot(cs,ts)
 ```{r}
 # Regress ts solely and cs, sore it to mod_ni
 mod_ni <- lm(ts ~ cs - 1) # or: lm(ts ~ cs + 0)
-
-# Extract the coefficient matrix from the models summary, save it to coef
-coef <- summary(mod_ni)$coefficients
-
-# Plot regression lines for both models
-plot(cs,ts)
-abline(mod)
-abline(mod_ni)
-
 ```
 
 *** =sct
@@ -523,6 +505,63 @@ test_correct(test_function("lm"),
 test_function("lm")
 
 test_object("mod_ni", eval=F)
+```
+
+--- type:NormalExercise lang:r xp: skills: key:ede65c6611
+## Regression Output: No Constant Case
+
+You have estimated a model without intercept. The estimated regression eqation now is
+
+$$ \widehat{score} = \underset{(1.36)}_{12.65} \times size $$.
+
+Convince yourself that everything is as stated above.
+
+*Vectors `cs` and `ts` as well as the list objects `mod` and `mod_ni` from previous exercises are availabe in your working environment.*
+
+*** =instructions
+
+- Extract the coefficient matrix from the summary of `mod_ni` and store it in `coef`
+- Plot the regression lines for `mod` and `mod_ni`
+
+*** =hint
+
+Remember: List entries can be accessed with the `$` operator.
+
+*** =pre_exercise_code
+```{r}
+cs <- c(23, 19, 30, 22, 23, 29, 35, 36, 33, 25)
+ts <- c(430, 430, 333, 410, 390, 377, 325, 310, 328, 375)
+mod <- lm(ts ~ cs)
+mod_ni <- lm(ts ~ cs - 1)
+```
+
+*** =sample_code
+```{r}
+# Extract the coefficient matrix from the models summary, save it to coef
+
+
+# Plot regression lines for both models
+plot(cs,ts)
+
+```
+
+*** =solution
+```{r}
+# Extract the coefficient matrix from the models summary, save it to coef
+coef <- summary(mod_ni)$coefficients
+
+# Plot regression lines for both models
+plot(cs,ts)
+abline(mod)
+abline(mod_ni)
+
+```
+
+*** =sct
+```{r}
+test_predefined_objects("mod")
+test_predefined_objects("mod_ni")
+
 test_object("coef")
 
 test_function("abline", index=1)
