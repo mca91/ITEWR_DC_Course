@@ -619,6 +619,41 @@ test_function("abline", index=1)
 test_function("abline", index=2)
 ```
 
+
+--- type:MultipleChoiceExercise lang:r xp:50 skills:1 key:990550825b
+## A Better Model?
+
+Sometimes, graphical inspection can be very beneficial. Look at the plot from the previous exercise again and assume that You are looking at the population instead of a sample.
+
+Which regression line does probably better in explaining the observed data?
+
+*** =instructions
+
+- The red one, i.e. the regression model lacking an intercept
+- The blue one, i.e. the regression model including an intercept
+- Both regression lines fit the data equivalently well
+- This quation cannot be answered without futher information
+
+*** =hint
+
+*** =pre_exercise_code
+```{r}
+cs <- c(23, 19, 30, 22, 23, 29, 35, 36, 33, 25)
+ts <- c(430, 430, 333, 410, 390, 377, 325, 310, 328, 375)
+mod <- lm(ts ~ cs)
+mod_ni <- lm(ts ~ cs - 1)
+plot(cs,ts)
+abline(mod, col="blue")
+abline(mod_ni, col="red")
+```
+
+*** =sct
+```{r}
+msg_bad <- "That is not correct!"
+msg_success <- "Wow! You're doin' good!"
+test_mc(correct = 2, feedback_msgs = c(msg_bad, msg_bad, msg_bad, msg_success))
+```
+
 --- type:NormalExercise lang:r xp: skills: key:673ab4d8fc
 ## The R^2 of a Regression Model  
 
