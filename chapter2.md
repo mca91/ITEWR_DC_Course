@@ -521,7 +521,6 @@ Convince yourself that everything is as stated above.
 *** =instructions
 
 - Extract the coefficient matrix from the summary of `mod_ni` and store it in `coef`
-- Plot the regression lines for `mod` and `mod_ni`
 
 *** =hint
 
@@ -540,20 +539,12 @@ mod_ni <- lm(ts ~ cs - 1)
 # Extract the coefficient matrix from the models summary, save it to coef
 
 
-# Plot regression lines for both models
-plot(cs,ts)
-
 ```
 
 *** =solution
 ```{r}
 # Extract the coefficient matrix from the models summary, save it to coef
 coef <- summary(mod_ni)$coefficients
-
-# Plot regression lines for both models
-plot(cs,ts)
-abline(mod)
-abline(mod_ni)
 
 ```
 
@@ -563,9 +554,6 @@ test_predefined_objects("mod")
 test_predefined_objects("mod_ni")
 
 test_object("coef")
-
-test_function("abline", index=1)
-test_function("abline", index=2)
 ```
 
 --- type:NormalExercise lang:r xp: skills: key:a6e79f9788
@@ -577,7 +565,7 @@ $$ \widehat{score} = \underset{(1.36)}{12.65} \times size $$.
 
 and
 
-$$ \widehat{score} = \underset{(23.9606)}{567.4272} + \underset{(0.8536)}{-7.1501} \times size $$.
+$$ \widehat{score} = \underset{(23.9606)}{567.4272} + \underset{(0.8536)}{-7.1501} \times size. $$
 
 In this exercise, you have to represent the situation graphically. 
 <br>
@@ -619,6 +607,8 @@ abline(mod_ni)
 
 *** =sct
 ```{r}
+test_predefined_objects("mod")
+test_predefined_objects("mod_ni")
 test_function("abline", index=1)
 test_function("abline", index=2)
 ```
