@@ -839,7 +839,7 @@ test_mc(correct = 3, feedback_msgs = c(msg_bad, msg_bad, msg_success, msg_bad))
 --- type:MultipleChoiceExercise lang:r xp:50 skills:1 key:7860286aef
 ## Inference Using p-Values
 
-Suppose You are confronted with the following output providing the $t$-statistic for the hypothesis $\beta_{cs} = 0$ and the corresponding $p$-value.
+Suppose You are confronted with the following output providing the $t$-statistic for a test of the hypothesis $\beta_{cs} = 0$ and the corresponding $p$-value.
 
 ```{r}
 Coefficients:
