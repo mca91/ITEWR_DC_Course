@@ -1213,14 +1213,7 @@ for (i in 1:length(cs)) {
 *** =pre_exercise_code
 ```{r}
 cs <- c(23, 19, 30, 22, 23, 29, 35, 36, 33, 25)
-D <- c()
-for (i in 1:length(cs)) {
-  if (cs[i] < ???) { 
-    D[i] <- ???
-    } else {
-      D[i] <- 0
-    }
-  }
+D <- c(1,1,0,1,1,0,0,0,0,1)
 ```
 
 ***=instructions
