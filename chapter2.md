@@ -1030,7 +1030,7 @@ The sample average class size across 50 classrooms is 22.8. What is the sample a
 Review the formulas for the OLS estimators!
 
 *** =sample_code
-```{}
+```{r}
 # What is the sample average of the test score across the 50 classrooms?
 
 
@@ -1056,9 +1056,9 @@ test_output_contains("527.896", incorrect_msg = "Not correct...")
 --- type:NormalExercise lang:r xp:50 skills:1 key:39aef8ac4c
 ## Interpreting OLS Regressions IV
 
-Suppose that a researcher, using data on class size $CS$, and average test score, $TestScore$, from 50 third-grade classes, estimates the OLS regression:
+Suppose that a researcher, using data on class size ($CS$) and average test score ($TestScore$) from 50 third-grade classes, estimates the following OLS regression:
 
-$$ \widehat{TestScore} = 640.3 - 4.93 \times CS, R^2 = 0.11, SER= 8.7 $$
+$$ \widehat{TestScore} = 640.3 - 4.93 \times CS, \ R^2 = 0.11, \ SER= 8.7 $$
 
 *** =instructions
 What is the sample standard deviation of test scores across the 50 classrooms?
