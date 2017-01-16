@@ -1278,7 +1278,7 @@ D <- c(1,1,0,1,1,0,0,0,0,1)
 
 ***=sample_code
 ```{r}
-# Regress ts on D and constant
+# Regress ts on D and a constant
 
 
 # Call summary on the model object
