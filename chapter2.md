@@ -1300,10 +1300,14 @@ test_function("summary")
 
 Consider again the dummy regression model from the previous exervise. The estimated regression equation was:
 
-$$ \widehat{TestScore} = 334.60 + 72.40 \times D $$
+$$ \widehat{TestScore}\_i = 334.60 + 72.40 \times D\_i $$
 
+Remember the definition of $D\_i$:
+
+$$ D_i = \begin{cases} 1 \ \ \text{if $CS$ in the $i^{th}$ class < 26} \\\\ 0 \ \ \text{if $CS$ in the $i^{th}$ class $\geq$ 26} \end{cases} $$
+
+<br>
 *The model object is available in your workspace (`mod`)*
-
 <br>
 Which of the following statements is *wrong*?
 
