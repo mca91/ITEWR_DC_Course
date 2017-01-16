@@ -958,7 +958,7 @@ test_mc(correct = 1, feedback_msgs = c(msg_success, msg_bad))
 
 Suppose that a researcher, using data on class size ($CS$) and average test score ($TestScore$) from 50 third-grade classes, estimates the following OLS regression:
 
-$$ \widehat{TestScore} = 640.3 - 4.93 \times CS, R^2 = 0.11, SER= 8.7 $$
+$$ \widehat{TestScore} = 640.3 - 4.93 \times CS, \ R^2 = 0.11, \ SER= 8.7 $$
 
 Say a classroom has 25 students. What is the model's prediction for the average test score of such a classroom? <br> Don't forget: You can use the R console as a calculator!
 
