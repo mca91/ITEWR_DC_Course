@@ -1143,10 +1143,8 @@ Notice that the code above contains two gaps indicated by `???`. Can You replace
 
 ***=instructions
 
-- Replace the `???` and create the dummy regressor `D` using the proposed loop above.
-- Convince Yourself that `D` is a vector. Check its length.
-- Estimate a regression of $cs$ on $D$.
-- Call summary on Your model. Think about how the estimated coefficients are interpreted!
+Replace the `???` and create the dummy regressor `D` using the proposed loop above.
+
 
 *** =pre_exercise_code
 ```{r}
@@ -1155,21 +1153,12 @@ ts <- c(430, 430, 333, 410, 390, 377, 325, 310, 328, 375)
 ```
 
 ***=hint
-- Check if an object is a vector using the function `is.vector()`
-- An object's length can be checked with `length`
+
 
 ***=sample_code
 ```{r}
 # Create D
 
-
-# Convince yourself that D is a vector. Check its length.
-
-
-# Regress ts on D and constant
-
-
-# Inspect the your model using summary
 ```
 
 ***=solution
@@ -1185,16 +1174,6 @@ for (i in 1:length(cs)) {
       D[i] <- 0
     }
   }
-
-# Convince yourself that D is a vector and Check its length
-is.vector(D)
-length(D)
-
-# Regress ts on D and constant
-mod <- lm(ts ~ D)
-
-# Call summary on the model object
-summary(mod)
 ```
 
 *** =sct
@@ -1207,10 +1186,6 @@ test_student_typed("for (i in 1:length(cs)) {
     }
   }", not_typed_msg="Make sure You use the loop proposed above. If you have done so, check Your replacement for both `???`.")
 test_object("D")
-test_function("length")
-test_function("is.vector")
-test_function_result("lm")
-test_function("summary")
 ```
 
 --- type:NormalExercise lang:r xp:100 skills:1 key:e9080a326f
@@ -1251,6 +1226,11 @@ for (i in 1:length(cs)) {
 ***=instructions
 
 Convince Yourself that `D` is a vector. Check its length.
+
+***=hint
+
+- Check if an object is a vector using the function `is.vector()`
+- An object's length can be checked with `length`
 
 ***=sample_code
 ```{r}
