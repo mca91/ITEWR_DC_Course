@@ -994,10 +994,10 @@ What is the regression's prediction for the change in the classroom's average te
 
 *** =hint
 
-Have a look at the regression equation. How can you interpret the relation on the right hand side? What does this imply if you got test scores for two different class sizes?
+Have a look at the regression equation. How can You interpret the relation on the right hand side? What does this imply if You got test scores for two different class sizes?
 
 *** =sample_code
-```{}
+```{r}
 # What is the difference in average test score?
 
 
