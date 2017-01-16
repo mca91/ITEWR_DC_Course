@@ -880,7 +880,7 @@ with standard errors in parentheses.
 
 - Compute the $p$-value for a test of the hypothesis that the intercept is zero. Save the result to `p_int`
 - Compute the $p$-value for a test of the hypothesis that the coefficient of $cs$ is zero. Save the result to `p_cs`
-- Think about the inference drawn from these results. Can you reject the null hypotheses? You will be asked about this in the next exercise.
+Think about the inference drawn from these results. Can you reject the null hypotheses? You will be asked about this in the next exercise.
 
 *** =sample_code
 ```{r}
