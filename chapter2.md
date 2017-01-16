@@ -883,6 +883,11 @@ with standard errors in parentheses.
 <br>
 Think about the inference drawn from these results. Can you reject the null hypotheses? You will be asked about this in the next exercise.
 
+***=hint
+
+Both hypotheses can be tested using a two-sided test. Remember the forumla for the $p$-vaule in this situation.
+Use `pnorm` to obtain cumulated probabilities for standard normal distributed outcomes.
+
 *** =sample_code
 ```{r}
 # Compute the p-value p_int
