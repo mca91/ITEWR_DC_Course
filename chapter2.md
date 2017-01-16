@@ -1112,7 +1112,7 @@ test_output_contains("sigma_hat", incorrect_msg = "Something's wrong... Did you 
 ```
 
 --- type:NormalExercise lang:r xp:100 skills:1 key:c4b2c27865
-## Regression when X is a Dummy Variable
+## A Loop & a Dummy
 
 Instead of using the regressor $CS$, we might be interested in running a regression where the regressor, $D$ say, is binary variable or a so-called dummy variable. 
 
@@ -1135,10 +1135,10 @@ for (i in 1:length(cs)) {
   }
 ```
 
-Notice that the code above contains two gaps indicated by `???`. Can you replace them with the right expressions?
+Notice that the code above contains two gaps indicated by `???`. Can You replace them with the right expressions?
 
 <br>
-*Vectors `cs` and `ts` are availabe in your working environment.*
+*Vectors `cs` and `ts` are availabe in Your working environment.*
 <br>
 
 ***=instructions
@@ -1213,6 +1213,115 @@ test_function_result("lm")
 test_function("summary")
 ```
 
+--- type:NormalExercise lang:r xp:100 skills:1 key:e9080a326f
+## The Dummy
+
+We defined $D_i$ in the following way:
+
+$$ D_i = \begin{cases} 1 \ \ \text{if $CS$ in the $i^{th}$ class < 26} \\\\ 0 \ \ \text{if $CS$ in the $i^{th}$ class $\geq$ 26} \end{cases} $$
+
+In R:
+
+```{r}
+# Define an empty vector D
+D <- c()
+# Assign values accordingly using a loop
+for (i in 1:length(cs)) {
+  if (cs[i] < ???) { 
+    D[i] <- ???
+    } else {
+      D[i] <- 0
+    }
+  }
+```
+
+*** =pre_exercise_code
+```{r}
+cs <- c(23, 19, 30, 22, 23, 29, 35, 36, 33, 25)
+D <- c()
+for (i in 1:length(cs)) {
+  if (cs[i] < ???) { 
+    D[i] <- ???
+    } else {
+      D[i] <- 0
+    }
+  }
+```
+
+***=instructions
+
+Convince Yourself that `D` is a vector. Check its length.
+
+***=sample_code
+```{r}
+# Convince yourself that D is a vector. Check its length
+
+
+```
+
+***=solution
+```{r}
+# Convince yourself that D is a vector and Check its length
+is.vector(D)
+length(D)
+```
+
+*** =sct
+```{r}
+test_predefined_objects("D")
+test_function("length")
+test_function("is.vector")
+```
+
+--- type:NormalExercise lang:r xp:100 skills:1 key:13ad5e1f16
+## The Dummy Regression
+
+Now, regress $CS$ on $D$ whereby
+
+$$ D_i = \begin{cases} 1 \ \ \text{if $CS$ in the $i^{th}$ class < 26} \\\\ 0 \ \ \text{if $CS$ in the $i^{th}$ class $\geq$ 26} \end{cases} $$
+
+as in the previous exercises.
+
+*Vectors `cs`, `ts` and $D$ are availabe in Your working environment.*
+
+***=instructions
+
+- Estimate a regression of $cs$ on $D$.
+- Call summary on Your model. Think about how the estimated coefficients are interpreted!
+
+***=pre_exercise_code
+```{r}
+cs <- c(23, 19, 30, 22, 23, 29, 35, 36, 33, 25)
+ts <- c(430, 430, 333, 410, 390, 377, 325, 310, 328, 375)
+D <- c(1,1,0,1,1,0,0,0,0,1)
+```
+
+***=sample_code
+```{r}
+# Regress ts on D and constant
+
+
+# Call summary on the model object
+
+
+```
+
+***=solution
+```{r}
+# Regress ts on D and constant
+mod <- lm(ts ~ D)
+# Call summary on the model object
+summary(mod)
+```
+
+*** =sct
+```{r}
+test_predefined_objects("D")
+test_function_result("lm")
+test_function("summary")
+```
+
+
 --- type:MultipleChoiceExercise lang:r xp: skills: key:b496c011e5
 ## Interpretation When X is a Dummy Variable 
 
@@ -1252,7 +1361,7 @@ test_mc(correct = 2, feedback_msgs = c(msg_bad, msg_success, msg_bad, msg_bad))
 
 
 --- type:NormalExercise lang:r xp: skills: key:2bb531e9cd
-## Plotting an Estimated Dummy Model Equation
+## Plotting the Estimated Dummy Model Equation
 
 In this exercise, you will visualize some of the results from the previously conducted dummy regression. 
 
