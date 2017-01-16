@@ -677,6 +677,7 @@ mod <- lm(ts ~ cs)
 *** =hint
 
 The solutions can be found in several ways, e.g. using formulas and/or knowledge about the structure of `lm` objects. Don't forget about the `$` operator!
+You may futher be interested in `?residuals` and `?var`.
 
 *** =instructions
 - Compute $SSR$, the sum of squared residuals, and save it to `ssr`
