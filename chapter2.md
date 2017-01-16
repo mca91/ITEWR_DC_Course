@@ -1308,6 +1308,7 @@ $$ D_i = \begin{cases} 1 \ \ \text{if $CS$ in the $i^{th}$ class < 26} \\\\ 0 \ 
 
 <br>
 *The model object is available in your workspace (`mod`)*
+
 <br>
 Which of the following statements is *wrong*?
 
