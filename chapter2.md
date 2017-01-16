@@ -1112,7 +1112,7 @@ test_output_contains("sigma_hat", incorrect_msg = "Something's wrong... Did you 
 ```
 
 --- type:NormalExercise lang:r xp:100 skills:1 key:c4b2c27865
-## Regression when X is a Dummy Variable I
+## Regression when X is a Dummy Variable
 
 Instead of using the regressor $CS$, we might be interested in running a regression where the regressor, $D$ say, is binary variable or so-called dummy variable. 
 
@@ -1252,7 +1252,7 @@ test_mc(correct = 2, feedback_msgs = c(msg_bad, msg_success, msg_bad, msg_bad))
 
 
 --- type:NormalExercise lang:r xp: skills: key:2bb531e9cd
-## Regression when X is a Dummy Variable 
+## Plotting an Estimated Dummy Model Equation
 
 In this exercise, you will visualize some of the results from the previously conducted dummy regression. 
 
