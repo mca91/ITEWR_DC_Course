@@ -1341,9 +1341,9 @@ test_mc(correct = 2, feedback_msgs = c(msg_bad, msg_success, msg_bad, msg_bad))
 --- type:NormalExercise lang:r xp: skills: key:2bb531e9cd
 ## Plotting the Estimated Dummy Model Equation
 
-In this exercise, you will visualize some of the results from the previously conducted dummy regression. 
+In this exercise, you will visualize some of the results from the previously conducted dummy regression 
 
-$$ \widehat{TestScore} = 334.60 + 72.40 \times D $$
+$$ \widehat{TestScore}\_i = 334.60 + 72.40 \times D\_i. $$
 
 Start by drawing a visually appealing plot of observations based on the following code chunk:
 
