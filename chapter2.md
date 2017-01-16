@@ -990,7 +990,7 @@ $$ \widehat{TestScore} = 640.3 - 4.93 \times CS, \ R^2 = 0.11, \ SER= 8.7 $$
 Last year a classroom had 21 students, and this year it has 24 students.
 
 *** =instructions
-What is the regression's prediction for the change in the classroom's average test score?
+What is the regression's prediction for the change in the classroom's average test scores?
 
 *** =hint
 
@@ -998,14 +998,14 @@ Have a look at the regression equation. How can You interpret the relation on th
 
 *** =sample_code
 ```{r}
-# What is the difference in average test score?
+# What is the difference in average test scores?
 
 
 ```
 
 *** =solution
 ```{r}
-# What is the difference in average test score?
+# What is the difference in average test scores?
 (640.3 - 4.93 * 24) - (640.3 - 4.93 * 21)
 
 ```
