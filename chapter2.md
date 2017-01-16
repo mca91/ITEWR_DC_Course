@@ -902,11 +902,11 @@ Use `pnorm` to obtain cumulated probabilities for standard normal distributed ou
 ```{r}
 # Compute the p-value p_int
 t_int <- 567.43/23.9606
-p_int <- 2*(1-pnorm(t_int))
+p_int <- 2*(1-pnorm(abs(t_int)))
 
 # Compute the p-value p_cs
 t_cs <- 7.15/0.8536
-p_cs <- 2*(1-pnorm(t_cs))
+p_cs <- 2*(1-pnorm(abs(t_cs)))
 ```
 
 *** =sct
