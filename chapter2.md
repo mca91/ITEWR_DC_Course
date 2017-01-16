@@ -990,7 +990,7 @@ $$ \widehat{TestScore} = 640.3 - 4.93 \times CS, \ R^2 = 0.11, \ SER= 8.7 $$
 Last year a classroom had 21 students, and this year it has 24 students.
 
 *** =instructions
-What is the regression's prediction for the change in the classrom average test score?
+What is the regression's prediction for the change in the classroom's average test score?
 
 *** =hint
 
