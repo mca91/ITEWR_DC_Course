@@ -737,7 +737,7 @@ tss <- 9*var(ts)
 
 *** =sample_code
 ```{r}
-# Compute R^2 and save it to R2
+# Compute R^2, round it and save it to R2
 
 
 # Check whether Your result is correct
@@ -756,8 +756,8 @@ R2 == 0.8976
 
 *** =sct
 ```{r}
-test_predefined_object("ssr")
-test_predefined_object("tss")
+test_predefined_objects("ssr")
+test_predefined_objects("tss")
 test_predefined_objects("mod")
 test_object("R2")
 test_function("round", args="digits", eq_condition="equal")
