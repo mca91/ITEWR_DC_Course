@@ -960,7 +960,7 @@ Suppose that a researcher, using data on class size ($CS$) and average test scor
 
 $$ \widehat{TestScore} = 640.3 - 4.93 \times CS, R^2 = 0.11, SER= 8.7 $$
 
-*Say a class room has 25 students. What is the regression's prediction for that classroom's average test score? <br> Don't forget: You can use the R console as a calculator!*
+Say a classroom has 25 students. What is the model's prediction for the average test score of such a classroom? <br> Don't forget: You can use the R console as a calculator!
 
 *** =instructions
 
