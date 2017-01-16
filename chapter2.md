@@ -1352,7 +1352,7 @@ plot(x = ??? , y = ???,
      pch=20, cex=1 ,col='Steelblue',
      xlab=expression(D[i]), ylab='Test Score',
      main = 'Dummy Regression'
-     )"
+     )
 ```
 
 Can you replace the `???` with correct arguments?
