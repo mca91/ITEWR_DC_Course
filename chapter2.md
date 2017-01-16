@@ -1202,8 +1202,8 @@ In R:
 D <- c()
 # Assign values accordingly using a loop
 for (i in 1:length(cs)) {
-  if (cs[i] < ???) { 
-    D[i] <- ???
+  if (cs[i] < 26) { 
+    D[i] <- 1
     } else {
       D[i] <- 0
     }
