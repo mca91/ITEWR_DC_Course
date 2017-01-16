@@ -796,7 +796,7 @@ test_output_contains("R2 == 0.8976")
 
 What was the definition of the $p$-value again? 
 
-Maybe the plot displayed on the right may help You to remember. It depicts the case of a two-sided test where $|t|$ is the computed test statistic.
+Maybe the plot displayed on the right may help You remember. It depicts the case of a two-sided test where $|t|$ is the computed test statistic.
 
 Choose the *right* statement.
 
