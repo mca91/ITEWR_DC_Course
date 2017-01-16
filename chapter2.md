@@ -1259,7 +1259,7 @@ as in the previous exercises.
 
 ***=instructions
 
-- Estimate a regression of $cs$ on $D$.
+- Estimate a regression of $TestScore$ on $D$.
 - Call summary on Your model. Think about how the estimated coefficients are interpreted!
 
 ***=pre_exercise_code
