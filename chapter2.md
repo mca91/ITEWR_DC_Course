@@ -796,7 +796,7 @@ test_output_contains("R2 == 0.8976")
 
 What was the definition of the $p$-value again? 
 
-Maybe the plot displayed on the right may help You remember. It depicts the case of a two-sided test where $|t|$ is the computed test statistic.
+Maybe the plot displayed on the right may help You remember. It depicts the case of a two-sided test where $|t|$ denotes the absolute value of the computed test statistic.
 
 Choose the *right* statement.
 
@@ -839,7 +839,7 @@ test_mc(correct = 3, feedback_msgs = c(msg_bad, msg_bad, msg_success, msg_bad))
 --- type:MultipleChoiceExercise lang:r xp:50 skills:1 key:7860286aef
 ## Inference Using p-Values
 
-Suppose You are confronted with the following output providing the t-statistic for the hypothesis $\beta_{cs} = 0$ and the corresponding $p$-value.
+Suppose You are confronted with the following output providing the $t$-statistic for the hypothesis $\beta_{cs} = 0$ and the corresponding $p$-value.
 
 ```{r}
 Coefficients:
