@@ -956,11 +956,11 @@ test_mc(correct = 1, feedback_msgs = c(msg_success, msg_bad))
 --- type:MultipleChoiceExercise lang:r xp:50 skills:1 key:13d4cf0fb6
 ## Interpreting OLS Regressions I
 
-Suppose that a researcher, using data on class size $CS$, and average test score, $TestScore$, from 50 third-grade classes, estimates the OLS regression:
+Suppose that a researcher, using data on class size ($CS$) and average test score ($TestScore$) from 50 third-grade classes, estimates the following OLS regression:
 
 $$ \widehat{TestScore} = 640.3 - 4.93 \times CS, R^2 = 0.11, SER= 8.7 $$
 
-<i>Say a class room has 25 students. What is the regression's prediction for that classroom's average test score? <br> Don't forget: You can use the R console as a calculator!</i>
+*Say a class room has 25 students. What is the regression's prediction for that classroom's average test score? <br> Don't forget: You can use the R console as a calculator!*
 
 *** =instructions
 
