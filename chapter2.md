@@ -655,23 +655,17 @@ test_mc(correct = 2, feedback_msgs = c(msg_bad, msg_success, msg_bad, msg_bad))
 ```
 
 --- type:NormalExercise lang:r xp: skills: key:673ab4d8fc
-## The R^2 of a Regression Model  
+## TSS & SSR  
+
+If graphical inspection does not help, one can resort to analytic technique in order to detect if a model fits the data at hand better than another.
 
 We now go back to the simple model including an intercept. The estimated regression line for `mod` was
 
-$$ \widehat{TestScore} = 567.43 - 7.15 \times ClassSize, \, R^2 = 0.8976, \, SER=15.19 $$
+$$ \widehat{TestScore} = 567.43 - 7.15 \times ClassSize, \, R^2 = 0.8976, \, SER=15.19. $$
 
 *You can check this as `mod` and vectores `cs` and `ts` are available in your working environment again.*
 
-*** =instructions
-- Compute $SSR$, the sum of squared residuals, and save it to `ssr`
-- Compute $TSS$, the total sum of squares, and save it to `tss`
-- Use `ssr` and `tss` to compute $R^2$, the coefficient of determination. Save it to R2
-- Use the logical expression `==` to check whether your result for $R^2$ equals the one mentioned above
-
-*** =hint
-
-The solutions can be found in several ways, e.g. using formulas and/or knowledge about the structure of `lm` objects. Don't forget about the `$` operator!
+Now, please do the following:
 
 *** =pre_exercise_code
 ```{r}
@@ -680,18 +674,20 @@ ts <- c(430, 430, 333, 410, 390, 377, 325, 310, 328, 375)
 mod <- lm(ts ~ cs)
 ```
 
+*** =hint
+
+The solutions can be found in several ways, e.g. using formulas and/or knowledge about the structure of `lm` objects. Don't forget about the `$` operator!
+
+*** =instructions
+- Compute $SSR$, the sum of squared residuals, and save it to `ssr`
+- Compute $TSS$, the total sum of squares, and save it to `tss`
+
 *** =sample_code
 ```{r}
 # Compute the SSR and save it to ssr
 
 
 # Compute the TSS and save it to tss
-
-
-# Compute R^2 and save it to R2
-
-
-# Check whether your result is correct
 
 
 ```
@@ -702,27 +698,69 @@ mod <- lm(ts ~ cs)
 ssr <- sum(mod$residuals^2)
 
 # Compute the TSS and save it to tss
-tss <- 9*var(ts) # var() computes the unbiased sample variance! => Correct by multiplying with n-1 = 9
+tss <- 9*var(ts) # var() uses the unbiased sample variance! => Correct by multiplying with (n-1) = 9
+```
 
+*** =sct
+```{r}
+test_predefined_objects("mod")
+test_object("ssr")
+test_object("tss")
+```
+
+--- type:NormalExercise lang:r xp: skills: key:e309b33487
+## The R^2 of a Regression Model  
+
+$$ \widehat{TestScore} = 567.43 - 7.15 \times ClassSize, \, R^2 = 0.8976, \, SER=15.19 $$
+
+Now, use Your results from the previous exercise to compute $R^2$, the coefficient of determination.
+
+*`mod`, `tss` and `ssr` are available in Your working environment.*
+
+*** =instructions
+- Use `ssr` and `tss` to compute $R^2$, the coefficient of determination. *Round* it to 4 decimal places. Save the result to `R2`.
+- Use the logical expression `==` to check whether your result for $R^2$ equals the one mentioned above.
+
+*** =hint
+
+$R^2 = 1 - \frac{SSR}{TSS}$. You can round numerical expressions using the function `round`. See `?round`. 
+
+*** =pre_exercise_code
+```{r}
+cs <- c(23, 19, 30, 22, 23, 29, 35, 36, 33, 25)
+ts <- c(430, 430, 333, 410, 390, 377, 325, 310, 328, 375)
+mod <- lm(ts ~ cs)
+ssr <- sum(mod$residuals^2)
+tss <- 9*var(ts)
+```
+
+*** =sample_code
+```{r}
+# Compute R^2 and save it to R2
+
+
+# Check whether Your result is correct
+
+
+```
+
+*** =solution
+```{r}
 # Compute R^2, round it by 4 decimal places and save it to R2
 R2 <- round(1-ssr/tss,4)
 
-# Check whether your result is correct
+# Check whether Your result is correct
 R2 == 0.8976
 ```
 
 *** =sct
 ```{r}
-test_object("ssr")
-test_object("tss")
-test_object("R2")
-
+test_predefined_object("ssr")
+test_predefined_object("tss")
 test_predefined_objects("mod")
-
+test_object("R2")
 test_function("round", args="digits", eq_condition="equal")
-
 test_student_typed("R2 == 0.8976", not_typed_msg = "Something is wrong. Make sure You type `R2 ==` followed by the value for R^2 mentioned above.")
-
 test_output_contains("R2 == 0.8976")
 ```
 
