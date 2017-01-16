@@ -1067,7 +1067,7 @@ Hint: Remember Your regression formulas! For correct evaluation of this exercise
 
 *** =hint
 
-Review the formulas for the $R^2$ and $SER$ 
+Review the formulas for $R^2$ and $SER$ 
 
 $ R^2 = \frac{SSR}{TSS} $
 
