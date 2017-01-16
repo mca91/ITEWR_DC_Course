@@ -1018,9 +1018,9 @@ test_output_contains("(640.3-4.93*24) - (640.3-4.93*21)", incorrect_msg = "No, t
 --- type:NormalExercise lang:r xp:50 skills:1 key:250d5774a4
 ## Interpreting OLS Regressions III
 
-Suppose that a researcher, using data on class size $CS$, and average test score, $TestScore$, from 50 third-grade classes, estimates the OLS regression:
+Suppose that a researcher, using data on class size ($CS$) and average test score ($TestScore$) from 50 third-grade classes, estimates the following OLS regression:
 
-$$ \widehat{TestScore} = 640.3 - 4.93 \times CS, R^2 = 0.11, SER= 8.7 $$
+$$ \widehat{TestScore} = 640.3 - 4.93 \times CS, \ R^2 = 0.11, \ SER= 8.7 $$
 
 *** =instructions
 The sample average class size across 50 classrooms is 22.8. What is the sample average of the test scores across the 50 classrooms?
