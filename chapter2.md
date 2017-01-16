@@ -983,12 +983,14 @@ test_mc(correct = 1, feedback_msgs = c(msg_success, msg_bad, msg_bad, msg_bad))
 --- type:NormalExercise lang:r xp:50 skills:1 key:b0b7650bb3
 ## Interpreting OLS Regressions II
 
-Suppose that a researcher, using data on class size, $CS$, and average test score, $TestScore$, from 50 third-grade classes, estimates the OLS regression:
+Suppose that a researcher, using data on class size ($CS$) and average test score ($TestScore$) from 50 third-grade classes, estimates the following OLS regression:
 
-$$ \widehat{TestScore} = 640.3 - 4.93 \times CS, R^2 = 0.11, SER= 8.7 $$
+$$ \widehat{TestScore} = 640.3 - 4.93 \times CS, \ R^2 = 0.11, \ SER= 8.7 $$
+
+Last year a classroom had 21 students, and this year it has 24 students.
 
 *** =instructions
-Last year a classroom had 21 students, and this year it has 24 students. What is the regression's prediction for the change in the classrom average test score?
+What is the regression's prediction for the change in the classrom average test score?
 
 *** =hint
 
