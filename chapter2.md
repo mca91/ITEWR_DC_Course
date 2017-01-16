@@ -833,7 +833,7 @@ arrows(-3,0.16,-tact,0, length = 0.1)
 ```{r}
 msg_bad <- "That is not correct!"
 msg_success <- "Wow!"
-test_mc(correct = 3, feedback_msgs = c(msg_bad, msg_bad, msg_bad, msg_success))
+test_mc(correct = 3, feedback_msgs = c(msg_bad, msg_bad, msg_success, msg_bad))
 ```
 
 --- type:MultipleChoiceExercise lang:r xp:50 skills:1 key:7860286aef
