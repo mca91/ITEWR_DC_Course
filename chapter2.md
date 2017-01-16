@@ -1317,7 +1317,7 @@ Which of the following statements is *wrong*?
 - The intercept can be interpreted as the estimated average test scrore among classes with at least 26 pupils. 
 - Increasing the class size by one unit leads to an estimated increase of 72.40 in test score on average.
 - The estimated average test score in classes with less than 26 pupils is 407.
-- The regression equation indicates that test score is higher for smaller class sizes.
+- The regression equation indicates that the test score is higher for smaller class sizes.
 
 *** =hint
 
