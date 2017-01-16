@@ -1189,7 +1189,7 @@ test_object("D")
 ```
 
 --- type:NormalExercise lang:r xp:100 skills:1 key:e9080a326f
-## The Dummy
+## About that Dummy...
 
 We defined $D_i$ in the following way:
 
