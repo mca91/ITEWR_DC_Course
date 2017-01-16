@@ -654,6 +654,32 @@ msg_success <- "Wow! You're doin' good! The fit of the blue regression line look
 test_mc(correct = 2, feedback_msgs = c(msg_bad, msg_success, msg_bad, msg_bad))
 ```
 
+--- type:MultipleChoiceExercise lang:r xp: skills: key:c0b8375eb8
+## What Was R^2 Again?  
+
+The coefficient of determination, denoted $R^2$, is a measure of a model's goodness of fit. It is defined as
+
+$$ R^2 = \frac{ESS}{TSS} = 1 - \frac{SSR}{TSS}. $$
+
+$TSS = \text{total sum of squares}$, $ESS = \text{explained sum of squares}$ and $TSS = \text{sum of squared residuals}$.
+
+Which of the following statements about $R^2$ is right?
+
+*** =instructions
+
+- The coefficient of determination can only be computed for linear regression models.
+- A model's $R^2$ shrinks if the absolute value of the residual sum decreases.
+- The coefficient of determination is always defined on $[-1,1]$. 
+- $R^2$ is a measure indicating the proportion of the variance in the dependent variable that is explained by the independent variable(s).
+
+
+*** =sct
+```{r}
+msg_bad <- "That is not correct!"
+msg_success <- "Wow!"
+test_mc(correct = 4, feedback_msgs = c(msg_bad, msg_bad, msg_bad, msg_success))
+```
+
 --- type:NormalExercise lang:r xp: skills: key:673ab4d8fc
 ## TSS & SSR  
 
@@ -765,36 +791,8 @@ test_student_typed("R2 == 0.8976", not_typed_msg = "Something is wrong. Make sur
 test_output_contains("R2 == 0.8976")
 ```
 
---- type:MultipleChoiceExercise lang:r xp: skills: key:c0b8375eb8
-## What Was R^2 Again?  
-
-The coefficient of determination, denoted $R^2$, is a measure of a model's goodness of fit. It is defined as
-
-$$ R^2 = \frac{ESS}{TSS} = 1 - \frac{SSR}{TSS}. $$
-
-Where $TSS = \text{total sum of squares}$, $ESS = \text{explained sum of squares}$ and $TSS = \text{sum of squared residuals}$.
-
-Which of the following statements about $R^2$ is right?
-
-*** =instructions
-
-- The coefficient of determination can only be computed for linear regression models.
-- A model's $R^2$ shrinks if the absolute value of the residual sum decreases.
-- The coefficient of determination is always defined on $[-1,1]$. 
-- $R^2$ is a measure indicating the proportion of the variance in the dependent variable that is explained by the independent variable(s).
-
-
-*** =sct
-```{r}
-msg_bad <- "That is not correct!"
-msg_success <- "Wow!"
-test_mc(correct = 4, feedback_msgs = c(msg_bad, msg_bad, msg_bad, msg_success))
-```
-
-
-
 --- type:MultipleChoiceExercise lang:r xp: skills: key:01c813746a
-## Recap: The P-Value 
+## Recap: The p-Value 
 
 What was the definition of the $p$-value again? 
 
