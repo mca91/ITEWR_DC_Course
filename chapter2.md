@@ -881,7 +881,7 @@ with standard errors in parentheses.
 - Compute the $p$-value for a test of the hypothesis that the intercept is zero. Save the result to `p_int`
 - Compute the $p$-value for a test of the hypothesis that the coefficient of $cs$ is zero. Save the result to `p_cs`
 <br>
-Think about the inference drawn from these results. Can you reject the null hypotheses? You will be asked about this in the next exercise.
+Think about the inference drawn from these results. Can You reject the null hypotheses? You will be asked about this in the next exercise.
 
 ***=hint
 
@@ -922,7 +922,21 @@ test_object("p_cs")
 
 $$ \widehat{TestScore} = \underset{(23.9606)}{567.43} - \underset{(0.8536)}{7.15} \times cs, \, R^2 = 0.8976, \, SER=15.19 $$
 
-Can you reject the null hypotheses discussed in the previous code exercise?
+Can You reject the null hypotheses discussed in the previous code exercise?
+
+*The objects `t_int`, `t_cs` as well as `p_int` and `p_cs` are available in Your working environment.*
+
+***=pre_exercise_code
+```{r}
+# Compute the p-value p_int
+t_int <- 567.43/23.9606
+p_int <- 2*(1-pnorm(abs(t_int)))
+
+# Compute the p-value p_cs
+t_cs <- 7.15/0.8536
+p_cs <- 2*(1-pnorm(abs(t_cs)))
+```
+
 
 *** =instructions
 
