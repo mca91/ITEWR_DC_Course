@@ -111,7 +111,7 @@ plot(ecgrowth$tradeshare, ecgrowth$growth)
 *** =solution
 ```{r}
 # Identify and remove the outlier from the dataset
-id <- which.max("ecgrowth$tradeshare")
+id <- which.max(ecgrowth$tradeshare)
 ecgrowth <- ecgrowth[-id,]
 ```
 
