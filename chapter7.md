@@ -301,12 +301,12 @@ text(ecgrowth$tradeshare[65], ecgrowth$growth[65]-0.5, "Malta")
 plot(ecgrowth$tradeshare, ecgrowth$growth)
 points(ecgrowth$tradeshare[65], ecgrowth$growth[65], col="red", pch=19)
 text(ecgrowth$tradeshare[65], ecgrowth$growth[65]-0.5, "Malta")
-abline(growth_reg)
-abline(growth_new_reg)
+abline(growth_reg, col="blue")
+abline(growth_new_reg, col="green")
 ```
 
 *** =sct
 ```{r}
-test_function("abline", index = 1)
-test_function("abline", index = 2)
+test_function("abline", index = 1, args = "col")
+test_function("abline", index = 2, args = "col")
 ```
