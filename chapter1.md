@@ -356,7 +356,7 @@ test_error()
 success_msg("Nicely Done!")
 ```
 
---- type:NormalExercise lang:r xp: skills: key:3f1213a746
+--- type:NormalExercise lang:r xp: skills: key:7e51261fdf
 ## Loading Data into R – .csv Files
 
 In R, it is often fairly easy to import data. This exercise will teach you how to import .csv files. "csv" means "comma seperated values".
@@ -396,7 +396,7 @@ test_object("my_data")
 success_msg("The cool thing about this is: You can access the data from anywhere. Try it yourself: copy, paste and execute Your call of `read.table()` to the console of the R version You have installed on Your computer!")
 ```
 
---- type:NormalExercise lang:r xp: skills: key:79dcfac3eb
+--- type:NormalExercise lang:r xp: skills: key:0a258644ef
 ## Print the Data Set
 
 Great! If you want to print your the contents of the object `my_data`, you simply have to type its name (to the console or in your script) and execute. 
@@ -432,7 +432,7 @@ test_predefined_objects("my_data")
 test_output_contains("my_data")
 ```
 
---- type:NormalExercise lang:r xp: skills: key:3913cf457b
+--- type:NormalExercise lang:r xp: skills: key:3ce52f9bc6
 ## How to Get an Overview
 
 When there are many variables and/or many observations, printing the data set can be really messy. 
@@ -471,7 +471,7 @@ test_function("head")
 success_msg("Well done!")
 ```
 
---- type:NormalExercise lang:r xp: skills: key:f1b1cc0c44
+--- type:NormalExercise lang:r xp: skills: key:e75ca5bf10
 ## Wait ... Something's Not Right
 
 The data set should look something like:
@@ -553,7 +553,7 @@ test_object("my_data")
 success_msg("Cool!")
 ```
 
---- type:NormalExercise lang:r xp: skills: key:cca87eed5d
+--- type:NormalExercise lang:r xp: skills: key:9da37be1b6
 ## Yes, That Looks Better!
 
 The data set should now look something like:
@@ -615,7 +615,7 @@ success_msg("Cool! The next exercise shows You how to read in data from .txt fil
 ```
 
 
---- type:NormalExercise lang:r xp: skills: key:2edcbb53ad
+--- type:NormalExercise lang:r xp: skills: key:b1fa35d58f
 ## Load Data From .txt Files Into R
 
 We have prepared another data set containing observations from the 1985 Current Population Survey, this time in a .txt file to be found at
@@ -659,7 +659,7 @@ test_output_contains("head(cps1985)")
 success_msg("This looks right! Keep up the good work!")
 ```
 
---- type:NormalExercise lang:r xp: skills: key:19809fac9c
+--- type:NormalExercise lang:r xp: skills: key:8fc19d6993
 ## Now Have a Look Again ...
 
 Okay. The data set You imported in the last exercise is available in Your environment.
