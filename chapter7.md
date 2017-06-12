@@ -133,7 +133,7 @@ test_object("ecgrowth_new")
 
 
 --- type:NormalExercise lang:r xp:100 skills:1 key:c2facac387
-## Economic Growth
+## Economic Growth IV
 
 We are interested in the relationship between growth and trade. A detailed description of the dataset can be found <a href="http://wps.pearsoned.co.uk/wps/media/objects/12401/12699039/empirical/empex_tb/Growth_Description.pdf">here</a>. 
 
