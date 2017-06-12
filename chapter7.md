@@ -252,13 +252,13 @@ We are interested in the relationship between growth and trade. A detailed descr
 
 Model objects `growth_reg` and `growth_new_reg` are available in Your workspace.
 
-Reconsider the previously conducted regressions.
+Reconsider the previously conducted regressions:
 
 <b> Full dataset </b>
 
 $$ Growth = 0.6403 + 2.3064 \times TradeShare $$ 
 
-<b> Excluding observation Malta </b>
+<b> Excluding the country Malta </b>
 
 $$ Growth = 0.9574 + 1.6809 \times TradeShare $$
 
