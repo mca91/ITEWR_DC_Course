@@ -188,8 +188,6 @@ test_object("growth_reg")
 test_function("predict", args = "newdata")
 ```
 
-
-
 --- type:NormalExercise lang:r xp:100 skills:1 key:013431ea1b
 ## Economic Growth V
 
@@ -224,7 +222,7 @@ plot(ecgrowth$tradeshare, ecgrowth$growth)
 ```{r}
 # Re-run the regression
 attach(ecgrowth_new)
-growth_reg <-
+growth_new_reg <-
 
 # Do the prediction
 
@@ -234,15 +232,56 @@ growth_reg <-
 ```{r}
 # Re-run the regression
 attach(ecgrowth_new)
-growth_reg <- lm(growth ~ tradeshare)
+growth_new_reg <- lm(growth ~ tradeshare)
 
 # Do the prediction
-predict(growth_reg, newdata = data.frame(tradeshare = 0.5))
+predict(growth_new_reg, newdata = data.frame(tradeshare = 0.5))
 ```
 
 *** =sct
 ```{r}
 test_function("attach")
-test_object("growth_reg")
+test_object("growth_new_reg")
 test_function("predict", args = "newdata")
+```
+
+--- type:NormalExercise lang:r xp:100 skills:1 key:68788ae1d3
+## Economic Growth VI
+
+We are interested in the relationship between growth and trade. A detailed description of the dataset can be found <a href="http://wps.pearsoned.co.uk/wps/media/objects/12401/12699039/empirical/empex_tb/Growth_Description.pdf">here</a>. 
+
+Model objects `growth_reg` and `growth_new_reg` are available in Your workspace.
+
+Reconsider the previously conducted regressions.
+
+<b> Full dataset </b>
+
+$$ Growth = 0.6403 + 2.3064 \times TradeShare $$ 
+
+<b> Excluding observation Malta </b>
+
+$$ Growth = 0.9574 + 1.6809 \times TradeShare $$
+
+*** =instructions
+
+*** =hint
+
+*** =pre_exercise_code
+```{r}
+
+```
+
+*** =sample_code
+```{r}
+
+```
+
+*** =solution
+```{r}
+
+```
+
+*** =sct
+```{r}
+
 ```
