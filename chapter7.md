@@ -52,7 +52,7 @@ We are interested in the relationship between growth and trade. A detailed descr
 
 The dataset 'ecgrowth' is available in Your workspace.
 
-Have a closer looked at the scatterplot. Does there appear to be any relationship between the variables?
+Have a closer look at the scatterplot. Does there appear to be any relationship between the variables?
 
 
 *** =instructions
