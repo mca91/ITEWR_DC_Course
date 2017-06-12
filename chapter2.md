@@ -1,5 +1,5 @@
 ---
-title       : OLS Basics 
+title       : OLS Basics - Linear Regression with One Regressor 
 description : This section contains exercises dealing with the simple linear regression model and estimation using ordinary least squares. 
 attachments :
   slides_link : https://github.com/Emwikts1970/URFITE_DC/raw/master/Econometrics
@@ -960,7 +960,7 @@ Suppose that a researcher, using data on class size ($CS$) and average test scor
 
 $$ \widehat{TestScore} = 640.3 - 4.93 \times CS, \ R^2 = 0.11, \ SER= 8.7 $$
 
-Say a classroom has 25 students. What is the model's prediction for the average test score of such a classroom? <br> Don't forget: You can use the R console as a calculator!
+Say a classroom has 25 students. What is the model's prediction for the average test score of such a classroom? <br> Remember: You can use the R console as a calculator!
 
 *** =instructions
 
@@ -1108,7 +1108,7 @@ sigma_hat
 
 *** =sct
 ```{r}
-test_output_contains("sigma_hat", incorrect_msg = "Something's wrong... Did you use the forumula for sample standard deviation?")
+test_output_contains("sigma_hat", incorrect_msg = "Something's wrong... Did You use the forumula for sample standard deviation?")
 ```
 
 --- type:NormalExercise lang:r xp:100 skills:1 key:c4b2c27865
