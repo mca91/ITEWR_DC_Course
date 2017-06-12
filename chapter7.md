@@ -117,5 +117,5 @@ ecgrowth <- ecgrowth[-id,]
 
 *** =sct
 ```{r}
-test_an_object("ecgrowth")
+test_object("ecgrowth")
 ```
