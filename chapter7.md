@@ -39,7 +39,7 @@ plot(ecgrowth$growth, ecgrowth$tradeshare)
 ```{r}
 test_function("plot", args = c("x","y"),
               not_called_msg = "You didn't call `plot()`!",
-              incorrect_msg = "You did call `attach()` with the arguments, `x` and `y`!")
+              incorrect_msg = "You did call `plot()` with wrong arguments, `x` and `y`!")
 
 test_error()
 success_msg("Well done!")
