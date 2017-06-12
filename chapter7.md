@@ -32,7 +32,7 @@ ecgrowth <- read.dta('http://s3.amazonaws.com/assets.datacamp.com/production/cou
 *** =solution
 ```{r}
 #plot the data
-plot(ecgrowth$growth, ecgrowth$tradeshare)
+plot(ecgrowth$tradeshare, ecgrowth$growth)
 ```
 
 *** =sct
