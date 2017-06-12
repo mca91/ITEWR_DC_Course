@@ -288,6 +288,10 @@ detach(ecgrowth_new)
 
 *** =sample_code
 ```{r}
+plot(ecgrowth$tradeshare, ecgrowth$growth)
+points(ecgrowth$tradeshare[65], ecgrowth$growth[65], col="red", pch=19)
+text(ecgrowth$tradeshare[65], ecgrowth$growth[65]-0.5, "Malta")
+
 # Add the regression lines to the plot
 ```
 
