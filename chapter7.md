@@ -142,9 +142,11 @@ The datasets `ecgrowth` and `ecgrowth_new` are available in Your workspace.
 *** =instructions
 
 - For convinience, attach `ecgrowth`. Run a simple linear regression of `growth` on `tradeshare` using `lm()`. Store the result in `growth_reg`. Try to interpret Your findings.
-- Use `growth_reg` to predict the growth rate for a country with a trade share of 0.5
+- Use `growth_reg` with `predict()` to predict the growth rate for a country with a trade share of 0.5
 
 *** =hint
+
+You have to specify the argument `newdata`. This must be a `data.frame` object where each row is an observation of regressors you want to make a prediction for. Note that the column names must equal the regressor names. Here, we have a single regressor `tradeshare`. 
 
 *** =pre_exercise_code
 ```{r}
@@ -195,28 +197,52 @@ We are interested in the relationship between growth and trade. A detailed descr
 
 The datasets `ecgrowth` and `ecgrowth_new` are available in Your workspace.
 
+The estimated regression equation from the last exercise is
+
+$$ Growth = 0.6403 + 2.3064 \times TradeShare. $$ 
+
+We continue with another regression.
+
 *** =instructions
 
-- Re-run the regression from the last exercise but this time without the outlier.
+- Re-run the regression from the last exercise but this time without the outlier i.e. exclude Malta. Try to interpret your results
+- Use Your results to predict the average growth of a country with a trade share of 0.5
 
 *** =hint
 
+You have to specify the argument `newdata`. This must be a `data.frame` object where each row is an observation of regressors you want to make a prediction for. Note that the column names must equal the regressor names. Here, we have a single regressor `tradeshare`. 
+
 *** =pre_exercise_code
 ```{r}
-
+library(foreign)
+ecgrowth <- read.dta('http://s3.amazonaws.com/assets.datacamp.com/production/course_1276/datasets/Growth.dta')
+ecgrowth_new <- ecgrowth[-65,]
+plot(ecgrowth$tradeshare, ecgrowth$growth)
 ```
 
 *** =sample_code
 ```{r}
+# Re-run the regression
+attach(ecgrowth_new)
+growth_reg <-
+
+# Do the prediction
 
 ```
 
 *** =solution
 ```{r}
+# Re-run the regression
+attach(ecgrowth_new)
+growth_reg <- lm(growth ~ tradeshare)
 
+# Do the prediction
+predict(growth_reg, newdata = data.frame(tradeshare = 0.5))
 ```
 
 *** =sct
 ```{r}
-
+test_function("attach")
+test_object("growth_reg")
+test_function("predict", args = "newdata")
 ```
