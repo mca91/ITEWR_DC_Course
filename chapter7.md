@@ -12,11 +12,11 @@ The dataset 'ecgrowth' is available in Your workspace.
 
 *** =instructions
 
-- Create a scatterplot of average annual growth ('growth') on the average trade share ('tradeshare').
+- Create a scatterplot of average annual growth (`growth`) on the average trade share (`tradeshare`).
 
 *** =hint
 
-Use the 'plot' function.
+Use the `plot` function.
 
 *** =pre_exercise_code
 ```{r}
