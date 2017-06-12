@@ -141,7 +141,7 @@ The datasets `ecgrowth` and `ecgrowth_new` are available in Your workspace.
 
 *** =instructions
 
-- For convinience, attach `ecgrowth`. Run a simple linear regression of `growth` on `tradeshare` using `lm()`. Store the result in `growth_reg`
+- For convinience, attach `ecgrowth`. Run a simple linear regression of `growth` on `tradeshare` using `lm()`. Store the result in `growth_reg`. Try to interpret Your findings.
 - Use `growth_reg` to predict the growth rate for a country with a trade share of 0.5
 
 *** =hint
@@ -184,4 +184,39 @@ predict(growth_reg, newdata = data.frame(tradeshare = 0.5))
 test_function("attach")
 test_object("growth_reg")
 test_function("predict", args = "newdata")
+```
+
+
+
+--- type:NormalExercise lang:r xp:100 skills:1 key:013431ea1b
+## Economic Growth V
+
+We are interested in the relationship between growth and trade. A detailed description of the dataset can be found <a href="http://wps.pearsoned.co.uk/wps/media/objects/12401/12699039/empirical/empex_tb/Growth_Description.pdf">here</a>. 
+
+The datasets `ecgrowth` and `ecgrowth_new` are available in Your workspace.
+
+*** =instructions
+
+- Re-run the regression from the last exercise but this time without the outlier.
+
+*** =hint
+
+*** =pre_exercise_code
+```{r}
+
+```
+
+*** =sample_code
+```{r}
+
+```
+
+*** =solution
+```{r}
+
+```
+
+*** =sct
+```{r}
+
 ```
