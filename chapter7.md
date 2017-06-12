@@ -92,7 +92,8 @@ The dataset `ecgrowth` is available in Your workspace.
 Have a closer look at the scatterplot, again. There seems to be an outlier.
 
 *** =instructions
-- Can you identify the country associated with the observation in the scatterplot? Remove the outlier from the dataset 'ecgrowth'!
+- Can you identify the country associated with the observation in the scatterplot? Store its name in `outlier`.
+- Remove the outlier from the dataset `ecgrowth`. Name the new dataset as `ecgrowth_new`.
 
 *** =hint
 
@@ -119,11 +120,12 @@ id <- which.max(ecgrowth$tradeshare)
 outlier <- ecgrowth$country_name[id]
 
 # Remove the outlier from the dataset
-ecgrowth <- ecgrowth[-id,]
+ecgrowth_new <- ecgrowth[-id,]
 ```
 
 *** =sct
 ```{r}
+test_predefined_objects("ecgrowth")
 test_object("outlier")
-test_object("ecgrowth")
+test_object("ecgrowth_new")
 ```
