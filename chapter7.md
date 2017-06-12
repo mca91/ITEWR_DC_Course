@@ -1,5 +1,5 @@
 ---
-title       : Empirical Exercises
+title       : Empirical Exercise - Economic Growth
 description : Further exercises
 
 
