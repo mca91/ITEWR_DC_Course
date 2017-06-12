@@ -276,16 +276,26 @@ ecgrowth_new <- ecgrowth[-65,]
 plot(ecgrowth$tradeshare, ecgrowth$growth)
 points(ecgrowth$tradeshare[65], ecgrowth$growth[65], col="red", pch=19)
 text(ecgrowth$tradeshare[65], ecgrowth$growth[65]-0.5, "Malta")
+
+attach(ecgrowth)
+growth_reg <- lm(growth ~ tradeshare)
+detach(ecgrowth)
+
+attach(ecgrowth_new)
+growth_new_reg <- lm(growth ~ tradeshare)
+detach(ecgrowth_new)
 ```
 
 *** =sample_code
 ```{r}
-# Add the regression lines
+# Add the regression lines to the plot
 ```
 
 *** =solution
 ```{r}
-
+# Add the regression lines to the plot
+abline(growth_reg)
+abline(growth_new_reg)
 ```
 
 *** =sct
