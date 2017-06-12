@@ -105,17 +105,25 @@ plot(ecgrowth$tradeshare, ecgrowth$growth)
 
 *** =sample_code
 ```{r}
-# Identify and remove the outlier from the dataset
+# Identify the outlier. Assign the country's name to an object named outlier.
+outlier <-
+
+# Remove the outlier from the dataset.
+
 ```
 
 *** =solution
 ```{r}
-# Identify and remove the outlier from the dataset
-id <- which.max(ecgrowth$tradeshare)
+# Identify the outlier. Assign the country's name to an object named outlier
+id <- which.max(ecgrowth$tradeshare
+outlier <- ecgrowth$country[id]
+
+# Remove the outlier from the dataset
 ecgrowth <- ecgrowth[-id,]
 ```
 
 *** =sct
 ```{r}
+test_object("outlier")
 test_object("ecgrowth")
 ```
