@@ -8,7 +8,7 @@ description : Further exercises
 
 The following exercises are considered with the subject of economical growth. Basis for this is a data set containing growth rates from 1960 through 1995 for 65 countries and various other variables that are possible determinants of growth. In particular, we are interested in the relationship between growth and trade. 
 
-*The dataset is available in Your workspace.*
+The dataset 'ecgrowth' is available in Your workspace.
 
 *** =instructions
 
@@ -20,7 +20,8 @@ Use the 'plot' function.
 
 *** =pre_exercise_code
 ```{r}
-
+library(foreign)
+ecgrowth <- read.dta('Growth.dta')
 ```
 
 *** =sample_code

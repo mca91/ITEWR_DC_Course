@@ -4,7 +4,7 @@ description : In this chapter, we provide exercises dealing with multiple linear
 attachments :
   slides_link : https://github.com/Emwikts1970/URFITE_DC/raw/master/Econometrics
 
---- type:NormalExercise lang:r xp: skills: key:af07cdc945
+--- type:NormalExercise lang:r xp: skills: key:73d2952f84
 ## Multiple Regression: Boston Housing Data
 
 For the course of this section, we will use the `Boston` data set which contains 506 observations concerning housing values in suburbs of Boston. The data set comes with the package `MASS`.
@@ -156,7 +156,7 @@ success_msg("Great! We see that the extended Model's R^2 is bigger than for the 
 
 
 
---- type:MultipleChoiceExercise lang:r xp: skills: key:e71f15da13
+--- type:MultipleChoiceExercise lang:r xp: skills: key:48a3eeab37
 ## Multiple Regression: Boston Housing Data III
 
 Use the summary function again and have a look at the coefficient section of the output printed to the console.
@@ -193,7 +193,7 @@ msg_success <- "Right, that sounds plausible. Good job!"
 test_mc(correct = 3, feedback_msgs = c(msg_bad1, msg_bad2, msg_success, msg_bad3))
 ```
 
---- type:NormalExercise lang:r xp: skills: key:e6bcd06795
+--- type:NormalExercise lang:r xp: skills: key:0c5b3ff16c
 ## Inference in the Multiple Regression Model – t-statistics
 
 Look at the regression equation below describing the previously estimated model. 
@@ -236,7 +236,7 @@ test_object("t_age")
 test_object("t_crim")
 ```
 
---- type:NormalExercise lang:r xp: skills: key:fc5e7319e1
+--- type:NormalExercise lang:r xp: skills: key:4e768f0ddb
 ## Inference in the Multiple Regression Model – p-values
 
 $$ \widehat{medv} = \underset{(0.74774)}{32.82804} + \underset{(0.05075)}{-0.99409} \times lstat + \underset{(0.01225)}{0.03765} \times age + \underset{(0.03594)}{-0.08262} \times crim  $$
@@ -285,7 +285,7 @@ test_object("p_age")
 test_object("p_crim")
 ```
 
---- type:NormalExercise lang:r xp: skills: key:905ec30cf5
+--- type:NormalExercise lang:r xp: skills: key:7e014a6af7
 ## Inference in the Multiple Regression Model - F-Statistic 
 
 Now, consider the following, extended output:
@@ -354,7 +354,7 @@ test_output_contains("1-pf(f, df1 = 3, df2 = 502)")
 success_msg("Great! You can see the $p$-value printed to the console. It should be approximately $0$ since the test statistic lies very far in the assumed null distribution distribution's right flank and thus we expect the $p$-value to be very small.")
 ```
 
---- type:MultipleChoiceExercise lang:r xp: skills: key:10d4b718b1
+--- type:MultipleChoiceExercise lang:r xp: skills: key:9e5ecf15b9
 ## Does the F-Test Reject? 
 
 Having in mind the results from the previous exercise, which of the following statements is true?
@@ -371,7 +371,7 @@ msg_success <- "Right, that sounds plausible. We reject the null hypothesis at e
 test_mc(correct = 2, feedback_msgs = c(msg_bad, msg_success))
 ```
 
---- type:MultipleChoiceExercise lang:r xp: skills: key:91e960796d
+--- type:MultipleChoiceExercise lang:r xp: skills: key:5fb002d877
 ## Which coefficients are significantly different from zero? 
 
 $$ \widehat{medv} = \underset{(0.74774)}{32.82804} + \underset{(0.05075)}{-0.99409} \times lstat + \underset{(0.01225)}{0.03765} \times age + \underset{(0.03594)}{-0.08262} \times crim  $$
@@ -395,7 +395,7 @@ msg_success <- "Right: $p$-value < 0.05 for all coefficients. Thus we can reject
 test_mc(correct = 3, feedback_msgs = c(msg_bad,msg_bad,msg_success,msg_bad))
 ```
 
---- type:MultipleChoiceExercise lang:r xp: skills: key:76501d8817
+--- type:MultipleChoiceExercise lang:r xp: skills: key:37ebde0280
 ## Validity of Model Assumptions 
 
 Think about $p$-values and parameter estimates. As in the simple regression model, You should only trust the results if the conditions for the regression do meet your assumptions reasonably well. Can You conclude that this holds using diagnostic plots?
@@ -423,7 +423,7 @@ msg_bad <- "No, that is not right. Look again at the plots."
 test_mc(correct = 2, feedback_msgs = c(msg_bad, msg_success))
 ```
 
---- type:NormalExercise lang:r xp: skills: key:2b32755b9d
+--- type:NormalExercise lang:r xp: skills: key:3e2de69086
 ## A Fully Fledged Model for Housing Values?
 
 *The multiple regression model from the previous exercise, `mod`, is available in your environment.* 
@@ -483,7 +483,7 @@ success_msg("Okay. You can see that the full models $adj. R^2$ is about $0.73$ r
 
 
 
---- type:MultipleChoiceExercise lang:r xp: skills: key:d3b0623549
+--- type:MultipleChoiceExercise lang:r xp: skills: key:7a5a5bfb4f
 ## Insignificant Regressors in the Full Model
 
 Which of the regressors are not significant at the $0.05$ level?
@@ -516,7 +516,7 @@ msg_success <- "Right, in the current setting, it seems that these regressors ar
 test_mc(correct = 4, feedback_msgs = c(msg_bad,msg_bad,msg_bad,msg_success,msg_bad))
 ```
 
---- type:NormalExercise lang:r xp: skills: key:1269599081
+--- type:NormalExercise lang:r xp: skills: key:b500bd2887
 ## The Impact of Robust Standard Errors I
 
 Do the significant levels for regressors `age` and `indus` change if You employ heteroskedasticity robust standard errors?
@@ -578,7 +578,7 @@ test_student_typed("library(sandwich)")
 test_function("coeftest", args = "vcov.")
 ```
 
---- type:MultipleChoiceExercise lang:r xp: skills: key:863492d367
+--- type:MultipleChoiceExercise lang:r xp: skills: key:5530944511
 ##  The Impact of Robust Standard Errors II 
 
 In the last exercise, You learned how to produce a summary reporting robust inference about coefficient in linear regression models estimated with `lm`.
@@ -608,7 +608,7 @@ using the console panel on the right. The robust summary is stored in `mod_robus
 test_mc(correct = 1, feedback_msgs = c(msg_success,msg_bad))
 ```
 
---- type:NormalExercise lang:r xp: skills: key:d9760cf640
+--- type:NormalExercise lang:r xp: skills: key:4579796006
 ## Model Selection: Adjusted R squared  
 
 Maybe we can improve the model by dropping a variable? 
@@ -678,7 +678,7 @@ which.max(l)
 success_msg("Okay. The next exercise will ask You for Your results.")
 ```
 
---- type:MultipleChoiceExercise lang:r xp: skills: key:3286e4408d
+--- type:MultipleChoiceExercise lang:r xp: skills: key:a7ae8d3031
 ## Model Selection: Adjusted R squared – ctd. 
 
 Name the variable which omission leads to the highest improvement in the fit of the model judging from $adj. R^2$.
