@@ -252,7 +252,7 @@ We are interested in the relationship between growth and trade. A detailed descr
 
 Model objects `growth_reg` and `growth_new_reg` are available in Your workspace.
 
-Reconsider the previously conducted regressions:
+Reconsider the previously conducted regressions. Estimated equation are:
 
 <b> Full dataset </b>
 
@@ -264,16 +264,23 @@ $$ Growth = 0.9574 + 1.6809 \times TradeShare $$
 
 *** =instructions
 
+- Add both regression lines to the scatterplot
+
 *** =hint
 
 *** =pre_exercise_code
 ```{r}
-
+library(foreign)
+ecgrowth <- read.dta('http://s3.amazonaws.com/assets.datacamp.com/production/course_1276/datasets/Growth.dta')
+ecgrowth_new <- ecgrowth[-65,]
+plot(ecgrowth$tradeshare, ecgrowth$growth)
+points(ecgrowth$tradeshare[65], ecgrowth$growth[65], col="red", pch=19)
+text(ecgrowth$tradeshare[65], ecgrowth$growth[65]-0.5, "Malta")
 ```
 
 *** =sample_code
 ```{r}
-
+# Add the regression lines
 ```
 
 *** =solution
