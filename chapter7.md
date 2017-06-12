@@ -74,5 +74,5 @@ plot(ecgrowth$tradeshare, ecgrowth$growth)
 ```{r}
 msg_bad <- "That is not correct!"
 msg_success <- "Exactly! There seems to be some positive relationship."
-test_mc(correct = 1, feedback_msgs = c(msg_sucess, msg_bad, msg_bad))
+test_mc(correct = 1, feedback_msgs = c(msg_success, msg_bad, msg_bad))
 ```
