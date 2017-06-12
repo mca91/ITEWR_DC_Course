@@ -141,7 +141,7 @@ The datasets `ecgrowth` and `ecgrowth_new` are available in Your workspace.
 
 *** =instructions
 
-- For convinience, attach `ecgrowth`. Run a simple linear regression of `growth` on `tradeshare`. Store the result in `growth_reg`
+- For convinience, attach `ecgrowth`. Run a simple linear regression of `growth` on `tradeshare` using `lm()`. Store the result in `growth_reg`
 - Use `growth_reg` to predict the growth rate for a country with a trade share of 0.5
 
 *** =hint
@@ -181,5 +181,7 @@ predict(growth_reg, newdata = data.frame(tradeshare = 0.5))
 
 *** =sct
 ```{r}
-
+test_function("attach")
+test_object("growth_reg")
+test_function("predict", args = "newdata")
 ```
