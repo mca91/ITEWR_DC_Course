@@ -4,7 +4,7 @@ description : Further exercises
 
 
 --- type:NormalExercise lang:r xp:100 skills:1 key:498a3c9d06
-## Economical Growth I
+## Economic Growth I
 
 The following exercises are considered with the subject of economical growth. Basis for this is a data set containing growth rates from 1960 through 1995 for 65 countries and various other variables that are possible determinants of growth. In particular, we are interested in the relationship between growth and trade. A detailed description of the dataset can be found <a href="http://wps.pearsoned.co.uk/wps/media/objects/12401/12699039/empirical/empex_tb/Growth_Description.pdf">here</a>. 
 
