@@ -115,7 +115,7 @@ outlier <-
 *** =solution
 ```{r}
 # Identify the outlier. Assign the country's name to an object named outlier
-id <- which.max(ecgrowth$tradeshare
+id <- which.max(ecgrowth$tradeshare)
 outlier <- ecgrowth$country[id]
 
 # Remove the outlier from the dataset
