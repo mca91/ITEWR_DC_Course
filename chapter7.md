@@ -298,6 +298,9 @@ text(ecgrowth$tradeshare[65], ecgrowth$growth[65]-0.5, "Malta")
 *** =solution
 ```{r}
 # Add the regression lines to the plot
+plot(ecgrowth$tradeshare, ecgrowth$growth)
+points(ecgrowth$tradeshare[65], ecgrowth$growth[65], col="red", pch=19)
+text(ecgrowth$tradeshare[65], ecgrowth$growth[65]-0.5, "Malta")
 abline(growth_reg)
 abline(growth_new_reg)
 ```
