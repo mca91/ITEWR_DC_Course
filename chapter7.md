@@ -129,3 +129,57 @@ test_predefined_objects("ecgrowth")
 test_object("outlier")
 test_object("ecgrowth_new")
 ```
+
+
+
+--- type:NormalExercise lang:r xp:100 skills:1 key:c2facac387
+## Economic Growth
+
+We are interested in the relationship between growth and trade. A detailed description of the dataset can be found <a href="http://wps.pearsoned.co.uk/wps/media/objects/12401/12699039/empirical/empex_tb/Growth_Description.pdf">here</a>. 
+
+The datasets `ecgrowth` and `ecgrowth_new` are available in Your workspace.
+
+*** =instructions
+
+- For convinience, attach `ecgrowth`. Run a simple linear regression of `growth` on `tradeshare`. Store the result in `growth_reg`
+- Use `growth_reg` to predict the growth rate for a country with a trade share of 0.5
+
+*** =hint
+
+*** =pre_exercise_code
+```{r}
+library(foreign)
+ecgrowth <- read.dta('http://s3.amazonaws.com/assets.datacamp.com/production/course_1276/datasets/Growth.dta')
+ecgrowth_new <- ecgrowth[-65,]
+plot(ecgrowth$tradeshare, ecgrowth$growth)
+```
+
+*** =sample_code
+```{r}
+# Attach the dataset
+
+# Run the regression
+
+# Do the prediction
+
+```
+
+*** =solution
+```{r}
+# Attach the dataset
+
+attach(ecgrowth)
+
+# Run the regression
+
+growth_reg <- lm(growth ~ tradeshare)
+
+# Do the prediction
+
+predict(growth_reg, newdata = data.frame(tradeshare = 0.5))
+```
+
+*** =sct
+```{r}
+
+```
