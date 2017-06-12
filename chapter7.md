@@ -300,5 +300,6 @@ abline(growth_new_reg)
 
 *** =sct
 ```{r}
-
+test_function("abline", index = 1, args = "reg")
+test_function("abline", index = 2, args = "reg")
 ```
