@@ -21,7 +21,7 @@ Use the 'plot' function.
 *** =pre_exercise_code
 ```{r}
 library(foreign)
-ecgrowth <- read.dta('Growth.dta')
+ecgrowth <- read.dta('http://s3.amazonaws.com/assets.datacamp.com/production/course_1276/datasets/Growth.dta')
 ```
 
 *** =sample_code
