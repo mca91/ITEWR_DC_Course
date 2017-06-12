@@ -87,7 +87,7 @@ test_mc(correct = 1, feedback_msgs = c(msg_success, msg_bad, msg_bad))
 
 We are interested in the relationship between growth and trade. A detailed description of the dataset can be found <a href="http://wps.pearsoned.co.uk/wps/media/objects/12401/12699039/empirical/empex_tb/Growth_Description.pdf">here</a>. 
 
-The dataset 'ecgrowth' is available in Your workspace.
+The dataset `ecgrowth` is available in Your workspace.
 
 Have a closer look at the scatterplot, again. There seems to be an outlier.
 
