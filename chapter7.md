@@ -6,7 +6,9 @@ description : Further exercises
 --- type:NormalExercise lang:r xp:100 skills:1 key:498a3c9d06
 ## Economic Growth I
 
-The following exercises are considered with the subject of economical growth. Basis for this is a data set containing growth rates from 1960 through 1995 for 65 countries and various other variables that are possible determinants of growth. In particular, we are interested in the relationship between growth and trade. A detailed description of the dataset can be found <a href="http://wps.pearsoned.co.uk/wps/media/objects/12401/12699039/empirical/empex_tb/Growth_Description.pdf">here</a>. 
+The following exercises are considered with the subject of economical growth. Basis for this is a real data set containing growth rates from 1960 through 1995 for 65 countries and various other variables that are possible determinants of growth. 
+
+In particular, we are interested in the relationship between growth and trade. A detailed description of the dataset can be found <a href="http://wps.pearsoned.co.uk/wps/media/objects/12401/12699039/empirical/empex_tb/Growth_Description.pdf">here</a>. 
 
 The dataset 'ecgrowth' is available in Your workspace.
 
@@ -75,4 +77,45 @@ plot(ecgrowth$tradeshare, ecgrowth$growth)
 msg_bad <- "That is not correct!"
 msg_success <- "Exactly! There seems to be some positive relationship."
 test_mc(correct = 1, feedback_msgs = c(msg_success, msg_bad, msg_bad))
+```
+
+
+
+
+--- type:NormalExercise lang:r xp:100 skills:1 key:54d05324f1
+## Economic Growth III
+
+We are interested in the relationship between growth and trade. A detailed description of the dataset can be found <a href="http://wps.pearsoned.co.uk/wps/media/objects/12401/12699039/empirical/empex_tb/Growth_Description.pdf">here</a>. 
+
+The dataset 'ecgrowth' is available in Your workspace.
+
+Have a closer look at the scatterplot, again. There seems to be an outlier.
+
+*** =instructions
+- Can you identify the country associated with the observation in the scatterplot? Remove the outlier from the dataset 'ecgrowth'!
+
+*** =hint
+
+*** =pre_exercise_code
+```{r}
+library(foreign)
+ecgrowth <- read.dta('http://s3.amazonaws.com/assets.datacamp.com/production/course_1276/datasets/Growth.dta')
+plot(ecgrowth$tradeshare, ecgrowth$growth)
+```
+
+*** =sample_code
+```{r}
+# Identify and remove the outlier from the dataset
+```
+
+*** =solution
+```{r}
+# Identify and remove the outlier from the dataset
+id <- which.max("ecgrowth$tradeshare")
+ecgrowth <- ecgrowth[-id,]
+```
+
+*** =sct
+```{r}
+test_an_object("ecgrowth")
 ```
