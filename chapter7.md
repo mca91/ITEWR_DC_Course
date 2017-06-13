@@ -10,7 +10,7 @@ The following exercises are considered with the subject of economical growth. Ba
 
 In particular, we are interested in the relationship between growth and trade. A detailed description of the dataset can be found <a href="http://wps.pearsoned.co.uk/wps/media/objects/12401/12699039/empirical/empex_tb/Growth_Description.pdf">here</a>. 
 
-The dataset 'ecgrowth' is available in Your workspace.
+The dataset `ecgrowth` is available in Your workspace.
 
 *** =instructions
 
@@ -361,6 +361,6 @@ abline(growth_new_reg, col="green")
 *** =sct
 ```{r}
 msg_bad <- "That is not correct!"
-msg_success <- "Exactly! Inclusion of an outlier may considerably distort OLS parameter estimates."
+msg_success <- "Exactly! Inclusion of an outlier may considerably distort OLS parameter estimates. This means we should exclude such an observation."
 test_mc(correct = 2, feedback_msgs = c(msg_bad, msg_success, msg_bad))
 ```
