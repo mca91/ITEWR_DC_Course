@@ -289,6 +289,7 @@ detach(ecgrowth_new)
 
 *** =sample_code
 ```{r}
+# These lines must not be altered. The generate the plot You see on the right
 plot(ecgrowth$tradeshare, ecgrowth$growth)
 points(ecgrowth$tradeshare[65], ecgrowth$growth[65], col="red", pch=19)
 text(ecgrowth$tradeshare[65], ecgrowth$growth[65]-0.5, "Malta")
