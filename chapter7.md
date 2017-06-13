@@ -319,6 +319,16 @@ test_function("abline", index = 2, args = "col")
 
 Have a look at the estimated regression functions. Why is the regression function that was estimated using the dataset including Malta steeper than the regression function that excludes Malta?
 
+Reconsider the previously conducted regressions. Estimated equation are:
+
+<b> Full dataset </b>
+
+<font color="blue"> $$ Growth = 0.6403 + 2.3064 \times TradeShare $$ </font> 
+
+<b> Excluding the country Malta </b>
+
+<font color="blue"> $$ Growth = 0.9574 + 1.6809 \times TradeShare $$ </font> 
+
 *** =instructions
 
 - This is solely due to random errors which cannot be observed
