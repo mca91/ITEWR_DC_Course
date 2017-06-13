@@ -327,7 +327,7 @@ Reconsider the previously conducted regressions. Estimated equation are:
 
 <b> Excluding the country Malta </b>
 
-<font color="blue"> $$ Growth = 0.9574 + 1.6809 \times TradeShare $$ </font> 
+<font color="green"> $$ Growth = 0.9574 + 1.6809 \times TradeShare $$ </font> 
 
 *** =instructions
 
