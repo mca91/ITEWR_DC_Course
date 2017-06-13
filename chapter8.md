@@ -372,7 +372,7 @@ test_mc(correct = 2, feedback_msgs = c(msg_bad, msg_success, msg_bad))
 
 In light of the last couple of exercises, we continue our analysis using the dataset `ecgrowth_new` which exludes Malta.
 
-The regression model `growth_new_reg` is available in your workspace. Can you reject the hypothesis $H\_0: \beta\_1 = 0$ vs. a two-sided alternative hypothesis at the $95\%$ level?
+The regression model `growth_new_reg` is available in Your workspace. Can you reject the hypothesis $H\_0: \beta\_1 = 0$ vs. a two-sided alternative hypothesis at the $95\%$ level?
 
 *** =instructions
 
