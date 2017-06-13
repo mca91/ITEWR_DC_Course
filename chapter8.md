@@ -413,5 +413,5 @@ confint(growth_new_reg)
 
 *** =sct
 ```{r}
-
+test_function("summary", args = "objects")
 ```
