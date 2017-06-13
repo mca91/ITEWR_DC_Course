@@ -253,7 +253,7 @@ We are interested in the relationship between growth and trade. A detailed descr
 
 Model objects `growth_reg` and `growth_new_reg` are available in Your workspace.
 
-Reconsider the previously conducted regressions. Estimated equation are:
+Reconsider the previously conducted regressions. Estimated equations are:
 
 <b> Full dataset </b>
 
