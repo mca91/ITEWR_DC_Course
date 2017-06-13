@@ -243,7 +243,7 @@ predict(growth_new_reg, newdata = data.frame(tradeshare = 0.5))
 test_function("attach")
 test_object("growth_new_reg")
 test_function("predict", args = "newdata")
-success_msg("Good! Re-running the estimation tells us that the model based on the full dataset predicts higher values for `growth` for larger values of `tradeshare` than the model excluding Malta.")
+success_msg("Good! Re-running the estimation tells us that the model based on the full dataset predicts higher values for `growth` for larger values of `tradeshare` than the model excluding Malta does.")
 ```
 
 --- type:NormalExercise lang:r xp:100 skills:1 key:68788ae1d3
