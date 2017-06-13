@@ -366,3 +366,52 @@ msg_bad <- "That is not correct!"
 msg_success <- "Exactly! Inclusion of an outlier may considerably distort OLS parameter estimates. This means we should exclude such an observation."
 test_mc(correct = 2, feedback_msgs = c(msg_bad, msg_success, msg_bad))
 ```
+
+--- type:NormalExercise lang:r xp:100 skills:1 key:8515865794
+## Economic Growth VIII
+
+In light of the last couple of exercises, we continue our analysis using the dataset `ecgrowth_new` which exludes Malta.
+
+The regression model `growth_new_reg` is available in your workspace. Can you reject the hypothesis $H\_0: \beta\_1 = 0$ vs. a two-sided alternative hypothesis at the $95\%$ level?
+
+*** =instructions
+
+- Check whether $\beta\_1$ is significantly different from zero using `summary()`
+- Assign the corresponding p-value to the variable `pval`
+- Compute $95\%$ confidence intervalls for $\beta\_0$ and $\beta\_1$ using `confint()`
+
+*** =hint
+
+*** =pre_exercise_code
+```{r}
+ecgrowth <- read.dta('http://s3.amazonaws.com/assets.datacamp.com/production/course_1276/datasets/Growth.dta')
+ecgrowth_new <- ecgrowth[-65,]
+attach(ecgrowth_new)
+growth_new_reg <- lm(growth ~ tradeshare)
+detach(ecgrowth_new)
+```
+
+*** =sample_code
+```{r}
+# Access statistical information about the model
+
+
+# Assign the p-value to pval
+
+
+# Compute the confidence intervall
+
+
+```
+
+*** =solution
+```{r}
+summary(growth_new_reg)
+pval <- summary(growth_new_reg)$coef[2,4]
+confint(growth_new_reg)
+```
+
+*** =sct
+```{r}
+
+```
