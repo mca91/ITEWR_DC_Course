@@ -320,7 +320,7 @@ test_function("abline", index = 2, args = "col")
 
 Have a look at the estimated regression functions. Why is the regression function that was estimated using the dataset including Malta steeper than the regression function that excludes Malta?
 
-Reconsider the previously conducted regressions. Estimated equation are:
+Reconsider the previously conducted regressions. Estimated equations are:
 
 <b> Full dataset </b>
 
