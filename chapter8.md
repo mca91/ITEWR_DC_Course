@@ -414,5 +414,7 @@ confint(growth_new_reg)
 
 *** =sct
 ```{r}
-test_function("summary", args = "objects")
+test_function("summary", args = "object")
+test_object("pval")
+test_function("confint", args = "object")
 ```
