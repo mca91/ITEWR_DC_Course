@@ -400,7 +400,7 @@ detach(ecgrowth_new)
 # Assign the p-value to pval
 
 
-# Compute the confidence intervall
+# Compute the confidence intervalls
 
 
 ```
@@ -411,7 +411,7 @@ detach(ecgrowth_new)
 summary(growth_new_reg)
 # Assign the p-value to pval
 pval <- summary(growth_new_reg)$coef[2,4]
-# Compute the confidence intervall
+# Compute the confidence intervalls
 confint(growth_new_reg)
 ```
 
