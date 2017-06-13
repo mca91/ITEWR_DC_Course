@@ -407,8 +407,11 @@ detach(ecgrowth_new)
 
 *** =solution
 ```{r}
+# Access statistical information about the model
 summary(growth_new_reg)
+# Assign the p-value to pval
 pval <- summary(growth_new_reg)$coef[2,4]
+# Compute the confidence intervall
 confint(growth_new_reg)
 ```
 
