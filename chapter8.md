@@ -384,6 +384,7 @@ The regression model `growth_new_reg` is available in your workspace. Can you re
 
 *** =pre_exercise_code
 ```{r}
+library(foreign)
 ecgrowth <- read.dta('http://s3.amazonaws.com/assets.datacamp.com/production/course_1276/datasets/Growth.dta')
 ecgrowth_new <- ecgrowth[-65,]
 attach(ecgrowth_new)
