@@ -1,5 +1,5 @@
 ---
-title       : Empirical Exercise - Economic Growth
+title       : Empirical Exercises - Economic Growth
 description : Further exercises
 
 
@@ -309,4 +309,48 @@ abline(growth_new_reg, col="green")
 ```{r}
 test_function("abline", index = 1, args = "col")
 test_function("abline", index = 2, args = "col")
+```
+
+
+
+
+--- type:MultipleChoiceExercise lang:r xp:50 skills:1 key:3370d4087a
+## Economic Growth VII
+
+Have a look at the estimated regression functions. Why is the regression function that was estimated using the dataset including Malta steeper than in the regression function that excludes Malta?
+
+*** =instructions
+
+- This is solely due to random errors which cannot be observed
+- OLS is sensitive to outliers. Therefore, inclusion of Malta in the dataset causes the estimate of the coefficient of `TradeShare` to be larger than when Malta is excluded
+- This cannot be answered without further information
+
+*** =hint
+
+*** =pre_exercise_code
+```{r}
+library(foreign)
+ecgrowth <- read.dta('http://s3.amazonaws.com/assets.datacamp.com/production/course_1276/datasets/Growth.dta')
+ecgrowth_new <- ecgrowth[-65,]
+plot(ecgrowth$tradeshare, ecgrowth$growth)
+points(ecgrowth$tradeshare[65], ecgrowth$growth[65], col="red", pch=19)
+text(ecgrowth$tradeshare[65], ecgrowth$growth[65]-0.5, "Malta")
+
+attach(ecgrowth)
+growth_reg <- lm(growth ~ tradeshare)
+detach(ecgrowth)
+
+attach(ecgrowth_new)
+growth_new_reg <- lm(growth ~ tradeshare)
+detach(ecgrowth_new)
+
+abline(growth_reg, col="blue")
+abline(growth_new_reg, col="green")
+```
+
+*** =sct
+```{r}
+msg_bad <- "That is not correct!"
+msg_success <- "Exactly! Inclusion of an outlier may considerably distort OLS parameter estimates."
+test_mc(correct = 2, feedback_msgs = c(msg_bad, msg_success, msg_bad))
 ```
