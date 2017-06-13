@@ -317,7 +317,7 @@ test_function("abline", index = 2, args = "col")
 --- type:MultipleChoiceExercise lang:r xp:50 skills:1 key:3370d4087a
 ## Economic Growth VII
 
-Have a look at the estimated regression functions. Why is the regression function that was estimated using the dataset including Malta steeper than in the regression function that excludes Malta?
+Have a look at the estimated regression functions. Why is the regression function that was estimated using the dataset including Malta steeper than the regression function that excludes Malta?
 
 *** =instructions
 
