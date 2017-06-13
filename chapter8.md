@@ -372,7 +372,10 @@ test_mc(correct = 2, feedback_msgs = c(msg_bad, msg_success, msg_bad))
 
 In light of the last couple of exercises, we continue our analysis using the dataset `ecgrowth_new` which exludes Malta.
 
-The regression model `growth_new_reg` is available in Your workspace. Can you reject the hypothesis $H\_0: \beta\_1 = 0$ vs. a two-sided alternative hypothesis at the $95\%$ level?
+The regression model `growth_new_reg` is available in Your workspace. 
+<br>
+<br>
+Can you reject the hypothesis $H\_0: \beta\_1 = 0$ vs. a two-sided alternative hypothesis at the $95\%$ level?
 
 *** =instructions
 
@@ -420,4 +423,52 @@ confint(growth_new_reg)
 test_function("summary", args = "object")
 test_object("pval")
 test_function("confint", args = "object")
+```
+
+
+
+
+
+--- type:NormalExercise lang:r xp:100 skills:1 key:5bb281f125
+## Economic Growth IX
+
+The dataset `ecgrowth_new` is available in Your workspace. 
+<br>
+<br>
+It is not realstic that only a country's trade share drives its economic growth. We will therfore expand our model by adding more regressors. In particular, we consider the following additional variables:
+
+- YearsSchool
+- Oil
+- Rev_Coups
+- Assassinations
+- RGDP60
+
+*** =instructions
+
+- Compute descriptive statistics for the abovementioned variables. Do so by subsetting the dataset accordingly and using relevant *implemented* R functions.
+
+*** =hint
+
+
+
+*** =pre_exercise_code
+```{r}
+library(foreign)
+ecgrowth <- read.dta('http://s3.amazonaws.com/assets.datacamp.com/production/course_1276/datasets/Growth.dta')
+ecgrowth_new <- ecgrowth[-65,]
+```
+
+*** =sample_code
+```{r}
+# Compute descriptive statistics
+```
+
+*** =solution
+```{r}
+
+```
+
+*** =sct
+```{r}
+
 ```
