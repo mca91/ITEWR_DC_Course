@@ -441,7 +441,6 @@ It is not realstic that only a country's trade share drives its economic growth.
 - `RGDP60`
 
 <br>
-<br>
 
 The dataset `ecgrowth_new` is available in Your workspace. 
 
