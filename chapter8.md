@@ -528,19 +528,13 @@ summary(mult_mod)$coef
 *** =sct
 ```{r}
 test_predefined_objects("ecgrowth_new")
+test_object("mult_mod", eval = F)
 
 test_correct(
-    test_object("mult_mod"),
+    test_function("lm", args = c("formula", "data")),
         {
-        test_correct(
-            test_function("attach", eq_condition = ),
-                {
-                test_function("lm", args = "data")
-                }
-)
+        ex() %>% override_solution("attach(ecgrowth_new);lm(growth ~ tradeshare + yearsschool + rev_coups + rgdp60 + assasinations)") %>% check_function("attach")
+        ex() %>% override_solution("attach(ecgrowth_new);lm(growth ~ tradeshare + yearsschool + rev_coups + rgdp60 + assasinations)") %>% check_function("lm")
         }
 )
-
-test_object("mult_mod", eval = F)
-test_function("lm", args = "data")
 ```
