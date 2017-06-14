@@ -451,7 +451,8 @@ The dataset `ecgrowth_new` is available in Your workspace.
 
 *** =hint
 
-Column means of an array `a` can be computed by using `apply(a, 2, mean)`. `2` is the dimension of the array the function `mean` will be applied over. 
+- Column means of an array `a` can be computed by using `apply(a, 2, mean)`. `2` is the dimension of the array the function `mean` will be applied over
+- Functions `min()`, `max()`, `mean()`, `sd()` might be useful
 
 
 *** =pre_exercise_code
