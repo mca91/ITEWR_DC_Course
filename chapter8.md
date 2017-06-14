@@ -491,13 +491,14 @@ test_object("sd", eq_condition = "equal")
 --- type:NormalExercise lang:r xp:100 skills:1 key:ac6a704316
 ## Economic Growth X
 
-Now, we will consider the following multiple regression model:
+We will now consider the following multiple regression model:
 
 $$ Growth = \beta\_0 + \beta\_1 \times TradeShare + \beta\_2 \times YearsSchool + \beta\_3 \times RevCoups + \beta\_4 \times RGDP60 + \epsilon $$
 
 *** =instructions
 
-- Estimate the model coefficients using OLS.
+- Estimate the model using OLS. Store the result in `mult_mod`
+- What is the value of the coefficient on `RevCoups`, a measure for political and social unrest? Try to interpret the coefficient. You will be asked about it in the next exercise 
 
 *** =hint
 
@@ -515,17 +516,17 @@ ecgrowth_new <- ecgrowth[-65,]
 # Estimate the multiple regression model
 
 
-
 ```
 
 *** =solution
 ```{r}
 # Estimate the multiple regression model
-
-
+mult_mod <- lm(growth ~., data = ecgrowth_new[,-c(1,3)])
+summary(mult_mod)$coef
 ```
 
 *** =sct
 ```{r}
-
+test_predefined_objects(ecgrowth_new)
+test_object("mult_mod")
 ```
