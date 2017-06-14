@@ -534,7 +534,7 @@ test_correct(
     test_function("lm", args = c("formula", "data")),
         {
         ex() %>% override_solution("attach(ecgrowth_new);lm(growth ~ tradeshare + yearsschool + rev_coups + rgdp60 + assasinations)") %>% check_function("attach")
-        ex() %>% override_solution("attach(ecgrowth_new);lm(growth ~ tradeshare + yearsschool + rev_coups + rgdp60 + assasinations)") %>% check_function("lm")
+        #ex() %>% override_solution("attach(ecgrowth_new);lm(growth ~ tradeshare + yearsschool + rev_coups + rgdp60 + assasinations)") %>% check_function("lm")
         }
 )
 ```
