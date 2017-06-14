@@ -437,11 +437,11 @@ The dataset `ecgrowth_new` is available in Your workspace.
 <br>
 It is not realstic that only a country's trade share drives its economic growth. We will therfore expand our model by adding more regressors. In particular, we consider the following additional variables:
 
-- YearsSchool
-- Oil
-- Rev_Coups
-- Assassinations
-- RGDP60
+- `YearsSchool`
+- `Oil`
+- `Rev_Coups`
+- `Assassinations`
+- `RGDP60`
 
 *** =instructions
 
