@@ -493,7 +493,7 @@ test_object("sd", eq_condition = "equal")
 
 We will now consider the following multiple regression model:
 
-$$ Growth = \beta\_0 + \beta\_1 \times TradeShare + \beta\_2 \times YearsSchool + \beta\_3 \times RevCoups + \beta\_4 \times RGDP60 + \epsilon $$
+$$ Growth = \beta\_0 + \beta\_1 \times TradeShare + \beta\_2 \times YearsSchool + \beta\_3 \times RevCoups + \beta\_4 \times RGDP60 + \beta\_5 \times assassinations + \epsilon $$
 
 *** =instructions
 
