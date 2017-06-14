@@ -445,7 +445,7 @@ The dataset `ecgrowth_new` is available in Your workspace.
 
 *** =instructions
 
-- Compute descriptive statistics for all columns of `ecgrowth_new` except `country`. Do so by subsetting the dataset accordingly and using relevant *implemented* R functions. Vectorize Your results. <b>Hint</b>: Use `apply()` on the columns of Your subsetted dataset. See `?apply`.   
+- Start by computing descriptive statistics for all columns of `ecgrowth_new` except `country`. Do so by subsetting the dataset accordingly and using relevant *implemented* R functions. Vectorize Your results. <b>Hint</b>: Use `apply()` on the columns of Your subsetted dataset. See `?apply`.   
 
 *** =hint
 
