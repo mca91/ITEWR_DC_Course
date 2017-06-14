@@ -432,9 +432,6 @@ test_function("confint", args = "object")
 --- type:NormalExercise lang:r xp:100 skills:1 key:5bb281f125
 ## Economic Growth IX
 
-The dataset `ecgrowth_new` is available in Your workspace. 
-<br>
-<br>
 It is not realstic that only a country's trade share drives its economic growth. We will therfore expand our model by adding more regressors. In particular, we consider the following additional variables:
 
 - `YearsSchool`
@@ -442,6 +439,12 @@ It is not realstic that only a country's trade share drives its economic growth.
 - `Rev_Coups`
 - `Assassinations`
 - `RGDP60`
+
+<br>
+<br>
+
+The dataset `ecgrowth_new` is available in Your workspace. 
+
 
 *** =instructions
 
