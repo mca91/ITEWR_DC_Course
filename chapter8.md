@@ -493,7 +493,7 @@ test_object("sd", eq_condition = "equal")
 
 We will now consider the following multiple regression model:
 
-$$ Growth = \beta\_0 + \beta\_1 \times TradeShare + \beta\_2 \times YearsSchool + \beta\_3 \times RevCoups + \beta\_4 \times RGDP60 + \beta\_5 \times assasinations + \epsilon $$
+$$ Growth = \beta\_0 + \beta\_1 \times TradeShare + \beta\_2 \times YearsSchool + \beta\_3 \times RevCoups \\\\ + \beta\_4 \times RGDP60 + \beta\_5 \times assasinations + \epsilon $$
 
 *** =instructions
 
@@ -528,6 +528,19 @@ summary(mult_mod)$coef
 *** =sct
 ```{r}
 test_predefined_objects("ecgrowth_new")
+
+test_correct(
+    test_object("mult_mod"),
+        {
+        test_correct(
+            test_function("attach", eq_condition = ),
+                {
+                test_function("lm", args = "data")
+                }
+)
+        }
+)
+
 test_object("mult_mod", eval = F)
 test_function("lm", args = "data")
 ```
