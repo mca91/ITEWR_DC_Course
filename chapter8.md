@@ -370,7 +370,7 @@ test_mc(correct = 2, feedback_msgs = c(msg_bad, msg_success, msg_bad))
 --- type:NormalExercise lang:r xp:100 skills:1 key:8515865794
 ## Economic Growth VIII
 
-In light of the last couple of exercises, we continue our analysis using the dataset `ecgrowth_new` which exludes Malta.
+In light of the last couple of exercises, we continue our analysis using the dataset `ecgrowth_new` which exlcudes Malta.
 
 The regression model `growth_new_reg` is available in Your workspace. 
 <br>
