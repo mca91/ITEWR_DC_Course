@@ -528,5 +528,6 @@ summary(mult_mod)$coef
 *** =sct
 ```{r}
 test_predefined_objects("ecgrowth_new")
-test_object("mult_mod", eq_condition = "equivalent")
+test_object("mult_mod", eval = F)
+test_function("lm", args = "data")
 ```
