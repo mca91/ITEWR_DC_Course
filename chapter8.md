@@ -445,10 +445,11 @@ It is not realstic that only a country's trade share drives its economic growth.
 
 *** =instructions
 
-- Compute descriptive statistics for the abovementioned variables. Do so by subsetting the dataset accordingly and using relevant *implemented* R functions.
+- Compute descriptive statistics for all columns of `ecgrowth_new` except `country`. Do so by subsetting the dataset accordingly and using relevant *implemented* R functions. Vectorize Your results. <b>Hint</b>: Use `apply()` on the columns of Your subsetted dataset. See `?apply`.   
 
 *** =hint
 
+Column means of an array `a` can be computed by using `apply(a, 2, mean)`. `2` is the dimension of the array the function `mean` will be applied over. 
 
 
 *** =pre_exercise_code
@@ -461,14 +462,25 @@ ecgrowth_new <- ecgrowth[-65,]
 *** =sample_code
 ```{r}
 # Compute descriptive statistics
+min <-
+max <-
+mean <-
+sd <-
 ```
 
 *** =solution
 ```{r}
-
+# Compute descriptive statistics
+min <- apply(ecgrowth_new[,-1], 2, min)
+max <- apply(ecgrowth_new[,-1], 2, max)
+mean <- apply(ecgrowth_new[,-1], 2, mean)
+sd <- apply(ecgrowth_new[,-1], 2, sd)
 ```
 
 *** =sct
 ```{r}
-
+test_object("min", eq_condition = "equal")
+test_object("max", eq_condition = "equal")
+test_object("mean", eq_condition = "equal")
+test_object("sd", eq_condition = "equal")
 ```
