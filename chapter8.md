@@ -485,3 +485,47 @@ test_object("max", eq_condition = "equal")
 test_object("mean", eq_condition = "equal")
 test_object("sd", eq_condition = "equal")
 ```
+
+
+
+--- type:NormalExercise lang:r xp:100 skills:1 key:ac6a704316
+## Economic Growth X
+
+Now, we will consider the following multiple regression model:
+
+$$ Growth = \beta\_0 + \beta\_1 \times TradeShare + \beta\_2 \times YearsSchool + \beta\_3 \times RevCoups + \beta\_4 \times RGDP60 + \epsilon $$
+
+*** =instructions
+
+- Estimate the model coefficients using OLS.
+
+*** =hint
+
+
+
+*** =pre_exercise_code
+```{r}
+library(foreign)
+ecgrowth <- read.dta('http://s3.amazonaws.com/assets.datacamp.com/production/course_1276/datasets/Growth.dta')
+ecgrowth_new <- ecgrowth[-65,]
+```
+
+*** =sample_code
+```{r}
+# Estimate the multiple regression model
+
+
+
+```
+
+*** =solution
+```{r}
+# Estimate the multiple regression model
+
+
+```
+
+*** =sct
+```{r}
+
+```
