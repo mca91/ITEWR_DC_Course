@@ -441,7 +441,7 @@ Reconsider our regression approach:
 
 $$ Growth = \beta\_0 + \beta\_1 \times TradeShare + \epsilon $$
 
-It is not realstic that a country's trade share is the only factor driving its economic growth. It might be prefarable to employ a model with more regressors. In particular, we consider the following additional variables:
+It is not realstic that a country's trade share is the only factor driving its economic growth. It might be prefarable to employ a model with more regressors. In particular, we could consider the following additional variables:
 
 - `YearsSchool`
 - `Oil`
@@ -509,7 +509,7 @@ $$ Growth = \beta\_0 + \beta\_1 \times TradeShare + \beta\_2 \times YearsSchool 
 *** =instructions
 
 - Estimate the model using OLS. Store the result in `mult_mod`
-- What is the value of the coefficient on `RevCoups`, a measure for political and social unrest? Try to interpret the coefficient. You will be asked about it in the next exercise 
+- What is the value of the coefficient on $RevCoups$, a measure for political and social unrest? Try to interpret the coefficient. You will be asked about it in the next exercise 
 
 *** =hint
 
@@ -548,4 +548,59 @@ test_or(
     ex() %>% override_solution("attach(ecgrowth_new);lm(growth ~ tradeshare + yearsschool + rev_coups + rgdp60 + assasinations)") %>% check_function("lm") %>% check_arg("formula") %>% check_equal()
     }
 )
+```
+
+
+
+
+
+
+
+--- type:MultipleChoiceExercise lang:r xp:50 skills:1 key:1e51b5f0fe
+## Economic Growth XI
+
+The estimated regression equation for our extented model is
+
+
+$$ Growth = 0.6269 + -0.0005 \times TradeShare + 1.3408 \times YearsSchool + 0.5642 \times RevCoups \\\\ + -2.1504 \times RGDP60 + 0.3226 \times assasinations $$ 
+
+*** =instructions
+
+*** =hint
+
+*** =pre_exercise_code
+```{r}
+
+```
+
+*** =sct
+```{r}
+
+```
+--- type:NormalExercise lang:r xp:100 skills:1 key:abc4d7eb94
+## abc
+
+
+*** =instructions
+
+*** =hint
+
+*** =pre_exercise_code
+```{r}
+
+```
+
+*** =sample_code
+```{r}
+
+```
+
+*** =solution
+```{r}
+
+```
+
+*** =sct
+```{r}
+
 ```
