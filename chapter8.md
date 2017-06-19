@@ -137,11 +137,12 @@ test_object("ecgrowth_new")
 
 We are interested in the relationship between growth and trade. A detailed description of the dataset can be found <a href="http://wps.pearsoned.co.uk/wps/media/objects/12401/12699039/empirical/empex_tb/Growth_Description.pdf">here</a>. 
 
-The datasets `ecgrowth` and `ecgrowth_new` are available in Your workspace.
-
 Now assume that economic growth is determined as follows:
 
 $$ Growth = \beta\_0 + \beta\_1 \times TradeShare + \epsilon$$
+
+The datasets `ecgrowth` and `ecgrowth_new` are available in Your workspace.
+
 
 *** =instructions
 
