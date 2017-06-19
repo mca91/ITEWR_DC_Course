@@ -599,9 +599,7 @@ The estimated regression equation for our extented model is
 
 $$ Growth = 0.6269 -0.0005 \times TradeShare + 1.3408 \times YearsSchool -2.1504 \times RevCoups \\\\ -0.0005 \times RGDP60 + 0.3226 \times assasinations $$ 
 
-The model object `mult_mod` is available in Your workspace. 
-
-Remember the descriptive statistics you computed before. Joining them coloumn-wise we get the following table:
+Now remember the descriptive statistics you computed before. Joining them coloumn-wise we get the following table:
 
 <table style="text-align:center"><tr><td colspan="5" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left"></td><td>min</td><td>max</td><td>mean</td><td>sd</td></tr>
 <tr></tr><tr><td style="text-align:left">growth</td><td>-2.812</td><td>7.157</td><td>1.869</td><td>1.816</td></tr>
@@ -613,15 +611,18 @@ Remember the descriptive statistics you computed before. Joining them coloumn-wi
 <tr><td style="text-align:left">assasinations</td><td>0</td><td>2.467</td><td>0.282</td><td>0.494</td></tr>
 <tr><td colspan="5" style="border-bottom: 1px solid black"></td></tr></table>
 
+The model object `mult_mod` is available in Your workspace.
+
 *** =instructions
 
-- Join all descriptive statistics in an object of class `data.frame`. Assign the result to `descriptives`.
-- Use the function `predict()` to predict the average anual growth rate for a country that has average values for all regressors.
+- Join all descriptive statistics as shown above in an object of class `data.frame`. Assign the result to `descriptives`.
+- Use the function `predict()` to predict the average anual growth rate for an *average* country, i.e. for an observation that has average values for all regressors.
 
 *** =hint
 
 - To join vectors `a`,`b` and `c` to a `data.frame` with named columns, execute `data.frame(a=a, b=b, c=c)`. See also `?data.frame`.
-- In Your call of `predict()` You have to specify the argument `newdata`. This must be a `data.frame` object where each row is an observation of regressors you want to make a prediction for. Note that the column names must equal the regressor names. Here, we have five regressors: `tradeshare`, `rgdp60`, `yearsschool`, `rev_coups` and `assasinations`. 
+- In Your call of `predict()` You have to specify the argument `newdata`. This must be a `data.frame` object where each row is an observation of regressors you want to make a prediction for. Note that the column names must equal the regressor names. We have five regressors: `tradeshare`, `rgdp60`, `yearsschool`, `rev_coups` and `assasinations`. 
+- The function `subset.data.frame()` may be helpful in specifying the argument `newdata` in `predict`.
 
 *** =pre_exercise_code
 ```{r}
@@ -638,15 +639,21 @@ sd <- apply(ecgrowth_new[,-1], 2, sd)
 ```{r}
 # Join all statistics in a data.frame
 descriptives <-
+
+# Predict economic growth for an average country
+
 ```
 
 *** =solution
 ```{r}
+# Join all statistics in a data.frame
 descriptives <- data.frame(min=min, max=max, mean=mean, sd=sd)
-
+predict(mult_mod, newdata = as.data.frame(t(subset.data.frame(descriptives, select = "mean")))[,-c(1,2)])
 ```
 
 *** =sct
 ```{r}
-
+test_object("descriptives", eq_condition = "equivalent")
+test_function("predict")
+success_msg("Great! Notice that the model's prediction for economic growth of an average country is nothing but the mean of `growth`.")
 ```
