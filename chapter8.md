@@ -649,7 +649,7 @@ descriptives <-
 ```{r}
 # Join all statistics in a data.frame
 descriptives <- data.frame(min=min, max=max, mean=mean, sd=sd)
-predict(mult_mod, newdata = as.data.frame(t(subset.data.frame(descriptives, select = "mean")))[,-c(1,2)])
+predict(mult_mod, newdata = as.data.frame(t(mean[-c(1,2)])))
 ```
 
 *** =sct
