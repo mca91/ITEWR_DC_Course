@@ -561,21 +561,25 @@ test_or(
 
 The estimated regression equation for our extented model is
 
+$$ Growth = 0.6269 -0.0005 \times TradeShare + 1.3408 \times YearsSchool -2.1504 \times RevCoups \\\\ -0.0005 \times RGDP60 + 0.3226 \times assasinations $$ 
 
-$$ Growth = 0.6269 + -0.0005 \times TradeShare + 1.3408 \times YearsSchool + 0.5642 \times RevCoups \\\\ + -2.1504 \times RGDP60 + 0.3226 \times assasinations $$ 
+How do You interpret the coefficient on $RevCoups$?
 
 *** =instructions
 
+- If a country experiences *any* political insurrections, or similar, we expect economic growth to be *lowered* by 2.1504$\%$, on average.
+- A *one unit* increase (decrease) in numbers of political unrests is expected to decrease (increase) economic growth by 2.1504\%.
+- If a country experiences *at least one*  political insurrections, we expect economic growth to be *increased* by 2.1504$\%$, on average.
+- This coefficient on its own right cannot be interpreted directly. 
+
 *** =hint
 
-*** =pre_exercise_code
-```{r}
-
-```
 
 *** =sct
 ```{r}
-
+msg_bad <- "That is not correct!"
+msg_success <- "Exactly!"
+test_mc(correct = 2, feedback_msgs = c(msg_bad, msg_success, msg_bad, msg_bad))
 ```
 --- type:NormalExercise lang:r xp:100 skills:1 key:abc4d7eb94
 ## abc
