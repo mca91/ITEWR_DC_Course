@@ -595,7 +595,7 @@ test_mc(correct = 2, feedback_msgs = c(msg_bad, msg_success, msg_bad, msg_bad))
 --- type:NormalExercise lang:r xp:100 skills:1 key:abc4d7eb94
 ## Economic Growth XII
 
-<div style="border: #3aaaca 4px;">
+<div style="border: #3aaaca 4px solid;">
 
 The estimated regression equation for our extented model is
 
