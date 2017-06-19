@@ -614,6 +614,7 @@ Now remember the descriptive statistics you computed before. Joining them coloum
 <tr><td style="text-align:left">rev_coups</td><td>0</td><td>0.970</td><td>0.170</td><td>0.225</td></tr>
 <tr><td style="text-align:left">assasinations</td><td>0</td><td>2.467</td><td>0.282</td><td>0.494</td></tr>
 <tr><td colspan="5" style="border-bottom: 1px solid black"></td></tr></table>
+<br>
 
 The model object `mult_mod` is available in Your workspace.
 
