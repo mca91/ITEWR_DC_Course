@@ -601,12 +601,15 @@ $$ Growth = 0.6269 -0.0005 \times TradeShare + 1.3408 \times YearsSchool -2.1504
 
 Remember the descriptive statistics you computed before:
 
-<table style="text-align:center"><tr><td colspan="6" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left">Statistic</td><td>N</td><td>Mean</td><td>St. Dev.</td><td>Min</td><td>Max</td></tr>
-<tr><td colspan="6" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left">min</td><td>7</td><td>52.075</td><td>138.873</td><td>-2.812</td><td>367.000</td></tr>
-<tr><td style="text-align:left">max</td><td>7</td><td>1,416.685</td><td>3,738.589</td><td>0.000</td><td>9,895.004</td></tr>
-<tr><td style="text-align:left">mean</td><td>7</td><td>448.234</td><td>1,182.907</td><td>0.000</td><td>3,130.813</td></tr>
-<tr><td style="text-align:left">sd</td><td>7</td><td>361.185</td><td>953.262</td><td>0.000</td><td>2,522.979</td></tr>
-<tr><td colspan="6" style="border-bottom: 1px solid black"></td></tr></table>
+<table style="text-align:center"><tr><td colspan="5" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left"></td><td>min</td><td>max</td><td>mean</td><td>sd</td></tr>
+<tr><td colspan="5" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left">growth</td><td>-2.812</td><td>7.157</td><td>1.869</td><td>1.816</td></tr>
+<tr><td style="text-align:left">oil</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td style="text-align:left">rgdp60</td><td>367.000</td><td>9,895.004</td><td>3,130.813</td><td>2,522.979</td></tr>
+<tr><td style="text-align:left">tradeshare</td><td>0.141</td><td>1.128</td><td>0.542</td><td>0.228</td></tr>
+<tr><td style="text-align:left">yearsschool</td><td>0.200</td><td>10.070</td><td>3.959</td><td>2.553</td></tr>
+<tr><td style="text-align:left">rev_coups</td><td>0</td><td>0.970</td><td>0.170</td><td>0.225</td></tr>
+<tr><td style="text-align:left">assasinations</td><td>0</td><td>2.467</td><td>0.282</td><td>0.494</td></tr>
+<tr><td colspan="5" style="border-bottom: 1px solid black"></td></tr></table>
 
 *** =instructions
 
