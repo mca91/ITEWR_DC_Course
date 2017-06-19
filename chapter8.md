@@ -375,7 +375,7 @@ In light of the last couple of exercises, we continue our analysis using the dat
 The regression model `growth_new_reg` is available in Your workspace. 
 <br>
 <br>
-Can you reject the hypothesis $H\_0: \beta\_1 = 0$ vs. a two-sided alternative hypothesis at the $95\%$ level?
+Can you reject the hypothesis $H\_0: \beta\_1 = 0$ vs. a two-sided alternative at the $95\%$ level?
 
 *** =instructions
 
