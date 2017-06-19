@@ -589,7 +589,6 @@ test_mc(correct = 2, feedback_msgs = c(msg_bad, msg_success, msg_bad, msg_bad))
 --- type:NormalExercise lang:r xp:100 skills:1 key:abc4d7eb94
 ## Economic Growth XII
 
-
 <div style="border: #3aaaca 3px solid">
 
 The estimated regression equation for our extented model is
@@ -665,9 +664,13 @@ success_msg("Great! Notice that the model's prediction for economic growth of an
 --- type:NormalExercise lang:r xp:100 skills:1 key:71af5cb730
 ## Economic Growth XIII
 
+<div style="border: #3aaaca 3px solid">
+
 The estimated regression equation for our extented model is
 
 $$ Growth = 0.6269 -0.0005 \times TradeShare + 1.3408 \times YearsSchool -2.1504 \times RevCoups \\\\ -0.0005 \times RGDP60 + 0.3226 \times assasinations $$ 
+
+</div>
 
 *** =instructions
 
