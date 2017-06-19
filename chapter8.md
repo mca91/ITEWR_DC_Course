@@ -602,7 +602,7 @@ $$ Growth = 0.6269 -0.0005 \times TradeShare + 1.3408 \times YearsSchool -2.1504
 Remember the descriptive statistics you computed before:
 
 <table style="text-align:center"><tr><td colspan="5" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left"></td><td>min</td><td>max</td><td>mean</td><td>sd</td></tr>
-<tr><td colspan="5" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left">growth</td><td>-2.812</td><td>7.157</td><td>1.869</td><td>1.816</td></tr>
+<tr></tr><tr><td style="text-align:left">growth</td><td>-2.812</td><td>7.157</td><td>1.869</td><td>1.816</td></tr>
 <tr><td style="text-align:left">oil</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
 <tr><td style="text-align:left">rgdp60</td><td>367.000</td><td>9,895.004</td><td>3,130.813</td><td>2,522.979</td></tr>
 <tr><td style="text-align:left">tradeshare</td><td>0.141</td><td>1.128</td><td>0.542</td><td>0.228</td></tr>
