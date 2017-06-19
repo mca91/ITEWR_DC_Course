@@ -711,5 +711,5 @@ predict(mult_mod, newdata = as.data.frame(t(mean[-c(1,2)] + c(0,sd[4],0,0,0))))
 *** =sct
 ```{r}
 test_function_result("predict")
-success_msg("Great! Notice that the model's prediction for economic growth of an average country is nothing but the mean of `growth`.")
+success_msg("Correct! As expected, the prediction of economical growth now lies above its mean value.")
 ```
