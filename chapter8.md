@@ -599,7 +599,7 @@ The estimated regression equation for our extented model is
 
 $$ Growth = 0.6269 -0.0005 \times TradeShare + 1.3408 \times YearsSchool -2.1504 \times RevCoups \\\\ -0.0005 \times RGDP60 + 0.3226 \times assasinations $$ 
 
-Remember the descriptive statistics you computed before:
+Remember the descriptive statistics you computed before. Joining them coloumn-wise we get the following table:
 
 <table style="text-align:center"><tr><td colspan="5" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left"></td><td>min</td><td>max</td><td>mean</td><td>sd</td></tr>
 <tr></tr><tr><td style="text-align:left">growth</td><td>-2.812</td><td>7.157</td><td>1.869</td><td>1.816</td></tr>
