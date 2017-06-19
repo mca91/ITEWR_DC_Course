@@ -139,6 +139,10 @@ We are interested in the relationship between growth and trade. A detailed descr
 
 The datasets `ecgrowth` and `ecgrowth_new` are available in Your workspace.
 
+Now assume that economic growth is determined as follows:
+
+$$ Growth = \beta\_0 + \beta\_1 \times TradeShare + \epsilon$$
+
 *** =instructions
 
 - For convinience, attach `ecgrowth`. Run a simple linear regression of `growth` on `tradeshare` using `lm()`. Store the result in `growth_reg`. Try to interpret Your findings.
