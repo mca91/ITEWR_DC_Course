@@ -567,9 +567,9 @@ How do You interpret the coefficient on $RevCoups$?
 
 *** =instructions
 
-- If a country experiences *any* political insurrections, or similar, we expect economic growth to be *lowered* by 2.1504$\%$, on average.
-- A *one unit* increase (decrease) in numbers of political unrests is expected to decrease (increase) economic growth by 2.1504\%.
-- If a country experiences *at least one*  political insurrections, we expect economic growth to be *increased* by 2.1504$\%$, on average.
+- If a country experiences *any* political insurrections, or similar, we expect economic growth to be *lowered* by $2.1504\%$, on average.
+- A *one unit* increase (decrease) in numbers of political unrests is expected to decrease (increase) economic growth by $2.1504\%$.
+- If a country experiences *at least one*  political insurrections, we expect economic growth to be *increased* by $2.1504\%$, on average.
 - This coefficient on its own right cannot be interpreted directly. 
 
 *** =hint
