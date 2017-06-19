@@ -655,7 +655,7 @@ predict(mult_mod, newdata = as.data.frame(t(subset.data.frame(descriptives, sele
 *** =sct
 ```{r}
 test_object("descriptives", eq_condition = "equivalent")
-test_function("predict")
+test_function("predict", args = c("object","newdata"))
 success_msg("Great! Notice that the model's prediction for economic growth of an average country is nothing but the mean of `growth`.")
 ```
 
