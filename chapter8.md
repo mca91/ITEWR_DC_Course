@@ -666,7 +666,7 @@ success_msg("Great! Notice that the model's prediction for economic growth of an
 
 <div style="border: #3aaaca 3px solid">
 
-The estimated regression equation for our extented model `mult_mod` is
+The estimated regression equation for our extented model is
 
 $$ Growth = 0.6269 -0.0005 \times TradeShare + 1.3408 \times YearsSchool -2.1504 \times RevCoups \\\\ -0.0005 \times RGDP60 + 0.3226 \times assasinations $$ 
 
