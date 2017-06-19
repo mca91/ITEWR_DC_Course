@@ -449,7 +449,7 @@ It is not realstic that a country's trade share is the only factor driving its e
 - `Assassinations`
 - `RGDP60`
 
-Check the <a href="http://wps.pearsoned.co.uk/wps/media/objects/12401/12699039/empirical/empex_tb/Growth_Description.pdf">description</a> for detailed info. 
+Check the <a href="http://wps.pearsoned.co.uk/wps/media/objects/12401/12699039/empirical/empex_tb/Growth_Description.pdf">description</a> for detailed info on variables. 
 
 The dataset `ecgrowth_new` is available in Your workspace. 
 
