@@ -672,26 +672,44 @@ $$ Growth = 0.6269 -0.0005 \times TradeShare + 1.3408 \times YearsSchool -2.1504
 
 </div>
 
+<br>
+
+The model object `mult_mod` as well as the `data.frame` named `descriptives` are available in Your workspace.
+
 *** =instructions
+
+- Repeat the prediction from the last exercise but now assume that the country's value for $TradeShare$ is one standard deviation above the mean. <b>Hint</b>: Try to set up the `newdata` argument in Your call of `predict` using vector addition.
 
 *** =hint
 
 *** =pre_exercise_code
 ```{r}
-
+library(foreign)
+ecgrowth <- read.dta('http://s3.amazonaws.com/assets.datacamp.com/production/course_1276/datasets/Growth.dta')
+ecgrowth_new <- ecgrowth[-65,]
+min <- apply(ecgrowth_new[,-1], 2, min)
+max <- apply(ecgrowth_new[,-1], 2, max)
+mean <- apply(ecgrowth_new[,-1], 2, mean)
+sd <- apply(ecgrowth_new[,-1], 2, sd)
+descriptives <- data.frame(min=min, max=max, mean=mean, sd=sd)
+mult_mod <- lm(growth ~., data = ecgrowth_new[,-c(1,3)])
 ```
 
 *** =sample_code
 ```{r}
+# Perform the prediction
+
 
 ```
 
 *** =solution
 ```{r}
-
+# Perform the prediction
+predict(mult_mod, newdata = as.data.frame(t(mean[-c(1,2)] + c(0,sd[4],0,0,0))))
 ```
 
 *** =sct
 ```{r}
-
+test_function_result("predict")
+success_msg("Great! Notice that the model's prediction for economic growth of an average country is nothing but the mean of `growth`.")
 ```
