@@ -436,13 +436,15 @@ Reconsider our regression approach:
 
 $$ Growth = \beta\_0 + \beta\_1 \times TradeShare + \epsilon $$
 
-It is not realstic that a country's trade share is the only factor driving its economic growth. We will therfore expand our model by adding more regressors. In particular, we consider the following additional variables:
+It is not realstic that a country's trade share is the only factor driving its economic growth. It might be prefarable to employ a model with more regressors. In particular, we consider the following additional variables:
 
 - `YearsSchool`
 - `Oil`
 - `Rev_Coups`
 - `Assassinations`
 - `RGDP60`
+
+Check the <a href="http://wps.pearsoned.co.uk/wps/media/objects/12401/12699039/empirical/empex_tb/Growth_Description.pdf">description</a> for detailed info. 
 
 The dataset `ecgrowth_new` is available in Your workspace. 
 
