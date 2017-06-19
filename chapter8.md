@@ -565,6 +565,8 @@ $$ Growth = 0.6269 -0.0005 \times TradeShare + 1.3408 \times YearsSchool -2.1504
 
 How do You interpret the coefficient on $RevCoups$?
 
+The model object `mult_mod` is available in Your workspace. 
+
 *** =instructions
 
 - If a country experiences *any* political insurrections, or similar, we expect economic growth to be *lowered* by $2.1504\%$, on average.
@@ -574,6 +576,15 @@ How do You interpret the coefficient on $RevCoups$?
 
 *** =hint
 
+TBD
+
+*** =pre_exercise_code
+```{r}
+library(foreign)
+ecgrowth <- read.dta('http://s3.amazonaws.com/assets.datacamp.com/production/course_1276/datasets/Growth.dta')
+ecgrowth_new <- ecgrowth[-65,]
+mult_mod <- lm(growth ~., data = ecgrowth_new[,-c(1,3)])
+```
 
 *** =sct
 ```{r}
@@ -582,25 +593,46 @@ msg_success <- "Exactly!"
 test_mc(correct = 2, feedback_msgs = c(msg_bad, msg_success, msg_bad, msg_bad))
 ```
 --- type:NormalExercise lang:r xp:100 skills:1 key:abc4d7eb94
-## abc
+## Economic Growth XII
+
+The estimated regression equation for our extented model is
+
+$$ Growth = 0.6269 -0.0005 \times TradeShare + 1.3408 \times YearsSchool -2.1504 \times RevCoups \\\\ -0.0005 \times RGDP60 + 0.3226 \times assasinations $$ 
+
+Remember the descriptive statistics you computed before:
+
 
 
 *** =instructions
 
+- Join all descriptive statistics in an object of class `data.frame`. Assign the result to `descriptives`.
+- Use the function `predict()` to predict the average anual growth rate for a country that has average values for all regressors.
+
 *** =hint
+
+- To join vectors `a`,`b` and `c` to a `data.frame` with named columns, execute `data.frame(a=a, b=b, c=c)`. See also `?data.frame`.
+- In Your call of `predict()` You have to specify the argument `newdata`. This must be a `data.frame` object where each row is an observation of regressors you want to make a prediction for. Note that the column names must equal the regressor names. Here, we have five regressors: `tradeshare`, `rgdp60`, `yearsschool`, `rev_coups` and `assasinations`. 
 
 *** =pre_exercise_code
 ```{r}
-
+library(foreign)
+ecgrowth <- read.dta('http://s3.amazonaws.com/assets.datacamp.com/production/course_1276/datasets/Growth.dta')
+ecgrowth_new <- ecgrowth[-65,]
+min <- apply(ecgrowth_new[,-1], 2, min)
+max <- apply(ecgrowth_new[,-1], 2, max)
+mean <- apply(ecgrowth_new[,-1], 2, mean)
+sd <- apply(ecgrowth_new[,-1], 2, sd)
 ```
 
 *** =sample_code
 ```{r}
-
+# Join all statistics in a data.frame
+descriptives <-
 ```
 
 *** =solution
 ```{r}
+descriptives <- data.frame(min=min, max=max, mean=mean, sd=sd)
 
 ```
 
