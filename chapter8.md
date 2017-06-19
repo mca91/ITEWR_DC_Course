@@ -633,6 +633,7 @@ min <- apply(ecgrowth_new[,-1], 2, min)
 max <- apply(ecgrowth_new[,-1], 2, max)
 mean <- apply(ecgrowth_new[,-1], 2, mean)
 sd <- apply(ecgrowth_new[,-1], 2, sd)
+mult_mod <- lm(growth ~., data = ecgrowth_new[,-c(1,3)])
 ```
 
 *** =sample_code
