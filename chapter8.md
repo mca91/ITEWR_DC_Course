@@ -595,9 +595,13 @@ test_mc(correct = 2, feedback_msgs = c(msg_bad, msg_success, msg_bad, msg_bad))
 --- type:NormalExercise lang:r xp:100 skills:1 key:abc4d7eb94
 ## Economic Growth XII
 
+<div style="border: red 4px dashed; border-bottom: blue 4px solid; border-top-style: ridge;">
+
 The estimated regression equation for our extented model is
 
 $$ Growth = 0.6269 -0.0005 \times TradeShare + 1.3408 \times YearsSchool -2.1504 \times RevCoups \\\\ -0.0005 \times RGDP60 + 0.3226 \times assasinations $$ 
+
+</div>
 
 Now remember the descriptive statistics you computed before. Joining them coloumn-wise we get the following table:
 
@@ -657,4 +661,38 @@ predict(mult_mod, newdata = as.data.frame(t(subset.data.frame(descriptives, sele
 test_object("descriptives", eq_condition = "equivalent")
 test_function("predict")
 success_msg("Great! Notice that the model's prediction for economic growth of an average country is nothing but the mean of `growth`.")
+```
+
+
+
+
+--- type:NormalExercise lang:r xp:100 skills:1 key:71af5cb730
+## Economic Growth XIII
+
+The estimated regression equation for our extented model is
+
+$$ Growth = 0.6269 -0.0005 \times TradeShare + 1.3408 \times YearsSchool -2.1504 \times RevCoups \\\\ -0.0005 \times RGDP60 + 0.3226 \times assasinations $$ 
+
+*** =instructions
+
+*** =hint
+
+*** =pre_exercise_code
+```{r}
+
+```
+
+*** =sample_code
+```{r}
+
+```
+
+*** =solution
+```{r}
+
+```
+
+*** =sct
+```{r}
+
 ```
