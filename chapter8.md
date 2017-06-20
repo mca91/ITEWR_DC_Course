@@ -605,7 +605,7 @@ The dataset `ecgrowth_new` is available in Your workspace.
 
 - No, adding $oil$ as a regressor introduces perfect multicollinearity. This can be directly seen when inspecting the variable `oil`.
 - Yes. Adding $oil$ as a regressor even reduces collinearity of regressors.
-- Yes, because $Growth$ is a linear function of the model coefficients. This is sufficient for OLS to be applicable.  
+- Yes, because $Growth$ is a linear function of the model coefficients. This is always sufficient for OLS to be applicable.  
 - This cannot be answered without jointly testing significance of the coefficients.
 
 *** =hint
