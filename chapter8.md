@@ -597,9 +597,9 @@ Let us stick with the multiple regression for a little longer. Say You would add
 
 $$ Growth = \beta\_0 + \beta\_1 \times TradeShare + \beta\_2 \times YearsSchool + \beta\_3 \times RevCoups \\\\ + \beta\_4 \times RGDP60 + \beta\_5 \times assasinations + \beta\_6 oil + \epsilon $$
 
-The dataset `ecgrowth_new` is available in Your workspace. 
-
 Could You estimate this model using OLS? <b>Hint</b>: You may want to try it out using a relevant function :)
+
+The dataset `ecgrowth_new` is available in Your workspace. 
 
 *** =instructions
 
