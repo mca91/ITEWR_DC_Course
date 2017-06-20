@@ -1,5 +1,5 @@
 ---
-title       : Empirical Exercises - economic Growth
+title       : Empirical Exercises - Economic Growth
 description : This section deals with the issue of finding determinants to economic growth. We consider data used by Levine et al. in their paper 'Finance and the Sources of Growth', <i> Journal of Financial Econometrics </i>, 2000, 58:261-300
 
 
