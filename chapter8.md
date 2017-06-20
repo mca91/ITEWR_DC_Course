@@ -1,12 +1,12 @@
 ---
-title       : Empirical Exercises - Economic Growth
+title       : Empirical Exercises - economic Growth
 description : This section deals with the issue of finding determinants to economic growth. We consider data used by Levine et al. in their paper 'Finance and the Sources of Growth', <i> Journal of Financial Econometrics </i>, 2000, 58:261-300
 
 
 --- type:NormalExercise lang:r xp:100 skills:1 key:498a3c9d06
 ## Economic Growth I
 
-The following exercises are considered with the subject of economical growth. Basis for this is a real data set containing growth rates from 1960 through 1995 for 65 countries and various other variables that are possible determinants of growth. 
+The following exercises are considered with the subject of economic growth. Basis for this is a real data set containing growth rates from 1960 through 1995 for 65 countries and various other variables that are possible determinants of growth. 
 
 In particular, we are interested in the relationship between growth and trade. A detailed description of the dataset can be found <a href="http://wps.pearsoned.co.uk/wps/media/objects/12401/12699039/empirical/empex_tb/Growth_Description.pdf">here</a>. 
 
@@ -711,5 +711,5 @@ predict(mult_mod, newdata = as.data.frame(t(mean[-c(1,2)] + c(0,sd[4],0,0,0))))
 *** =sct
 ```{r}
 test_function_result("predict")
-success_msg("Correct! As expected, the prediction of economical growth now lies above its mean value.")
+success_msg("Correct! As expected, the prediction of economic growth now lies above its mean value.")
 ```
