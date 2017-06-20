@@ -674,7 +674,7 @@ $$ Growth = 0.6269 -0.0005 \times TradeShare + 1.3408 \times YearsSchool -2.1504
 
 <br>
 
-The model object `mult_mod` as well as the `data.frame` named `descriptives` are available in Your workspace.
+The model object `mult_mod`, the `data.frame` named `descriptives` as well as the original dataset are available in Your workspace.
 
 *** =instructions
 
