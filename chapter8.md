@@ -595,7 +595,7 @@ test_mc(correct = 2, feedback_msgs = c(msg_bad, msg_success, msg_bad, msg_bad))
 
 Let us stick with the multiple regression for a little longer. Say You would add $oil$ to the model i.e. the model became 
 
-$$ Growth = \beta\_0 + \beta\_1 \times TradeShare + \beta\_2 \times YearsSchool + \beta\_3 \times RevCoups \\\\ + \beta\_4 \times RGDP60 + \beta\_5 \times assasinations + \beta\_6 oil + \epsilon $$
+$$ Growth = \beta\_0 + \beta\_1 \times TradeShare + \beta\_2 \times YearsSchool + \beta\_3 \times RevCoups \\\\ + \beta\_4 \times RGDP60 + \beta\_5 \times assasinations + \beta\_6 \times oil + \epsilon $$
 
 Could You estimate this model using OLS? <b>Hint</b>: You may want to try it out using a relevant function :)
 
