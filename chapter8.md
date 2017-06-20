@@ -550,6 +550,9 @@ test_or(
 )
 ```
 
+
+
+
 --- type:MultipleChoiceExercise lang:r xp:50 skills:1 key:1e51b5f0fe
 ## Economic Growth XI
 
@@ -585,6 +588,42 @@ mult_mod <- lm(growth ~., data = ecgrowth_new[,-c(1,3)])
 msg_bad <- "That is not correct!"
 msg_success <- "Exactly!"
 test_mc(correct = 2, feedback_msgs = c(msg_bad, msg_success, msg_bad, msg_bad))
+```
+
+--- type:MultipleChoiceExercise lang:r xp:50 skills:1 key:5870624a04
+## Economic Growth X.2
+
+Let us stick with the multiple regression for a little longer. Say You would add $oil$ to the model i.e. the model became 
+
+$$ Growth = \beta\_0 + \beta\_1 \times TradeShare + \beta\_2 \times YearsSchool + \beta\_3 \times RevCoups \\\\ + \beta\_4 \times RGDP60 + \beta\_5 \times assasinations + \beta\_6 oil \epsilon $$
+
+The dataset `ecgrowth_new` is available in Your workspace. 
+
+Could You estimate this model using OLS? <b>Hint</b>: You may want to try it out using a relevant function :)
+
+*** =instructions
+
+- No, adding $oil$ as a regressor introduces perfect multicollinearity. This can be directly seen when inspecting the variable `oil`.
+- Yes. Adding $oil$ as a regressor even reduces collinearity of regressors.
+- Yes, because $Growth$ is a linear function of the model coefficients. This is sufficient for OLS to be applicable.  
+- This cannot be answered without jointly testing significance of the coefficients.
+
+*** =hint
+
+Use `lm()` to estimate the model above and interpret the outcome. Further it might be helpful to view the contents of the variable `oil`.
+
+*** =pre_exercise_code
+```{r}
+library(foreign)
+ecgrowth <- read.dta('http://s3.amazonaws.com/assets.datacamp.com/production/course_1276/datasets/Growth.dta')
+ecgrowth_new <- ecgrowth[-65,]
+```
+
+*** =sct
+```{r}
+msg_bad <- "That is not correct!"
+msg_success <- "Right! `oil` is a zero vector. Together with observations for `intercept`, a vector of ones, we have perfect multicollinearity."
+test_mc(correct = 1, feedback_msgs = c(msg_success, msg_bad, msg_bad, msg_bad))
 ```
 --- type:NormalExercise lang:r xp:100 skills:1 key:abc4d7eb94
 ## Economic Growth XII
