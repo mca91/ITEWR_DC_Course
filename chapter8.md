@@ -557,7 +557,7 @@ Let us stick with the multiple regression for a little longer. Say You would add
 
 $$ Growth = \beta\_0 + \beta\_1 \times TradeShare + \beta\_2 \times YearsSchool + \beta\_3 \times RevCoups \\\\ + \beta\_4 \times RGDP60 + \beta\_5 \times assasinations + \beta\_6 \times oil + \epsilon $$
 
-Could You estimate this model using OLS? <b>Hint</b>: You may want to try it out using a relevant function :)
+Could You estimate this model using OLS? <b>Hint</b>: You may want to estimate the model using a relevant function and look at the outcome.
 
 The dataset `ecgrowth_new` is available in Your workspace. 
 
@@ -582,7 +582,7 @@ ecgrowth_new <- ecgrowth[-65,]
 *** =sct
 ```{r}
 msg_bad <- "That is not correct!"
-msg_success <- "Right! `oil` is a zero vector. Together with observations for `intercept`, a vector of ones, we have perfect multicollinearity."
+msg_success <- "Right! `oil` is a zero vector. Together with observations for `intercept`, a vector of ones, we have perfect multicollinearity. This model cannot be estimated."
 test_mc(correct = 1, feedback_msgs = c(msg_success, msg_bad, msg_bad, msg_bad))
 ```
 
