@@ -2,7 +2,7 @@
 title       : OLS Basics - Linear Regression with One Regressor 
 description : This section contains exercises dealing with the simple linear regression model and estimation using ordinary least squares. 
 attachments :
-  slides_link : https://github.com/Emwikts1970/URFITE_DC/raw/master/Econometrics
+  slides_link : https://github.com/Emwikts1970/URFITE_DC/raw/master/Econometrics.pdf
 
 --- type:NormalExercise lang:r xp: skills: key:9d4515394d
 ## Class Sizes and Test Scores
@@ -204,14 +204,14 @@ test_mc(correct = 1, feedback_msgs = c(msg_success, msg_bad, msg_bad, msg_bad))
 
 In this exercise, You will learn how to estimate a simple linear regression model.
 
-In R, linear models can be fitted by use of the `lm` function. 
+In R, linear models can be fitted by use of the function `lm()`. 
 
-An argument to be always specified in `lm` is a regression formula of the form `y ~ x`. This expression states that You want to estimate a linear model of `y` as a function of `x`.  Type and execute `?lm` or `?formula` for further info on subjects.
+An argument to be always specified in a call of`lm()` is a regression `formula` of the form `y ~ x`. This expression states that You want to estimate a simple linear model where `y` is a function of `x` and a constant. Type and execute `?lm` or `?formula` for further details.
 
-*Data vectors from the previous exercise are available in Your workspace.*
+*Data vectors `cs` and `ls` from the previous exercise are available in Your workspace.*
 
 *** =instructions
-Estimate a linear regression of test score on class size using `lm`. Store the result in `mod`. Use the help function if you do not know how to start.
+Estimate a simple linear regression model with test score (`ts`) as the dependent variable and class size (`cs`) as the regressor. Use `lm()`. Store the result in `mod`.
 
 
 
