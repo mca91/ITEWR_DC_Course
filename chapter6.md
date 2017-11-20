@@ -2,7 +2,7 @@
 title       : Mock Exam I
 description : Dieses Testat besteht aus einem Kapitel mit insgesamt 11 Aufgaben. Die Aufgaben können unabhängig voneinander gelöst werden.
 
---- type:NormalExercise lang:r xp:100 skills: key:e8803615c1
+--- type:NormalExercise lang:r xp:100 skills: key:229668725d
 ## A1 Importieren eines Datensatzes in R
 
 In dieser Aufgabe sollen Sie eine .csv-Datei einlesen.
@@ -39,7 +39,7 @@ test_or({
 success_msg("Weiter so!")
 ```
 
---- type:NormalExercise lang:r xp:100 skills: key:1152cc1eba
+--- type:NormalExercise lang:r xp:100 skills: key:9798d5b00f
 ## A2 Beobachtungen anzeigen
 
 *Der Datensatz `cps` aus der vorherigen Aufgabe ist in Ihrer Arbeitsumgebung verfügbar!*
@@ -53,7 +53,7 @@ cps <- read.table("http://s3.amazonaws.com/assets.datacamp.com/production/course
 *** =instructions
 - Aus der Übung kennen Sie Möglichkeiten, die ersten `n` Reihen eines Objekts auszulesen. Lassen Sie sich die ersten 10 Beobachtungen der Tabelle `cps` anzeigen!
   
-  ***=hint
+***=hint
 
 Eine geeignete Funktion zum Anzeigen der ersten paar Beobachtungen ist `head`. Für weitere Hilfestellung, nutzen Sie die Hilfefunktion, indem Sie `?head` über die Konsole aufrufen.
 
@@ -79,7 +79,7 @@ test_or({
 })
 success_msg("Weiter so!")
 ```
---- type:NormalExercise lang:r xp:100 skills: key:d0b5af7a21
+--- type:NormalExercise lang:r xp:100 skills: key:3d2d9f1c69
 ## A3 Deskriptive Statistiken
 
 *Der Datensatz `cps` aus der vorherigen Aufgabe ist in Ihrer Arbeitsumgebung verfügbar!*
@@ -118,7 +118,7 @@ test_function("summary", args="object", incorrect_msg = "Sie haben die Funktion 
 success_msg("Weiter so!")
 ```
 
---- type:NormalExercise lang:r xp:200 skills: key:99a5fdcf85
+--- type:NormalExercise lang:r xp:200 skills: key:bdc2294c80
 ## A4 Ein bearbeiteter Datensatz
 
 *Der Datensatz `cps` aus der vorherigen Aufgabe ist in Ihrer Arbeitsumgebung verfügbar!*
@@ -164,7 +164,7 @@ test_object("cps.neu", eq_condition = "equal",undefined_msg = "Sie haben das Obj
 success_msg("Weiter so!")
 ```
 
---- type:NormalExercise lang:r xp:200 skills: key:812718ebe3
+--- type:NormalExercise lang:r xp:200 skills: key:e863c34443
 ## A5 Ändern der Kodierung von Variablen
 
 *Der Datensatz `cps.neu` aus der vorherigen Aufgabe ist in Ihrer Arbeitsumgebung verfügbar!*
@@ -217,7 +217,7 @@ test_object("cps.neu", eq_condition = "equal", incorrect_msg = "Das Objekt `cps.
 success_msg("Weiter so!")
 ```
 
---- type:NormalExercise lang:r xp:100 skills: key:6079bb2eb5
+--- type:NormalExercise lang:r xp:100 skills: key:15d77a3750
 ## B1 Ein Dummy-Regressionsmodell für den Stundenlohn 
 
 Sie vermuten die folgende Beziehung zwischen Studenlohn und Geschlecht:
@@ -274,7 +274,7 @@ test_or({
 success_msg("Weiter so!")
 ```
 
---- type:NormalExercise lang:r xp:100 skills: key:c77c0e6270
+--- type:NormalExercise lang:r xp:100 skills: key:c10b8e94cd
 ## B2 Das Modellobjekt
 
 *Der Datensatz `cps.neu` und das Modell `mod` aus der vorherigen Aufgabe sind in Ihrer Arbeitsumgebung verfügbar.*
@@ -333,7 +333,7 @@ test_or({
 success_msg("Weiter so!")
 ```
 
---- type:NormalExercise lang:r xp:150 skills: key:987ca6ad29
+--- type:NormalExercise lang:r xp:150 skills: key:d048da5696
 ## B3 Koeffizienten und Konfidenzintervalle
 
 *Der Datensatz `cps.neu` und das Modell `mod` aus der vorherigen Aufgabe sind in Ihrer Arbeitsumgebung verfügbar!*
@@ -398,7 +398,7 @@ test_function("confint")
 success_msg("Weiter so!")
 ```
 
---- type:NormalExercise lang:r xp:100 skills: key:d63791df76
+--- type:NormalExercise lang:r xp:100 skills: key:29cd542f70
 ## B4 Interpretation
 
 Betrachten Sie nun das zuvor geschätzte Regressionsmodel:
@@ -464,7 +464,7 @@ test_or({
 })
 ```
 
---- type:NormalExercise lang:r xp:200 skills: key:4bffa84edc
+--- type:NormalExercise lang:r xp:200 skills: key:0d1962f2a8
 ## B5 Modellgüte
 
 
@@ -519,7 +519,7 @@ test_object("R2")
 success_msg("Weiter so!")
 ```
 
---- type:NormalExercise lang:r xp:150 skills: key:4a9f66f0d7
+--- type:NormalExercise lang:r xp:150 skills: key:8b92c756f8
 ## B6 Inferenz
 
 Betrachten Sie erneut das geschätzte Regressionsmodell:
