@@ -300,7 +300,7 @@ Angenommen Sie betrachten das Regressionsmodel
 
 $$ y\_i=\beta\_0 + \epsilon\_i \ \ , \ \ \epsilon\_i \sim (0,\sigma^2) \ \text{für} \ i=1,\dots,n $$
   
-  d.h. eine Regression der Variable $\mathbf{Y} = (y\_1 \dots y\_n)$ auf einen konstanten Regressor $\mathbf{X} = (1 \dots 1)'.$
+  d.h. eine Regression der Variable $\mathbf{Y} = (y\_1 \dots y\_n)'$ auf einen konstanten Regressor $\mathbf{X} = (1 \dots 1)'.$
 
 In `script.R` finden Sie eine Funktion, welche den OLS-Schätzer für $\beta\_0$ in diesem Modell berechnen soll. Allerdings ist die Funktion fehlerhaft programmiert: <br> Dieser Schätzer ist zwar linear aber *nicht unverzerrt* und entspricht nicht der OLS-Lösung.
 
