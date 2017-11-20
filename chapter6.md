@@ -45,26 +45,25 @@ success_msg("Weiter so!")
 *Der Datensatz `cps` aus der vorherigen Aufgabe ist in Ihrer Arbeitsumgebung verfügbar!*
   
   
-***=pre_exercise_code
+*** =pre_exercise_code
 ```{r}
 cps <- read.table("http://s3.amazonaws.com/assets.datacamp.com/production/course_1276/datasets/cps_ch3.csv", header = T, sep = ";")
 ```
 
 *** =instructions
 - Aus der Übung kennen Sie Möglichkeiten, die ersten `n` Reihen eines Objekts auszulesen. Lassen Sie sich die ersten 10 Beobachtungen der Tabelle `cps` anzeigen!
-  
-  ***=hint
 
+*** =hint
 Eine geeignete Funktion zum Anzeigen der ersten paar Beobachtungen ist `head`. Für weitere Hilfestellung, nutzen Sie die Hilfefunktion, indem Sie `?head` über die Konsole aufrufen.
 
-***=sample_code
+*** =sample_code
 ```{r}
 # Lassen Sie sich die ersten 10 Beobachtungen des Datensatzes anzeigen.
 
 
 ```
 
-***=solution
+*** =solution
 ```{r}
 # Lassen Sie sich die ersten 10 Beobachtungen des Datensatzes anzeigen.
 head(cps, n=10) 
@@ -89,13 +88,13 @@ success_msg("Weiter so!")
 cps <- read.table("http://s3.amazonaws.com/assets.datacamp.com/production/course_1276/datasets/cps_ch3.csv", header = T, sep = ";")
 ```
 
-***=instructions
+*** =instructions
 - Verschaffen Sie sich einen Überblick über den Datensatz mit einer aus der Übung bekannten Funktion.
 
-***=hint
+*** =hint
 Einen Überblick verschaffen Sie sich mit der Funktion `summary`.
 
-***=sample_code
+*** =sample_code
 ```{r}
 # Verschaffen Sie sich einen Überblick über den Datensatz.
 
@@ -413,7 +412,7 @@ $$ Geschlecht = \begin{cases} 0 & \text{wenn weiblich,} \\\\ 1 & \text{sonst.}  
   
   *Der Datensatz `cps.neu`, das Regressionsobjekt `mod` sowie die Matrix `coef` aus der letzten Aufgabe sind Ihrer der Arbeitsumgebung verfügbar!*
   
-  ***=pre_exercise_code
+*** =pre_exercise_code
 ```{r}
 cps <- read.table("http://s3.amazonaws.com/assets.datacamp.com/production/course_1276/datasets/cps_ch3.csv", header = T, sep = ";", dec = ".")
 cps.neu <- cps
@@ -432,7 +431,7 @@ coef <- mod$coefficients
 - Wie hoch sind die geschätzten Studenlöhne für Männer und Frauen? *Runden Sie ihre Ergebnisse auf 2 Nachkommastellen* und weisen Sie die Werte den Variablen `dLohn.Mann` und `dLohn.Frau` zu!
   
   
- *** =hint
+*** =hint
 
 - Sie können der Modellgleichung die zur Berechnung nötigen Werte entnehmen. 
 - Runden können Sie mit der Funktion `round`. Diese Funktion besitzt ein Argument, mit dem Sie die Anzahl der Nachkommastellen festlegen können.
@@ -466,7 +465,6 @@ test_or({
 
 ---type:NormalExercise lang:r xp:200 skills: key:ed3e692798
 ## B5 Modellgüte
-
 
 *Der Datensatz `cps.neu` und das Regressionsobjekt `mod` aus der letzten Aufgabe sind in Ihrer Arbeitsumgebung verfügbar!*
   
@@ -544,8 +542,6 @@ mod <- lm(Stundenlohn ~ Geschlecht, data = cps.neu)
 - Die allgemeine Formel der $t$-Statistik eines Regressionskoeffizienten lautet $\frac{\hat{\beta}\_i-\beta\_{i,0}}{\widehat{s.d.}(\hat{\beta}\_i)}$.
 - Geschätzte Standardfehler stehen in Klammern under dem jeweiligen geschätzten Koeffizienten.
 - Sie können den Rechenaufwand verringern, indem Sie geschickt auf zur Verfügung stehende Objekte zurückgreifen! Denken Sie bspw. an `summary`.
-
-
 
 *** =sample_code
 ```{r}
