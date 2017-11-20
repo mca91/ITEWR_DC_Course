@@ -2,7 +2,7 @@
 title       : Mock Exam I
 description : Dieses Testat besteht aus einem Kapitel mit insgesamt 11 Aufgaben. Die Aufgaben können unabhängig voneinander gelöst werden.
 
---- type:NormalExercise lang:r xp:100 skills: key:e8803615c1
+--- type:NormalExercise lang:r xp:100 skills: key:ed5522f8d9
 ## A1 Importieren eines Datensatzes in R
 
 In dieser Aufgabe sollen Sie eine .csv-Datei einlesen.
@@ -39,7 +39,7 @@ test_or({
 success_msg("Weiter so!")
 ```
 
---- type:NormalExercise lang:r xp:100 skills: key:1152cc1eba
+--- type:NormalExercise lang:r xp:100 skills: key:16b32779ef
 ## A2 Beobachtungen anzeigen
 
 *Der Datensatz `cps` aus der vorherigen Aufgabe ist in Ihrer Arbeitsumgebung verfügbar!*
@@ -79,7 +79,7 @@ test_or({
 })
 success_msg("Weiter so!")
 ```
---- type:NormalExercise lang:r xp:100 skills: key:d0b5af7a21
+--- type:NormalExercise lang:r xp:100 skills: key:a5509025e0
 ## A3 Deskriptive Statistiken
 
 *Der Datensatz `cps` aus der vorherigen Aufgabe ist in Ihrer Arbeitsumgebung verfügbar!*
@@ -118,7 +118,7 @@ test_function("summary", args="object", incorrect_msg = "Sie haben die Funktion 
 success_msg("Weiter so!")
 ```
 
---- type:NormalExercise lang:r xp:200 skills: key:99a5fdcf85
+--- type:NormalExercise lang:r xp:200 skills: key:dc56639493
 ## A4 Ein bearbeiteter Datensatz
 
 *Der Datensatz `cps` aus der vorherigen Aufgabe ist in Ihrer Arbeitsumgebung verfügbar!*
@@ -131,9 +131,10 @@ cps <- read.table("http://s3.amazonaws.com/assets.datacamp.com/production/course
 *** =instructions
 - Erstellen Sie eine Kopie von `cps` namens `cps.neu`. 
 - Sollten Sie alles richtig gemacht habe, so ist `cps.neu` mit `cps` identisch. `cps.neu` ist also ebenfalls ein Objekt vom Typ `data.frame`. Ändern Sie die Namen der Variablen -- d.h. die Spaltennamen -- in `cps.neu` wie folgt:
-  * `a_sex` zu `Geschlecht`
-  * `year` zu `Jahr`
-  * `ahe12` zu `Stundenlohn`
+
+    * `a_sex` zu `Geschlecht`
+    * `year` zu `Jahr`
+    * `ahe12` zu `Stundenlohn`
 
 *** =hint
 - Erstellen Sie die Kopie `cps.neu` mithilfe des Operators `<-`. Was müssen Sie `cps.neu` zuweisen?
@@ -164,7 +165,7 @@ test_object("cps.neu", eq_condition = "equal",undefined_msg = "Sie haben das Obj
 success_msg("Weiter so!")
 ```
 
---- type:NormalExercise lang:r xp:200 skills: key:812718ebe3
+--- type:NormalExercise lang:r xp:200 skills: key:056f489910
 ## A5 Ändern der Kodierung von Variablen
 
 *Der Datensatz `cps.neu` aus der vorherigen Aufgabe ist in Ihrer Arbeitsumgebung verfügbar!*
@@ -217,7 +218,7 @@ test_object("cps.neu", eq_condition = "equal", incorrect_msg = "Das Objekt `cps.
 success_msg("Weiter so!")
 ```
 
---- type:NormalExercise lang:r xp:100 skills: key:6079bb2eb5
+--- type:NormalExercise lang:r xp:100 skills: key:d39267ee7d
 ## B1 Ein Dummy-Regressionsmodell für den Stundenlohn 
 
 Sie vermuten die folgende Beziehung zwischen Studenlohn und Geschlecht:
@@ -274,7 +275,7 @@ test_or({
 success_msg("Weiter so!")
 ```
 
---- type:NormalExercise lang:r xp:100 skills: key:c77c0e6270
+--- type:NormalExercise lang:r xp:100 skills: key:4fcd5e7c78
 ## B2 Das Modellobjekt
 
 *Der Datensatz `cps.neu` und das Modell `mod` aus der vorherigen Aufgabe sind in Ihrer Arbeitsumgebung verfügbar.*
@@ -333,7 +334,7 @@ test_or({
 success_msg("Weiter so!")
 ```
 
---- type:NormalExercise lang:r xp:150 skills: key:987ca6ad29
+--- type:NormalExercise lang:r xp:150 skills: key:c1dfc2d9b4
 ## B3 Koeffizienten und Konfidenzintervalle
 
 *Der Datensatz `cps.neu` und das Modell `mod` aus der vorherigen Aufgabe sind in Ihrer Arbeitsumgebung verfügbar!*
@@ -398,7 +399,7 @@ test_function("confint")
 success_msg("Weiter so!")
 ```
 
---- type:NormalExercise lang:r xp:100 skills: key:d63791df76
+--- type:NormalExercise lang:r xp:100 skills: key:e1e1015d02
 ## B4 Interpretation
 
 Betrachten Sie nun das zuvor geschätzte Regressionsmodel:
@@ -464,7 +465,7 @@ test_or({
 })
 ```
 
---- type:NormalExercise lang:r xp:200 skills: key:4bffa84edc
+--- type:NormalExercise lang:r xp:200 skills: key:5cad317717
 ## B5 Modellgüte
 
 
@@ -519,7 +520,7 @@ test_object("R2")
 success_msg("Weiter so!")
 ```
 
---- type:NormalExercise lang:r xp:150 skills: key:4a9f66f0d7
+--- type:NormalExercise lang:r xp:150 skills: key:d7e977a88c
 ## B6 Inferenz
 
 Betrachten Sie erneut das geschätzte Regressionsmodell:
