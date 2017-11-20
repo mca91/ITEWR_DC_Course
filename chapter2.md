@@ -864,7 +864,7 @@ Which of the following statements is *false*?
 ```{r}
 msg_bad <- "No, that is not correct!"
 msg_success <- "Exactly!"
-test_mc(correct = 1, feedback_msgs = c(msg_bad, msg_success, msg_bad, msg_bad))
+test_mc(correct = 1, feedback_msgs = c(msg_success, msg_bad, msg_bad, msg_bad))
 ```
 
 --- type:NormalExercise lang:r xp: skills: key:4d6c0982cd
