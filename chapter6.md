@@ -2,7 +2,7 @@
 title       : Mock Exam I
 description : Dieses Testat besteht aus einem Kapitel mit insgesamt 11 Aufgaben. Die Aufgaben können unabhängig voneinander gelöst werden.
 
---- type:NormalExercise lang:r xp:100 skills: key:6df53e9226
+--- type:NormalExercise lang:r xp:100 skills: key:e8803615c1
 ## A1 Importieren eines Datensatzes in R
 
 In dieser Aufgabe sollen Sie eine .csv-Datei einlesen.
@@ -39,7 +39,7 @@ test_or({
 success_msg("Weiter so!")
 ```
 
---- type:NormalExercise lang:r xp:100 skills: key:ae1ac364da
+--- type:NormalExercise lang:r xp:100 skills: key:1152cc1eba
 ## A2 Beobachtungen anzeigen
 
 *Der Datensatz `cps` aus der vorherigen Aufgabe ist in Ihrer Arbeitsumgebung verfügbar!*
@@ -79,7 +79,7 @@ test_or({
 })
 success_msg("Weiter so!")
 ```
---- type:NormalExercise lang:r xp:100 skills: key:3b203649cb
+--- type:NormalExercise lang:r xp:100 skills: key:d0b5af7a21
 ## A3 Deskriptive Statistiken
 
 *Der Datensatz `cps` aus der vorherigen Aufgabe ist in Ihrer Arbeitsumgebung verfügbar!*
@@ -118,7 +118,7 @@ test_function("summary", args="object", incorrect_msg = "Sie haben die Funktion 
 success_msg("Weiter so!")
 ```
 
---- type:NormalExercise lang:r xp:200 skills: key:5ba8036229
+--- type:NormalExercise lang:r xp:200 skills: key:99a5fdcf85
 ## A4 Ein bearbeiteter Datensatz
 
 *Der Datensatz `cps` aus der vorherigen Aufgabe ist in Ihrer Arbeitsumgebung verfügbar!*
@@ -165,7 +165,7 @@ test_object("cps.neu", eq_condition = "equal",undefined_msg = "Sie haben das Obj
 success_msg("Weiter so!")
 ```
 
---- type:NormalExercise lang:r xp:200 skills: key:eaa8eaf952
+--- type:NormalExercise lang:r xp:200 skills: key:812718ebe3
 ## A5 Ändern der Kodierung von Variablen
 
 *Der Datensatz `cps.neu` aus der vorherigen Aufgabe ist in Ihrer Arbeitsumgebung verfügbar!*
@@ -218,7 +218,7 @@ test_object("cps.neu", eq_condition = "equal", incorrect_msg = "Das Objekt `cps.
 success_msg("Weiter so!")
 ```
 
---- type:NormalExercise lang:r xp:100 skills: key:0596363bc1
+--- type:NormalExercise lang:r xp:100 skills: key:6079bb2eb5
 ## B1 Ein Dummy-Regressionsmodell für den Stundenlohn 
 
 Sie vermuten die folgende Beziehung zwischen Studenlohn und Geschlecht:
@@ -275,7 +275,7 @@ test_or({
 success_msg("Weiter so!")
 ```
 
---- type:NormalExercise lang:r xp:100 skills: key:e95d95b91a
+--- type:NormalExercise lang:r xp:100 skills: key:c77c0e6270
 ## B2 Das Modellobjekt
 
 *Der Datensatz `cps.neu` und das Modell `mod` aus der vorherigen Aufgabe sind in Ihrer Arbeitsumgebung verfügbar.*
@@ -334,7 +334,7 @@ test_or({
 success_msg("Weiter so!")
 ```
 
---- type:NormalExercise lang:r xp:150 skills: key:bef50e8d50
+--- type:NormalExercise lang:r xp:150 skills: key:987ca6ad29
 ## B3 Koeffizienten und Konfidenzintervalle
 
 *Der Datensatz `cps.neu` und das Modell `mod` aus der vorherigen Aufgabe sind in Ihrer Arbeitsumgebung verfügbar!*
@@ -399,7 +399,7 @@ test_function("confint")
 success_msg("Weiter so!")
 ```
 
---- type:NormalExercise lang:r xp:100 skills: key:acde4f4f91
+--- type:NormalExercise lang:r xp:100 skills: key:d63791df76
 ## B4 Interpretation
 
 Betrachten Sie nun das zuvor geschätzte Regressionsmodel:
@@ -465,7 +465,7 @@ test_or({
 })
 ```
 
---- type:NormalExercise lang:r xp:200 skills: key:4c08d6e5d7
+--- type:NormalExercise lang:r xp:200 skills: key:4bffa84edc
 ## B5 Modellgüte
 
 
@@ -520,7 +520,7 @@ test_object("R2")
 success_msg("Weiter so!")
 ```
 
---- type:NormalExercise lang:r xp:150 skills: key:87eb1dc30e
+--- type:NormalExercise lang:r xp:150 skills: key:4a9f66f0d7
 ## B6 Inferenz
 
 Betrachten Sie erneut das geschätzte Regressionsmodell:
