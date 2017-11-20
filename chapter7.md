@@ -15,7 +15,7 @@ Sie interessieren sich für das folgende Model:
   
   *Die Vektoren `XP` und `Z` sind in Ihrer Arbeitsumgebung verfügbar.*
   
- ***=hint
+***=hint
 
 Lineare Modelle können Sie mit `lm` schätzen. Nutzten Sie `round` zum Runden. Die geschätzten Koeffizienten erhalten Sie z.B. mit `coefficients`.
 
@@ -72,7 +72,8 @@ $$ t \sim \tau_{n-k} $$
 
 *Die Vektoren `XP` und `Z` sowie ein entsprechendes Regressionsmodell `mod` sind in Ihrer Arbeitsumgebung verfügbar.*
   
-  *** =pre_exercise_code
+*** =pre_exercise_code
+
 ```{r}
 set.seed(2)
 n <- 105
@@ -151,7 +152,8 @@ Betrachten Sie erneut den Plot: Eine weitere Auffälligkeit in den Daten ist, da
 *Die Vektoren `XP` und `Z` sowie ein entsprechendes Regressionsmodell `mod` sind in Ihrer Arbeitsumgebung verfügbar.*
   
   
-  *** =pre_exercise_code
+*** =pre_exercise_code
+
 ```{r}
 set.seed(2)
 n <- 105
@@ -216,7 +218,8 @@ test_function("dim", args = "x")
 
 *Die Vektoren `XP` und `Z`, das Regressionsmodell `mod` sowie die geschätzte Varianz-Kovarianz-Matrix `hcm` sind in Ihrer Arbeitsumgebung verfügbar.*
   
-  *** =pre_exercise_code
+*** =pre_exercise_code
+
 ```{r}
 library(sandwich)
 library(lmtest)
@@ -233,7 +236,7 @@ mod <- lm(XP ~ Z)
 hcm <- vcovHC(mod, type = "HC0")
 ```
 
-***hint
+***=hint
 
 `coeftest` besitzt das Argument `vcov.`. Die angegebene Matrix wird als Varianz-Kovarianz-Matrix zum Berechnen robuster Teststatistiken verwendet.
 <br>

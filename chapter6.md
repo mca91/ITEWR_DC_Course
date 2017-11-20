@@ -2,7 +2,7 @@
 title       : Mock Exam I
 description : Dieses Testat besteht aus einem Kapitel mit insgesamt 11 Aufgaben. Die Aufgaben können unabhängig voneinander gelöst werden.
 
---- type:NormalExercise lang:r xp:100 skills: key:e8803615c1
+--- type:NormalExercise lang:r xp:100 skills: key:c445d1272d
 ## A1 Importieren eines Datensatzes in R
 
 In dieser Aufgabe sollen Sie eine .csv-Datei einlesen.
@@ -12,6 +12,9 @@ Die Datei *cps_ch3.csv* enthält einen Auszug des Current Population Survey, ein
 *** =instructions
 Lesen Sie den oben ganannten Datensatz *adäquat* ein und weisen Sie das Resultat dem Objekt `cps` zu.<br><br> <b>Hinweis:</b> Sie können die Web-Adresse als Pfad-Argument in der gesuchten Funktion nutzen!
   
+*** =hint
+Benutzen Sie die Funktion `read.table` zum Einlesen der Daten. Nutzen Sie die Argumente `header` und `sep`. Mit welchem Symbol sind Beobachtungen unterschiedlicher Variablen im Datensatz separiert?
+
 *** =sample_code
 ```{r}
 # Lesen Sie den Datensatz ein und nennen Sie das Object cps.
@@ -19,10 +22,6 @@ Lesen Sie den oben ganannten Datensatz *adäquat* ein und weisen Sie das Resulta
 
 
 ```
-
-*** =hint
-
-Benutzen Sie die Funktion `read.table` zum Einlesen der Daten. Nutzen Sie die Argumente `header` und `sep`. Mit welchem Symbol sind Beobachtungen unterschiedlicher Variablen im Datensatz separiert?
 
 *** =solution
 ```{r}
@@ -40,31 +39,32 @@ test_or({
 success_msg("Weiter so!")
 ```
 
---- type:NormalExercise lang:r xp:100 skills: key:1152cc1eba
+--- type:NormalExercise lang:r xp:100 skills: key:b25bbdc525
 ## A2 Beobachtungen anzeigen
 
 *Der Datensatz `cps` aus der vorherigen Aufgabe ist in Ihrer Arbeitsumgebung verfügbar!*
   
   
-*** =pre_exercise_code
+***=pre_exercise_code
 ```{r}
 cps <- read.table("http://s3.amazonaws.com/assets.datacamp.com/production/course_1276/datasets/cps_ch3.csv", header = T, sep = ";")
 ```
 
 *** =instructions
 - Aus der Übung kennen Sie Möglichkeiten, die ersten `n` Reihen eines Objekts auszulesen. Lassen Sie sich die ersten 10 Beobachtungen der Tabelle `cps` anzeigen!
+  
+  ***=hint
 
-*** =hint
 Eine geeignete Funktion zum Anzeigen der ersten paar Beobachtungen ist `head`. Für weitere Hilfestellung, nutzen Sie die Hilfefunktion, indem Sie `?head` über die Konsole aufrufen.
 
-*** =sample_code
+***=sample_code
 ```{r}
 # Lassen Sie sich die ersten 10 Beobachtungen des Datensatzes anzeigen.
 
 
 ```
 
-*** =solution
+***=solution
 ```{r}
 # Lassen Sie sich die ersten 10 Beobachtungen des Datensatzes anzeigen.
 head(cps, n=10) 
@@ -79,23 +79,23 @@ test_or({
 })
 success_msg("Weiter so!")
 ```
---- type:NormalExercise lang:r xp:100 skills: key:d0b5af7a21
+--- type:NormalExercise lang:r xp:100 skills: key:9a88c5e7c3
 ## A3 Deskriptive Statistiken
 
 *Der Datensatz `cps` aus der vorherigen Aufgabe ist in Ihrer Arbeitsumgebung verfügbar!*
   
-*** =pre_exercise_code
+  ***=pre_exercise_code
 ```{r}
 cps <- read.table("http://s3.amazonaws.com/assets.datacamp.com/production/course_1276/datasets/cps_ch3.csv", header = T, sep = ";")
 ```
 
-*** =instructions
+***=instructions
 - Verschaffen Sie sich einen Überblick über den Datensatz mit einer aus der Übung bekannten Funktion.
 
-*** =hint
+***=hint
 Einen Überblick verschaffen Sie sich mit der Funktion `summary`.
 
-*** =sample_code
+***=sample_code
 ```{r}
 # Verschaffen Sie sich einen Überblick über den Datensatz.
 
@@ -118,7 +118,7 @@ test_function("summary", args="object", incorrect_msg = "Sie haben die Funktion 
 success_msg("Weiter so!")
 ```
 
---- type:NormalExercise lang:r xp:200 skills: key:99a5fdcf85
+--- type:NormalExercise lang:r xp:200 skills: key:e508f2f5d9
 ## A4 Ein bearbeiteter Datensatz
 
 *Der Datensatz `cps` aus der vorherigen Aufgabe ist in Ihrer Arbeitsumgebung verfügbar!*
@@ -164,7 +164,7 @@ test_object("cps.neu", eq_condition = "equal",undefined_msg = "Sie haben das Obj
 success_msg("Weiter so!")
 ```
 
---- type:NormalExercise lang:r xp:200 skills: key:812718ebe3
+--- type:NormalExercise lang:r xp:200 skills: key:74285e88f6
 ## A5 Ändern der Kodierung von Variablen
 
 *Der Datensatz `cps.neu` aus der vorherigen Aufgabe ist in Ihrer Arbeitsumgebung verfügbar!*
@@ -217,7 +217,7 @@ test_object("cps.neu", eq_condition = "equal", incorrect_msg = "Das Objekt `cps.
 success_msg("Weiter so!")
 ```
 
---- type:NormalExercise lang:r xp:100 skills: key:6079bb2eb5
+--- type:NormalExercise lang:r xp:100 skills: key:284010a541
 ## B1 Ein Dummy-Regressionsmodell für den Stundenlohn 
 
 Sie vermuten die folgende Beziehung zwischen Studenlohn und Geschlecht:
@@ -274,7 +274,7 @@ test_or({
 success_msg("Weiter so!")
 ```
 
---- type:NormalExercise lang:r xp:100 skills: key:c77c0e6270
+--- type:NormalExercise lang:r xp:100 skills: key:ce268cfd04
 ## B2 Das Modellobjekt
 
 *Der Datensatz `cps.neu` und das Modell `mod` aus der vorherigen Aufgabe sind in Ihrer Arbeitsumgebung verfügbar.*
@@ -333,7 +333,7 @@ test_or({
 success_msg("Weiter so!")
 ```
 
---- type:NormalExercise lang:r xp:150 skills: key:987ca6ad29
+--- type:NormalExercise lang:r xp:150 skills: key:9a7d42b41b
 ## B3 Koeffizienten und Konfidenzintervalle
 
 *Der Datensatz `cps.neu` und das Modell `mod` aus der vorherigen Aufgabe sind in Ihrer Arbeitsumgebung verfügbar!*
@@ -398,7 +398,7 @@ test_function("confint")
 success_msg("Weiter so!")
 ```
 
---- type:NormalExercise lang:r xp:100 skills: key:d63791df76
+--- type:NormalExercise lang:r xp:100 skills: key:6421eeb8d3
 ## B4 Interpretation
 
 Betrachten Sie nun das zuvor geschätzte Regressionsmodel:
@@ -413,7 +413,7 @@ $$ Geschlecht = \begin{cases} 0 & \text{wenn weiblich,} \\\\ 1 & \text{sonst.}  
   
   *Der Datensatz `cps.neu`, das Regressionsobjekt `mod` sowie die Matrix `coef` aus der letzten Aufgabe sind Ihrer der Arbeitsumgebung verfügbar!*
   
-*** =pre_exercise_code
+  ***=pre_exercise_code
 ```{r}
 cps <- read.table("http://s3.amazonaws.com/assets.datacamp.com/production/course_1276/datasets/cps_ch3.csv", header = T, sep = ";", dec = ".")
 cps.neu <- cps
@@ -432,7 +432,7 @@ coef <- mod$coefficients
 - Wie hoch sind die geschätzten Studenlöhne für Männer und Frauen? *Runden Sie ihre Ergebnisse auf 2 Nachkommastellen* und weisen Sie die Werte den Variablen `dLohn.Mann` und `dLohn.Frau` zu!
   
   
-*** =hint
+ *** =hint
 
 - Sie können der Modellgleichung die zur Berechnung nötigen Werte entnehmen. 
 - Runden können Sie mit der Funktion `round`. Diese Funktion besitzt ein Argument, mit dem Sie die Anzahl der Nachkommastellen festlegen können.
@@ -464,8 +464,9 @@ test_or({
 })
 ```
 
---- type:NormalExercise lang:r xp:200 skills: key:4bffa84edc
+--- type:NormalExercise lang:r xp:200 skills: key:c0b85a2c10
 ## B5 Modellgüte
+
 
 *Der Datensatz `cps.neu` und das Regressionsobjekt `mod` aus der letzten Aufgabe sind in Ihrer Arbeitsumgebung verfügbar!*
   
@@ -518,7 +519,7 @@ test_object("R2")
 success_msg("Weiter so!")
 ```
 
---- type:NormalExercise lang:r xp:150 skills: key:4a9f66f0d7
+--- type:NormalExercise lang:r xp:150 skills: key:2e5c5fe80c
 ## B6 Inferenz
 
 Betrachten Sie erneut das geschätzte Regressionsmodell:
@@ -543,6 +544,8 @@ mod <- lm(Stundenlohn ~ Geschlecht, data = cps.neu)
 - Die allgemeine Formel der $t$-Statistik eines Regressionskoeffizienten lautet $\frac{\hat{\beta}\_i-\beta\_{i,0}}{\widehat{s.d.}(\hat{\beta}\_i)}$.
 - Geschätzte Standardfehler stehen in Klammern under dem jeweiligen geschätzten Koeffizienten.
 - Sie können den Rechenaufwand verringern, indem Sie geschickt auf zur Verfügung stehende Objekte zurückgreifen! Denken Sie bspw. an `summary`.
+
+
 
 *** =sample_code
 ```{r}
