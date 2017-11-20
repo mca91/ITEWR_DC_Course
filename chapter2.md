@@ -855,7 +855,7 @@ Which of the following statements is *false*?
 
 *** =instructions
 
-- The coefficient of `cs` *is not* statistically significantly different from zero at any level of significance used in practice.
+- The coefficient of `cs` *is not* significantly different from zero at any level of significance used in practice.
 - We can reject the hypothsis at the $0.05$ level of significant since $p\text{-value} > 0.05$.
 - The value of the t-statistic is not an element of the set of values for which the null would be rejected.
 - Given the info above it is not possible to say whether the null is rejected or not.
