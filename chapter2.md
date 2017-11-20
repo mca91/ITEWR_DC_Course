@@ -845,7 +845,7 @@ Suppose You are confronted with the following output providing the $t$-statistic
 Coefficients:
           t value   Pr(>|t|)    
 cs        -1.1      0.27133
----
+
 Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
 ```
 
