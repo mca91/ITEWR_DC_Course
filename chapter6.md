@@ -1,7 +1,6 @@
 ---
 title       : Mock Exam I
 description : Dieses Testat besteht aus einem Kapitel mit insgesamt 11 Aufgaben. Die Aufgaben können unabhängig voneinander gelöst werden.
----
 
 ---type:NormalExercise lang:r xp:100 skills: key:e8803615c1
 ## A1 Importieren eines Datensatzes in R
