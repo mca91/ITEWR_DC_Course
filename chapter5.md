@@ -110,7 +110,7 @@ mod <- lm(cars$dist ~ cars$speed)
 
 - Add the regression line for the model `mod` to the plot
 
-By means of simply plotting the data, it is not always easy to decide whether there is heteroskedasticity or not, especially if your data set has more than two variables. Here, it seems that there is more dispersion in `dist` for observations around the mean of `speed`. Let us have a closer look:
+    By means of simply plotting the data, it is not always easy to decide whether there is heteroskedasticity or not, especially if your data set has more than two variables. Here, it seems that there is more dispersion in `dist` for observations around the mean of `speed`. Let us have a closer look:
 
 - Applying `plot()` to a model model object like `model` produces a whole battery of diagnostic plots. Check this (Your can navigate through the different plots using the buttons).
 
@@ -208,7 +208,7 @@ test_function("bptest", args = "formula")
 ```
 
 
---- type:MultipleChoiceExercise lang:r xp: skills: key:8508ba1468
+--- type:MultipleChoiceExercise lang:r xp: skills: key:47c3b65c74
 ## Heteroskedasticity IV
 
 Let us have another look on the results of the Breusch-Pagan test.
@@ -247,7 +247,7 @@ msg_success <- "Exactly! The null cannot be rejected. We conclude that there is 
 test_mc(correct = 2, feedback_msgs = c(msg_bad, msg_success, msg_bad, msg_bad))
 ```
 
---- type:NormalExercise lang:r xp: skills: key:e51917681b
+--- type:NormalExercise lang:r xp: skills: key:5abc205510
 ## Heteroskedasticity V 
 
 We stored the results from the previously conducted Breusch-Pagan test for You. The object's name is `bp`. Use the console to convince yourself that it exisits and what info is stored using the `$` operator.
