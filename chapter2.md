@@ -661,7 +661,7 @@ The coefficient of determination, denoted $R^2$, is a measure of a model's goodn
 
 $$ R^2 = \frac{ESS}{TSS} = 1 - \frac{SSR}{TSS}. $$
 
-$TSS = \text{total sum of squares}$, $ESS = \text{explained sum of squares}$ and $TSS = \text{sum of squared residuals}$.
+$TSS = \text{total sum of squares}$, $ESS = \text{explained sum of squares}$ and $SSR = \text{sum of squared residuals}$.
 
 Which of the following statements about $R^2$ is right?
 
