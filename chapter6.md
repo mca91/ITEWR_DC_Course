@@ -2,7 +2,7 @@
 title       : Mock Exam I
 description : Dieses Testat besteht aus einem Kapitel mit insgesamt 11 Aufgaben. Die Aufgaben können unabhängig voneinander gelöst werden.
 
---- type:NormalExercise lang:r xp:100 skills: key:e8803615c1
+--- type:NormalExercise lang:r xp:100 skills: key:e49bf7114d
 ## A1 Importieren eines Datensatzes in R
 
 In dieser Aufgabe sollen Sie eine .csv-Datei einlesen.
@@ -39,7 +39,7 @@ test_or({
 success_msg("Weiter so!")
 ```
 
---- type:NormalExercise lang:r xp:100 skills: key:1152cc1eba
+--- type:NormalExercise lang:r xp:100 skills: key:bfd5d0ec06
 ## A2 Beobachtungen anzeigen
 
 *Der Datensatz `cps` aus der vorherigen Aufgabe ist in Ihrer Arbeitsumgebung verfügbar!*
@@ -79,7 +79,7 @@ test_or({
 })
 success_msg("Weiter so!")
 ```
---- type:NormalExercise lang:r xp:100 skills: key:d0b5af7a21
+--- type:NormalExercise lang:r xp:100 skills: key:882dfc916c
 ## A3 Deskriptive Statistiken
 
 *Der Datensatz `cps` aus der vorherigen Aufgabe ist in Ihrer Arbeitsumgebung verfügbar!*
@@ -118,7 +118,7 @@ test_function("summary", args="object", incorrect_msg = "Sie haben die Funktion 
 success_msg("Weiter so!")
 ```
 
---- type:NormalExercise lang:r xp:200 skills: key:99a5fdcf85
+--- type:NormalExercise lang:r xp:200 skills: key:246552787e
 ## A4 Ein bearbeiteter Datensatz
 
 *Der Datensatz `cps` aus der vorherigen Aufgabe ist in Ihrer Arbeitsumgebung verfügbar!*
@@ -165,7 +165,7 @@ test_object("cps.neu", eq_condition = "equal",undefined_msg = "Sie haben das Obj
 success_msg("Weiter so!")
 ```
 
---- type:NormalExercise lang:r xp:200 skills: key:812718ebe3
+--- type:NormalExercise lang:r xp:200 skills: key:a96ee6364f
 ## A5 Ändern der Kodierung von Variablen
 
 *Der Datensatz `cps.neu` aus der vorherigen Aufgabe ist in Ihrer Arbeitsumgebung verfügbar!*
@@ -218,7 +218,7 @@ test_object("cps.neu", eq_condition = "equal", incorrect_msg = "Das Objekt `cps.
 success_msg("Weiter so!")
 ```
 
---- type:NormalExercise lang:r xp:100 skills: key:6079bb2eb5
+--- type:NormalExercise lang:r xp:100 skills: key:e3bffa26b5
 ## B1 Ein Dummy-Regressionsmodell für den Stundenlohn 
 
 Sie vermuten die folgende Beziehung zwischen Studenlohn und Geschlecht:
@@ -275,7 +275,7 @@ test_or({
 success_msg("Weiter so!")
 ```
 
---- type:NormalExercise lang:r xp:100 skills: key:c77c0e6270
+--- type:NormalExercise lang:r xp:100 skills: key:adce02faf7
 ## B2 Das Modellobjekt
 
 *Der Datensatz `cps.neu` und das Modell `mod` aus der vorherigen Aufgabe sind in Ihrer Arbeitsumgebung verfügbar.*
@@ -334,7 +334,7 @@ test_or({
 success_msg("Weiter so!")
 ```
 
---- type:NormalExercise lang:r xp:150 skills: key:987ca6ad29
+--- type:NormalExercise lang:r xp:150 skills: key:b92171a5aa
 ## B3 Koeffizienten und Konfidenzintervalle
 
 *Der Datensatz `cps.neu` und das Modell `mod` aus der vorherigen Aufgabe sind in Ihrer Arbeitsumgebung verfügbar!*
@@ -399,7 +399,7 @@ test_function("confint")
 success_msg("Weiter so!")
 ```
 
---- type:NormalExercise lang:r xp:100 skills: key:d63791df76
+--- type:NormalExercise lang:r xp:100 skills: key:cce5105c00
 ## B4 Interpretation
 
 Betrachten Sie nun das zuvor geschätzte Regressionsmodel:
@@ -414,7 +414,7 @@ $$ Geschlecht = \begin{cases} 0 & \text{wenn weiblich,} \\\\ 1 & \text{sonst.}  
   
   *Der Datensatz `cps.neu`, das Regressionsobjekt `mod` sowie die Matrix `coef` aus der letzten Aufgabe sind Ihrer der Arbeitsumgebung verfügbar!*
   
-  ***=pre_exercise_code
+***=pre_exercise_code
 ```{r}
 cps <- read.table("http://s3.amazonaws.com/assets.datacamp.com/production/course_1276/datasets/cps_ch3.csv", header = T, sep = ";", dec = ".")
 cps.neu <- cps
@@ -465,7 +465,7 @@ test_or({
 })
 ```
 
---- type:NormalExercise lang:r xp:200 skills: key:4bffa84edc
+--- type:NormalExercise lang:r xp:200 skills: key:aaf0d7fe36
 ## B5 Modellgüte
 
 
@@ -520,7 +520,7 @@ test_object("R2")
 success_msg("Weiter so!")
 ```
 
---- type:NormalExercise lang:r xp:150 skills: key:4a9f66f0d7
+--- type:NormalExercise lang:r xp:150 skills: key:cfb6321aae
 ## B6 Inferenz
 
 Betrachten Sie erneut das geschätzte Regressionsmodell:
