@@ -53,7 +53,7 @@ library(AER)
 *** =instructions
 - Get an overview over the data set using `summary()`
 - Plot speed (`speed`) against distance (`dist`)
-- Estimate the model $$ dist = \beta\_0 + \beta\_1 \times speed + u\_i $$. Store the restut in `mod`
+- Estimate the model $$dist = \beta\_0 + \beta\_1 \times speed + u\_i$$ and store the restut in `mod`
 
 *** =sample_code
 ```{r}
@@ -208,7 +208,7 @@ test_function("bptest", args = "formula")
 ```
 
 
---- type:MultipleChoiceExercise lang:r xp: skills: key:8508ba1468
+--- type:MultipleChoiceExercise lang:r xp: skills: key:f7494f6d8a
 ## Heteroskedasticity IV
 
 Let us have another look on the results of the Breusch-Pagan test.
@@ -247,7 +247,7 @@ msg_success <- "Exactly! The null cannot be rejected. We conclude that there is 
 test_mc(correct = 2, feedback_msgs = c(msg_bad, msg_success, msg_bad, msg_bad))
 ```
 
---- type:NormalExercise lang:r xp: skills: key:e51917681b
+--- type:NormalExercise lang:r xp: skills: key:fe5cb4d64e
 ## Heteroskedasticity V 
 
 We stored the results from the previously conducted Breusch-Pagan test for You. The object's name is `bp`. Use the console to convince yourself that it exisits and what info is stored using the `$` operator.
