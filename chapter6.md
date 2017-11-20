@@ -13,6 +13,7 @@ Die Datei *cps_ch3.csv* enthält einen Auszug des Current Population Survey, ein
 Lesen Sie den oben ganannten Datensatz *adäquat* ein und weisen Sie das Resultat dem Objekt `cps` zu.<br><br> <b>Hinweis:</b> Sie können die Web-Adresse als Pfad-Argument in der gesuchten Funktion nutzen!
   
 *** =hint
+
 Benutzen Sie die Funktion `read.table` zum Einlesen der Daten. Nutzen Sie die Argumente `header` und `sep`. Mit welchem Symbol sind Beobachtungen unterschiedlicher Variablen im Datensatz separiert?
 
 *** =sample_code
