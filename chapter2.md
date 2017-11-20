@@ -804,7 +804,7 @@ Choose the *right* statement.
 
 - The $p$-value is the proportion of cases for which we can reject the null hypothesis.
 - The $p$-value is a measure for the probability that the null hypothesis is true.
-- The $p$-value is defined as the probabilty of observing a result that is at least as extreme as the observed result, provided the null hypothesis is true. If the $p$-value is less or equals the choosen level of significance, the null is rejected.
+- The $p$-value is defined as the probabilty of observing a result that is at least as extreme as the observed result, provided the null hypothesis is true. If the $p$-value is smaller than the choosen level of significance, the null is rejected.
 - The $p$-value has to be choosen before conducting a significance test. If the $t$-statistic exceeds the $p$-value, the null hypothesis is not rejected.
 
 *** =hint
