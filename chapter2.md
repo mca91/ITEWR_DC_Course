@@ -512,7 +512,7 @@ test_object("mod_ni", eval=F)
 
 You have estimated a model without intercept. The estimated regression eqation now is
 
-$$ \widehat{score} = \underset{(1.36)}{12.65} \times size $$.
+$$ \widehat{score} = \underset{(1.36)}{12.65} \times size. $$
 
 Convince yourself that everything is as stated above.
 
