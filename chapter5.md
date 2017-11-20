@@ -174,7 +174,7 @@ The object `mod` from the previous exercise is available in Your R session.
 
 - Load the `lmtest` package
 - Check the help file entry for `bptest`
-- Conduct the Breusch-Pagan test
+- Perform the Breusch-Pagan test
 
 
 *** =sample_code
@@ -208,7 +208,7 @@ test_function("bptest", args = "formula")
 ```
 
 
---- type:MultipleChoiceExercise lang:r xp: skills: key:8508ba1468
+--- type:MultipleChoiceExercise lang:r xp: skills: key:b7f6e5c3aa
 ## Heteroskedasticity IV
 
 Let us have another look on the results of the Breusch-Pagan test.
@@ -247,7 +247,7 @@ msg_success <- "Exactly! The null cannot be rejected. We conclude that there is 
 test_mc(correct = 2, feedback_msgs = c(msg_bad, msg_success, msg_bad, msg_bad))
 ```
 
---- type:NormalExercise lang:r xp: skills: key:e51917681b
+--- type:NormalExercise lang:r xp: skills: key:6a0fac6416
 ## Heteroskedasticity V 
 
 We stored the results from the previously conducted Breusch-Pagan test for You. The object's name is `bp`. Use the console to convince yourself that it exisits and what info is stored using the `$` operator.
