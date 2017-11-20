@@ -5,11 +5,11 @@ description : We revisit a central statement of the Gauss-Markov theorem. You wi
 --- type:MultipleChoiceExercise lang:r xp:100 skills:1 key:726a6d460b
 ## A Simulation Study I
 
-Suppose you got the regression model
+Consider the regression model
 
-$$ y=\beta + \epsilon $$
+$$ Y\_i=\beta + \epsilon\_i, $$
 
-i.e. a regression of some variable $y_i$ solely on a constant or, put differently: the regressor is a vector of ones
+that is a regression of some variable $Y$ solely on a constant or, put differently: the only regressor is a vector of ones
 
 $$\mathbf{X} = (1 \dots 1)'.$$
 
