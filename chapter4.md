@@ -15,7 +15,7 @@ $$\mathbf{X} = (1 \dots 1)'.$$
 
 In the plotting area on the right You see the result of a *Monte Carlo Simulation* that allows us to analyze distributional properties of $\widehat{\beta}$, the OLS estimator for $\beta$ in the model above and another linear estimator, $\overset{\sim}{\beta}$, which uses different weights than OLS. 
 
-The sample data are drawn from a standard normal distribution, hence the true beta is zero. 
+The sample data are drawn from a standard normal distribution, hence the true $\beta$ is zero. 
 
 Is the result consistent with what You expect beeing aware of the Gauss-Markov Theorem?  
 
