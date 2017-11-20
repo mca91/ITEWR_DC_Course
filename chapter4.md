@@ -13,7 +13,7 @@ that is a regression of observations $i=1,\dots,n$ of some variable $Y$ solely o
 
 $$\mathbf{X} = (1 \dots 1)'.$$
 
-In the plotting area on the right You see the result of a *Monte Carlo Simulation* that allows us to analyze distributional properties of the OLS estimator for $\beta$ in the model above and another linear estimator $\overset{\sim}{\beta}$ which uses different weights than OLS. 
+In the plotting area on the right You see the result of a *Monte Carlo Simulation* that allows us to analyze distributional properties of $\widehat{\beta}$, the OLS estimator for $\beta$ in the model above and another linear estimator, $\overset{\sim}{\beta}$, which uses different weights than OLS. 
 
 The sample data are drawn from a standard normal distribution, hence the true beta is zero. 
 
