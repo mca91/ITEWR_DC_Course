@@ -118,7 +118,7 @@ test_function("summary", args="object", incorrect_msg = "Sie haben die Funktion 
 success_msg("Weiter so!")
 ```
 
---- type:NormalExercise lang:r xp:200 skills: key:d6bf938caf
+---type:NormalExercise lang:r xp:200 skills: key:d6bf938caf
 ## A4 Ein bearbeiteter Datensatz
 
 *Der Datensatz `cps` aus der vorherigen Aufgabe ist in Ihrer Arbeitsumgebung verfügbar!*
@@ -164,7 +164,7 @@ test_object("cps.neu", eq_condition = "equal",undefined_msg = "Sie haben das Obj
 success_msg("Weiter so!")
 ```
 
---- type:NormalExercise lang:r xp:200 skills: key:47ed547661
+---type:NormalExercise lang:r xp:200 skills: key:47ed547661
 ## A5 Ändern der Kodierung von Variablen
 
 *Der Datensatz `cps.neu` aus der vorherigen Aufgabe ist in Ihrer Arbeitsumgebung verfügbar!*
@@ -274,7 +274,7 @@ test_or({
 success_msg("Weiter so!")
 ```
 
---- type:NormalExercise lang:r xp:100 skills: key:26bccb9ef1
+---type:NormalExercise lang:r xp:100 skills: key:26bccb9ef1
 ## B2 Das Modellobjekt
 
 *Der Datensatz `cps.neu` und das Modell `mod` aus der vorherigen Aufgabe sind in Ihrer Arbeitsumgebung verfügbar.*
@@ -333,7 +333,7 @@ test_or({
 success_msg("Weiter so!")
 ```
 
---- type:NormalExercise lang:r xp:150 skills: key:35e5f91ed5
+---type:NormalExercise lang:r xp:150 skills: key:35e5f91ed5
 ## B3 Koeffizienten und Konfidenzintervalle
 
 *Der Datensatz `cps.neu` und das Modell `mod` aus der vorherigen Aufgabe sind in Ihrer Arbeitsumgebung verfügbar!*
@@ -398,7 +398,7 @@ test_function("confint")
 success_msg("Weiter so!")
 ```
 
---- type:NormalExercise lang:r xp:100 skills: key:96f8d5ec8d
+---type:NormalExercise lang:r xp:100 skills: key:96f8d5ec8d
 ## B4 Interpretation
 
 Betrachten Sie nun das zuvor geschätzte Regressionsmodel:
@@ -464,7 +464,7 @@ test_or({
 })
 ```
 
---- type:NormalExercise lang:r xp:200 skills: key:ed3e692798
+---type:NormalExercise lang:r xp:200 skills: key:ed3e692798
 ## B5 Modellgüte
 
 
@@ -519,7 +519,7 @@ test_object("R2")
 success_msg("Weiter so!")
 ```
 
---- type:NormalExercise lang:r xp:150 skills: key:8ff33cc2c4
+---type:NormalExercise lang:r xp:150 skills: key:8ff33cc2c4
 ## B6 Inferenz
 
 Betrachten Sie erneut das geschätzte Regressionsmodell:
