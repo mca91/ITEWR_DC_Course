@@ -64,7 +64,7 @@ $$ XP\_i = \beta\_0 + \beta\_1 \times Z\_i +  \epsilon\_i. $$
 
 Nun interessiert es Sie, ob die erwartete Punktzahl für Studenten, die gar keine Zeit investiert haben, signifikant von $0$ verschieden ist. Daher möchten Sie einen $t$-Test durchführen.
 
-Hinweis: Es ist
+**Hinweis**: Es ist
 
 $$ t \sim \tau_{n-k} $$
   
