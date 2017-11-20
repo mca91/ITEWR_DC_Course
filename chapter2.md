@@ -650,7 +650,7 @@ abline(mod_ni, col="red")
 *** =sct
 ```{r}
 msg_bad <- "That is not correct!"
-msg_success <- "Wow! You're doin' good! The fit of the blue regression line looks much better. Hence, excluding the intercept is not a good idea in this case."
+msg_success <- "Wow! You're doin' good! The fit of the blue regression line fits the data much better. Hence, excluding the intercept is not a good idea in this case."
 test_mc(correct = 2, feedback_msgs = c(msg_bad, msg_success, msg_bad, msg_bad))
 ```
 
