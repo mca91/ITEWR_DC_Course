@@ -9,7 +9,7 @@ Consider the regression model
 
 $$ Y\_i=\beta + \epsilon\_i, $$
 
-that is a regression of some variable $Y$ solely on a constant or, put differently: the only regressor is a vector of ones
+that is a regression of observations $i=1,\dots,n$ of some variable $Y$ solely on a constant or, put differently: the only regressor is a vector of ones
 
 $$\mathbf{X} = (1 \dots 1)'.$$
 
