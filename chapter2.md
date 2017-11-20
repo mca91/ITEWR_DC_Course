@@ -654,7 +654,7 @@ msg_success <- "Wow! You're doin' good! The fit of the blue regression line fits
 test_mc(correct = 2, feedback_msgs = c(msg_bad, msg_success, msg_bad, msg_bad))
 ```
 
---- type:MultipleChoiceExercise lang:r xp: skills: key:c0b8375eb8
+--- type:MultipleChoiceExercise lang:r xp: skills: key:09f36ed860
 ## What Was $R^2$ Again?  
 
 The coefficient of determination, denoted $R^2$, is a measure of a model's goodness of fit. It is defined as
