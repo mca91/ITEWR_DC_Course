@@ -166,7 +166,7 @@ plot(Z,XP, pch=20, col="Steelblue", cex=0.5, xlim = c(0,24), ylim = c(0,1500), x
 mod <- lm(XP ~ Z)
 ```
 
-***hint
+***=hint
 
 Den White-Schätzer können Sie berechnen, indem Sie das Argument `type="HC0"` im Aufruf von `vcovHC` benutzen. Die Dimensionen einer Matrix können Sie mit `dim` überprüfen. 
 
