@@ -1,6 +1,7 @@
 ---
 title       : Mock Exam I
 description : Dieses Testat besteht aus einem Kapitel mit insgesamt 11 Aufgaben. Die Aufgaben können unabhängig voneinander gelöst werden.
+---
 
 --- type:NormalExercise lang:r xp:100 skills: key:e8803615c1
 ## A1 Importieren eines Datensatzes in R
@@ -9,12 +10,11 @@ In dieser Aufgabe sollen Sie eine .csv-Datei einlesen.
 
 Die Datei *cps_ch3.csv* enthält einen Auszug des Current Population Survey, einer sozioökonomischen Umfrage in den USA.<br> <b>*Der Datensatz ist online unter der im R-Skript angegebenen Web-Adresse verfügbar.*</b>
   
-  *** =instructions
+ *** =instructions
 
 - Lesen Sie den oben ganannten Datensatz *adäquat* ein und weisen Sie das Resultat dem Objekt `cps` zu.<br><br> <b>Hinweis:</b> Sie können die Web-Adresse als Pfad-Argument in der gesuchten Funktion nutzen!
   
-  
-  *** =hint
+ *** =hint
 
 Benutzen Sie die Funktion `read.table` zum Einlesen der Daten. Nutzen Sie die Argumente `header` und `sep`. Mit welchem Symbol sind Beobachtungen unterschiedlicher Variablen im Datensatz separiert?
 
