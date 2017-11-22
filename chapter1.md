@@ -10,7 +10,7 @@ description : This section teaches you basic commands in R.
 - Use R as a calculator. Calculate $3+4$, $6−8$, $3\times 5$ and $\frac{10}{3}$
 - Save the result of $\frac{10}{3}$ to a variable, e.g. `x`, by using the `<-` operator: `x <- 10/3`
 - Print the content of this object to the console by typing its name and pressing the <i>enter key</i> 
-- Round the result to 2 decimal places using `round(x, 2)`
+- Round the result to 2 decimal places using `round(x, 2)`.
 
 *** =sample_code
 ```{r}
