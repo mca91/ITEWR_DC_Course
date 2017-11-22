@@ -10,7 +10,7 @@ description : This section teaches you basic commands in R.
 - Use R as a calculator. Calculate $3+4$, $6−8$, $3\times 5$ and $\frac{10}{3}$
 - Save the result of $\frac{10}{3}$ to a variable, e.g. `x`, by using the `<-` operator: `x <- 10/3`
 - Print the content of this object to the console by typing its name and pressing the <i>enter key</i> 
-- Round the result to 2 decimal places using `round(x, 2)`.
+- Round the result to 2 decimal places using `round(x, 2)`
 
 *** =sample_code
 ```{r}
@@ -356,7 +356,7 @@ test_error()
 success_msg("Nicely Done!")
 ```
 
---- type:NormalExercise lang:r xp: skills: key:56f668383f
+--- type:NormalExercise lang:r xp: skills: key:4c3bc7671d
 ## Loading Data into R – .csv Files
 
 In R, it is often fairly easy to import data. This exercise will teach you how to import .csv files. "csv" means "comma seperated values".
@@ -396,7 +396,7 @@ test_object("my_data")
 success_msg("The cool thing about this is: You can access the data from anywhere. Try it yourself: copy, paste and execute Your call of `read.table()` to the console of the R version You have installed on Your computer!")
 ```
 
---- type:NormalExercise lang:r xp: skills: key:48bcdba534
+--- type:NormalExercise lang:r xp: skills: key:7a432ab2d1
 ## Print the Data Set
 
 Great! If you want to print your the contents of the object `my_data`, you simply have to type its name (to the console or in your script) and execute. 
@@ -432,7 +432,7 @@ test_predefined_objects("my_data")
 test_output_contains("my_data")
 ```
 
---- type:NormalExercise lang:r xp: skills: key:97b12fb589
+--- type:NormalExercise lang:r xp: skills: key:3aab7dff10
 ## How to Get an Overview
 
 When there are many variables and/or many observations, printing the data set can be really messy. 
@@ -471,7 +471,7 @@ test_function("head")
 success_msg("Well done!")
 ```
 
---- type:NormalExercise lang:r xp: skills: key:5ff61203bc
+--- type:NormalExercise lang:r xp: skills: key:ff3d873a47
 ## Wait ... Something's Not Right
 
 The data set should look something like:
@@ -553,7 +553,7 @@ test_object("my_data")
 success_msg("Cool!")
 ```
 
---- type:NormalExercise lang:r xp: skills: key:3961cff671
+--- type:NormalExercise lang:r xp: skills: key:a9e63bea9d
 ## Yes, That Looks Better!
 
 The data set should now look something like:
@@ -615,7 +615,7 @@ success_msg("Cool! The next exercise shows You how to read in data from .txt fil
 ```
 
 
---- type:NormalExercise lang:r xp: skills: key:3b32be21cf
+--- type:NormalExercise lang:r xp: skills: key:37cb77dc9d
 ## Load Data From .txt Files Into R
 
 We have prepared another data set containing observations from the 1985 Current Population Survey, this time in a .txt file to be found at
@@ -659,7 +659,7 @@ test_output_contains("head(cps1985)")
 success_msg("This looks right! Keep up the good work!")
 ```
 
---- type:NormalExercise lang:r xp: skills: key:16c189f45a
+--- type:NormalExercise lang:r xp: skills: key:4785452df8
 ## Now Have a Look Again ...
 
 Okay. The data set You imported in the last exercise is available in Your environment.
