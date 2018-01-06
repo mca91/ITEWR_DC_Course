@@ -12,7 +12,7 @@ For the course of this section, we will use the `Boston` data set which contains
 *** =instructions
 
 - Load the package and the data set
-- Get youself an overview over the data set using the `summary` function. Hint: Use `?Boston` for detailed info on variables
+- Get yourself an overview over the data set using the `summary` function. Hint: Use `?Boston` for detailed info on variables
 - Estimate a simple linear regression model explaining *median house value*, `medv`. by the *percent of household with low socioecononomic status*, `lstat`, and a constant. 
 - Inspect the model's summary
 
