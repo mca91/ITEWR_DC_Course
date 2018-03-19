@@ -510,7 +510,7 @@ test_object("mod_ni", eval=F)
 --- type:NormalExercise lang:r xp: skills: key:ede65c6611
 ## Regression Output: No Constant Case
 
-You have estimated a model without intercept. The estimated regression eqation now is
+You have estimated a model without intercept. The estimated regression equation now is
 
 $$ \widehat{score} = \underset{(1.36)}{12.65} \times size. $$
 
@@ -536,14 +536,14 @@ mod_ni <- lm(ts ~ cs - 1)
 
 *** =sample_code
 ```{r}
-# Extract the coefficient matrix from the models summary, save it to coef
+# Extract the coefficient matrix from the model's summary, save it to coef
 
 
 ```
 
 *** =solution
 ```{r}
-# Extract the coefficient matrix from the models summary, save it to coef
+# Extract the coefficient matrix from the model's summary, save it to coef
 coef <- summary(mod_ni)$coefficients
 
 ```
@@ -552,14 +552,14 @@ coef <- summary(mod_ni)$coefficients
 ```{r}
 test_predefined_objects("mod")
 test_predefined_objects("mod_ni")
-
 test_object("coef")
+success_msg("Right! Note that there is only one coefficient estimate reported by <tt>summary(mod_ni)</tt>")
 ```
 
 --- type:NormalExercise lang:r xp: skills: key:a6e79f9788
 ## Two Regression Lines, One Plot
 
-The two estimated regression eqations are
+The two estimated regression equations are
 
 $$ \widehat{score} = \underset{(1.36)}{12.65} \times size $$
 
@@ -683,13 +683,13 @@ test_mc(correct = 4, feedback_msgs = c(msg_bad, msg_bad, msg_bad, msg_success))
 --- type:NormalExercise lang:r xp: skills: key:673ab4d8fc
 ## TSS & SSR  
 
-If graphical inspection does not help, one can resort to analytic technique in order to detect if a model fits the data at hand better than another.
+If graphical inspection does not help, one can resort to analytic techniques in order to detect if a model fits the data at hand better than another.
 
 We now go back to the simple model including an intercept. The estimated regression line for `mod` was
 
 $$ \widehat{TestScore} = 567.43 - 7.15 \times ClassSize, \, R^2 = 0.8976, \, SER=15.19. $$
 
-*You can check this as `mod` and vectores `cs` and `ts` are available in your working environment again.*
+*You can check this as `mod` and vectors `cs` and `ts` are available in your working environment again.*
 
 Now, please do the following:
 
@@ -725,7 +725,7 @@ You may futher be interested in `?residuals` and `?var`.
 ssr <- sum(mod$residuals^2)
 
 # Compute the TSS and save it to tss
-tss <- 9*var(ts) # var() uses the unbiased sample variance! => Correct by multiplying with (n-1) = 9
+tss <- 9*var(ts) # var() computes the unbiased sample variance! => Corrected for by multiplying with (n-1) = 9
 ```
 
 *** =sct
@@ -740,17 +740,17 @@ test_object("tss")
 
 $$ \widehat{TestScore} = 567.43 - 7.15 \times ClassSize, \, R^2 = 0.8976, \, SER=15.19 $$
 
-Now, use Your results from the previous exercise to compute $R^2$, the coefficient of determination.
+Now, use your results from the previous exercise to compute $R^2$, the coefficient of determination.
 
-*`mod`, `tss` and `ssr` are available in Your working environment.*
+*`mod`, `tss` and `ssr` are available in your working environment.*
 
 *** =instructions
-- Use `ssr` and `tss` to compute $R^2$, the coefficient of determination. *Round* it to 4 decimal places. Save the result to `R2`.
-- Use the logical expression `==` to check whether your result for $R^2$ equals the one mentioned above.
+- Use `ssr` and `tss` to compute $R^2$. *Round* it to four decimal places. Save the result to `R2`.
+- Use the logical operator `==` to check whether your result for $R^2$ equals the value mentioned above.
 
 *** =hint
 
-$R^2 = 1 - \frac{SSR}{TSS}$. You can round numerical expressions using the function `round`. See `?round`. 
+$R^2 = 1 - \frac{SSR}{TSS}$. You can round numeric expressions using the function `round()`. See `?round`. 
 
 *** =pre_exercise_code
 ```{r}
@@ -763,20 +763,20 @@ tss <- 9*var(ts)
 
 *** =sample_code
 ```{r}
-# Compute R^2, round it and save it to R2
+# Compute R^2, round it by four decimal places and save it to R2
 
 
-# Check whether Your result is correct
+# Check whether your result is correct
 
 
 ```
 
 *** =solution
 ```{r}
-# Compute R^2, round it by 4 decimal places and save it to R2
+# Compute R^2, round it by four decimal places and save it to R2
 R2 <- round(1-ssr/tss,4)
 
-# Check whether Your result is correct
+# Check whether your result is correct
 R2 == 0.8976
 ```
 
@@ -788,7 +788,6 @@ test_predefined_objects("mod")
 test_object("R2")
 test_function("round", args="digits", eq_condition="equal")
 test_student_typed("R2 == 0.8976", not_typed_msg = "Something is wrong. Make sure You type `R2 ==` followed by the value for R^2 mentioned above.")
-test_output_contains("R2 == 0.8976")
 ```
 
 --- type:MultipleChoiceExercise lang:r xp: skills: key:01c813746a
@@ -796,7 +795,7 @@ test_output_contains("R2 == 0.8976")
 
 What was the definition of the $p$-value again? 
 
-Maybe the plot displayed on the right may help You remember. It depicts the case of a two-sided test where $|t|$ denotes the absolute value of the computed test statistic.
+Maybe the plot displayed on the right may help you remember. It depicts the case of a two-sided test where $|t|$ denotes the absolute value of the computed test statistic.
 
 Choose the *right* statement.
 
@@ -804,8 +803,8 @@ Choose the *right* statement.
 
 - The $p$-value is the proportion of cases for which we can reject the null hypothesis.
 - The $p$-value is a measure for the probability that the null hypothesis is true.
-- The $p$-value is defined as the probabilty of observing a result that is at least as extreme as the observed result, provided the null hypothesis is true. If the $p$-value is smaller than the choosen level of significance, the null is rejected.
-- The $p$-value has to be choosen before conducting a significance test. If the $t$-statistic exceeds the $p$-value, the null hypothesis is not rejected.
+- The $p$-value is defined as the probabilty of observing a result that is at least as extreme as the observed result, provided the null hypothesis is true. If the $p$-value is smaller than the chosen level of significance, the null is rejected.
+- The $p$-value has to be chosen before conducting a significance test. If the $t$-statistic exceeds the $p$-value, the null hypothesis is not rejected.
 
 *** =hint
 
