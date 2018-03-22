@@ -916,7 +916,7 @@ test_object("p_cs")
 
 
 
---- type:MultipleChoiceExercise lang:r xp: skills: key:9bf182dbda
+--- type:MultipleChoiceExercise lang:r xp: skills: key:74e0004e1e
 ## Two Null Hypotheses You Can't Reject, Can You?
 
 $$ \widehat{TestScore} = \underset{(23.9606)}{567.43} - \underset{(0.8536)}{7.15} \times cs, \, R^2 = 0.8976, \, SER=15.19 $$
